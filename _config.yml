@@ -96,10 +96,10 @@ comments:
     issue_term: # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-    repo: Cptzzzzz/comments # <gh-username>/<repo>
-    repo_id: R_kgDOJhXGrw
+    repo: Cptzzzzz/jekyll-theme-chirpy # <gh-username>/<repo>
+    repo_id: R_kgDOJh0v2A
     category: BlogComment
-    category_id: DIC_kwDOJhXGr84CWZi2
+    category_id: DIC_kwDOJh0v2M4CWbA7
     mapping: # optional, default to 'pathname'
     input_position: top # optional, default to 'bottom'
     lang: # optional, default to the value of `site.lang`
