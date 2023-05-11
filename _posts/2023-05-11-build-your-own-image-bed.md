@@ -55,7 +55,7 @@ docker run -d --name minio-server \
 
 例如访问本地 `9000` 端口 `bucket` 中的 `filename` 文件
 
-URL: `127.0.0.1：9000/bucket/filename`
+URL: `127.0.0.1:9000/bucket/filename`
 
 ## 服务端存储图片
 
@@ -63,8 +63,6 @@ URL: `127.0.0.1：9000/bucket/filename`
 {: .prompt-info }
 
 参考代码
-
-`server.go`
 
 ```go
 package main
@@ -131,6 +129,7 @@ func upload(w http.ResponseWriter, r *http.Request) {
 }
 
 ```
+{: file="server.go" }
 
 这份代码监听 `8080` 端口，同时接收 `Http` 请求中传入的文件，根据文件内容解析文件格式，随后按时间生成新的文件名后存入 `minio` ，并把 `URL` 返回给客户端
 
@@ -159,8 +158,6 @@ docker run -d -p 8080:8080
 根据 `Typora` 中自定义上传图片的逻辑，上传服务选择 `Custom Command` ，并在后续填入所需执行的命令，`Typora` 会在命令后补全文件绝对路径并调用，因此需要从命令行参数中读取文件名，随后封装 `Http` 请求，最后把图片 `URL` 输出到标准输出，`Typora` 会根据标准输出的结果替换图片路径。
 
 参考代码
-
-`client.go`
 
 ```go
 package main
@@ -193,11 +190,11 @@ func main() {
 }
 
 ```
+{: file="client.go" }
 
 在修改好 `UploadUrl` 后，使用 `go build -o upload.exe client.go` 生成可执行文件，将可执行文件绝对目录填入 `Typora` 中即可
 
 > 如果你有域名的话，可以使用 `nginx` 来为你的 `minio` 图床设置域名。
->
 > 实际运行时，需要把代码中的 `URL`换成真实的 `URL`
 {: .prompt-tip }
 
