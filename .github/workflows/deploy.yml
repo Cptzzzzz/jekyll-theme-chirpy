@@ -1,0 +1,33 @@
+name: "Build and Deploy"
+
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3.5.2
+        with:
+          fetch-depth: 0
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v3
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3   # reads from a '.ruby-version' or '.tools-version' file if 'ruby-version' is omitted
+          bundler-cache: true
+      - name: Build Assets
+        run: npm i && npm run build
+      
+      - name: Build Site
+        run: bundle exec jekyll b
+        env:
+          JEKYLL_ENV: "production"
+        
