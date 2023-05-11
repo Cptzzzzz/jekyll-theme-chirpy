@@ -37,8 +37,7 @@ docker run -d --name minio-server \
 记住生成的账号密码
 
 > 生成账号密码可以使用``pwgen`命令，例如生成长64位的密钥`pwgen -Bsv1 64`
->
-> {: .prompt-tip }
+{: .prompt-tip }
 
 ### 设置存储`bucket`
 
@@ -63,8 +62,7 @@ URL:`127.0.0.1：9000/bucket/filename`
 ## 服务端存储图片
 
 > 这一部分的主要工作是接收上传的图片，使用上述的`Service Account`连接`minio`，并将图片存入
->
-> {: .prompt-info }
+{: .prompt-info }
 
 参考代码
 
@@ -158,8 +156,7 @@ docker run -d -p 8080:8080
 ## 客户端上传图片
 
 > 这一部分的主要功能是对接`Typora`，封装`Http`请求完成上传图片
->
-> {: .prompt-info }
+{: .prompt-info }
 
 根据`Typora`中自定义上传图片的逻辑，上传服务选择`Custom Command`，并在后续填入所需执行的命令，`Typora`会在命令后补全文件绝对路径并调用，因此需要从命令行参数中读取文件名，随后封装`Http`请求，最后把图片`URL`输出到标准输出，`Typora`会根据标准输出的结果替换图片路径。
 
@@ -204,6 +201,5 @@ func main() {
 > 如果你有域名的话，可以使用`nginx`来为你的`minio`图床设置域名。
 >
 > 实际运行时，需要把代码中的`URL`换成真实的`URL`
->
-> {: .prompt-tip }
+{: .prompt-tip }
 
