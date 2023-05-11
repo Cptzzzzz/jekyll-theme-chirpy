@@ -30,4 +30,4 @@ jobs:
         run: bundle exec jekyll b
         env:
           JEKYLL_ENV: "production"
-        
+
