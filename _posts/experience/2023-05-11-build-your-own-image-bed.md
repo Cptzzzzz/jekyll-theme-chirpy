@@ -3,7 +3,7 @@ title: Build Your Own Image Bed
 author: Cptz
 date: 2023-05-10 20:55:00 +0800
 categories: [Experience, Tutorial]
-tags: [minio, image bed]
+tags: [minio, image bed, typora]
 pin: true
 ---
 
