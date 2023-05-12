@@ -5,6 +5,7 @@ date: 2023-05-12 20:23:15 +0800
 categories: [Reading Notes, 深入理解分布式系统]
 tags: [distributed system, notes]
 pin: true
+math: true
 ---
 
 ## 分布式数据
