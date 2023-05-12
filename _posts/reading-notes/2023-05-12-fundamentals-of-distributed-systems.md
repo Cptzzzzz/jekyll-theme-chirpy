@@ -6,6 +6,9 @@ categories: [Reading Notes, 深入理解分布式系统]
 tags: [distributed system, notes]
 pin: true
 math: true
+image:
+  path: http://storage.cptz.space/typora/1683896499.jpg
+  alt: 深入理解分布式系统
 ---
 
 ## 分布式数据
