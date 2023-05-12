@@ -8,7 +8,7 @@ pin: true
 math: true
 image:
   path: http://storage.cptz.space/typora/1683896499.jpg
-  alt: 深入理解分布式系统
+  alt: 《深入理解分布式系统》书籍
 ---
 
 ## 分布式数据
