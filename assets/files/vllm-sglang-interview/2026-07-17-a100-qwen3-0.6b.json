@@ -1,0 +1,149 @@
+{
+  "date": "2026-07-17",
+  "hardware": {
+    "gpu": "NVIDIA A100 PCIe 40GB",
+    "gpu_count": 1
+  },
+  "model": "Qwen/Qwen3-0.6B",
+  "source": {
+    "vllm_commit": "d1d2f7535686acdc39b034bf18ba52d07c21def5",
+    "sglang_commit": "9529c2e96351f3b1d5715eaa89989b20723d60b5"
+  },
+  "common_serving_config": {
+    "context_length": 8192,
+    "max_running_requests": 32,
+    "gpu_memory_fraction": 0.7,
+    "attention_backend": "FlashAttention v2 for vLLM, Triton for SGLang"
+  },
+  "prefill_ttft_ms": {
+    "description": "20 unique random prompts, concurrency 1, one output token",
+    "vllm_eager": {
+      "256": {"mean": 41.657, "p95": 44.727},
+      "1024": {"mean": 60.23, "p95": 66.611},
+      "4096": {"mean": 114.431, "p95": 139.311}
+    },
+    "sglang_eager": {
+      "256": {"mean": 61.424, "p95": 65.57},
+      "1024": {"mean": 73.021, "p95": 78.638},
+      "4096": {"mean": 105.067, "p95": 128.864}
+    },
+    "sglang_graph": {
+      "256": {"mean": 24.272, "p95": 30.161},
+      "1024": {"mean": 37.557, "p95": 51.696},
+      "4096": {"mean": 105.45, "p95": 115.661}
+    }
+  },
+  "decode": {
+    "description": "16 requests, 256 input tokens and 32 output tokens",
+    "vllm_eager": {
+      "c1": {"output_tps": 43.135, "mean_ttft_ms": 62.917, "mean_tpot_ms": 21.893, "p99_itl_ms": 27.058},
+      "c4": {"output_tps": 156.372, "mean_ttft_ms": 98.738, "mean_tpot_ms": 23.186, "p99_itl_ms": 27.944},
+      "c16": {"output_tps": 555.493, "mean_ttft_ms": 163.29, "mean_tpot_ms": 24.131, "p99_itl_ms": 28.658}
+    },
+    "vllm_graph": {
+      "c1": {"output_tps": 280.794, "mean_ttft_ms": 40.045, "mean_tpot_ms": 2.377, "p99_itl_ms": 5.063},
+      "c4": {"output_tps": 798.273, "mean_ttft_ms": 69.441, "mean_tpot_ms": 2.9, "p99_itl_ms": 4.774},
+      "c16": {"output_tps": 2078.309, "mean_ttft_ms": 128.104, "mean_tpot_ms": 3.579, "p99_itl_ms": 10.576}
+    },
+    "sglang_eager": {
+      "c1": {"output_tps": 40.465, "mean_ttft_ms": 68.022, "mean_tpot_ms": 23.308, "p99_itl_ms": 27.37},
+      "c4": {"output_tps": 150.478, "mean_ttft_ms": 84.97, "mean_tpot_ms": 24.663, "p99_itl_ms": 43.521},
+      "c16": {"output_tps": 446.829, "mean_ttft_ms": 258.066, "mean_tpot_ms": 28.437, "p99_itl_ms": 265.942}
+    },
+    "sglang_graph": {
+      "c1": {"output_tps": 370.826, "mean_ttft_ms": 25.824, "mean_tpot_ms": 1.941, "p99_itl_ms": 3.19},
+      "c4": {"output_tps": 1012.517, "mean_ttft_ms": 42.455, "mean_tpot_ms": 2.676, "p99_itl_ms": 6.754},
+      "c16": {"output_tps": 2316.925, "mean_ttft_ms": 88.337, "mean_tpot_ms": 4.055, "p99_itl_ms": 31.989}
+    }
+  },
+  "prefix_cache": {
+    "description": "Direct token-ID requests, 2080-token query, second request repeats the first",
+    "vllm_eager": {
+      "block_size": 16,
+      "cold": {"matched_tokens": 0, "server_ttft_ms": 52.016, "server_prefill_ms": 47.146},
+      "warm": {"matched_tokens": 2064, "server_ttft_ms": 46.06, "server_prefill_ms": 41.78}
+    },
+    "vllm_graph": {
+      "block_size": 16,
+      "cold": {"matched_tokens": 0, "server_ttft_ms": 49.881, "server_prefill_ms": 44.522},
+      "warm": {"matched_tokens": 2064, "server_ttft_ms": 18.45, "server_prefill_ms": 13.779}
+    },
+    "sglang_eager": {
+      "page_size": 1,
+      "cold": {"matched_tokens": 0, "server_e2e_ms": 56.84},
+      "warm": {"matched_tokens": 2079, "server_e2e_ms": 49.59}
+    },
+    "sglang_graph": {
+      "page_size": 1,
+      "cold": {"matched_tokens": 0, "server_e2e_ms": 44.661},
+      "warm": {"matched_tokens": 2079, "server_e2e_ms": 18.173}
+    }
+  },
+  "chunked_prefill_interference": {
+    "description": "One 256-token streaming decode; inject a 7168-token prefill after 20 stream events; five repetitions",
+    "sglang_chunk8192_no_mix": {"baseline_stream_gap_ms": 1.966, "max_overlap_gap_ms": 119.67, "long_prefill_client_ms": 153.943},
+    "sglang_chunk512_no_mix": {"baseline_stream_gap_ms": 1.998, "max_overlap_gap_ms": 221.626, "long_prefill_client_ms": 251.395},
+    "sglang_chunk512_mixed": {"baseline_stream_gap_ms": 1.952, "max_overlap_gap_ms": 23.874, "long_prefill_client_ms": 273.501},
+    "vllm_budget8192": {"baseline_stream_gap_ms": 2.36, "max_overlap_gap_ms": 87.251, "long_prefill_client_ms": 142.834},
+    "vllm_budget512": {"baseline_stream_gap_ms": 2.337, "max_overlap_gap_ms": 22.18, "long_prefill_client_ms": 302.106}
+  },
+  "kv_pressure": {
+    "description": "4096 KV-token capacity, eight requests, each 1024 input plus 512 forced output tokens",
+    "vllm": {
+      "preemptions": 3,
+      "mean_ttft_ms": 1765.213,
+      "p99_ttft_ms": 3589.14,
+      "output_tps": 780.075,
+      "mean_tpot_ms": 3.407,
+      "queue_time_sum_s": 12.56
+    },
+    "sglang_conservative": {
+      "retractions": 0,
+      "mean_ttft_ms": 2204.908,
+      "p99_ttft_ms": 4324.8,
+      "output_tps": 719.766,
+      "mean_tpot_ms": 2.692,
+      "queue_time_sum_s": 17.03
+    },
+    "sglang_mixed": {
+      "retractions": 1,
+      "retracted_input_tokens": 1024,
+      "retracted_output_tokens": 338,
+      "new_token_ratio_before": 0.098,
+      "new_token_ratio_after": 0.7063,
+      "mean_ttft_ms": 1988.727,
+      "p99_ttft_ms": 4437.96,
+      "output_tps": 707.893,
+      "mean_tpot_ms": 3.21
+    }
+  },
+  "sglang_ngram_speculation": {
+    "description": "Default graph mode, eight verify tokens per request, three measured runs per prompt after cache flush, 256 forced output tokens",
+    "non_speculative_baseline": {
+      "repetitive_prompt_median_e2e_ms": 504.468,
+      "ordinary_prompt_median_e2e_ms": 503.383
+    },
+    "ngram": {
+      "repetitive_prompt": {
+        "median_e2e_ms": 187.348,
+        "speedup": 2.693,
+        "accept_rate": 0.9697,
+        "accept_length": 7.7576,
+        "verify_count": 33
+      },
+      "ordinary_prompt": {
+        "median_e2e_ms": 331.917,
+        "speedup": 1.517,
+        "accept_rate": 0.4221,
+        "accept_length": 3.8788,
+        "verify_count": 66
+      }
+    }
+  },
+  "limitations": [
+    "Single A100 and a 0.6B dense model; results are mechanisms evidence, not cross-framework production rankings.",
+    "Serving stacks, graph bucket policies and attention backends differ, so absolute framework numbers are not an apples-to-apples leaderboard.",
+    "OpenAI SSE can coalesce text fragments; interference gaps are client-visible event gaps, not exact per-token kernel latency.",
+    "Multi-GPU TP, EP and prefill/decode disaggregation were source-audited but not measured in this single-GPU run."
+  ]
+}
