@@ -1,0 +1,7 @@
+algorithm,requested_protocol,message_bytes,selected_algo_id,selected_proto_id,launch_family_marker,launch_kernel_names,kernel_name_encodes_requested_protocol,instances,median_kernel_us,p95_kernel_us,grid_x_values,block_x_values,private_report
+Ring,LL,1048576,1,0,_RING_LL,ncclDevKernel_AllReduce_Sum_f32_RING_LL,1,56,44.111000000000004,826.0875000000001,12,512,/root/nccl-learning/private/ch14_protocol/20260710T161632Z/01_ring_ll_1m.nsys-rep
+Ring,LL128,1048576,1,1,_RING_LL,ncclDevKernel_AllReduce_Sum_f32_RING_LL,0,56,57.232,809.295,12,640,/root/nccl-learning/private/ch14_protocol/20260710T161632Z/02_ring_ll128_1m.nsys-rep
+Ring,Simple,1048576,1,2,_RING_LL,ncclDevKernel_AllReduce_Sum_f32_RING_LL,0,56,66.11099999999999,983.694,12,544,/root/nccl-learning/private/ch14_protocol/20260710T161632Z/03_ring_simple_1m.nsys-rep
+Tree,LL,1048576,0,0,_TREE_LL,ncclDevKernel_AllReduce_Sum_f32_TREE_LL,1,56,58.8955,728.66475,12,640,/root/nccl-learning/private/ch14_protocol/20260710T161632Z/04_tree_ll_1m.nsys-rep
+Tree,LL128,1048576,0,1,_TREE_LL,ncclDevKernel_AllReduce_Sum_f32_TREE_LL,0,56,65.1515,812.95975,12,640,/root/nccl-learning/private/ch14_protocol/20260710T161632Z/05_tree_ll128_1m.nsys-rep
+Tree,Simple,1048576,0,2,_TREE_LL,ncclDevKernel_AllReduce_Sum_f32_TREE_LL,0,56,93.8225,857.3515,12,640,/root/nccl-learning/private/ch14_protocol/20260710T161632Z/06_tree_simple_1m.nsys-rep

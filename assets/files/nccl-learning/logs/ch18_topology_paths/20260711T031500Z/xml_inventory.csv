@@ -1,0 +1,6 @@
+fixture,cpu_nodes,pci_nodes,gpu_nodes,nic_nodes,net_nodes,nvlink_records,positive_nvlink_records,sum_directed_nvlink_count,gpu_pci_widths,gpu_pci_speeds
+native_nv2,1,5,4,1,1,12,12,24,16,8.0 GT/s PCIe
+all_to_all_nv1,1,5,4,1,1,12,12,12,16,8.0 GT/s PCIe
+sparse_nv2_ring,1,5,4,1,1,8,8,16,16,8.0 GT/s PCIe
+pcie_x16,1,5,4,1,1,12,0,0,16,8.0 GT/s PCIe
+pcie_x4,1,5,4,1,1,12,0,0,4,8.0 GT/s PCIe

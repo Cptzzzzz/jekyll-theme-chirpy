@@ -1,0 +1,4 @@
+config,p2p_lines,shm_lines,coll_channels
+baseline,48,0,12
+channel1,4,0,1
+no_p2p,0,12,2

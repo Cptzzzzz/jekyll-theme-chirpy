@@ -1,0 +1,289 @@
+W0710 02:02:15.851000 140507619340736 torch/distributed/run.py:793] 
+W0710 02:02:15.851000 140507619340736 torch/distributed/run.py:793] *****************************************
+W0710 02:02:15.851000 140507619340736 torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0710 02:02:15.851000 140507619340736 torch/distributed/run.py:793] *****************************************
+sg-fuxc2-260708-12652-default0-0:25765:25765 [0] NCCL INFO NCCL version 2.22.3+cuda12.6
+sg-fuxc2-260708-12652-default0-0:25768:25768 [3] NCCL INFO NCCL version 2.22.3+cuda12.6
+sg-fuxc2-260708-12652-default0-0:25766:25766 [1] NCCL INFO NCCL version 2.22.3+cuda12.6
+sg-fuxc2-260708-12652-default0-0:25767:25767 [2] NCCL INFO NCCL version 2.22.3+cuda12.6
+sg-fuxc2-260708-12652-default0-0:25768:25768 [3] NCCL INFO AllGather: opCount 0 sendbuff 0x7f2c1e000000 recvbuff 0x7f2c12000000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25766:25766 [1] NCCL INFO AllGather: opCount 0 sendbuff 0x7f9532000000 recvbuff 0x7f9526000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25767:25767 [2] NCCL INFO AllGather: opCount 0 sendbuff 0x7fa438000000 recvbuff 0x7fa430000000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25765:25765 [0] NCCL INFO AllGather: opCount 0 sendbuff 0x7ff042000000 recvbuff 0x7ff040000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25767:25767 [2] NCCL INFO AllGather: opCount 1 sendbuff 0x7fa438400000 recvbuff 0x7fa430000000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25767:25767 [2] NCCL INFO AllGather: opCount 2 sendbuff 0x7fa438800000 recvbuff 0x7fa3fe800000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25766:25766 [1] NCCL INFO AllGather: opCount 1 sendbuff 0x7f9532400000 recvbuff 0x7f9526000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25765:25765 [0] NCCL INFO AllGather: opCount 1 sendbuff 0x7ff04a000000 recvbuff 0x7ff040000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25768:25768 [3] NCCL INFO AllGather: opCount 1 sendbuff 0x7f2c1e400000 recvbuff 0x7f2c12000000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25766:25766 [1] NCCL INFO AllGather: opCount 2 sendbuff 0x7f9532800000 recvbuff 0x7f94f2000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25767:25767 [2] NCCL INFO AllGather: opCount 3 sendbuff 0x7fa438c00000 recvbuff 0x7fa430000000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25765:25765 [0] NCCL INFO AllGather: opCount 2 sendbuff 0x7ff04a400000 recvbuff 0x7ff040000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25766:25766 [1] NCCL INFO AllGather: opCount 3 sendbuff 0x7f9532c00000 recvbuff 0x7f9526000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25768:25768 [3] NCCL INFO AllGather: opCount 2 sendbuff 0x7f2c1e800000 recvbuff 0x7f2c12000000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25766:25766 [1] NCCL INFO AllGather: opCount 4 sendbuff 0x7f9533000000 recvbuff 0x7f94f2000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25767:25767 [2] NCCL INFO AllGather: opCount 4 sendbuff 0x7fa439000000 recvbuff 0x7fa3fe800000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25765:25765 [0] NCCL INFO AllGather: opCount 3 sendbuff 0x7ff04a800000 recvbuff 0x7ff012000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25768:25768 [3] NCCL INFO AllGather: opCount 3 sendbuff 0x7f2c1ec00000 recvbuff 0x7f2c12000000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25766:25766 [1] NCCL INFO AllGather: opCount 5 sendbuff 0x7f952c000000 recvbuff 0x7f9526000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25767:25767 [2] NCCL INFO AllGather: opCount 5 sendbuff 0x7fa433000000 recvbuff 0x7fa430000000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25765:25765 [0] NCCL INFO AllGather: opCount 4 sendbuff 0x7ff04ac00000 recvbuff 0x7ff012000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25768:25768 [3] NCCL INFO AllGather: opCount 4 sendbuff 0x7f2c1f000000 recvbuff 0x7f2c12000000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25765:25765 [0] NCCL INFO AllGather: opCount 5 sendbuff 0x7ff046000000 recvbuff 0x7ff012000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25766:25766 [1] NCCL INFO AllGather: opCount 6 sendbuff 0x7f952c400000 recvbuff 0x7f94f2000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25767:25767 [2] NCCL INFO AllGather: opCount 6 sendbuff 0x7fa433400000 recvbuff 0x7fa3fe800000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25768:25768 [3] NCCL INFO AllGather: opCount 5 sendbuff 0x7f2c18000000 recvbuff 0x7f2c12000000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25765:25765 [0] NCCL INFO AllGather: opCount 6 sendbuff 0x7ff046400000 recvbuff 0x7ff012000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25766:25766 [1] NCCL INFO AllGather: opCount 7 sendbuff 0x7f952c800000 recvbuff 0x7f9526000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25767:25767 [2] NCCL INFO AllGather: opCount 7 sendbuff 0x7fa433800000 recvbuff 0x7fa430000000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25768:25768 [3] NCCL INFO AllGather: opCount 6 sendbuff 0x7f2c18400000 recvbuff 0x7f2c12000000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25765:25765 [0] NCCL INFO AllGather: opCount 7 sendbuff 0x7ff046800000 recvbuff 0x7ff012000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25766:25766 [1] NCCL INFO AllGather: opCount 8 sendbuff 0x7f952cc00000 recvbuff 0x7f94f2000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25767:25767 [2] NCCL INFO AllGather: opCount 8 sendbuff 0x7fa433c00000 recvbuff 0x7fa3fe800000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25768:25768 [3] NCCL INFO AllGather: opCount 7 sendbuff 0x7f2c18800000 recvbuff 0x7f2c12000000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25765:25765 [0] NCCL INFO AllGather: opCount 8 sendbuff 0x7ff046c00000 recvbuff 0x7ff040000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25766:25766 [1] NCCL INFO AllGather: opCount 9 sendbuff 0x7f952a000000 recvbuff 0x7f9526000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25767:25767 [2] NCCL INFO AllGather: opCount 9 sendbuff 0x7fa434000000 recvbuff 0x7fa430000000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25768:25768 [3] NCCL INFO AllGather: opCount 8 sendbuff 0x7f2c18c00000 recvbuff 0x7f2c12000000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25765:25765 [0] NCCL INFO AllGather: opCount 9 sendbuff 0x7ff044000000 recvbuff 0x7ff012000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25766:25766 [1] NCCL INFO AllGather: opCount a sendbuff 0x7f952a400000 recvbuff 0x7f94f2000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25767:25767 [2] NCCL INFO AllGather: opCount a sendbuff 0x7fa434400000 recvbuff 0x7fa3fe800000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25768:25768 [3] NCCL INFO AllGather: opCount 9 sendbuff 0x7f2c16000000 recvbuff 0x7f2c12000000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25765:25765 [0] NCCL INFO AllGather: opCount a sendbuff 0x7ff044400000 recvbuff 0x7ff012000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25766:25766 [1] NCCL INFO AllGather: opCount b sendbuff 0x7f952a800000 recvbuff 0x7f9526000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25767:25767 [2] NCCL INFO AllGather: opCount b sendbuff 0x7fa434800000 recvbuff 0x7fa430000000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25768:25768 [3] NCCL INFO AllGather: opCount a sendbuff 0x7f2c16400000 recvbuff 0x7f2c12000000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25765:25765 [0] NCCL INFO AllGather: opCount b sendbuff 0x7ff044800000 recvbuff 0x7ff040000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25768:25768 [3] NCCL INFO AllGather: opCount b sendbuff 0x7f2c16800000 recvbuff 0x7f2c12000000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25766:25807 [1] NCCL INFO AllGather: opCount c sendbuff 0x7f952a800000 recvbuff 0x7f94f2000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25767:25812 [2] NCCL INFO AllGather: opCount c sendbuff 0x7fa434800000 recvbuff 0x7fa3fe800000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25766:25807 [1] NCCL INFO AllGather: opCount d sendbuff 0x7f952a400000 recvbuff 0x7f9526000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25765:25814 [0] NCCL INFO AllGather: opCount c sendbuff 0x7ff044800000 recvbuff 0x7ff012000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25767:25812 [2] NCCL INFO AllGather: opCount d sendbuff 0x7fa434400000 recvbuff 0x7fa430000000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25765:25814 [0] NCCL INFO AllGather: opCount d sendbuff 0x7ff044400000 recvbuff 0x7ff040000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25766:25807 [1] NCCL INFO ReduceScatter: opCount e sendbuff 0x7f94ea000000 recvbuff 0x7f94e2000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25768:25821 [3] NCCL INFO AllGather: opCount c sendbuff 0x7f2c16800000 recvbuff 0x7f2c12000000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25767:25812 [2] NCCL INFO ReduceScatter: opCount e sendbuff 0x7fa3f6800000 recvbuff 0x7fa3ee000000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25766:25807 [1] NCCL INFO AllGather: opCount f sendbuff 0x7f952a000000 recvbuff 0x7f94f2000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25765:25814 [0] NCCL INFO ReduceScatter: opCount e sendbuff 0x7ff002000000 recvbuff 0x7feffa000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25767:25812 [2] NCCL INFO AllGather: opCount f sendbuff 0x7fa434000000 recvbuff 0x7fa3fe800000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25768:25821 [3] NCCL INFO AllGather: opCount d sendbuff 0x7f2c16400000 recvbuff 0x7f2bdea00000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25766:25807 [1] NCCL INFO ReduceScatter: opCount 10 sendbuff 0x7f94eb000000 recvbuff 0x7f94e2400000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25765:25814 [0] NCCL INFO AllGather: opCount f sendbuff 0x7ff044000000 recvbuff 0x7ff012000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25767:25812 [2] NCCL INFO ReduceScatter: opCount 10 sendbuff 0x7fa3e6000000 recvbuff 0x7fa3ee400000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25766:25807 [1] NCCL INFO AllGather: opCount 11 sendbuff 0x7f952cc00000 recvbuff 0x7f9526000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25767:25812 [2] NCCL INFO AllGather: opCount 11 sendbuff 0x7fa433c00000 recvbuff 0x7fa430000000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25765:25814 [0] NCCL INFO ReduceScatter: opCount 10 sendbuff 0x7ff003000000 recvbuff 0x7feffa400000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25766:25807 [1] NCCL INFO ReduceScatter: opCount 12 sendbuff 0x7f94da000000 recvbuff 0x7f94e2800000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25765:25814 [0] NCCL INFO AllGather: opCount 11 sendbuff 0x7ff046c00000 recvbuff 0x7ff040000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25767:25812 [2] NCCL INFO ReduceScatter: opCount 12 sendbuff 0x7fa3e7000000 recvbuff 0x7fa3ee800000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25768:25821 [3] NCCL INFO ReduceScatter: opCount e sendbuff 0x7f2bd6800000 recvbuff 0x7f2bce000000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25765:25814 [0] NCCL INFO ReduceScatter: opCount 12 sendbuff 0x7feff8000000 recvbuff 0x7feffa800000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25768:25821 [3] NCCL INFO AllGather: opCount f sendbuff 0x7f2c16000000 recvbuff 0x7f2bd6800000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25765:25814 [0] NCCL INFO AllGather: opCount 13 sendbuff 0x7ff046800000 recvbuff 0x7ff002000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25766:25807 [1] NCCL INFO AllGather: opCount 13 sendbuff 0x7f952c800000 recvbuff 0x7f94ea000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25767:25812 [2] NCCL INFO AllGather: opCount 13 sendbuff 0x7fa433800000 recvbuff 0x7fa3f6800000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25768:25821 [3] NCCL INFO ReduceScatter: opCount 10 sendbuff 0x7f2c12000000 recvbuff 0x7f2bce400000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25765:25814 [0] NCCL INFO ReduceScatter: opCount 14 sendbuff 0x7ff012000000 recvbuff 0x7feffac00000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25766:25807 [1] NCCL INFO ReduceScatter: opCount 14 sendbuff 0x7f94f2000000 recvbuff 0x7f94e2c00000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25767:25812 [2] NCCL INFO ReduceScatter: opCount 14 sendbuff 0x7fa3fe800000 recvbuff 0x7fa3eec00000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25768:25821 [3] NCCL INFO AllGather: opCount 11 sendbuff 0x7f2c18c00000 recvbuff 0x7f2bdea00000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25766:25807 [1] NCCL INFO AllGather: opCount 15 sendbuff 0x7f952c400000 recvbuff 0x7f94eb000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25767:25812 [2] NCCL INFO AllGather: opCount 15 sendbuff 0x7fa433400000 recvbuff 0x7fa3e6000000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25765:25814 [0] NCCL INFO AllGather: opCount 15 sendbuff 0x7ff046400000 recvbuff 0x7ff003000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25768:25821 [3] NCCL INFO ReduceScatter: opCount 12 sendbuff 0x7f2c12000000 recvbuff 0x7f2bce800000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25766:25807 [1] NCCL INFO ReduceScatter: opCount 16 sendbuff 0x7f9526000000 recvbuff 0x7f94e3000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25767:25812 [2] NCCL INFO ReduceScatter: opCount 16 sendbuff 0x7fa430000000 recvbuff 0x7fa3ef000000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25765:25814 [0] NCCL INFO ReduceScatter: opCount 16 sendbuff 0x7ff040000000 recvbuff 0x7feffb000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25768:25821 [3] NCCL INFO AllGather: opCount 13 sendbuff 0x7f2c18800000 recvbuff 0x7f2bd6800000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25767:25812 [2] NCCL INFO AllGather: opCount 17 sendbuff 0x7fa433000000 recvbuff 0x7fa3e7000000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25766:25807 [1] NCCL INFO AllGather: opCount 17 sendbuff 0x7f952c000000 recvbuff 0x7f94da000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25765:25814 [0] NCCL INFO AllGather: opCount 17 sendbuff 0x7ff046000000 recvbuff 0x7feff8000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25768:25821 [3] NCCL INFO ReduceScatter: opCount 14 sendbuff 0x7f2c12000000 recvbuff 0x7f2bcec00000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25768:25821 [3] NCCL INFO AllGather: opCount 15 sendbuff 0x7f2c18400000 recvbuff 0x7f2bdea00000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25765:25814 [0] NCCL INFO ReduceScatter: opCount 18 sendbuff 0x7ff002000000 recvbuff 0x7feff6000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25767:25812 [2] NCCL INFO ReduceScatter: opCount 18 sendbuff 0x7fa3f6800000 recvbuff 0x7fa3e4000000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25766:25807 [1] NCCL INFO ReduceScatter: opCount 18 sendbuff 0x7f94ea000000 recvbuff 0x7f94d8000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25767:25812 [2] NCCL INFO AllGather: opCount 19 sendbuff 0x7fa439000000 recvbuff 0x7fa3e6000000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25765:25814 [0] NCCL INFO AllGather: opCount 19 sendbuff 0x7ff04ac00000 recvbuff 0x7ff003000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25766:25807 [1] NCCL INFO AllGather: opCount 19 sendbuff 0x7f9533000000 recvbuff 0x7f94eb000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25768:25821 [3] NCCL INFO ReduceScatter: opCount 16 sendbuff 0x7f2c12000000 recvbuff 0x7f2bcf000000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25767:25812 [2] NCCL INFO ReduceScatter: opCount 1a sendbuff 0x7fa3fe800000 recvbuff 0x7fa3e4400000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25765:25814 [0] NCCL INFO ReduceScatter: opCount 1a sendbuff 0x7ff012000000 recvbuff 0x7feff6400000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25768:25821 [3] NCCL INFO AllGather: opCount 17 sendbuff 0x7f2c18000000 recvbuff 0x7f2bd6800000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25766:25807 [1] NCCL INFO ReduceScatter: opCount 1a sendbuff 0x7f94f2000000 recvbuff 0x7f94d8400000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25765:25814 [0] NCCL INFO AllGather: opCount 1b sendbuff 0x7ff04a800000 recvbuff 0x7feff8000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25767:25812 [2] NCCL INFO AllGather: opCount 1b sendbuff 0x7fa438c00000 recvbuff 0x7fa3e7000000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25766:25807 [1] NCCL INFO AllGather: opCount 1b sendbuff 0x7f9532c00000 recvbuff 0x7f94da000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25768:25821 [3] NCCL INFO ReduceScatter: opCount 18 sendbuff 0x7f2c12000000 recvbuff 0x7f2bc6000000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25767:25812 [2] NCCL INFO ReduceScatter: opCount 1c sendbuff 0x7fa430000000 recvbuff 0x7fa3e4800000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25765:25814 [0] NCCL INFO ReduceScatter: opCount 1c sendbuff 0x7ff040000000 recvbuff 0x7feff6800000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25766:25807 [1] NCCL INFO ReduceScatter: opCount 1c sendbuff 0x7f9526000000 recvbuff 0x7f94d8800000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25768:25821 [3] NCCL INFO AllGather: opCount 19 sendbuff 0x7f2c1f000000 recvbuff 0x7f2bdea00000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25765:25814 [0] NCCL INFO AllGather: opCount 1d sendbuff 0x7ff04a400000 recvbuff 0x7ff002000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25767:25812 [2] NCCL INFO AllGather: opCount 1d sendbuff 0x7fa438800000 recvbuff 0x7fa3e6000000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25766:25807 [1] NCCL INFO AllGather: opCount 1d sendbuff 0x7f9532800000 recvbuff 0x7f94ea000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25768:25821 [3] NCCL INFO ReduceScatter: opCount 1a sendbuff 0x7f2c12000000 recvbuff 0x7f2bc6400000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25765:25814 [0] NCCL INFO ReduceScatter: opCount 1e sendbuff 0x7ff003000000 recvbuff 0x7feff6c00000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25766:25807 [1] NCCL INFO ReduceScatter: opCount 1e sendbuff 0x7f94eb000000 recvbuff 0x7f94d8c00000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25767:25812 [2] NCCL INFO ReduceScatter: opCount 1e sendbuff 0x7fa3f6800000 recvbuff 0x7fa3e4c00000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25768:25821 [3] NCCL INFO AllGather: opCount 1b sendbuff 0x7f2c1ec00000 recvbuff 0x7f2bd6800000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25765:25814 [0] NCCL INFO AllGather: opCount 1f sendbuff 0x7ff04a000000 recvbuff 0x7feff8000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25767:25812 [2] NCCL INFO AllGather: opCount 1f sendbuff 0x7fa438400000 recvbuff 0x7fa3e7000000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25766:25807 [1] NCCL INFO AllGather: opCount 1f sendbuff 0x7f9532400000 recvbuff 0x7f94da000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25768:25821 [3] NCCL INFO ReduceScatter: opCount 1c sendbuff 0x7f2c12000000 recvbuff 0x7f2bc6800000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25767:25812 [2] NCCL INFO ReduceScatter: opCount 20 sendbuff 0x7fa3fe800000 recvbuff 0x7fa3e5000000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25766:25807 [1] NCCL INFO ReduceScatter: opCount 20 sendbuff 0x7f94f2000000 recvbuff 0x7f94d9000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25765:25814 [0] NCCL INFO ReduceScatter: opCount 20 sendbuff 0x7ff012000000 recvbuff 0x7feff7000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25768:25821 [3] NCCL INFO AllGather: opCount 1d sendbuff 0x7f2c1e800000 recvbuff 0x7f2bdea00000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25766:25807 [1] NCCL INFO AllGather: opCount 21 sendbuff 0x7f9532000000 recvbuff 0x7f94ea000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25767:25812 [2] NCCL INFO AllGather: opCount 21 sendbuff 0x7fa438000000 recvbuff 0x7fa3e6000000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25765:25814 [0] NCCL INFO AllGather: opCount 21 sendbuff 0x7ff042000000 recvbuff 0x7ff002000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25768:25821 [3] NCCL INFO ReduceScatter: opCount 1e sendbuff 0x7f2c12000000 recvbuff 0x7f2bc6c00000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25768:25821 [3] NCCL INFO AllGather: opCount 1f sendbuff 0x7f2c1e400000 recvbuff 0x7f2bd6800000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25765:25814 [0] NCCL INFO ReduceScatter: opCount 22 sendbuff 0x7ff040000000 recvbuff 0x7feff4000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25766:25807 [1] NCCL INFO ReduceScatter: opCount 22 sendbuff 0x7f9526000000 recvbuff 0x7f94d6000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25767:25812 [2] NCCL INFO ReduceScatter: opCount 22 sendbuff 0x7fa430000000 recvbuff 0x7fa3e2000000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25768:25821 [3] NCCL INFO ReduceScatter: opCount 20 sendbuff 0x7f2c12000000 recvbuff 0x7f2bc7000000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25766:25807 [1] NCCL INFO ReduceScatter: opCount 23 sendbuff 0x7f94da000000 recvbuff 0x7f94d6400000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25765:25814 [0] NCCL INFO ReduceScatter: opCount 23 sendbuff 0x7feff8000000 recvbuff 0x7feff4400000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25767:25812 [2] NCCL INFO ReduceScatter: opCount 23 sendbuff 0x7fa3e7000000 recvbuff 0x7fa3e2400000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25768:25821 [3] NCCL INFO AllGather: opCount 21 sendbuff 0x7f2c1e000000 recvbuff 0x7f2bdea00000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25768:25821 [3] NCCL INFO ReduceScatter: opCount 22 sendbuff 0x7f2c12000000 recvbuff 0x7f2bc4000000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25768:25821 [3] NCCL INFO ReduceScatter: opCount 23 sendbuff 0x7f2bd6800000 recvbuff 0x7f2bc4400000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25767:25767 [2] NCCL INFO AllGather: opCount 24 sendbuff 0x7fa438000000 recvbuff 0x7fa441000000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25768:25768 [3] NCCL INFO AllGather: opCount 24 sendbuff 0x7f2c1e000000 recvbuff 0x7f2c23000000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25766:25766 [1] NCCL INFO AllGather: opCount 24 sendbuff 0x7f9532000000 recvbuff 0x7f9537000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25765:25765 [0] NCCL INFO AllGather: opCount 24 sendbuff 0x7ff042000000 recvbuff 0x7ff06d000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25766:25766 [1] NCCL INFO AllGather: opCount 25 sendbuff 0x7f9532400000 recvbuff 0x7f953e000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25768:25768 [3] NCCL INFO AllGather: opCount 25 sendbuff 0x7f2c1e400000 recvbuff 0x7f2c2a000000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25767:25767 [2] NCCL INFO AllGather: opCount 25 sendbuff 0x7fa438400000 recvbuff 0x7fa442000000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25765:25765 [0] NCCL INFO AllGather: opCount 25 sendbuff 0x7ff04a000000 recvbuff 0x7ff06e000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25766:25766 [1] NCCL INFO AllGather: opCount 26 sendbuff 0x7f9532800000 recvbuff 0x7f953f000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25768:25768 [3] NCCL INFO AllGather: opCount 26 sendbuff 0x7f2c1e800000 recvbuff 0x7f2c2b000000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25765:25765 [0] NCCL INFO AllGather: opCount 26 sendbuff 0x7ff04a400000 recvbuff 0x7ff06f000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25767:25767 [2] NCCL INFO AllGather: opCount 26 sendbuff 0x7fa438800000 recvbuff 0x7fa443000000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25765:25765 [0] NCCL INFO AllGather: opCount 27 sendbuff 0x7ff04a800000 recvbuff 0x7feff9000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25766:25766 [1] NCCL INFO AllGather: opCount 27 sendbuff 0x7f9532c00000 recvbuff 0x7f94db000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25768:25768 [3] NCCL INFO AllGather: opCount 27 sendbuff 0x7f2c1ec00000 recvbuff 0x7f2bc2000000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25767:25767 [2] NCCL INFO AllGather: opCount 27 sendbuff 0x7fa438c00000 recvbuff 0x7fa3e0000000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25767:25767 [2] NCCL INFO AllGather: opCount 28 sendbuff 0x7fa439000000 recvbuff 0x7fa3e1000000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25768:25768 [3] NCCL INFO AllGather: opCount 28 sendbuff 0x7f2c1f000000 recvbuff 0x7f2bc3000000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25765:25765 [0] NCCL INFO AllGather: opCount 28 sendbuff 0x7ff04ac00000 recvbuff 0x7feff2000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25766:25766 [1] NCCL INFO AllGather: opCount 28 sendbuff 0x7f9533000000 recvbuff 0x7f94d4000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25765:25765 [0] NCCL INFO AllGather: opCount 29 sendbuff 0x7ff046000000 recvbuff 0x7feff3000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25766:25766 [1] NCCL INFO AllGather: opCount 29 sendbuff 0x7f952c000000 recvbuff 0x7f94d5000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25768:25768 [3] NCCL INFO AllGather: opCount 29 sendbuff 0x7f2c18000000 recvbuff 0x7f2bc0000000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25767:25767 [2] NCCL INFO AllGather: opCount 29 sendbuff 0x7fa433000000 recvbuff 0x7fa3de000000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25767:25767 [2] NCCL INFO AllGather: opCount 2a sendbuff 0x7fa433400000 recvbuff 0x7fa3df000000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25765:25765 [0] NCCL INFO AllGather: opCount 2a sendbuff 0x7ff046400000 recvbuff 0x7feff0000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25766:25766 [1] NCCL INFO AllGather: opCount 2a sendbuff 0x7f952c400000 recvbuff 0x7f94d2000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25768:25768 [3] NCCL INFO AllGather: opCount 2a sendbuff 0x7f2c18400000 recvbuff 0x7f2bc1000000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25765:25765 [0] NCCL INFO AllGather: opCount 2b sendbuff 0x7ff046800000 recvbuff 0x7feff1000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25766:25766 [1] NCCL INFO AllGather: opCount 2b sendbuff 0x7f952c800000 recvbuff 0x7f94d3000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25767:25767 [2] NCCL INFO AllGather: opCount 2b sendbuff 0x7fa433800000 recvbuff 0x7fa3dc000000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25768:25768 [3] NCCL INFO AllGather: opCount 2b sendbuff 0x7f2c18800000 recvbuff 0x7f2bbe000000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25765:25765 [0] NCCL INFO AllGather: opCount 2c sendbuff 0x7ff046c00000 recvbuff 0x7fefee000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25766:25766 [1] NCCL INFO AllGather: opCount 2c sendbuff 0x7f952cc00000 recvbuff 0x7f94d0000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25768:25768 [3] NCCL INFO AllGather: opCount 2c sendbuff 0x7f2c18c00000 recvbuff 0x7f2bbf000000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25767:25767 [2] NCCL INFO AllGather: opCount 2c sendbuff 0x7fa433c00000 recvbuff 0x7fa3dd000000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25767:25767 [2] NCCL INFO AllGather: opCount 2d sendbuff 0x7fa434000000 recvbuff 0x7fa3da000000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25766:25766 [1] NCCL INFO AllGather: opCount 2d sendbuff 0x7f952a000000 recvbuff 0x7f94d1000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25768:25768 [3] NCCL INFO AllGather: opCount 2d sendbuff 0x7f2c16000000 recvbuff 0x7f2bbc000000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25765:25765 [0] NCCL INFO AllGather: opCount 2d sendbuff 0x7ff044000000 recvbuff 0x7fefef000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25768:25768 [3] NCCL INFO AllGather: opCount 2e sendbuff 0x7f2c16400000 recvbuff 0x7f2bbd000000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25767:25767 [2] NCCL INFO AllGather: opCount 2e sendbuff 0x7fa434400000 recvbuff 0x7fa3db000000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25766:25766 [1] NCCL INFO AllGather: opCount 2e sendbuff 0x7f952a400000 recvbuff 0x7f94ce000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25765:25765 [0] NCCL INFO AllGather: opCount 2e sendbuff 0x7ff044400000 recvbuff 0x7fefec000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25768:25768 [3] NCCL INFO AllGather: opCount 2f sendbuff 0x7f2c16800000 recvbuff 0x7f2bba000000 count 1048576 datatype 7 op 0 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25766:25766 [1] NCCL INFO AllGather: opCount 2f sendbuff 0x7f952a800000 recvbuff 0x7f94cf000000 count 1048576 datatype 7 op 0 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25767:25767 [2] NCCL INFO AllGather: opCount 2f sendbuff 0x7fa434800000 recvbuff 0x7fa3d8000000 count 1048576 datatype 7 op 0 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25765:25765 [0] NCCL INFO AllGather: opCount 2f sendbuff 0x7ff044800000 recvbuff 0x7fefed000000 count 1048576 datatype 7 op 0 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25766:25766 [1] NCCL INFO AllReduce: opCount 30 sendbuff 0x7f95335c0400 recvbuff 0x7f95335c0400 count 1 datatype 7 op 3 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25767:25767 [2] NCCL INFO AllReduce: opCount 30 sendbuff 0x7fa4395c0400 recvbuff 0x7fa4395c0400 count 1 datatype 7 op 3 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25768:25768 [3] NCCL INFO AllReduce: opCount 30 sendbuff 0x7f2c1f5c0400 recvbuff 0x7f2c1f5c0400 count 1 datatype 7 op 3 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25766:25766 [1] NCCL INFO AllReduce: opCount 31 sendbuff 0x7f95335c0600 recvbuff 0x7f95335c0600 count 1 datatype 7 op 2 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25765:25765 [0] NCCL INFO AllReduce: opCount 30 sendbuff 0x7ff0435c0400 recvbuff 0x7ff0435c0400 count 1 datatype 7 op 3 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25767:25767 [2] NCCL INFO AllReduce: opCount 31 sendbuff 0x7fa4395c0600 recvbuff 0x7fa4395c0600 count 1 datatype 7 op 2 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25768:25768 [3] NCCL INFO AllReduce: opCount 31 sendbuff 0x7f2c1f5c0600 recvbuff 0x7f2c1f5c0600 count 1 datatype 7 op 2 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25765:25765 [0] NCCL INFO AllReduce: opCount 31 sendbuff 0x7ff0435c0600 recvbuff 0x7ff0435c0600 count 1 datatype 7 op 2 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+sg-fuxc2-260708-12652-default0-0:25766:25766 [1] NCCL INFO AllReduce: opCount 32 sendbuff 0x7f95335c0800 recvbuff 0x7f95335c0800 count 2 datatype 4 op 2 root 0 comm 0x55a6aa4ff950 [nranks=4] stream 0x55a6aa38f4a0
+sg-fuxc2-260708-12652-default0-0:25767:25767 [2] NCCL INFO AllReduce: opCount 32 sendbuff 0x7fa4395c0800 recvbuff 0x7fa4395c0800 count 2 datatype 4 op 2 root 0 comm 0x555a38f16f10 [nranks=4] stream 0x555a38da69a0
+sg-fuxc2-260708-12652-default0-0:25768:25768 [3] NCCL INFO AllReduce: opCount 32 sendbuff 0x7f2c1f5c0800 recvbuff 0x7f2c1f5c0800 count 2 datatype 4 op 2 root 0 comm 0x55d3e408fe60 [nranks=4] stream 0x55d3e3f1f8e0
+sg-fuxc2-260708-12652-default0-0:25765:25765 [0] NCCL INFO AllReduce: opCount 32 sendbuff 0x7ff0435c0800 recvbuff 0x7ff0435c0800 count 2 datatype 4 op 2 root 0 comm 0x560a0e54d750 [nranks=4] stream 0x560a0e3dcee0
+RESULT_JSON={"allocated_bytes": 218630144, "max_step_ms": 600.4078979492188, "median_step_ms": 600.4078979492188, "min_step_ms": 600.4078979492188, "mode": "fsdp", "p95_step_ms": 600.4078979492188, "parameter_bytes": 201326592, "parameters_equal": true, "peak_allocated_bytes": 419955712}
+sg-fuxc2-260708-12652-default0-0:25767:25823 [2] NCCL INFO misc/socket.cc:47 -> 3
+sg-fuxc2-260708-12652-default0-0:25766:25822 [1] NCCL INFO misc/socket.cc:47 -> 3
+sg-fuxc2-260708-12652-default0-0:25768:25824 [3] NCCL INFO misc/socket.cc:47 -> 3
+sg-fuxc2-260708-12652-default0-0:25767:25823 [2] NCCL INFO misc/socket.cc:550 -> 3
+sg-fuxc2-260708-12652-default0-0:25766:25822 [1] NCCL INFO misc/socket.cc:550 -> 3
+sg-fuxc2-260708-12652-default0-0:25768:25824 [3] NCCL INFO misc/socket.cc:550 -> 3
+sg-fuxc2-260708-12652-default0-0:25767:25823 [2] NCCL INFO misc/socket.cc:573 -> 3
+sg-fuxc2-260708-12652-default0-0:25766:25822 [1] NCCL INFO misc/socket.cc:573 -> 3
+sg-fuxc2-260708-12652-default0-0:25768:25824 [3] NCCL INFO misc/socket.cc:573 -> 3
+sg-fuxc2-260708-12652-default0-0:25767:25823 [2] NCCL INFO misc/socket.cc:621 -> 3
+sg-fuxc2-260708-12652-default0-0:25766:25822 [1] NCCL INFO misc/socket.cc:621 -> 3
+sg-fuxc2-260708-12652-default0-0:25768:25824 [3] NCCL INFO misc/socket.cc:621 -> 3
+sg-fuxc2-260708-12652-default0-0:25767:25794 [2] NCCL INFO misc/socket.cc:47 -> 3
+sg-fuxc2-260708-12652-default0-0:25766:25798 [1] NCCL INFO misc/socket.cc:47 -> 3
+sg-fuxc2-260708-12652-default0-0:25768:25800 [3] NCCL INFO misc/socket.cc:47 -> 3
+sg-fuxc2-260708-12652-default0-0:25767:25794 [2] NCCL INFO misc/socket.cc:752 -> 3
+sg-fuxc2-260708-12652-default0-0:25766:25798 [1] NCCL INFO misc/socket.cc:752 -> 3
+sg-fuxc2-260708-12652-default0-0:25768:25824 [3] NCCL INFO misc/socket.cc:47 -> 3
+sg-fuxc2-260708-12652-default0-0:25767:25794 [2] NCCL INFO misc/socket.cc:428 -> 3
+sg-fuxc2-260708-12652-default0-0:25766:25798 [1] NCCL INFO misc/socket.cc:428 -> 3
+sg-fuxc2-260708-12652-default0-0:25768:25824 [3] NCCL INFO misc/socket.cc:58 -> 3
+sg-fuxc2-260708-12652-default0-0:25766:25798 [1] NCCL INFO misc/socket.cc:564 -> 3
+sg-fuxc2-260708-12652-default0-0:25767:25794 [2] NCCL INFO misc/socket.cc:564 -> 3
+sg-fuxc2-260708-12652-default0-0:25768:25800 [3] NCCL INFO misc/socket.cc:752 -> 3
+sg-fuxc2-260708-12652-default0-0:25766:25798 [1] NCCL INFO misc/socket.cc:668 -> 3
+sg-fuxc2-260708-12652-default0-0:25767:25794 [2] NCCL INFO misc/socket.cc:668 -> 3
+
+sg-fuxc2-260708-12652-default0-0:25766:25798 [1] proxy.cc:1458 NCCL WARN [Service thread] Accept failed Resource temporarily unavailable
+sg-fuxc2-260708-12652-default0-0:25768:25800 [3] NCCL INFO misc/socket.cc:428 -> 3
+sg-fuxc2-260708-12652-default0-0:25767:25823 [2] NCCL INFO misc/socket.cc:47 -> 3
+sg-fuxc2-260708-12652-default0-0:25766:25822 [1] NCCL INFO misc/socket.cc:47 -> 3
+sg-fuxc2-260708-12652-default0-0:25768:25800 [3] NCCL INFO misc/socket.cc:564 -> 3
+sg-fuxc2-260708-12652-default0-0:25767:25823 [2] NCCL INFO misc/socket.cc:58 -> 3
+sg-fuxc2-260708-12652-default0-0:25765:25825 [0] NCCL INFO misc/socket.cc:47 -> 3
+sg-fuxc2-260708-12652-default0-0:25766:25822 [1] NCCL INFO misc/socket.cc:58 -> 3
+sg-fuxc2-260708-12652-default0-0:25767:25823 [2] NCCL INFO misc/socket.cc:775 -> 3
+sg-fuxc2-260708-12652-default0-0:25768:25800 [3] NCCL INFO misc/socket.cc:668 -> 3
+sg-fuxc2-260708-12652-default0-0:25765:25825 [0] NCCL INFO misc/socket.cc:550 -> 3
+sg-fuxc2-260708-12652-default0-0:25766:25822 [1] NCCL INFO misc/socket.cc:775 -> 3
+
+sg-fuxc2-260708-12652-default0-0:25767:25794 [2] proxy.cc:1458 NCCL WARN [Service thread] Accept failed Success
+sg-fuxc2-260708-12652-default0-0:25768:25824 [3] NCCL INFO misc/socket.cc:775 -> 3
+sg-fuxc2-260708-12652-default0-0:25765:25825 [0] NCCL INFO misc/socket.cc:573 -> 3
+sg-fuxc2-260708-12652-default0-0:25766:25798 [1] NCCL INFO misc/socket.cc:826 -> 3
+sg-fuxc2-260708-12652-default0-0:25765:25825 [0] NCCL INFO misc/socket.cc:621 -> 3
+
+sg-fuxc2-260708-12652-default0-0:25766:25798 [1] proxy.cc:1497 NCCL WARN [Service thread] Could not receive type from localRank 1, res=3, closed=0
+
+sg-fuxc2-260708-12652-default0-0:25768:25800 [3] proxy.cc:1458 NCCL WARN [Service thread] Accept failed Resource temporarily unavailable
+sg-fuxc2-260708-12652-default0-0:25767:25794 [2] NCCL INFO misc/socket.cc:826 -> 3
+sg-fuxc2-260708-12652-default0-0:25765:25796 [0] NCCL INFO misc/socket.cc:47 -> 3
+
+sg-fuxc2-260708-12652-default0-0:25766:25798 [1] proxy.cc:1521 NCCL WARN [Proxy Service 1] Failed to execute operation Close from rank 1, retcode 3
+
+sg-fuxc2-260708-12652-default0-0:25767:25794 [2] proxy.cc:1497 NCCL WARN [Service thread] Could not receive type from localRank 2, res=3, closed=0
+sg-fuxc2-260708-12652-default0-0:25768:25800 [3] NCCL INFO misc/socket.cc:826 -> 3
+sg-fuxc2-260708-12652-default0-0:25765:25825 [0] NCCL INFO misc/socket.cc:47 -> 3
+
+sg-fuxc2-260708-12652-default0-0:25767:25794 [2] proxy.cc:1521 NCCL WARN [Proxy Service 2] Failed to execute operation Close from rank 2, retcode 3
+sg-fuxc2-260708-12652-default0-0:25765:25825 [0] NCCL INFO misc/socket.cc:58 -> 3
+
+sg-fuxc2-260708-12652-default0-0:25768:25800 [3] proxy.cc:1497 NCCL WARN [Service thread] Could not receive type from localRank 3, res=3, closed=0
+sg-fuxc2-260708-12652-default0-0:25765:25825 [0] NCCL INFO misc/socket.cc:775 -> 3
+
+sg-fuxc2-260708-12652-default0-0:25768:25800 [3] proxy.cc:1521 NCCL WARN [Proxy Service 3] Failed to execute operation Close from rank 3, retcode 3
+sg-fuxc2-260708-12652-default0-0:25765:25796 [0] NCCL INFO misc/socket.cc:752 -> 3
+sg-fuxc2-260708-12652-default0-0:25765:25796 [0] NCCL INFO misc/socket.cc:428 -> 3
+sg-fuxc2-260708-12652-default0-0:25765:25796 [0] NCCL INFO misc/socket.cc:564 -> 3
+sg-fuxc2-260708-12652-default0-0:25765:25796 [0] NCCL INFO misc/socket.cc:668 -> 3
+
+sg-fuxc2-260708-12652-default0-0:25765:25796 [0] proxy.cc:1458 NCCL WARN [Service thread] Accept failed Resource temporarily unavailable
+sg-fuxc2-260708-12652-default0-0:25765:25796 [0] NCCL INFO misc/socket.cc:826 -> 3
+
+sg-fuxc2-260708-12652-default0-0:25765:25796 [0] proxy.cc:1497 NCCL WARN [Service thread] Could not receive type from localRank 0, res=3, closed=0
+
+sg-fuxc2-260708-12652-default0-0:25765:25796 [0] proxy.cc:1521 NCCL WARN [Proxy Service 0] Failed to execute operation Close from rank 0, retcode 3

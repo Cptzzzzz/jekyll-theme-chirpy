@@ -1,0 +1,10 @@
+experiment=ch17_init_state_machine
+run_id=20260710T200500Z
+timestamp_utc=2026-07-10T19:59:46.345391+00:00
+hostname=sg-fuxc2-260708-12652-default0-0
+world_sizes=1,2,3,4
+cycles_per_world=10
+timing_rows=100
+scaling_correctness=PASS
+failure_cases=invalid_comm_id,duplicate_gpu,missing_rank
+nccl_source_commit=178b6b759074597777ce13438efb0e0ba625e429

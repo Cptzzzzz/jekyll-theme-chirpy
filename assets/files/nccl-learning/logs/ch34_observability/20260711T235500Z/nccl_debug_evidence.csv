@@ -1,0 +1,33 @@
+config,kind,ordinal,evidence
+init_graph,ring,0,Ring 00 : 0 -> 1 -> 0
+init_graph,ring,1,Ring 01 : 0 -> 1 -> 0
+init_graph,ring,2,Ring 02 : 0 -> 1 -> 0
+init_graph,ring,3,Ring 03 : 0 -> 1 -> 0
+init_graph,ring,4,Ring 00 : 1 -> 0 -> 1
+init_graph,ring,5,Ring 01 : 1 -> 0 -> 1
+init_graph,ring,6,Ring 02 : 1 -> 0 -> 1
+init_graph,ring,7,Ring 03 : 1 -> 0 -> 1
+tuning,tuning,0,4096 Bytes -> Algo 1 proto 0 time 8.004800
+tuning,tuning,1,1048576 Bytes -> Algo 1 proto 2 time 41.414398
+tuning,tuning,2,67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+tuning,tuning,3,4096 Bytes -> Algo 1 proto 0 time 8.004800
+tuning,tuning,4,1048576 Bytes -> Algo 1 proto 2 time 41.414398
+tuning,tuning,5,67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+coll_trace,tuning,0,4096 Bytes -> Algo 1 proto 0 time 8.004800
+coll_trace,tuning,1,1048576 Bytes -> Algo 1 proto 2 time 41.414398
+coll_trace,tuning,2,67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+coll_trace,tuning,3,4096 Bytes -> Algo 1 proto 0 time 8.004800
+coll_trace,tuning,4,1048576 Bytes -> Algo 1 proto 2 time 41.414398
+coll_trace,tuning,5,67108864 Bytes -> Algo 1 proto 2 time 1692.921509
+coll_trace,coll_info,0,AllReduce: opCount 0 sendbuff <ptr> recvbuff <ptr> count 1024 datatype 7 op 0 root 0 comm <ptr> [nranks=2] stream <ptr>
+coll_trace,coll_info,1,AllReduce: opCount 0 sendbuff <ptr> recvbuff <ptr> count 1024 datatype 7 op 0 root 0 comm <ptr> [nranks=2] stream <ptr>
+coll_trace,coll_info,2,AllReduce: opCount 1 sendbuff <ptr> recvbuff <ptr> count 262144 datatype 7 op 0 root 0 comm <ptr> [nranks=2] stream <ptr>
+coll_trace,coll_info,3,AllReduce: opCount 1 sendbuff <ptr> recvbuff <ptr> count 262144 datatype 7 op 0 root 0 comm <ptr> [nranks=2] stream <ptr>
+coll_trace,coll_info,4,AllReduce: opCount 2 sendbuff <ptr> recvbuff <ptr> count 16777216 datatype 7 op 0 root 0 comm <ptr> [nranks=2] stream <ptr>
+coll_trace,coll_info,5,AllReduce: opCount 2 sendbuff <ptr> recvbuff <ptr> count 16777216 datatype 7 op 0 root 0 comm <ptr> [nranks=2] stream <ptr>
+coll_trace,coll_info,6,AllReduce: opCount 3 sendbuff <ptr> recvbuff <ptr> count 1024 datatype 7 op 0 root 0 comm <ptr> [nranks=2] stream <ptr>
+coll_trace,coll_info,7,AllReduce: opCount 3 sendbuff <ptr> recvbuff <ptr> count 1024 datatype 7 op 0 root 0 comm <ptr> [nranks=2] stream <ptr>
+coll_trace,coll_info,8,AllReduce: opCount 4 sendbuff <ptr> recvbuff <ptr> count 262144 datatype 7 op 0 root 0 comm <ptr> [nranks=2] stream <ptr>
+coll_trace,coll_info,9,AllReduce: opCount 4 sendbuff <ptr> recvbuff <ptr> count 262144 datatype 7 op 0 root 0 comm <ptr> [nranks=2] stream <ptr>
+coll_trace,coll_info,10,AllReduce: opCount 5 sendbuff <ptr> recvbuff <ptr> count 16777216 datatype 7 op 0 root 0 comm <ptr> [nranks=2] stream <ptr>
+coll_trace,coll_info,11,AllReduce: opCount 5 sendbuff <ptr> recvbuff <ptr> count 16777216 datatype 7 op 0 root 0 comm <ptr> [nranks=2] stream <ptr>

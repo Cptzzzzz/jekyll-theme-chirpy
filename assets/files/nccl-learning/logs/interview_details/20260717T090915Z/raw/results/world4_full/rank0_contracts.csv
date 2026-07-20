@@ -1,0 +1,177 @@
+rank,world_size,section,name,correct,detail
+0,4,async,size-4096-cycle-0,True,sum result
+0,4,async,size-4096-cycle-1,True,sum result
+0,4,async,size-4096-cycle-2,True,sum result
+0,4,async,size-4096-cycle-3,True,sum result
+0,4,async,size-4096-cycle-4,True,sum result
+0,4,async,size-4096-cycle-5,True,sum result
+0,4,async,size-4096-cycle-6,True,sum result
+0,4,async,size-4096-cycle-7,True,sum result
+0,4,async,size-4096-cycle-8,True,sum result
+0,4,async,size-4096-cycle-9,True,sum result
+0,4,async,size-1048576-cycle-0,True,sum result
+0,4,async,size-1048576-cycle-1,True,sum result
+0,4,async,size-1048576-cycle-2,True,sum result
+0,4,async,size-1048576-cycle-3,True,sum result
+0,4,async,size-1048576-cycle-4,True,sum result
+0,4,async,size-1048576-cycle-5,True,sum result
+0,4,async,size-1048576-cycle-6,True,sum result
+0,4,async,size-1048576-cycle-7,True,sum result
+0,4,async,size-1048576-cycle-8,True,sum result
+0,4,async,size-1048576-cycle-9,True,sum result
+0,4,async,size-67108864-cycle-0,True,sum result
+0,4,async,size-67108864-cycle-1,True,sum result
+0,4,async,size-67108864-cycle-2,True,sum result
+0,4,async,size-67108864-cycle-3,True,sum result
+0,4,async,size-67108864-cycle-4,True,sum result
+0,4,async,size-67108864-cycle-5,True,sum result
+0,4,async,size-67108864-cycle-6,True,sum result
+0,4,async,size-67108864-cycle-7,True,sum result
+0,4,async,size-67108864-cycle-8,True,sum result
+0,4,async,size-67108864-cycle-9,True,sum result
+0,4,decomposition,size-4096-direct-cycle-0,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-4096-rs_ag-cycle-0,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-4096-rs_ag-cycle-1,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-4096-direct-cycle-1,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-4096-direct-cycle-2,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-4096-rs_ag-cycle-2,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-4096-rs_ag-cycle-3,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-4096-direct-cycle-3,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-4096-direct-cycle-4,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-4096-rs_ag-cycle-4,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-4096-rs_ag-cycle-5,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-4096-direct-cycle-5,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-4096-direct-cycle-6,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-4096-rs_ag-cycle-6,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-4096-rs_ag-cycle-7,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-4096-direct-cycle-7,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-4096-direct-cycle-8,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-4096-rs_ag-cycle-8,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-4096-rs_ag-cycle-9,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-4096-direct-cycle-9,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-4096-equivalence,True,AllReduce output equals ReduceScatter plus AllGather output
+0,4,decomposition,size-524288-direct-cycle-0,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-524288-rs_ag-cycle-0,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-524288-rs_ag-cycle-1,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-524288-direct-cycle-1,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-524288-direct-cycle-2,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-524288-rs_ag-cycle-2,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-524288-rs_ag-cycle-3,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-524288-direct-cycle-3,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-524288-direct-cycle-4,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-524288-rs_ag-cycle-4,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-524288-rs_ag-cycle-5,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-524288-direct-cycle-5,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-524288-direct-cycle-6,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-524288-rs_ag-cycle-6,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-524288-rs_ag-cycle-7,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-524288-direct-cycle-7,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-524288-direct-cycle-8,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-524288-rs_ag-cycle-8,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-524288-rs_ag-cycle-9,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-524288-direct-cycle-9,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-524288-equivalence,True,AllReduce output equals ReduceScatter plus AllGather output
+0,4,decomposition,size-67108864-direct-cycle-0,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-67108864-rs_ag-cycle-0,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-67108864-rs_ag-cycle-1,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-67108864-direct-cycle-1,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-67108864-direct-cycle-2,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-67108864-rs_ag-cycle-2,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-67108864-rs_ag-cycle-3,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-67108864-direct-cycle-3,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-67108864-direct-cycle-4,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-67108864-rs_ag-cycle-4,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-67108864-rs_ag-cycle-5,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-67108864-direct-cycle-5,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-67108864-direct-cycle-6,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-67108864-rs_ag-cycle-6,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-67108864-rs_ag-cycle-7,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-67108864-direct-cycle-7,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-67108864-direct-cycle-8,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-67108864-rs_ag-cycle-8,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-67108864-rs_ag-cycle-9,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-67108864-direct-cycle-9,True,direct and RS+AG must produce the same sum
+0,4,decomposition,size-67108864-equivalence,True,AllReduce output equals ReduceScatter plus AllGather output
+0,4,fragmentation,count-1-cycle-0,True,zero is invariant under SUM
+0,4,fragmentation,count-10-cycle-0,True,zero is invariant under SUM
+0,4,fragmentation,count-40-cycle-0,True,zero is invariant under SUM
+0,4,fragmentation,count-160-cycle-0,True,zero is invariant under SUM
+0,4,fragmentation,count-160-cycle-1,True,zero is invariant under SUM
+0,4,fragmentation,count-40-cycle-1,True,zero is invariant under SUM
+0,4,fragmentation,count-10-cycle-1,True,zero is invariant under SUM
+0,4,fragmentation,count-1-cycle-1,True,zero is invariant under SUM
+0,4,fragmentation,count-1-cycle-2,True,zero is invariant under SUM
+0,4,fragmentation,count-10-cycle-2,True,zero is invariant under SUM
+0,4,fragmentation,count-40-cycle-2,True,zero is invariant under SUM
+0,4,fragmentation,count-160-cycle-2,True,zero is invariant under SUM
+0,4,fragmentation,count-160-cycle-3,True,zero is invariant under SUM
+0,4,fragmentation,count-40-cycle-3,True,zero is invariant under SUM
+0,4,fragmentation,count-10-cycle-3,True,zero is invariant under SUM
+0,4,fragmentation,count-1-cycle-3,True,zero is invariant under SUM
+0,4,fragmentation,count-1-cycle-4,True,zero is invariant under SUM
+0,4,fragmentation,count-10-cycle-4,True,zero is invariant under SUM
+0,4,fragmentation,count-40-cycle-4,True,zero is invariant under SUM
+0,4,fragmentation,count-160-cycle-4,True,zero is invariant under SUM
+0,4,fragmentation,count-160-cycle-5,True,zero is invariant under SUM
+0,4,fragmentation,count-40-cycle-5,True,zero is invariant under SUM
+0,4,fragmentation,count-10-cycle-5,True,zero is invariant under SUM
+0,4,fragmentation,count-1-cycle-5,True,zero is invariant under SUM
+0,4,fragmentation,count-1-cycle-6,True,zero is invariant under SUM
+0,4,fragmentation,count-10-cycle-6,True,zero is invariant under SUM
+0,4,fragmentation,count-40-cycle-6,True,zero is invariant under SUM
+0,4,fragmentation,count-160-cycle-6,True,zero is invariant under SUM
+0,4,fragmentation,count-160-cycle-7,True,zero is invariant under SUM
+0,4,fragmentation,count-40-cycle-7,True,zero is invariant under SUM
+0,4,fragmentation,count-10-cycle-7,True,zero is invariant under SUM
+0,4,fragmentation,count-1-cycle-7,True,zero is invariant under SUM
+0,4,fragmentation,count-1-cycle-8,True,zero is invariant under SUM
+0,4,fragmentation,count-10-cycle-8,True,zero is invariant under SUM
+0,4,fragmentation,count-40-cycle-8,True,zero is invariant under SUM
+0,4,fragmentation,count-160-cycle-8,True,zero is invariant under SUM
+0,4,fragmentation,count-160-cycle-9,True,zero is invariant under SUM
+0,4,fragmentation,count-40-cycle-9,True,zero is invariant under SUM
+0,4,fragmentation,count-10-cycle-9,True,zero is invariant under SUM
+0,4,fragmentation,count-1-cycle-9,True,zero is invariant under SUM
+0,4,decode,tokens-1-cycle-0,True,zero is invariant under SUM
+0,4,decode,tokens-8-cycle-0,True,zero is invariant under SUM
+0,4,decode,tokens-32-cycle-0,True,zero is invariant under SUM
+0,4,decode,tokens-128-cycle-0,True,zero is invariant under SUM
+0,4,decode,tokens-128-cycle-1,True,zero is invariant under SUM
+0,4,decode,tokens-32-cycle-1,True,zero is invariant under SUM
+0,4,decode,tokens-8-cycle-1,True,zero is invariant under SUM
+0,4,decode,tokens-1-cycle-1,True,zero is invariant under SUM
+0,4,decode,tokens-1-cycle-2,True,zero is invariant under SUM
+0,4,decode,tokens-8-cycle-2,True,zero is invariant under SUM
+0,4,decode,tokens-32-cycle-2,True,zero is invariant under SUM
+0,4,decode,tokens-128-cycle-2,True,zero is invariant under SUM
+0,4,decode,tokens-128-cycle-3,True,zero is invariant under SUM
+0,4,decode,tokens-32-cycle-3,True,zero is invariant under SUM
+0,4,decode,tokens-8-cycle-3,True,zero is invariant under SUM
+0,4,decode,tokens-1-cycle-3,True,zero is invariant under SUM
+0,4,decode,tokens-1-cycle-4,True,zero is invariant under SUM
+0,4,decode,tokens-8-cycle-4,True,zero is invariant under SUM
+0,4,decode,tokens-32-cycle-4,True,zero is invariant under SUM
+0,4,decode,tokens-128-cycle-4,True,zero is invariant under SUM
+0,4,decode,tokens-128-cycle-5,True,zero is invariant under SUM
+0,4,decode,tokens-32-cycle-5,True,zero is invariant under SUM
+0,4,decode,tokens-8-cycle-5,True,zero is invariant under SUM
+0,4,decode,tokens-1-cycle-5,True,zero is invariant under SUM
+0,4,decode,tokens-1-cycle-6,True,zero is invariant under SUM
+0,4,decode,tokens-8-cycle-6,True,zero is invariant under SUM
+0,4,decode,tokens-32-cycle-6,True,zero is invariant under SUM
+0,4,decode,tokens-128-cycle-6,True,zero is invariant under SUM
+0,4,decode,tokens-128-cycle-7,True,zero is invariant under SUM
+0,4,decode,tokens-32-cycle-7,True,zero is invariant under SUM
+0,4,decode,tokens-8-cycle-7,True,zero is invariant under SUM
+0,4,decode,tokens-1-cycle-7,True,zero is invariant under SUM
+0,4,decode,tokens-1-cycle-8,True,zero is invariant under SUM
+0,4,decode,tokens-8-cycle-8,True,zero is invariant under SUM
+0,4,decode,tokens-32-cycle-8,True,zero is invariant under SUM
+0,4,decode,tokens-128-cycle-8,True,zero is invariant under SUM
+0,4,decode,tokens-128-cycle-9,True,zero is invariant under SUM
+0,4,decode,tokens-32-cycle-9,True,zero is invariant under SUM
+0,4,decode,tokens-8-cycle-9,True,zero is invariant under SUM
+0,4,decode,tokens-1-cycle-9,True,zero is invariant under SUM
+0,4,numerics,fp16-replicas-equal,True,all ranks must receive the same FP16 result
+0,4,numerics,fp32-replicas-equal,True,all ranks must receive the same FP32 result
+0,4,numerics,fp32-matches-reference,True,FP32 reduction matches math.fsum for all constructed cases

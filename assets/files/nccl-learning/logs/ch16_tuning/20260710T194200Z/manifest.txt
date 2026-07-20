@@ -1,0 +1,22 @@
+experiment=ch16_tuning_model_plugin
+run_id=20260710T194200Z
+timestamp_utc=2026-07-10T19:40:27.750321+00:00
+hostname=sg-fuxc2-260708-12652-default0-0
+world_size=4
+collective=AllReduce
+datatype=float
+auto_cycles_per_replicate=5
+auto_replicates=2
+iterations=20
+auto_measurement_rows=290
+plugin_cycles=10
+plugin_measurement_rows=20
+plugin_source_sha256=37da1791d4d772c231ed2844381c30cbd509f18a32567e5eb4d183bd2b62610e
+private_artifacts=/root/nccl-learning/private/ch16_tuning/20260710T194200Z
+nccl_tests_commit=5bcd45d2ee8365e37895e118c9d11b0ebc15aa69
+nccl_source_commit=178b6b759074597777ce13438efb0e0ba625e429
+command_01=NCCL_DEBUG=WARN /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 4 -e 1G -f 2 -g 4 -w 5 -n 20 -N 5 -c 1 -I 0 -z 0 -u 0 -C 0 -a 3 -d float -o sum
+command_02=NCCL_DEBUG=WARN /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 4 -e 1G -f 2 -g 4 -w 5 -n 20 -N 5 -c 1 -I 0 -z 0 -u 0 -C 0 -a 3 -d float -o sum
+command_03=NCCL_DEBUG=INFO NCCL_DEBUG_SUBSYS=ENV,TUNING /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 4 -e 1G -f 2 -g 4 -w 5 -n 1 -N 1 -c 1 -I 0 -z 0 -u 0 -C 0 -a 3 -d float -o sum
+command_04=NCCL_DEBUG=WARN /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 64M -e 64M -f 2 -g 4 -w 5 -n 20 -N 10 -c 1 -I 0 -z 0 -u 0 -C 0 -a 3 -d float -o sum
+command_05=NCCL_TUNER_PLUGIN=/root/nccl-learning/private/ch16_tuning/20260710T194200Z/ch16_force_tree_simple_tuner.so NCCL_DEBUG=WARN /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 64M -e 64M -f 2 -g 4 -w 5 -n 20 -N 10 -c 1 -I 0 -z 0 -u 0 -C 0 -a 3 -d float -o sum

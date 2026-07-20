@@ -1,0 +1,12 @@
+run_id=20260710T014532Z
+started_at=2026-07-10T01:45:32.745637+00:00
+hostname=sg-fuxc2-260708-12652-default0-0
+cycles=5
+iters=30
+case_ring_simple=NCCL_ALGO=Ring NCCL_PROTO=Simple /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 1K -e 256M -f 4 -g 4 -w 10 -n 30 -N 5 -c 1
+case_ring_ll=NCCL_ALGO=Ring NCCL_PROTO=LL /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 1K -e 256M -f 4 -g 4 -w 10 -n 30 -N 5 -c 1
+case_ring_ll128=NCCL_ALGO=Ring NCCL_PROTO=LL128 /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 1K -e 256M -f 4 -g 4 -w 10 -n 30 -N 5 -c 1
+case_tree_simple=NCCL_ALGO=Tree NCCL_PROTO=Simple /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 1K -e 256M -f 4 -g 4 -w 10 -n 30 -N 5 -c 1
+case_tree_ll=NCCL_ALGO=Tree NCCL_PROTO=LL /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 1K -e 256M -f 4 -g 4 -w 10 -n 30 -N 5 -c 1
+case_tree_ll128=NCCL_ALGO=Tree NCCL_PROTO=LL128 /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 1K -e 256M -f 4 -g 4 -w 10 -n 30 -N 5 -c 1
+completed_at=2026-07-10T01:46:30.666857+00:00

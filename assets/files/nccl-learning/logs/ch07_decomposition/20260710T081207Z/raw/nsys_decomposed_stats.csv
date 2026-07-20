@@ -1,0 +1,13 @@
+Generating SQLite file /root/nccl-learning/logs/ch07_decomposition/20260710T081207Z/artifacts/decomposed.sqlite from /root/nccl-learning/logs/ch07_decomposition/20260710T081207Z/artifacts/decomposed.nsys-rep
+Processing [/root/nccl-learning/logs/ch07_decomposition/20260710T081207Z/artifacts/decomposed.sqlite] with [/usr/local/cuda-12.6/NsightSystems-cli-2024.4.2/target-linux-x64/reports/nvtx_kern_sum.py]... 
+NVTX Range,Style,PID,TID,NVTX Inst,Kern Inst,Total Time (ns),Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Kernel Name
+:decomposed,PushPop,35755,35755,1,20,10167526,508376.3,508572.0,498911,520158,5141.1,ncclDevKernel_ReduceScatter_Sum_u32_RING_LL(ncclDevKernelArgsStorage<(unsigned long)4096>)
+:decomposed,PushPop,35755,35755,1,20,9106350,455317.5,456748.0,444574,465566,6002.7,ncclDevKernel_AllGather_RING_LL(ncclDevKernelArgsStorage<(unsigned long)4096>)
+NCCL:ncclGroupEnd,PushPop,35755,35755,7,28,38240897,1365746.3,509084.0,498911,13072794,2789583.1,ncclDevKernel_ReduceScatter_Sum_u32_RING_LL(ncclDevKernelArgsStorage<(unsigned long)4096>)
+NCCL:ncclGroupEnd,PushPop,35755,35755,7,28,12929146,461755.2,458156.5,444574,512415,17867.5,ncclDevKernel_AllGather_RING_LL(ncclDevKernelArgsStorage<(unsigned long)4096>)
+
+Processing [/root/nccl-learning/logs/ch07_decomposition/20260710T081207Z/artifacts/decomposed.sqlite] with [/usr/local/cuda-12.6/NsightSystems-cli-2024.4.2/target-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+Time (%),Total Time (ns),Instances,Avg (ns),Med (ns),Min (ns),Max (ns),StdDev (ns),Name
+74.7,38240897,28,1365746.3,509084.0,498911,13072794,2789583.1,ncclDevKernel_ReduceScatter_Sum_u32_RING_LL(ncclDevKernelArgsStorage<(unsigned long)4096>)
+25.3,12929146,28,461755.2,458156.5,444574,512415,17867.5,ncclDevKernel_AllGather_RING_LL(ncclDevKernelArgsStorage<(unsigned long)4096>)
+

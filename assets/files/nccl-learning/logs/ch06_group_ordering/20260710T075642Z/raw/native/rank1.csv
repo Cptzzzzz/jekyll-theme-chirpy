@@ -1,0 +1,20 @@
+rank,kind,variant,cycle,host_us,device_us,event_ready_after_group_end,correct,detail
+1,semantic,group-end-without-start,-1,0,0,-1,true,result=invalid usage (run with NCCL_DEBUG=WARN for details)
+1,semantic,nested-depth-two,-1,96438.4,0,-1,true,three ordered allreduces;inner and outer end success
+1,semantic,two-user-streams,-1,0,0,-1,true,one group;one allreduce per stream
+1,semantic,async-error-after-success,-1,0,0,-1,true,async=no error
+1,semantic,invalid-root-group-cleanup,-1,0,0,-1,true,api=invalid argument (run with NCCL_DEBUG=WARN for details);group_end=invalid argument (run with NCCL_DEBUG=WARN for details)
+1,semantic,valid-op-after-group-error,-1,0,0,-1,true,balanced group cleanup restored subsequent use
+1,semantic,nonblocking-init-poll,-1,48953.5,0,-1,true,initial=NCCL operation in progress;terminal=no error;polls=47
+1,semantic,nonblocking-group-poll,-1,0.781,0,-1,true,api=no error;group_end=no error;terminal=no error;polls=1
+1,semantic,nonblocking-finalize-poll,-1,1059.24,0,-1,true,initial=NCCL operation in progress;terminal=no error;polls=2
+1,completion,grouped-256MiB-allreduce,0,14.314,3510.27,0,true,host group interval versus CUDA event interval
+1,completion,grouped-256MiB-allreduce,1,15.856,3531.3,0,true,host group interval versus CUDA event interval
+1,completion,grouped-256MiB-allreduce,2,14.995,3555.9,0,true,host group interval versus CUDA event interval
+1,completion,grouped-256MiB-allreduce,3,13.327,3546.02,0,true,host group interval versus CUDA event interval
+1,completion,grouped-256MiB-allreduce,4,13.771,3545.76,0,true,host group interval versus CUDA event interval
+1,completion,grouped-256MiB-allreduce,5,24.498,3554.05,0,true,host group interval versus CUDA event interval
+1,completion,grouped-256MiB-allreduce,6,13.378,3516.96,0,true,host group interval versus CUDA event interval
+1,completion,grouped-256MiB-allreduce,7,13.46,3561.28,0,true,host group interval versus CUDA event interval
+1,completion,grouped-256MiB-allreduce,8,14.896,3535.68,0,true,host group interval versus CUDA event interval
+1,completion,grouped-256MiB-allreduce,9,12.726,3524.35,0,true,host group interval versus CUDA event interval

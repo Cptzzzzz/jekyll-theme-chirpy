@@ -1,0 +1,10 @@
+W0710 01:38:33.537000 139924000092608 torch/distributed/run.py:793] 
+W0710 01:38:33.537000 139924000092608 torch/distributed/run.py:793] *****************************************
+W0710 01:38:33.537000 139924000092608 torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0710 01:38:33.537000 139924000092608 torch/distributed/run.py:793] *****************************************
+rank,host_enqueue_us,host_wait_us,host_total_to_sync_us,gpu_elapsed_us,is_completed_immediate,correct
+0,120.189,17.741,3629.688,3623.936,0.000,1.000
+1,125.126,17.116,3641.827,3636.448,0.000,1.000
+2,121.728,17.999,3653.412,3647.296,0.000,1.000
+3,124.320,17.696,3636.636,3630.272,0.000,1.000
+csv=/root/nccl-learning/logs/foundations/20260710T013809Z/async_collective.csv

@@ -1,0 +1,5 @@
+world_size,rank_samples,cycles,median_total_ms,p95_total_ms,total_cv_percent,median_kernels_ms,median_bootstrap_ms,median_allgathers_ms,median_topo_ms,median_graphs_ms,median_connections_ms,median_rest_ms
+1,10,10,360.0,390.0,4.617921381333393,180.0,150.0,0.0,10.0,0.0,20.0,0.0
+2,20,10,405.0,440.0,5.608212388458636,270.0,120.0,0.0,10.0,0.0,0.0,0.0
+3,30,10,555.0,580.0,2.933120828126069,360.0,120.0,0.0,60.0,0.0,10.0,0.0
+4,40,10,670.0,690.0,2.8485757121439246,450.0,155.0,0.0,20.0,0.0,20.0,10.0

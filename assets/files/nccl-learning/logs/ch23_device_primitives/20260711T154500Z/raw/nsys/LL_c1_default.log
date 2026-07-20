@@ -1,0 +1,14 @@
+NCCL version 2.22.3+cuda12.6
+RESULT mode=grouped ops=1 replays=1 bytes=67108864 host_us=115.414 total_us=23439.400 graph_nodes=0 correct=1
+Generating '/tmp/nsys-report-68ea.qdstrm'
+
+[1/1] [0%                          ] nsys_LL_c1_default.nsys-rep
+[1/1] [0%                          ] nsys_LL_c1_default.nsys-rep
+[1/1] [7%                          ] nsys_LL_c1_default.nsys-rep
+[1/1] [8%                          ] nsys_LL_c1_default.nsys-rep
+[1/1] [9%                          ] nsys_LL_c1_default.nsys-rep
+[1/1] [====================85%     ] nsys_LL_c1_default.nsys-rep
+[1/1] [========================100%] nsys_LL_c1_default.nsys-rep
+[1/1] [========================100%] nsys_LL_c1_default.nsys-rep
+Generated:
+    /root/nccl-learning/logs/ch23_device_primitives/20260711T154500Z/private/nsys_LL_c1_default.nsys-rep

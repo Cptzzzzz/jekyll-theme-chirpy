@@ -1,0 +1,9 @@
+config,replicate,socket_selected,ib_no_device,ib_disabled,correct
+auto,1,1,1,0,1
+ib_disabled,1,1,1,1,1
+socket_forced,1,1,1,0,1
+missing_hca,1,1,1,0,1
+missing_hca,2,1,1,0,1
+socket_forced,2,1,1,0,1
+ib_disabled,2,1,1,1,1
+auto,2,1,1,0,1

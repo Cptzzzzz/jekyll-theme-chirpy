@@ -1,0 +1,2 @@
+world_size,algorithm,size_bytes,samples,median_time_us,p95_time_us,cycle_cv_percent,min_time_us,max_time_us,samples_over_2x_median,median_busbw_GBs
+3,Ring,1048576,40,60.885,61.39149999999999,0.5150913373983484,60.41,62.19,0,22.965

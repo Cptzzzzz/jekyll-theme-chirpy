@@ -1,0 +1,7 @@
+process_id=27791
+header_version_code=22203
+header_version=2.22.3
+runtime_version_code=29999
+runtime_version=2.99.99
+nccl_get_version_object=/root/nccl-learning/logs/ch01_stack_version/20260710T065547Z/artifacts/fake/libnccl.so.2
+hold_seconds=0

@@ -1,0 +1,7 @@
+run_id=20260710T020423Z
+started_at=2026-07-10T02:04:23Z
+hostname=sg-fuxc2-260708-12652-default0-0
+sizes_mib=1,16,64
+warmup=5
+iterations=20
+completed_at=2026-07-10T02:04:29Z

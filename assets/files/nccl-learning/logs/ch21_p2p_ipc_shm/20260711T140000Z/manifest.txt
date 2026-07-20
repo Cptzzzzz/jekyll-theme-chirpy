@@ -1,0 +1,15 @@
+experiment=ch21_p2p_ipc_shm_modes
+run_id=20260711T140000Z
+timestamp_utc=2026-07-11T13:48:08.369009+00:00
+hostname=sg-fuxc2-260708-12652-default0-0
+world_size=4
+path_configs=12
+performance_configs=10
+performance_rows=600
+pair_rows=120
+path_acceptance=12/12 PASS
+correctness=PASS
+shm_cleanup=PASS
+stale_shm_files=0
+nccl_runtime=2.22.3
+nccl_source_commit=178b6b759074597777ce13438efb0e0ba625e429

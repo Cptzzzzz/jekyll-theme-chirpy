@@ -1,0 +1,5 @@
+rank,mode,payload_bytes,baseline_bytes,steady_delta_bytes,peak_delta_bytes,correct
+2,allreduce-full,268435456,2560,268435456,268435456,True
+2,reduce-scatter-shard,268435456,2560,67108864,335544320,True
+2,rs-ag-naive-lifetime,268435456,2560,268435456,603979776,True
+2,rs-ag-optimized-lifetime,268435456,2560,268435456,335544320,True

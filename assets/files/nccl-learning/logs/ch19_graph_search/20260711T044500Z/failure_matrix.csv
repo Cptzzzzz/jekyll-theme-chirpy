@@ -1,0 +1,2 @@
+case,exit_status,signature,observed
+invalid_graph_device,3,XML Import Channel : dev 255 not found,1

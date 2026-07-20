@@ -1,0 +1,28 @@
+
+sg-fuxc2-260708-12652-default0-0:33291:33291 [1] group.cc:488 NCCL WARN ncclGroupEnd: not in a group call.
+sg-fuxc2-260708-12652-default0-0:33291:33291 [1] NCCL INFO group.cc:101 -> 5
+sg-fuxc2-260708-12652-default0-0:33291:33291 [1] NCCL INFO NCCL version 2.22.3+cuda12.6
+sg-fuxc2-260708-12652-default0-0:33291:33291 [1] NCCL INFO AllReduce: opCount 0 sendbuff 0x7f3dd4000000 recvbuff 0x7f3dd4000000 count 4 datatype 2 op 0 root 0 comm 0x556479f81000 [nranks=4] stream 0x55647d9bf160
+sg-fuxc2-260708-12652-default0-0:33291:33291 [1] NCCL INFO AllReduce: opCount 0 sendbuff 0x7f3dd4000200 recvbuff 0x7f3dd4000200 count 4 datatype 2 op 0 root 0 comm 0x556479f81000 [nranks=4] stream 0x55647d9bf160
+sg-fuxc2-260708-12652-default0-0:33291:33291 [1] NCCL INFO AllReduce: opCount 0 sendbuff 0x7f3dd4000400 recvbuff 0x7f3dd4000400 count 4 datatype 2 op 0 root 0 comm 0x556479f81000 [nranks=4] stream 0x55647d9bf160
+sg-fuxc2-260708-12652-default0-0:33291:33291 [1] NCCL INFO AllReduce: opCount 1 sendbuff 0x7f3dd4000000 recvbuff 0x7f3dd4000000 count 4 datatype 2 op 0 root 0 comm 0x556479f81000 [nranks=4] stream 0x55647d9bf160
+sg-fuxc2-260708-12652-default0-0:33291:33291 [1] NCCL INFO AllReduce: opCount 1 sendbuff 0x7f3dd4000200 recvbuff 0x7f3dd4000200 count 4 datatype 2 op 0 root 0 comm 0x556479f81000 [nranks=4] stream 0x55647d94e100
+
+sg-fuxc2-260708-12652-default0-0:33291:33291 [1] misc/argcheck.cc:48 NCCL WARN Broadcast : invalid root 4 (root should be in the 0..4 range)
+sg-fuxc2-260708-12652-default0-0:33291:33291 [1] NCCL INFO enqueue.cc:2063 -> 4
+sg-fuxc2-260708-12652-default0-0:33291:33291 [1] NCCL INFO collectives.cc:135 -> 4
+sg-fuxc2-260708-12652-default0-0:33291:33291 [1] NCCL INFO group.cc:101 -> 4
+sg-fuxc2-260708-12652-default0-0:33291:33291 [1] NCCL INFO AllReduce: opCount 2 sendbuff 0x7f3dd4000000 recvbuff 0x7f3dd4000000 count 4 datatype 2 op 0 root 0 comm 0x556479f81000 [nranks=4] stream 0x55647d9bf160
+sg-fuxc2-260708-12652-default0-0:33291:33291 [1] NCCL INFO AllReduce: opCount 3 sendbuff 0x7f3d94000000 recvbuff 0x7f3d94000000 count 67108864 datatype 2 op 0 root 0 comm 0x556479f81000 [nranks=4] stream 0x55647d9bf160
+sg-fuxc2-260708-12652-default0-0:33291:33291 [1] NCCL INFO AllReduce: opCount 4 sendbuff 0x7f3d94000000 recvbuff 0x7f3d94000000 count 67108864 datatype 2 op 0 root 0 comm 0x556479f81000 [nranks=4] stream 0x55647d9bf160
+sg-fuxc2-260708-12652-default0-0:33291:33291 [1] NCCL INFO AllReduce: opCount 5 sendbuff 0x7f3d94000000 recvbuff 0x7f3d94000000 count 67108864 datatype 2 op 0 root 0 comm 0x556479f81000 [nranks=4] stream 0x55647d9bf160
+sg-fuxc2-260708-12652-default0-0:33291:33291 [1] NCCL INFO AllReduce: opCount 6 sendbuff 0x7f3d94000000 recvbuff 0x7f3d94000000 count 67108864 datatype 2 op 0 root 0 comm 0x556479f81000 [nranks=4] stream 0x55647d9bf160
+sg-fuxc2-260708-12652-default0-0:33291:33291 [1] NCCL INFO AllReduce: opCount 7 sendbuff 0x7f3d94000000 recvbuff 0x7f3d94000000 count 67108864 datatype 2 op 0 root 0 comm 0x556479f81000 [nranks=4] stream 0x55647d9bf160
+sg-fuxc2-260708-12652-default0-0:33291:33291 [1] NCCL INFO AllReduce: opCount 8 sendbuff 0x7f3d94000000 recvbuff 0x7f3d94000000 count 67108864 datatype 2 op 0 root 0 comm 0x556479f81000 [nranks=4] stream 0x55647d9bf160
+sg-fuxc2-260708-12652-default0-0:33291:33291 [1] NCCL INFO AllReduce: opCount 9 sendbuff 0x7f3d94000000 recvbuff 0x7f3d94000000 count 67108864 datatype 2 op 0 root 0 comm 0x556479f81000 [nranks=4] stream 0x55647d9bf160
+sg-fuxc2-260708-12652-default0-0:33291:33291 [1] NCCL INFO AllReduce: opCount a sendbuff 0x7f3d94000000 recvbuff 0x7f3d94000000 count 67108864 datatype 2 op 0 root 0 comm 0x556479f81000 [nranks=4] stream 0x55647d9bf160
+sg-fuxc2-260708-12652-default0-0:33291:33291 [1] NCCL INFO AllReduce: opCount b sendbuff 0x7f3d94000000 recvbuff 0x7f3d94000000 count 67108864 datatype 2 op 0 root 0 comm 0x556479f81000 [nranks=4] stream 0x55647d9bf160
+sg-fuxc2-260708-12652-default0-0:33291:33291 [1] NCCL INFO AllReduce: opCount c sendbuff 0x7f3d94000000 recvbuff 0x7f3d94000000 count 67108864 datatype 2 op 0 root 0 comm 0x556479f81000 [nranks=4] stream 0x55647d9bf160
+sg-fuxc2-260708-12652-default0-0:33291:33291 [1] NCCL INFO AllReduce: opCount d sendbuff 0x7f3d94000000 recvbuff 0x7f3d94000000 count 67108864 datatype 2 op 0 root 0 comm 0x556479f81000 [nranks=4] stream 0x55647d9bf160
+sg-fuxc2-260708-12652-default0-0:33291:33291 [1] NCCL INFO AllReduce: opCount e sendbuff 0x7f3d94000000 recvbuff 0x7f3d94000000 count 67108864 datatype 2 op 0 root 0 comm 0x556479f81000 [nranks=4] stream 0x55647d9bf160
+sg-fuxc2-260708-12652-default0-0:33291:33291 [1] NCCL INFO AllReduce: opCount f sendbuff 0x7f3d94000000 recvbuff 0x7f3d94000000 count 67108864 datatype 2 op 0 root 0 comm 0x556479f81000 [nranks=4] stream 0x55647d9bf160

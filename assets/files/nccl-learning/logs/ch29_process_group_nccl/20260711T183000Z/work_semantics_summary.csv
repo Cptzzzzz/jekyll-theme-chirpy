@@ -1,0 +1,5 @@
+config,samples,median_sleep_gpu_us,median_enqueue_host_us,median_action_host_us,p95_action_host_us,median_device_sync_host_us,completed_enqueue_fraction,completed_action_fraction,future_done_enqueue_fraction,future_done_action_fraction,free_before_dependent_fraction,correct_fraction
+device_sync_no_wait,40,52062.320709228516,73.95599999999999,0.605,1.7448499999999998,52385.1105,0.0,0.0,1.0,1.0,1.0,1.0
+future_wait_nonblocking,40,52065.13595581055,61.4035,5.54,16.79785,52381.312000000005,0.0,0.0,1.0,1.0,1.0,1.0
+work_wait_blocking,40,52084.62333679199,202.168,60948.757,71140.18175,56.805499999999995,0.0,1.0,1.0,1.0,0.0,1.0
+work_wait_nonblocking,40,53620.80001831055,67.089,4.8614999999999995,16.83145,54283.3475,0.0,0.0,1.0,1.0,1.0,1.0

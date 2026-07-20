@@ -1,0 +1,7 @@
+process_id=27785
+header_version_code=22203
+header_version=2.22.3
+runtime_version_code=22203
+runtime_version=2.22.3
+nccl_get_version_object=/lib/x86_64-linux-gnu/libnccl.so.2
+hold_seconds=0

@@ -1,0 +1,25 @@
+experiment=interview_details
+run_id=20260717T090915Z
+timestamp_utc=2026-07-17T09:09:43.924377+00:00
+hostname=sg-fuxc2-260708-12652-default0-0
+gpu=4x Tesla V100-SXM2-32GB
+topology=all GPU pairs NV2
+torch=2.5.0a0+872d972e41.nv24.08
+cuda_runtime=12.6
+nccl_runtime=2.22.3
+nccl_source_commit=178b6b759074597777ce13438efb0e0ba625e429
+worker_sha256=213929238fc898455d22c28475aa4d9a37eeb669e7e03ec7c0f6d85ae3e0899a
+cycles=10
+warmups=3
+decode_collectives=160
+cpu_affinity=0,2,4,6 (local rank i uses entry i)
+nccl_tests=/root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf
+dtype=FP32 for async/decomposition; FP16 for fragmentation/decode/numeric counterexample/nccl-tests control
+critical_path_summary=max rank duration per cycle, then median/P95/CV across cycles
+NCCL_DEBUG=INFO
+NCCL_DEBUG_SUBSYS=INIT,GRAPH,COLL
+commands:
+  NCCL_DEBUG=INFO NCCL_DEBUG_SUBSYS=INIT,GRAPH,COLL torchrun --standalone --nproc_per_node=4 /root/jekyll-theme-chirpy/assets/files/nccl-learning/scripts/61_interview_detail_worker.py --output-dir /root/jekyll-theme-chirpy/assets/files/nccl-learning/logs/interview_details/20260717T090915Z/raw/results/world4_full --sections async,decomposition,fragmentation,decode,numerics --cycles 10 --warmups 3 --decode-collectives 160 --cpu-affinity 0,2,4,6
+  NCCL_DEBUG=INFO NCCL_DEBUG_SUBSYS=INIT,GRAPH,COLL torchrun --standalone --nproc_per_node=2 /root/jekyll-theme-chirpy/assets/files/nccl-learning/scripts/61_interview_detail_worker.py --output-dir /root/jekyll-theme-chirpy/assets/files/nccl-learning/logs/interview_details/20260717T090915Z/raw/results/world2_decode --sections decode --cycles 10 --warmups 3 --decode-collectives 160 --cpu-affinity 0,2,4,6
+  NCCL_DEBUG=INFO NCCL_DEBUG_SUBSYS=INIT,GRAPH,COLL /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 8K -e 1M -f 2 -g 2 -w 20 -n 100 -N 10 -c 1 -d half -a 3
+  NCCL_DEBUG=INFO NCCL_DEBUG_SUBSYS=INIT,GRAPH,COLL /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 8K -e 1M -f 2 -g 4 -w 20 -n 100 -N 10 -c 1 -d half -a 3

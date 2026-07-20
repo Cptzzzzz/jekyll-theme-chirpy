@@ -1,0 +1,4 @@
+config,samples,median_busbw_gbps,min_busbw_gbps,max_busbw_gbps,cv_percent,regression_percent
+baseline,5,116.81,115.81,118.15,0.8105836103758072,0.0
+channel1,5,19.37,19.22,22.69,7.989715696849889,83.41751562366235
+no_p2p,5,2.56,2.56,2.56,0.0,97.80840681448507

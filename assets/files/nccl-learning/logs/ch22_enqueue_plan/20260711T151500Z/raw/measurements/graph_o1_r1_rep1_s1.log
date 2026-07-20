@@ -1,0 +1,1 @@
+RESULT mode=graph ops=1 replays=1 bytes=1048576 host_us=513.148 total_us=522.232 graph_nodes=12 correct=1

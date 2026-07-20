@@ -1,0 +1,8 @@
+source_run=/root/nccl-learning/logs/ch13_tree/20260710T155522Z
+threshold_percent=5.0
+cycles=20
+iterations=20
+groups=1
+rows=40
+command_01=NCCL_ALGO=Ring NCCL_PROTO=Simple NCCL_MIN_NCHANNELS=12 NCCL_MAX_NCHANNELS=12 /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 1048576 -e 1048576 -g 3 -w 5 -n 20 -N 20 -c 1 -I 0 -z 0 -C 0 -a 3 -d float -o sum
+command_02=NCCL_ALGO=Ring NCCL_PROTO=Simple NCCL_MIN_NCHANNELS=12 NCCL_MAX_NCHANNELS=12 /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 1048576 -e 1048576 -g 3 -w 5 -n 20 -N 20 -c 1 -I 0 -z 0 -C 0 -a 3 -d float -o sum

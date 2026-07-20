@@ -1,0 +1,12 @@
+experiment=ch18_topology_xml_paths
+run_id=20260711T031500Z
+timestamp_utc=2026-07-11T04:47:09.313550+00:00
+hostname=sg-fuxc2-260708-12652-default0-0
+world_size=4
+fixtures=native_nv2,all_to_all_nv1,sparse_nv2_ring,pcie_x16,pcie_x4
+cycles=10
+iterations=20
+measurement_rows=300
+physical_topology=4xV100_all_pairs_NV2
+fixture_performance_warning=XML changes planner view not physical wiring
+nccl_source_commit=178b6b759074597777ce13438efb0e0ba625e429

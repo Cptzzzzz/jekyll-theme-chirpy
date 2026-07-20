@@ -1,0 +1,1 @@
+RESULT mode=sequential ops=1 replays=1 bytes=1048576 host_us=60.511 total_us=120.112 graph_nodes=0 correct=1

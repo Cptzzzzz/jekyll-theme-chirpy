@@ -1,0 +1,10 @@
+RESULT mode=grouped ops=4 replays=1 bytes=1048576 host_us=153.191 total_us=293.169 graph_nodes=0 correct=1
+Generating '/tmp/nsys-report-5833.qdstrm'
+
+[1/1] [0%                          ] nsys_grouped.nsys-rep
+[1/1] [0%                          ] nsys_grouped.nsys-rep
+[1/1] [======================91%   ] nsys_grouped.nsys-rep
+[1/1] [========================100%] nsys_grouped.nsys-rep
+[1/1] [========================100%] nsys_grouped.nsys-rep
+Generated:
+    /root/nccl-learning/logs/ch22_enqueue_plan/20260711T151500Z/private/nsys_grouped.nsys-rep

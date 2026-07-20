@@ -1,0 +1,3 @@
+DUPLICATE_GPU entering ncclCommInitAll devices=0,0
+sg-fuxc2-260708-12652-default0-0:58968:58968 [0] NCCL INFO cudaDriverVersion 13000
+DUPLICATE_GPU result=invalid usage (run with NCCL_DEBUG=WARN for details) code=5

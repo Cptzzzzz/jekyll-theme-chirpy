@@ -1,0 +1,15 @@
+metric,value
+header_version_code,22203
+system_runtime_version_code,22203
+system_runtime_version,2.22.3
+torch_compiled_version_code,22203
+torch_compiled_version,2.22.3
+torch_loaded_runtime_version_code,22203
+fake_runtime_version_code,29999
+fake_runtime_version,2.99.99
+header_matches_system,true
+header_matches_torch_compile_time,true
+system_matches_torch_loaded_runtime,true
+fake_override_proved,true
+system_object,/lib/x86_64-linux-gnu/libnccl.so.2
+fake_object,/root/nccl-learning/logs/ch01_stack_version/20260710T065547Z/artifacts/fake/libnccl.so.2

@@ -1,0 +1,12 @@
+experiment=ch06_group_ordering
+run_id=20260710T075310Z
+timestamp_utc=2026-07-10T07:53:10Z
+hostname=sg-fuxc2-260708-12652-default0-0
+world_size_native=4
+world_size_failure_matrix=2
+process_group_timeout_seconds=6
+large_payload_bytes=268435456
+warmups=3
+cycles=10
+nccl_source_commit=178b6b759074597777ce13438efb0e0ba625e429
+torch=2.5.0a0+872d972e41.nv24.08

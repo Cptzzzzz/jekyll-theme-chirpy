@@ -1,0 +1,23 @@
+# nccl-tests version 2.19.5 nccl-headers=22203 nccl-library=22203
+# Collective test starting: all_reduce_perf
+# nThread 1 nGpus 2 minBytes 67108864 maxBytes 67108864 step: 128(factor) warmup iters: 5 iters: 20 agg iters: 1 validation: 1 graph: 0 unalign: 0
+#
+# Using devices
+#  Rank  0 Group  0 Pid  65301 on sg-fuxc2-260708-12652-default0-0 device  0 [0000:1c:00] Tesla V100-SXM2-32GB
+#  Rank  1 Group  0 Pid  65301 on sg-fuxc2-260708-12652-default0-0 device  1 [0000:1d:00] Tesla V100-SXM2-32GB
+NCCL version 2.22.3+cuda12.6
+#
+#                                                              out-of-place                       in-place          
+#       size         count      type   redop    root     time   algbw   busbw  #wrong     time   algbw   busbw  #wrong 
+#        (B)    (elements)                               (us)  (GB/s)  (GB/s)             (us)  (GB/s)  (GB/s)         
+    67108864      16777216     float     sum      -1  1988.66   33.75   33.75       0  1990.68   33.71   33.71       0
+    67108864      16777216     float     sum      -1  1987.54   33.76   33.76       0  1985.57   33.80   33.80       0
+    67108864      16777216     float     sum      -1  1986.92   33.78   33.78       0  1989.38   33.73   33.73       0
+    67108864      16777216     float     sum      -1  1989.99   33.72   33.72       0  1996.26   33.62   33.62       0
+    67108864      16777216     float     sum      -1  1987.41   33.77   33.77       0  1990.18   33.72   33.72       0
+# Out of bounds values : 0 OK
+# Avg bus bandwidth    : 33.7356 
+#
+# Collective test concluded: all_reduce_perf
+#
+

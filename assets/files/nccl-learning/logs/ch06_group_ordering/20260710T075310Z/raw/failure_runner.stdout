@@ -1,0 +1,5 @@
+label=ordered_off returncode=0 duration_s=5.071 outcome=success accepted=1
+label=op_mismatch_detail returncode=1 duration_s=5.034 outcome=fingerprint-rejected accepted=1
+label=size_mismatch_detail returncode=1 duration_s=5.256 outcome=fingerprint-rejected accepted=1
+label=op_mismatch_raw returncode=1 duration_s=4.844 outcome=semantic-mismatch-returned accepted=1
+label=rank_skip_raw returncode=1 duration_s=11.071 outcome=watchdog-timeout accepted=1

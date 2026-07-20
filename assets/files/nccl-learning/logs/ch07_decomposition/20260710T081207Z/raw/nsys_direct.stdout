@@ -1,0 +1,5 @@
+mode=direct bytes=67108864 iterations=5 correct=1
+Generating '/tmp/nsys-report-8349.qdstrm'
+[1/1] [0%                          ] direct.nsys-rep[1/1] [0%                          ] direct.nsys-rep[1/1] [0%                          ] direct.nsys-rep[1/1] [====28%                     ] direct.nsys-rep[1/1] [=============58%            ] direct.nsys-rep[1/1] [=====================87%    ] direct.nsys-rep[1/1] [========================98% ] direct.nsys-rep[1/1] [========================100%] direct.nsys-rep[1/1] [========================100%] direct.nsys-rep
+Generated:
+    /root/nccl-learning/logs/ch07_decomposition/20260710T081207Z/artifacts/direct.nsys-rep

@@ -1,0 +1,5 @@
+mode,steady_MiB_max_rank,peak_MiB_max_rank
+allreduce-full,256.0,256.0
+reduce-scatter-shard,64.0,320.0
+rs-ag-naive-lifetime,256.0,576.0
+rs-ag-optimized-lifetime,256.0,320.0

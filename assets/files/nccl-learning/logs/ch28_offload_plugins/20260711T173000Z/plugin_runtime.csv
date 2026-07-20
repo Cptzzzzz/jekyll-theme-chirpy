@@ -1,0 +1,4 @@
+case,library_opened,net_v8_accepted,devices_usable,internal_socket_fallback,correct
+sharp_default,1,1,0,1,1
+bad_abi,1,0,0,1,1
+missing,0,0,0,1,1

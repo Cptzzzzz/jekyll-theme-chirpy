@@ -1,0 +1,336 @@
+# nccl-tests version 2.19.5 nccl-headers=22203 nccl-library=22203
+# Collective test starting: all_reduce_perf
+# nThread 1 nGpus 4 minBytes 4096 maxBytes 4096 step: 128(factor) warmup iters: 1 iters: 1 agg iters: 1 validation: 1 graph: 0 unalign: 0
+#
+# Using devices
+#  Rank  0 Group  0 Pid  64222 on sg-fuxc2-260708-12652-default0-0 device  0 [0000:1a:00] Tesla V100-SXM2-32GB
+#  Rank  1 Group  0 Pid  64222 on sg-fuxc2-260708-12652-default0-0 device  1 [0000:1c:00] Tesla V100-SXM2-32GB
+#  Rank  2 Group  0 Pid  64222 on sg-fuxc2-260708-12652-default0-0 device  2 [0000:1d:00] Tesla V100-SXM2-32GB
+#  Rank  3 Group  0 Pid  64222 on sg-fuxc2-260708-12652-default0-0 device  3 [0000:1e:00] Tesla V100-SXM2-32GB
+sg-fuxc2-260708-12652-default0-0:64222:64222 [0] NCCL INFO Bootstrap : Using eth0:10.244.49.68<0>
+sg-fuxc2-260708-12652-default0-0:64222:64222 [0] NCCL INFO cudaDriverVersion 13000
+sg-fuxc2-260708-12652-default0-0:64222:64222 [0] NCCL INFO NCCL version 2.22.3+cuda12.6
+sg-fuxc2-260708-12652-default0-0:64222:64230 [1] NCCL INFO Plugin Path : /opt/hpcx/nccl_rdma_sharp_plugin/lib/libnccl-net.so
+sg-fuxc2-260708-12652-default0-0:64222:64230 [1] NCCL INFO P2P plugin IBext_v8
+sg-fuxc2-260708-12652-default0-0:64222:64230 [1] NCCL INFO NET/IB : No device found.
+sg-fuxc2-260708-12652-default0-0:64222:64230 [1] NCCL INFO NET/IB : No device found.
+sg-fuxc2-260708-12652-default0-0:64222:64230 [1] NCCL INFO NET/Socket : Using [0]eth0:10.244.49.68<0>
+sg-fuxc2-260708-12652-default0-0:64222:64230 [1] NCCL INFO Using network Socket
+sg-fuxc2-260708-12652-default0-0:64222:64229 [0] NCCL INFO Using network Socket
+sg-fuxc2-260708-12652-default0-0:64222:64231 [2] NCCL INFO Using network Socket
+sg-fuxc2-260708-12652-default0-0:64222:64232 [3] NCCL INFO Using network Socket
+sg-fuxc2-260708-12652-default0-0:64222:64232 [3] NCCL INFO ncclCommInitRank comm 0x5611733cc4e0 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId 1e000 commId 0x7e39ccfd8aabc91c - Init START
+sg-fuxc2-260708-12652-default0-0:64222:64231 [2] NCCL INFO ncclCommInitRank comm 0x5611733909f0 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId 1d000 commId 0x7e39ccfd8aabc91c - Init START
+sg-fuxc2-260708-12652-default0-0:64222:64230 [1] NCCL INFO ncclCommInitRank comm 0x561173354dc0 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 1c000 commId 0x7e39ccfd8aabc91c - Init START
+sg-fuxc2-260708-12652-default0-0:64222:64229 [0] NCCL INFO ncclCommInitRank comm 0x5611733191f0 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 1a000 commId 0x7e39ccfd8aabc91c - Init START
+sg-fuxc2-260708-12652-default0-0:64222:64232 [3] NCCL INFO Setting affinity for GPU 3 to 5555,55555555,55555555
+sg-fuxc2-260708-12652-default0-0:64222:64231 [2] NCCL INFO Setting affinity for GPU 2 to 5555,55555555,55555555
+sg-fuxc2-260708-12652-default0-0:64222:64232 [3] NCCL INFO NVLS multicast support is not available on dev 3
+sg-fuxc2-260708-12652-default0-0:64222:64231 [2] NCCL INFO NVLS multicast support is not available on dev 2
+sg-fuxc2-260708-12652-default0-0:64222:64229 [0] NCCL INFO Setting affinity for GPU 0 to 5555,55555555,55555555
+sg-fuxc2-260708-12652-default0-0:64222:64229 [0] NCCL INFO NVLS multicast support is not available on dev 0
+sg-fuxc2-260708-12652-default0-0:64222:64230 [1] NCCL INFO Setting affinity for GPU 1 to 5555,55555555,55555555
+sg-fuxc2-260708-12652-default0-0:64222:64230 [1] NCCL INFO NVLS multicast support is not available on dev 1
+sg-fuxc2-260708-12652-default0-0:64222:64232 [3] NCCL INFO comm 0x5611733cc4e0 rank 3 nRanks 4 nNodes 1 localRanks 4 localRank 3 MNNVL 0
+sg-fuxc2-260708-12652-default0-0:64222:64230 [1] NCCL INFO comm 0x561173354dc0 rank 1 nRanks 4 nNodes 1 localRanks 4 localRank 1 MNNVL 0
+sg-fuxc2-260708-12652-default0-0:64222:64229 [0] NCCL INFO comm 0x5611733191f0 rank 0 nRanks 4 nNodes 1 localRanks 4 localRank 0 MNNVL 0
+sg-fuxc2-260708-12652-default0-0:64222:64231 [2] NCCL INFO comm 0x5611733909f0 rank 2 nRanks 4 nNodes 1 localRanks 4 localRank 2 MNNVL 0
+sg-fuxc2-260708-12652-default0-0:64222:64232 [3] NCCL INFO Trees [0] -1/-1/-1->3->2 [1] -1/-1/-1->3->2 [2] -1/-1/-1->3->1 [3] -1/-1/-1->3->1 [4] 2/-1/-1->3->0 [5] 2/-1/-1->3->0 [6] -1/-1/-1->3->2 [7] -1/-1/-1->3->2 [8] -1/-1/-1->3->1 [9] -1/-1/-1->3->1 [10] 2/-1/-1->3->0 [11] 2/-1/-1->3->0
+sg-fuxc2-260708-12652-default0-0:64222:64230 [1] NCCL INFO Trees [0] 2/-1/-1->1->0 [1] 2/-1/-1->1->0 [2] 3/-1/-1->1->2 [3] 3/-1/-1->1->2 [4] 0/-1/-1->1->-1 [5] 0/-1/-1->1->-1 [6] 2/-1/-1->1->0 [7] 2/-1/-1->1->0 [8] 3/-1/-1->1->2 [9] 3/-1/-1->1->2 [10] 0/-1/-1->1->-1 [11] 0/-1/-1->1->-1
+sg-fuxc2-260708-12652-default0-0:64222:64232 [3] NCCL INFO P2P Chunksize set to 524288
+sg-fuxc2-260708-12652-default0-0:64222:64230 [1] NCCL INFO P2P Chunksize set to 524288
+sg-fuxc2-260708-12652-default0-0:64222:64231 [2] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 3/-1/-1->2->1 [2] 1/-1/-1->2->0 [3] 1/-1/-1->2->0 [4] -1/-1/-1->2->3 [5] -1/-1/-1->2->3 [6] 3/-1/-1->2->1 [7] 3/-1/-1->2->1 [8] 1/-1/-1->2->0 [9] 1/-1/-1->2->0 [10] -1/-1/-1->2->3 [11] -1/-1/-1->2->3
+sg-fuxc2-260708-12652-default0-0:64222:64231 [2] NCCL INFO P2P Chunksize set to 524288
+sg-fuxc2-260708-12652-default0-0:64222:64229 [0] NCCL INFO Channel 00/12 :    0   1   2   3
+sg-fuxc2-260708-12652-default0-0:64222:64229 [0] NCCL INFO Channel 01/12 :    0   1   3   2
+sg-fuxc2-260708-12652-default0-0:64222:64229 [0] NCCL INFO Channel 02/12 :    0   2   3   1
+sg-fuxc2-260708-12652-default0-0:64222:64229 [0] NCCL INFO Channel 03/12 :    0   2   1   3
+sg-fuxc2-260708-12652-default0-0:64222:64229 [0] NCCL INFO Channel 04/12 :    0   3   1   2
+sg-fuxc2-260708-12652-default0-0:64222:64229 [0] NCCL INFO Channel 05/12 :    0   3   2   1
+sg-fuxc2-260708-12652-default0-0:64222:64229 [0] NCCL INFO Channel 06/12 :    0   1   2   3
+sg-fuxc2-260708-12652-default0-0:64222:64229 [0] NCCL INFO Channel 07/12 :    0   1   3   2
+sg-fuxc2-260708-12652-default0-0:64222:64229 [0] NCCL INFO Channel 08/12 :    0   2   3   1
+sg-fuxc2-260708-12652-default0-0:64222:64229 [0] NCCL INFO Channel 09/12 :    0   2   1   3
+sg-fuxc2-260708-12652-default0-0:64222:64229 [0] NCCL INFO Channel 10/12 :    0   3   1   2
+sg-fuxc2-260708-12652-default0-0:64222:64229 [0] NCCL INFO Channel 11/12 :    0   3   2   1
+sg-fuxc2-260708-12652-default0-0:64222:64229 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1 [2] 2/-1/-1->0->-1 [3] 2/-1/-1->0->-1 [4] 3/-1/-1->0->1 [5] 3/-1/-1->0->1 [6] 1/-1/-1->0->-1 [7] 1/-1/-1->0->-1 [8] 2/-1/-1->0->-1 [9] 2/-1/-1->0->-1 [10] 3/-1/-1->0->1 [11] 3/-1/-1->0->1
+sg-fuxc2-260708-12652-default0-0:64222:64229 [0] NCCL INFO P2P Chunksize set to 524288
+sg-fuxc2-260708-12652-default0-0:64222:64231 [2] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+sg-fuxc2-260708-12652-default0-0:64222:64231 [2] NCCL INFO 12 coll channels, 12 collnet channels, 0 nvls channels, 16 p2p channels, 4 p2p channels per peer
+sg-fuxc2-260708-12652-default0-0:64222:64230 [1] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+sg-fuxc2-260708-12652-default0-0:64222:64230 [1] NCCL INFO 12 coll channels, 12 collnet channels, 0 nvls channels, 16 p2p channels, 4 p2p channels per peer
+sg-fuxc2-260708-12652-default0-0:64222:64232 [3] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+sg-fuxc2-260708-12652-default0-0:64222:64232 [3] NCCL INFO 12 coll channels, 12 collnet channels, 0 nvls channels, 16 p2p channels, 4 p2p channels per peer
+sg-fuxc2-260708-12652-default0-0:64222:64229 [0] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+sg-fuxc2-260708-12652-default0-0:64222:64229 [0] NCCL INFO 12 coll channels, 12 collnet channels, 0 nvls channels, 16 p2p channels, 4 p2p channels per peer
+sg-fuxc2-260708-12652-default0-0:64222:64229 [0] NCCL INFO CC Off, Multi-GPU CC Off, workFifoBytes 1048576
+sg-fuxc2-260708-12652-default0-0:64222:64232 [3] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v3 symbol.
+sg-fuxc2-260708-12652-default0-0:64222:64232 [3] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v2 symbol, using internal tuner instead.
+sg-fuxc2-260708-12652-default0-0:64222:64232 [3] NCCL INFO ncclCommInitRank comm 0x5611733cc4e0 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId 1e000 commId 0x7e39ccfd8aabc91c - Init COMPLETE
+sg-fuxc2-260708-12652-default0-0:64222:64232 [3] NCCL INFO Init timings: rank 3 nranks 4 total 0.64 (kernels 0.45, bootstrap 0.13, allgathers 0.00, topo 0.02, graphs 0.01, connections 0.02, rest 0.01)
+sg-fuxc2-260708-12652-default0-0:64222:64230 [1] NCCL INFO ncclCommInitRank comm 0x561173354dc0 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 1c000 commId 0x7e39ccfd8aabc91c - Init COMPLETE
+sg-fuxc2-260708-12652-default0-0:64222:64230 [1] NCCL INFO Init timings: rank 1 nranks 4 total 0.64 (kernels 0.45, bootstrap 0.13, allgathers 0.00, topo 0.02, graphs 0.01, connections 0.02, rest 0.01)
+sg-fuxc2-260708-12652-default0-0:64222:64231 [2] NCCL INFO ncclCommInitRank comm 0x5611733909f0 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId 1d000 commId 0x7e39ccfd8aabc91c - Init COMPLETE
+sg-fuxc2-260708-12652-default0-0:64222:64229 [0] NCCL INFO ncclCommInitRank comm 0x5611733191f0 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 1a000 commId 0x7e39ccfd8aabc91c - Init COMPLETE
+sg-fuxc2-260708-12652-default0-0:64222:64231 [2] NCCL INFO Init timings: rank 2 nranks 4 total 0.64 (kernels 0.45, bootstrap 0.13, allgathers 0.00, topo 0.02, graphs 0.01, connections 0.02, rest 0.01)
+sg-fuxc2-260708-12652-default0-0:64222:64229 [0] NCCL INFO Init timings: rank 0 nranks 4 total 0.64 (kernels 0.45, bootstrap 0.13, allgathers 0.00, topo 0.02, graphs 0.01, connections 0.02, rest 0.01)
+#
+#                                                              out-of-place                       in-place          
+#       size         count      type   redop    root     time   algbw   busbw  #wrong     time   algbw   busbw  #wrong 
+#        (B)    (elements)                               (us)  (GB/s)  (GB/s)             (us)  (GB/s)  (GB/s)         
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO NCCL_P2P_READ_ENABLE set by environment to 1.
+sg-fuxc2-260708-12652-default0-0:64222:64237 [3] NCCL INFO Allocated shareable buffer 0x7f265f800000 size 6291456 ipcDesc 0x7f25b80049a0
+sg-fuxc2-260708-12652-default0-0:64222:64241 [2] NCCL INFO Allocated shareable buffer 0x7f265fe00000 size 6291456 ipcDesc 0x7f25a40049a0
+sg-fuxc2-260708-12652-default0-0:64222:64235 [0] NCCL INFO Allocated shareable buffer 0x7f2660a00000 size 6291456 ipcDesc 0x7f26a0000be0
+sg-fuxc2-260708-12652-default0-0:64222:64239 [1] NCCL INFO Allocated shareable buffer 0x7f2660400000 size 6291456 ipcDesc 0x7f25ac0049a0
+sg-fuxc2-260708-12652-default0-0:64222:64237 [3] NCCL INFO Allocated shareable buffer 0x7f2661000000 size 6291456 ipcDesc 0x7f25b8006400
+sg-fuxc2-260708-12652-default0-0:64222:64241 [2] NCCL INFO Allocated shareable buffer 0x7f266c000000 size 6291456 ipcDesc 0x7f25a4006360
+sg-fuxc2-260708-12652-default0-0:64222:64235 [0] NCCL INFO Allocated shareable buffer 0x7f266c600000 size 6291456 ipcDesc 0x7f26a0006410
+sg-fuxc2-260708-12652-default0-0:64222:64239 [1] NCCL INFO Allocated shareable buffer 0x7f266cc00000 size 6291456 ipcDesc 0x7f25ac0062c0
+sg-fuxc2-260708-12652-default0-0:64222:64237 [3] NCCL INFO Allocated shareable buffer 0x7f266d200000 size 6291456 ipcDesc 0x7f25b8007d40
+sg-fuxc2-260708-12652-default0-0:64222:64241 [2] NCCL INFO Allocated shareable buffer 0x7f266d800000 size 6291456 ipcDesc 0x7f25a4007d40
+sg-fuxc2-260708-12652-default0-0:64222:64235 [0] NCCL INFO Allocated shareable buffer 0x7f266de00000 size 6291456 ipcDesc 0x7f26a0007d50
+sg-fuxc2-260708-12652-default0-0:64222:64239 [1] NCCL INFO Allocated shareable buffer 0x7f266e400000 size 6291456 ipcDesc 0x7f25ac007c00
+sg-fuxc2-260708-12652-default0-0:64222:64237 [3] NCCL INFO Allocated shareable buffer 0x7f266ea00000 size 6291456 ipcDesc 0x7f25b8009660
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Channel 00/0 : 3[3] -> 0[0] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64241 [2] NCCL INFO Allocated shareable buffer 0x7f266f000000 size 6291456 ipcDesc 0x7f25a4009660
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Channel 00/0 : 2[2] -> 3[3] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64235 [0] NCCL INFO Allocated shareable buffer 0x7f266f600000 size 6291456 ipcDesc 0x7f26a0009670
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[1] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64239 [1] NCCL INFO Allocated shareable buffer 0x7f266fc00000 size 6291456 ipcDesc 0x7f25ac009520
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Channel 00/0 : 1[1] -> 2[2] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64237 [3] NCCL INFO Allocated shareable buffer 0x7f2670200000 size 6291456 ipcDesc 0x7f25b800af60
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Channel 03/0 : 3[3] -> 0[0] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64241 [2] NCCL INFO Allocated shareable buffer 0x7f2670800000 size 6291456 ipcDesc 0x7f25a400af60
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Channel 02/0 : 2[2] -> 3[3] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64235 [0] NCCL INFO Allocated shareable buffer 0x7f2670e00000 size 6291456 ipcDesc 0x7f26a000af70
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[1] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64239 [1] NCCL INFO Allocated shareable buffer 0x7f2671400000 size 6291456 ipcDesc 0x7f25ac00ae20
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Channel 04/0 : 1[1] -> 2[2] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64237 [3] NCCL INFO Allocated shareable buffer 0x7f2671a00000 size 6291456 ipcDesc 0x7f25b800c860
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Channel 06/0 : 3[3] -> 0[0] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64241 [2] NCCL INFO Allocated shareable buffer 0x7f2672000000 size 6291456 ipcDesc 0x7f25a400c860
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Channel 06/0 : 2[2] -> 3[3] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64235 [0] NCCL INFO Allocated shareable buffer 0x7f2672600000 size 6291456 ipcDesc 0x7f26a000c870
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Channel 06/0 : 0[0] -> 1[1] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64239 [1] NCCL INFO Allocated shareable buffer 0x7f2672c00000 size 6291456 ipcDesc 0x7f25ac00c720
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Channel 06/0 : 1[1] -> 2[2] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64237 [3] NCCL INFO Allocated shareable buffer 0x7f2673200000 size 6291456 ipcDesc 0x7f25b800e160
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Channel 09/0 : 3[3] -> 0[0] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64241 [2] NCCL INFO Allocated shareable buffer 0x7f2673800000 size 6291456 ipcDesc 0x7f25a400e160
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Channel 08/0 : 2[2] -> 3[3] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64235 [0] NCCL INFO Allocated shareable buffer 0x7f2673e00000 size 6291456 ipcDesc 0x7f26a000e170
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Channel 07/0 : 0[0] -> 1[1] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64239 [1] NCCL INFO Allocated shareable buffer 0x7f2674400000 size 6291456 ipcDesc 0x7f25ac00e020
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Channel 10/0 : 1[1] -> 2[2] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64237 [3] NCCL INFO Allocated shareable buffer 0x7f2674a00000 size 6291456 ipcDesc 0x7f25b800fa20
+sg-fuxc2-260708-12652-default0-0:64222:64241 [2] NCCL INFO Allocated shareable buffer 0x7f2675000000 size 6291456 ipcDesc 0x7f25a400fa20
+sg-fuxc2-260708-12652-default0-0:64222:64235 [0] NCCL INFO Allocated shareable buffer 0x7f2675600000 size 6291456 ipcDesc 0x7f26a000fa30
+sg-fuxc2-260708-12652-default0-0:64222:64239 [1] NCCL INFO Allocated shareable buffer 0x7f2675c00000 size 6291456 ipcDesc 0x7f25ac00f8e0
+sg-fuxc2-260708-12652-default0-0:64222:64237 [3] NCCL INFO Allocated shareable buffer 0x7f2676200000 size 6291456 ipcDesc 0x7f25b80112e0
+sg-fuxc2-260708-12652-default0-0:64222:64235 [0] NCCL INFO Allocated shareable buffer 0x7f2676800000 size 6291456 ipcDesc 0x7f26a00112f0
+sg-fuxc2-260708-12652-default0-0:64222:64241 [2] NCCL INFO Allocated shareable buffer 0x7f2676e00000 size 6291456 ipcDesc 0x7f25a40112e0
+sg-fuxc2-260708-12652-default0-0:64222:64239 [1] NCCL INFO Allocated shareable buffer 0x7f2677400000 size 6291456 ipcDesc 0x7f25ac0111a0
+sg-fuxc2-260708-12652-default0-0:64222:64237 [3] NCCL INFO Allocated shareable buffer 0x7f2677a00000 size 6291456 ipcDesc 0x7f25b8012ba0
+sg-fuxc2-260708-12652-default0-0:64222:64235 [0] NCCL INFO Allocated shareable buffer 0x7f2678000000 size 6291456 ipcDesc 0x7f26a0012bb0
+sg-fuxc2-260708-12652-default0-0:64222:64241 [2] NCCL INFO Allocated shareable buffer 0x7f2678600000 size 6291456 ipcDesc 0x7f25a4012ba0
+sg-fuxc2-260708-12652-default0-0:64222:64239 [1] NCCL INFO Allocated shareable buffer 0x7f2678c00000 size 6291456 ipcDesc 0x7f25ac012a60
+sg-fuxc2-260708-12652-default0-0:64222:64237 [3] NCCL INFO Allocated shareable buffer 0x7f2679200000 size 6291456 ipcDesc 0x7f25b8014460
+sg-fuxc2-260708-12652-default0-0:64222:64235 [0] NCCL INFO Allocated shareable buffer 0x7f2679800000 size 6291456 ipcDesc 0x7f26a0014470
+sg-fuxc2-260708-12652-default0-0:64222:64241 [2] NCCL INFO Allocated shareable buffer 0x7f2679e00000 size 6291456 ipcDesc 0x7f25a4014460
+sg-fuxc2-260708-12652-default0-0:64222:64239 [1] NCCL INFO Allocated shareable buffer 0x7f267a400000 size 6291456 ipcDesc 0x7f25ac014320
+sg-fuxc2-260708-12652-default0-0:64222:64237 [3] NCCL INFO Allocated shareable buffer 0x7f267aa00000 size 6291456 ipcDesc 0x7f25b8015d20
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Channel 02/0 : 3[3] -> 1[1] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64235 [0] NCCL INFO Allocated shareable buffer 0x7f267b000000 size 6291456 ipcDesc 0x7f26a0015d30
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Channel 02/0 : 0[0] -> 2[2] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64241 [2] NCCL INFO Allocated shareable buffer 0x7f2687600000 size 6291456 ipcDesc 0x7f25a4015d20
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Channel 01/0 : 2[2] -> 0[0] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64239 [1] NCCL INFO Allocated shareable buffer 0x7f2687c00000 size 6291456 ipcDesc 0x7f25ac015be0
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Channel 01/0 : 1[1] -> 3[3] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64237 [3] NCCL INFO Allocated shareable buffer 0x7f2688200000 size 6291456 ipcDesc 0x7f25b80175e0
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Channel 04/0 : 3[3] -> 1[1] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64235 [0] NCCL INFO Allocated shareable buffer 0x7f2688800000 size 6291456 ipcDesc 0x7f26a00175f0
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Channel 03/0 : 0[0] -> 2[2] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64241 [2] NCCL INFO Allocated shareable buffer 0x7f2688e00000 size 6291456 ipcDesc 0x7f25a4017680
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Channel 04/0 : 2[2] -> 0[0] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64239 [1] NCCL INFO Allocated shareable buffer 0x7f2689400000 size 6291456 ipcDesc 0x7f25ac0174a0
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Channel 03/0 : 1[1] -> 3[3] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64237 [3] NCCL INFO Allocated shareable buffer 0x7f2689a00000 size 6291456 ipcDesc 0x7f25b8018ea0
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Channel 08/0 : 3[3] -> 1[1] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64235 [0] NCCL INFO Allocated shareable buffer 0x7f268a000000 size 6291456 ipcDesc 0x7f26a0018eb0
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Channel 08/0 : 0[0] -> 2[2] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64241 [2] NCCL INFO Allocated shareable buffer 0x7f268a600000 size 6291456 ipcDesc 0x7f25a4018f40
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Channel 07/0 : 2[2] -> 0[0] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64239 [1] NCCL INFO Allocated shareable buffer 0x7f268ac00000 size 6291456 ipcDesc 0x7f25ac018d60
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Channel 07/0 : 1[1] -> 3[3] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64237 [3] NCCL INFO Allocated shareable buffer 0x7f268b200000 size 6291456 ipcDesc 0x7f25b801a760
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Channel 10/0 : 3[3] -> 1[1] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64235 [0] NCCL INFO Allocated shareable buffer 0x7f268b800000 size 6291456 ipcDesc 0x7f26a001a770
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Channel 09/0 : 0[0] -> 2[2] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64241 [2] NCCL INFO Allocated shareable buffer 0x7f268be00000 size 6291456 ipcDesc 0x7f25a401a800
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Channel 10/0 : 2[2] -> 0[0] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64239 [1] NCCL INFO Allocated shareable buffer 0x7f268c400000 size 6291456 ipcDesc 0x7f25ac01a620
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Channel 09/0 : 1[1] -> 3[3] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64237 [3] NCCL INFO Allocated shareable buffer 0x7f268ca00000 size 6291456 ipcDesc 0x7f25b801c020
+sg-fuxc2-260708-12652-default0-0:64222:64235 [0] NCCL INFO Allocated shareable buffer 0x7f268d000000 size 6291456 ipcDesc 0x7f26a001c030
+sg-fuxc2-260708-12652-default0-0:64222:64241 [2] NCCL INFO Allocated shareable buffer 0x7f268d600000 size 6291456 ipcDesc 0x7f25a401c0c0
+sg-fuxc2-260708-12652-default0-0:64222:64239 [1] NCCL INFO Allocated shareable buffer 0x7f268dc00000 size 6291456 ipcDesc 0x7f25ac01bee0
+sg-fuxc2-260708-12652-default0-0:64222:64235 [0] NCCL INFO Allocated shareable buffer 0x7f268e200000 size 6291456 ipcDesc 0x7f26a001d8f0
+sg-fuxc2-260708-12652-default0-0:64222:64241 [2] NCCL INFO Allocated shareable buffer 0x7f268e800000 size 6291456 ipcDesc 0x7f25a401d980
+sg-fuxc2-260708-12652-default0-0:64222:64237 [3] NCCL INFO Allocated shareable buffer 0x7f268ee00000 size 6291456 ipcDesc 0x7f25b801d8e0
+sg-fuxc2-260708-12652-default0-0:64222:64239 [1] NCCL INFO Allocated shareable buffer 0x7f268f400000 size 6291456 ipcDesc 0x7f25ac01d7a0
+sg-fuxc2-260708-12652-default0-0:64222:64235 [0] NCCL INFO Allocated shareable buffer 0x7f268fa00000 size 6291456 ipcDesc 0x7f26a001f1b0
+sg-fuxc2-260708-12652-default0-0:64222:64241 [2] NCCL INFO Allocated shareable buffer 0x7f2690000000 size 6291456 ipcDesc 0x7f25a401f240
+sg-fuxc2-260708-12652-default0-0:64222:64237 [3] NCCL INFO Allocated shareable buffer 0x7f2690600000 size 6291456 ipcDesc 0x7f25b801f1a0
+sg-fuxc2-260708-12652-default0-0:64222:64239 [1] NCCL INFO Allocated shareable buffer 0x7f2690c00000 size 6291456 ipcDesc 0x7f25ac01f060
+sg-fuxc2-260708-12652-default0-0:64222:64235 [0] NCCL INFO Allocated shareable buffer 0x7f2691200000 size 6291456 ipcDesc 0x7f26a0020a70
+sg-fuxc2-260708-12652-default0-0:64222:64241 [2] NCCL INFO Allocated shareable buffer 0x7f2691800000 size 6291456 ipcDesc 0x7f25a4020b00
+sg-fuxc2-260708-12652-default0-0:64222:64237 [3] NCCL INFO Allocated shareable buffer 0x7f2691e00000 size 6291456 ipcDesc 0x7f25b8020a60
+sg-fuxc2-260708-12652-default0-0:64222:64239 [1] NCCL INFO Allocated shareable buffer 0x7f2692400000 size 6291456 ipcDesc 0x7f25ac020920
+sg-fuxc2-260708-12652-default0-0:64222:64235 [0] NCCL INFO Allocated shareable buffer 0x7f2692a00000 size 6291456 ipcDesc 0x7f26a0022330
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Channel 04/0 : 0[0] -> 3[3] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64241 [2] NCCL INFO Allocated shareable buffer 0x7f2693000000 size 6291456 ipcDesc 0x7f25a40223c0
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Channel 03/0 : 2[2] -> 1[1] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64237 [3] NCCL INFO Allocated shareable buffer 0x7f2693600000 size 6291456 ipcDesc 0x7f25b8022320
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Channel 01/0 : 3[3] -> 2[2] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64239 [1] NCCL INFO Allocated shareable buffer 0x7f2693c00000 size 6291456 ipcDesc 0x7f25ac0221e0
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Channel 02/0 : 1[1] -> 0[0] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64235 [0] NCCL INFO Allocated shareable buffer 0x7f2694200000 size 6291456 ipcDesc 0x7f26a0023bf0
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Channel 05/0 : 0[0] -> 3[3] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64241 [2] NCCL INFO Allocated shareable buffer 0x7f2694800000 size 6291456 ipcDesc 0x7f25a4023c80
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Channel 05/0 : 2[2] -> 1[1] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64237 [3] NCCL INFO Allocated shareable buffer 0x7f2694e00000 size 6291456 ipcDesc 0x7f25b8023be0
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Channel 05/0 : 3[3] -> 2[2] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64239 [1] NCCL INFO Allocated shareable buffer 0x7f2695400000 size 6291456 ipcDesc 0x7f25ac023aa0
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Channel 05/0 : 1[1] -> 0[0] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64235 [0] NCCL INFO Allocated shareable buffer 0x602000000 size 6291456 ipcDesc 0x7f26a00254b0
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Channel 10/0 : 0[0] -> 3[3] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64241 [2] NCCL INFO Allocated shareable buffer 0x602600000 size 6291456 ipcDesc 0x7f25a4025540
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Channel 09/0 : 2[2] -> 1[1] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64237 [3] NCCL INFO Allocated shareable buffer 0x602c00000 size 6291456 ipcDesc 0x7f25b80254a0
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Channel 07/0 : 3[3] -> 2[2] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64239 [1] NCCL INFO Allocated shareable buffer 0x603200000 size 6291456 ipcDesc 0x7f25ac025220
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Channel 08/0 : 1[1] -> 0[0] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64235 [0] NCCL INFO Allocated shareable buffer 0x603800000 size 6291456 ipcDesc 0x7f26a0027120
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Channel 11/0 : 0[0] -> 3[3] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64241 [2] NCCL INFO Allocated shareable buffer 0x604000000 size 6291456 ipcDesc 0x7f25a4026e00
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Channel 11/0 : 2[2] -> 1[1] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64237 [3] NCCL INFO Allocated shareable buffer 0x604600000 size 6291456 ipcDesc 0x7f25b8026d60
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Channel 11/0 : 3[3] -> 2[2] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64239 [1] NCCL INFO Allocated shareable buffer 0x604c00000 size 6291456 ipcDesc 0x7f25ac026ae0
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Channel 11/0 : 1[1] -> 0[0] via P2P/direct pointer/read
+sg-fuxc2-260708-12652-default0-0:64222:64235 [0] NCCL INFO Allocated shareable buffer 0x605200000 size 6291456 ipcDesc 0x7f26a00289e0
+sg-fuxc2-260708-12652-default0-0:64222:64241 [2] NCCL INFO Allocated shareable buffer 0x605800000 size 6291456 ipcDesc 0x7f25a40289d0
+sg-fuxc2-260708-12652-default0-0:64222:64237 [3] NCCL INFO Allocated shareable buffer 0x606000000 size 6291456 ipcDesc 0x7f25b8028620
+sg-fuxc2-260708-12652-default0-0:64222:64239 [1] NCCL INFO Allocated shareable buffer 0x606600000 size 6291456 ipcDesc 0x7f25ac0283a0
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Set Access for buffer 0x7f2660a00000 size 6291456 on dev 0
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Set Access for buffer 0x7f265f800000 size 6291456 on dev 3
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Set Access for buffer 0x7f2660400000 size 6291456 on dev 1
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Set Access for buffer 0x7f265fe00000 size 6291456 on dev 2
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Set Access for buffer 0x7f2670e00000 size 6291456 on dev 0
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Set Access for buffer 0x7f2671400000 size 6291456 on dev 1
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Set Access for buffer 0x7f2670800000 size 6291456 on dev 2
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Set Access for buffer 0x7f2670200000 size 6291456 on dev 3
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Set Access for buffer 0x7f266cc00000 size 6291456 on dev 1
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Set Access for buffer 0x7f2672600000 size 6291456 on dev 0
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Set Access for buffer 0x7f2661000000 size 6291456 on dev 3
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Set Access for buffer 0x7f2672000000 size 6291456 on dev 2
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Set Access for buffer 0x7f2671a00000 size 6291456 on dev 3
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Set Access for buffer 0x7f266c000000 size 6291456 on dev 2
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Set Access for buffer 0x7f2672c00000 size 6291456 on dev 1
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Set Access for buffer 0x7f266e400000 size 6291456 on dev 1
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Set Access for buffer 0x7f266c600000 size 6291456 on dev 0
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Set Access for buffer 0x7f266d800000 size 6291456 on dev 2
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Set Access for buffer 0x7f2673200000 size 6291456 on dev 3
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Set Access for buffer 0x7f266de00000 size 6291456 on dev 0
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Set Access for buffer 0x7f266d200000 size 6291456 on dev 3
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Set Access for buffer 0x7f2673e00000 size 6291456 on dev 0
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Set Access for buffer 0x7f266fc00000 size 6291456 on dev 1
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Set Access for buffer 0x7f2673800000 size 6291456 on dev 2
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Set Access for buffer 0x7f2674400000 size 6291456 on dev 1
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Set Access for buffer 0x7f2675600000 size 6291456 on dev 0
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Set Access for buffer 0x7f2674a00000 size 6291456 on dev 3
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Set Access for buffer 0x7f266ea00000 size 6291456 on dev 3
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Set Access for buffer 0x7f266f000000 size 6291456 on dev 2
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Set Access for buffer 0x7f2688e00000 size 6291456 on dev 2
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Set Access for buffer 0x7f2675c00000 size 6291456 on dev 1
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Set Access for buffer 0x7f2675000000 size 6291456 on dev 2
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Set Access for buffer 0x7f2676200000 size 6291456 on dev 3
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Set Access for buffer 0x7f2676e00000 size 6291456 on dev 2
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Set Access for buffer 0x7f2676800000 size 6291456 on dev 0
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Set Access for buffer 0x7f266f600000 size 6291456 on dev 0
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Set Access for buffer 0x7f2688800000 size 6291456 on dev 0
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Set Access for buffer 0x7f2688200000 size 6291456 on dev 3
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Set Access for buffer 0x7f2678600000 size 6291456 on dev 2
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Set Access for buffer 0x7f2689400000 size 6291456 on dev 1
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Set Access for buffer 0x7f268a000000 size 6291456 on dev 0
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Set Access for buffer 0x7f2677a00000 size 6291456 on dev 3
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Set Access for buffer 0x7f268a600000 size 6291456 on dev 2
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Set Access for buffer 0x7f2677400000 size 6291456 on dev 1
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Set Access for buffer 0x7f2678000000 size 6291456 on dev 0
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Set Access for buffer 0x7f268be00000 size 6291456 on dev 2
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Set Access for buffer 0x7f268ac00000 size 6291456 on dev 1
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Set Access for buffer 0x7f2689a00000 size 6291456 on dev 3
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Set Access for buffer 0x7f2679800000 size 6291456 on dev 0
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Set Access for buffer 0x7f2678c00000 size 6291456 on dev 1
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Set Access for buffer 0x7f2679e00000 size 6291456 on dev 2
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Set Access for buffer 0x7f268b800000 size 6291456 on dev 0
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Set Access for buffer 0x7f2679200000 size 6291456 on dev 3
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Set Access for buffer 0x7f268c400000 size 6291456 on dev 1
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Set Access for buffer 0x7f268d000000 size 6291456 on dev 0
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Set Access for buffer 0x7f268b200000 size 6291456 on dev 3
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Set Access for buffer 0x7f2687600000 size 6291456 on dev 2
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Set Access for buffer 0x7f267b000000 size 6291456 on dev 0
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Set Access for buffer 0x7f267a400000 size 6291456 on dev 1
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Set Access for buffer 0x7f267aa00000 size 6291456 on dev 3
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Set Access for buffer 0x7f268d600000 size 6291456 on dev 2
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Set Access for buffer 0x7f2694e00000 size 6291456 on dev 3
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Set Access for buffer 0x7f268dc00000 size 6291456 on dev 1
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Set Access for buffer 0x7f2695400000 size 6291456 on dev 1
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Set Access for buffer 0x7f268f400000 size 6291456 on dev 1
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Set Access for buffer 0x7f2687c00000 size 6291456 on dev 1
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Set Access for buffer 0x7f268ee00000 size 6291456 on dev 3
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Set Access for buffer 0x7f268ca00000 size 6291456 on dev 3
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Set Access for buffer 0x7f2690c00000 size 6291456 on dev 1
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Set Access for buffer 0x7f2690600000 size 6291456 on dev 3
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Set Access for buffer 0x7f268e800000 size 6291456 on dev 2
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Set Access for buffer 0x602c00000 size 6291456 on dev 3
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Set Access for buffer 0x7f268e200000 size 6291456 on dev 0
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Set Access for buffer 0x7f2694200000 size 6291456 on dev 0
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Set Access for buffer 0x604600000 size 6291456 on dev 3
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Set Access for buffer 0x603200000 size 6291456 on dev 1
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Set Access for buffer 0x7f2694800000 size 6291456 on dev 2
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Set Access for buffer 0x7f2692400000 size 6291456 on dev 1
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Set Access for buffer 0x7f2690000000 size 6291456 on dev 2
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Set Access for buffer 0x604c00000 size 6291456 on dev 1
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Set Access for buffer 0x7f268fa00000 size 6291456 on dev 0
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Set Access for buffer 0x7f2693c00000 size 6291456 on dev 1
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Set Access for buffer 0x602000000 size 6291456 on dev 0
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Set Access for buffer 0x602600000 size 6291456 on dev 2
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Set Access for buffer 0x606000000 size 6291456 on dev 3
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Set Access for buffer 0x7f2691800000 size 6291456 on dev 2
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Set Access for buffer 0x7f2691200000 size 6291456 on dev 0
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Set Access for buffer 0x603800000 size 6291456 on dev 0
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Set Access for buffer 0x7f2691e00000 size 6291456 on dev 3
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Set Access for buffer 0x604000000 size 6291456 on dev 2
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Set Access for buffer 0x7f2693600000 size 6291456 on dev 3
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Set Access for buffer 0x7f2693000000 size 6291456 on dev 2
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Set Access for buffer 0x7f2692a00000 size 6291456 on dev 0
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Set Access for buffer 0x606600000 size 6291456 on dev 1
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Set Access for buffer 0x605800000 size 6291456 on dev 2
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Set Access for buffer 0x605200000 size 6291456 on dev 0
+sg-fuxc2-260708-12652-default0-0:64222:64246 [0] NCCL INFO Connected all rings
+sg-fuxc2-260708-12652-default0-0:64222:64244 [2] NCCL INFO Connected all rings
+sg-fuxc2-260708-12652-default0-0:64222:64243 [3] NCCL INFO Connected all rings
+sg-fuxc2-260708-12652-default0-0:64222:64245 [1] NCCL INFO Connected all rings
+        4096          1024     float     sum      -1    38.22    0.11    0.16       0    35.20    0.12    0.17       0
+sg-fuxc2-260708-12652-default0-0:64222:64222 [0] NCCL INFO comm 0x5611733191f0 rank 0 nranks 4 cudaDev 0 busId 1a000 - Destroy COMPLETE
+sg-fuxc2-260708-12652-default0-0:64222:64222 [3] NCCL INFO comm 0x5611733cc4e0 rank 3 nranks 4 cudaDev 3 busId 1e000 - Destroy COMPLETE
+sg-fuxc2-260708-12652-default0-0:64222:64222 [2] NCCL INFO comm 0x5611733909f0 rank 2 nranks 4 cudaDev 2 busId 1d000 - Destroy COMPLETE
+sg-fuxc2-260708-12652-default0-0:64222:64222 [1] NCCL INFO comm 0x561173354dc0 rank 1 nranks 4 cudaDev 1 busId 1c000 - Destroy COMPLETE
+# Out of bounds values : 0 OK
+# Avg bus bandwidth    : 0.16764 
+#
+# Collective test concluded: all_reduce_perf
+#
+

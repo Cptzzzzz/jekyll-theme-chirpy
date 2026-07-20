@@ -1,0 +1,8 @@
+0000:1a:00.0 max_link_speed=8.0 GT/s PCIe
+0000:1a:00.0 max_link_width=16
+0000:1c:00.0 max_link_speed=8.0 GT/s PCIe
+0000:1c:00.0 max_link_width=16
+0000:1d:00.0 max_link_speed=8.0 GT/s PCIe
+0000:1d:00.0 max_link_width=16
+0000:1e:00.0 max_link_speed=8.0 GT/s PCIe
+0000:1e:00.0 max_link_width=16

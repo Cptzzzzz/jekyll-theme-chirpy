@@ -1,0 +1,10 @@
+config,protocol,channels,kernel_instances,median_duration_us,grid_x,block_x,registers_per_thread,static_smem_MB,dynamic_smem_MB,kernel_name_count,profile_private
+LL_c1_default,LL,1,4,23312.746,1,512,96,0.007,0.041,1,1
+LL_c4_default,LL,4,4,5888.8055,4,512,96,0.007,0.041,1,1
+LL_c12_default,LL,12,4,2622.775,12,512,96,0.007,0.041,1,1
+LL128_c1_default,LL128,1,4,9965.5145,1,640,96,0.007,0.041,1,1
+LL128_c4_default,LL128,4,4,2845.079,4,640,96,0.007,0.041,1,1
+LL128_c12_default,LL128,12,4,1183.767,12,640,96,0.007,0.041,1,1
+Simple_c1_default,Simple,1,4,5234.4585,1,544,96,0.007,0.041,1,1
+Simple_c4_default,Simple,4,4,1437.2535,4,544,96,0.007,0.041,1,1
+Simple_c12_default,Simple,12,4,865.93,12,544,96,0.007,0.041,1,1

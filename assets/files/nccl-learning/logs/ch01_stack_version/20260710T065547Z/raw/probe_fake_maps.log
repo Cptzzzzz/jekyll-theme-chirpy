@@ -1,0 +1,5 @@
+7f880b80e000-7f880b80f000 r--p 00000000 00:21e 53506884                  /root/nccl-learning/logs/ch01_stack_version/20260710T065547Z/artifacts/fake/libnccl.so.2
+7f880b80f000-7f880b810000 r-xp 00001000 00:21e 53506884                  /root/nccl-learning/logs/ch01_stack_version/20260710T065547Z/artifacts/fake/libnccl.so.2
+7f880b810000-7f880b811000 r--p 00002000 00:21e 53506884                  /root/nccl-learning/logs/ch01_stack_version/20260710T065547Z/artifacts/fake/libnccl.so.2
+7f880b811000-7f880b812000 r--p 00002000 00:21e 53506884                  /root/nccl-learning/logs/ch01_stack_version/20260710T065547Z/artifacts/fake/libnccl.so.2
+7f880b812000-7f880b813000 rw-p 00003000 00:21e 53506884                  /root/nccl-learning/logs/ch01_stack_version/20260710T065547Z/artifacts/fake/libnccl.so.2

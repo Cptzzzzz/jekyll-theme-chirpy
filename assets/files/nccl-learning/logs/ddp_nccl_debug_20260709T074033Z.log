@@ -1,0 +1,997 @@
+W0709 07:40:34.834000 140419036545472 torch/distributed/run.py:793] 
+W0709 07:40:34.834000 140419036545472 torch/distributed/run.py:793] *****************************************
+W0709 07:40:34.834000 140419036545472 torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0709 07:40:34.834000 140419036545472 torch/distributed/run.py:793] *****************************************
+sg-fuxc2-260708-12652-default0-0:11662:11662 [0] NCCL INFO Bootstrap : Using eth0:10.244.49.68<0>
+sg-fuxc2-260708-12652-default0-0:11662:11662 [0] NCCL INFO cudaDriverVersion 13000
+sg-fuxc2-260708-12652-default0-0:11662:11662 [0] NCCL INFO NCCL version 2.22.3+cuda12.6
+sg-fuxc2-260708-12652-default0-0:11663:11663 [1] NCCL INFO cudaDriverVersion 13000
+sg-fuxc2-260708-12652-default0-0:11665:11665 [3] NCCL INFO cudaDriverVersion 13000
+sg-fuxc2-260708-12652-default0-0:11663:11663 [1] NCCL INFO Bootstrap : Using eth0:10.244.49.68<0>
+sg-fuxc2-260708-12652-default0-0:11663:11663 [1] NCCL INFO NCCL version 2.22.3+cuda12.6
+sg-fuxc2-260708-12652-default0-0:11665:11665 [3] NCCL INFO Bootstrap : Using eth0:10.244.49.68<0>
+sg-fuxc2-260708-12652-default0-0:11665:11665 [3] NCCL INFO NCCL version 2.22.3+cuda12.6
+sg-fuxc2-260708-12652-default0-0:11664:11664 [2] NCCL INFO cudaDriverVersion 13000
+sg-fuxc2-260708-12652-default0-0:11664:11664 [2] NCCL INFO Bootstrap : Using eth0:10.244.49.68<0>
+sg-fuxc2-260708-12652-default0-0:11664:11664 [2] NCCL INFO NCCL version 2.22.3+cuda12.6
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Plugin Path : /opt/hpcx/nccl_rdma_sharp_plugin/lib/libnccl-net.so
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO P2P plugin IBext_v8
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO NET/IB : No device found.
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO Plugin Path : /opt/hpcx/nccl_rdma_sharp_plugin/lib/libnccl-net.so
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO P2P plugin IBext_v8
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO NET/IB : No device found.
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO NET/IB : No device found.
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO NET/Socket : Using [0]eth0:10.244.49.68<0>
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Using network Socket
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO NET/IB : No device found.
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO Plugin Path : /opt/hpcx/nccl_rdma_sharp_plugin/lib/libnccl-net.so
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO P2P plugin IBext_v8
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO NET/Socket : Using [0]eth0:10.244.49.68<0>
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO Using network Socket
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO NET/IB : No device found.
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO NET/IB : No device found.
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO NET/Socket : Using [0]eth0:10.244.49.68<0>
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO Using network Socket
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO Plugin Path : /opt/hpcx/nccl_rdma_sharp_plugin/lib/libnccl-net.so
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO P2P plugin IBext_v8
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO NET/IB : No device found.
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO NET/IB : No device found.
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO NET/Socket : Using [0]eth0:10.244.49.68<0>
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO Using network Socket
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO ncclCommInitRank comm 0x55c02614f810 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 1c000 commId 0xa63a5f9a96a1df1e - Init START
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO ncclCommInitRank comm 0x55e68108a070 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 1a000 commId 0xa63a5f9a96a1df1e - Init START
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO ncclCommInitRank comm 0x55f39199d850 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId 1e000 commId 0xa63a5f9a96a1df1e - Init START
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO ncclCommInitRank comm 0x55fe42176e80 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId 1d000 commId 0xa63a5f9a96a1df1e - Init START
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'eth0'
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'eth0'
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'eth0'
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'eth0'
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO === System : maxBw 40.0 totalBw 120.0 ===
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO CPU/0-0 (1/1/2)
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO + PCI[5000.0] - NIC/0-0
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO + PCI[12.0] - PCI/0-18000 (10b5879610b58796)
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO               + PCI[12.0] - GPU/0-1a000 (0)
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO               + PCI[12.0] - GPU/0-1c000 (1)
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO               + PCI[12.0] - GPU/0-1d000 (2)
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO               + PCI[12.0] - GPU/0-1e000 (3)
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO ==========================================
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO GPU/1A000 :GPU/0-1a000 (0/5000.0/LOC) GPU/0-1c000 (1/40.0/NVL) GPU/0-1d000 (1/40.0/NVL) GPU/0-1e000 (1/40.0/NVL) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO GPU/1C000 :GPU/0-1a000 (1/40.0/NVL) GPU/0-1c000 (0/5000.0/LOC) GPU/0-1d000 (1/40.0/NVL) GPU/0-1e000 (1/40.0/NVL) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO GPU/1D000 :GPU/0-1a000 (1/40.0/NVL) GPU/0-1c000 (1/40.0/NVL) GPU/0-1d000 (0/5000.0/LOC) GPU/0-1e000 (1/40.0/NVL) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO GPU/1E000 :GPU/0-1a000 (1/40.0/NVL) GPU/0-1c000 (1/40.0/NVL) GPU/0-1d000 (1/40.0/NVL) GPU/0-1e000 (0/5000.0/LOC) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO Setting affinity for GPU 1 to 5555,55555555,55555555
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO NVLS multicast support is not available on dev 1
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO === System : maxBw 40.0 totalBw 120.0 ===
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO CPU/0-0 (1/1/2)
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO + PCI[5000.0] - NIC/0-0
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO + PCI[12.0] - PCI/0-18000 (10b5879610b58796)
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO               + PCI[12.0] - GPU/0-1a000 (0)
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO               + PCI[12.0] - GPU/0-1c000 (1)
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO               + PCI[12.0] - GPU/0-1d000 (2)
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO               + PCI[12.0] - GPU/0-1e000 (3)
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO ==========================================
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO GPU/1A000 :GPU/0-1a000 (0/5000.0/LOC) GPU/0-1c000 (1/40.0/NVL) GPU/0-1d000 (1/40.0/NVL) GPU/0-1e000 (1/40.0/NVL) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO GPU/1C000 :GPU/0-1a000 (1/40.0/NVL) GPU/0-1c000 (0/5000.0/LOC) GPU/0-1d000 (1/40.0/NVL) GPU/0-1e000 (1/40.0/NVL) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO GPU/1D000 :GPU/0-1a000 (1/40.0/NVL) GPU/0-1c000 (1/40.0/NVL) GPU/0-1d000 (0/5000.0/LOC) GPU/0-1e000 (1/40.0/NVL) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO GPU/1E000 :GPU/0-1a000 (1/40.0/NVL) GPU/0-1c000 (1/40.0/NVL) GPU/0-1d000 (1/40.0/NVL) GPU/0-1e000 (0/5000.0/LOC) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Setting affinity for GPU 0 to 5555,55555555,55555555
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO NVLS multicast support is not available on dev 0
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO === System : maxBw 40.0 totalBw 120.0 ===
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO CPU/0-0 (1/1/2)
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO + PCI[5000.0] - NIC/0-0
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO + PCI[12.0] - PCI/0-18000 (10b5879610b58796)
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO               + PCI[12.0] - GPU/0-1a000 (0)
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO               + PCI[12.0] - GPU/0-1c000 (1)
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO               + PCI[12.0] - GPU/0-1d000 (2)
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO               + PCI[12.0] - GPU/0-1e000 (3)
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO ==========================================
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO GPU/1A000 :GPU/0-1a000 (0/5000.0/LOC) GPU/0-1c000 (1/40.0/NVL) GPU/0-1d000 (1/40.0/NVL) GPU/0-1e000 (1/40.0/NVL) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO GPU/1C000 :GPU/0-1a000 (1/40.0/NVL) GPU/0-1c000 (0/5000.0/LOC) GPU/0-1d000 (1/40.0/NVL) GPU/0-1e000 (1/40.0/NVL) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO GPU/1D000 :GPU/0-1a000 (1/40.0/NVL) GPU/0-1c000 (1/40.0/NVL) GPU/0-1d000 (0/5000.0/LOC) GPU/0-1e000 (1/40.0/NVL) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO GPU/1E000 :GPU/0-1a000 (1/40.0/NVL) GPU/0-1c000 (1/40.0/NVL) GPU/0-1d000 (1/40.0/NVL) GPU/0-1e000 (0/5000.0/LOC) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO Setting affinity for GPU 2 to 5555,55555555,55555555
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO NVLS multicast support is not available on dev 2
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO === System : maxBw 40.0 totalBw 120.0 ===
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO CPU/0-0 (1/1/2)
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO + PCI[5000.0] - NIC/0-0
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO + PCI[12.0] - PCI/0-18000 (10b5879610b58796)
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO               + PCI[12.0] - GPU/0-1a000 (0)
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO               + PCI[12.0] - GPU/0-1c000 (1)
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO               + PCI[12.0] - GPU/0-1d000 (2)
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO               + PCI[12.0] - GPU/0-1e000 (3)
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO ==========================================
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO GPU/1A000 :GPU/0-1a000 (0/5000.0/LOC) GPU/0-1c000 (1/40.0/NVL) GPU/0-1d000 (1/40.0/NVL) GPU/0-1e000 (1/40.0/NVL) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO GPU/1C000 :GPU/0-1a000 (1/40.0/NVL) GPU/0-1c000 (0/5000.0/LOC) GPU/0-1d000 (1/40.0/NVL) GPU/0-1e000 (1/40.0/NVL) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO GPU/1D000 :GPU/0-1a000 (1/40.0/NVL) GPU/0-1c000 (1/40.0/NVL) GPU/0-1d000 (0/5000.0/LOC) GPU/0-1e000 (1/40.0/NVL) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO GPU/1E000 :GPU/0-1a000 (1/40.0/NVL) GPU/0-1c000 (1/40.0/NVL) GPU/0-1d000 (1/40.0/NVL) GPU/0-1e000 (0/5000.0/LOC) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO Setting affinity for GPU 3 to 5555,55555555,55555555
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO NVLS multicast support is not available on dev 3
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO Pattern 4, crossNic 0, nChannels 6, bw 20.000000/20.000000, type NVL/PIX, sameChannels 0
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO  0 : GPU/0 GPU/1 GPU/2 GPU/3
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO  1 : GPU/0 GPU/1 GPU/3 GPU/2
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO  2 : GPU/0 GPU/2 GPU/3 GPU/1
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO  3 : GPU/0 GPU/2 GPU/1 GPU/3
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO  4 : GPU/0 GPU/3 GPU/1 GPU/2
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO  5 : GPU/0 GPU/3 GPU/2 GPU/1
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO Pattern 1, crossNic 0, nChannels 6, bw 20.000000/20.000000, type NVL/PIX, sameChannels 0
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO  0 : GPU/0 GPU/1 GPU/2 GPU/3
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO  1 : GPU/0 GPU/1 GPU/2 GPU/3
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO  2 : GPU/0 GPU/2 GPU/1 GPU/3
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO  3 : GPU/0 GPU/2 GPU/1 GPU/3
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO  4 : GPU/1 GPU/0 GPU/3 GPU/2
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO  5 : GPU/1 GPU/0 GPU/3 GPU/2
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO Pattern 4, crossNic 0, nChannels 6, bw 20.000000/20.000000, type NVL/PIX, sameChannels 0
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO  0 : GPU/0 GPU/1 GPU/2 GPU/3
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO  1 : GPU/0 GPU/1 GPU/3 GPU/2
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO  2 : GPU/0 GPU/2 GPU/3 GPU/1
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO  3 : GPU/0 GPU/2 GPU/1 GPU/3
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO  4 : GPU/0 GPU/3 GPU/1 GPU/2
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO  5 : GPU/0 GPU/3 GPU/2 GPU/1
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Pattern 4, crossNic 0, nChannels 6, bw 20.000000/20.000000, type NVL/PIX, sameChannels 0
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO  0 : GPU/0 GPU/1 GPU/2 GPU/3
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO  1 : GPU/0 GPU/1 GPU/3 GPU/2
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO  2 : GPU/0 GPU/2 GPU/3 GPU/1
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO  3 : GPU/0 GPU/2 GPU/1 GPU/3
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO  4 : GPU/0 GPU/3 GPU/1 GPU/2
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO  5 : GPU/0 GPU/3 GPU/2 GPU/1
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO Pattern 4, crossNic 0, nChannels 6, bw 20.000000/20.000000, type NVL/PIX, sameChannels 0
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO  0 : GPU/0 GPU/1 GPU/2 GPU/3
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO  1 : GPU/0 GPU/1 GPU/3 GPU/2
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO  2 : GPU/0 GPU/2 GPU/3 GPU/1
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO  3 : GPU/0 GPU/2 GPU/1 GPU/3
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO  4 : GPU/0 GPU/3 GPU/1 GPU/2
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO  5 : GPU/0 GPU/3 GPU/2 GPU/1
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO Pattern 1, crossNic 0, nChannels 6, bw 20.000000/20.000000, type NVL/PIX, sameChannels 0
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO  0 : GPU/0 GPU/1 GPU/2 GPU/3
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO  1 : GPU/0 GPU/1 GPU/2 GPU/3
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO  2 : GPU/0 GPU/2 GPU/1 GPU/3
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO  3 : GPU/0 GPU/2 GPU/1 GPU/3
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO  4 : GPU/1 GPU/0 GPU/3 GPU/2
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO  5 : GPU/1 GPU/0 GPU/3 GPU/2
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Pattern 1, crossNic 0, nChannels 6, bw 20.000000/20.000000, type NVL/PIX, sameChannels 0
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO  0 : GPU/0 GPU/1 GPU/2 GPU/3
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO  1 : GPU/0 GPU/1 GPU/2 GPU/3
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO  2 : GPU/0 GPU/2 GPU/1 GPU/3
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO  3 : GPU/0 GPU/2 GPU/1 GPU/3
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO  4 : GPU/1 GPU/0 GPU/3 GPU/2
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO  5 : GPU/1 GPU/0 GPU/3 GPU/2
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO Pattern 1, crossNic 0, nChannels 6, bw 20.000000/20.000000, type NVL/PIX, sameChannels 0
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO  0 : GPU/0 GPU/1 GPU/2 GPU/3
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO  1 : GPU/0 GPU/1 GPU/2 GPU/3
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO  2 : GPU/0 GPU/2 GPU/1 GPU/3
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO  3 : GPU/0 GPU/2 GPU/1 GPU/3
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO  4 : GPU/1 GPU/0 GPU/3 GPU/2
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO  5 : GPU/1 GPU/0 GPU/3 GPU/2
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO comm 0x55fe42176e80 rank 2 nRanks 4 nNodes 1 localRanks 4 localRank 2 MNNVL 0
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO Tree 2 : 0 -> 2 -> 1/-1/-1
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO Tree 8 : 0 -> 2 -> 1/-1/-1
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO comm 0x55c02614f810 rank 1 nRanks 4 nNodes 1 localRanks 4 localRank 1 MNNVL 0
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO comm 0x55e68108a070 rank 0 nRanks 4 nNodes 1 localRanks 4 localRank 0 MNNVL 0
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO Tree 3 : 0 -> 2 -> 1/-1/-1
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO comm 0x55f39199d850 rank 3 nRanks 4 nNodes 1 localRanks 4 localRank 3 MNNVL 0
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO Tree 9 : 0 -> 2 -> 1/-1/-1
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO Tree 0 : 0 -> 1 -> 2/-1/-1
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Tree 0 : -1 -> 0 -> 1/-1/-1
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO Ring 00 : 1 -> 2 -> 3
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO Tree 6 : 0 -> 1 -> 2/-1/-1
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Tree 6 : -1 -> 0 -> 1/-1/-1
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO Ring 01 : 3 -> 2 -> 0
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO Tree 1 : 0 -> 1 -> 2/-1/-1
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO Ring 00 : 2 -> 3 -> 0
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Tree 1 : -1 -> 0 -> 1/-1/-1
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO Ring 02 : 0 -> 2 -> 3
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO Tree 7 : 0 -> 1 -> 2/-1/-1
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO Ring 01 : 1 -> 3 -> 2
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Tree 7 : -1 -> 0 -> 1/-1/-1
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO Ring 03 : 0 -> 2 -> 1
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO Tree 4 : -1 -> 1 -> 0/-1/-1
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO Ring 02 : 2 -> 3 -> 1
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Tree 2 : -1 -> 0 -> 2/-1/-1
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO Ring 04 : 1 -> 2 -> 0
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO Tree 10 : -1 -> 1 -> 0/-1/-1
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO Ring 03 : 1 -> 3 -> 0
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Tree 8 : -1 -> 0 -> 2/-1/-1
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO Ring 05 : 3 -> 2 -> 1
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO Tree 5 : -1 -> 1 -> 0/-1/-1
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO Ring 04 : 0 -> 3 -> 1
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Tree 3 : -1 -> 0 -> 2/-1/-1
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO Ring 06 : 1 -> 2 -> 3
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO Tree 11 : -1 -> 1 -> 0/-1/-1
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO Ring 05 : 0 -> 3 -> 2
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Tree 9 : -1 -> 0 -> 2/-1/-1
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO Ring 07 : 3 -> 2 -> 0
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO Ring 06 : 2 -> 3 -> 0
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Tree 4 : 1 -> 0 -> 3/-1/-1
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO Ring 08 : 0 -> 2 -> 3
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO Ring 00 : 0 -> 1 -> 2
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO Ring 07 : 1 -> 3 -> 2
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO Ring 01 : 0 -> 1 -> 3
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Tree 10 : 1 -> 0 -> 3/-1/-1
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO Ring 09 : 0 -> 2 -> 1
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO Ring 08 : 2 -> 3 -> 1
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO Ring 02 : 3 -> 1 -> 0
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Tree 5 : 1 -> 0 -> 3/-1/-1
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO Ring 10 : 1 -> 2 -> 0
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO Ring 03 : 2 -> 1 -> 3
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO Ring 09 : 1 -> 3 -> 0
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO Ring 04 : 3 -> 1 -> 2
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Tree 11 : 1 -> 0 -> 3/-1/-1
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO Ring 11 : 3 -> 2 -> 1
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO Ring 10 : 0 -> 3 -> 1
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO Ring 05 : 2 -> 1 -> 0
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 3/-1/-1->2->1 [2] 1/-1/-1->2->0 [3] 1/-1/-1->2->0 [4] -1/-1/-1->2->3 [5] -1/-1/-1->2->3 [6] 3/-1/-1->2->1 [7] 3/-1/-1->2->1 [8] 1/-1/-1->2->0 [9] 1/-1/-1->2->0 [10] -1/-1/-1->2->3 [11] -1/-1/-1->2->3
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Channel 00/12 :    0   1   2   3
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO Ring 11 : 0 -> 3 -> 2
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO P2P Chunksize set to 524288
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO Ring 06 : 0 -> 1 -> 2
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Channel 01/12 :    0   1   3   2
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO Trees [0] -1/-1/-1->3->2 [1] -1/-1/-1->3->2 [2] -1/-1/-1->3->1 [3] -1/-1/-1->3->1 [4] 2/-1/-1->3->0 [5] 2/-1/-1->3->0 [6] -1/-1/-1->3->2 [7] -1/-1/-1->3->2 [8] -1/-1/-1->3->1 [9] -1/-1/-1->3->1 [10] 2/-1/-1->3->0 [11] 2/-1/-1->3->0
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Channel 02/12 :    0   2   3   1
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO Ring 07 : 0 -> 1 -> 3
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO P2P Chunksize set to 524288
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO Ring 08 : 3 -> 1 -> 0
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Channel 03/12 :    0   2   1   3
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO Ring 09 : 2 -> 1 -> 3
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Channel 04/12 :    0   3   1   2
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO Ring 10 : 3 -> 1 -> 2
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Channel 05/12 :    0   3   2   1
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO Ring 11 : 2 -> 1 -> 0
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Channel 06/12 :    0   1   2   3
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO Trees [0] 2/-1/-1->1->0 [1] 2/-1/-1->1->0 [2] 3/-1/-1->1->2 [3] 3/-1/-1->1->2 [4] 0/-1/-1->1->-1 [5] 0/-1/-1->1->-1 [6] 2/-1/-1->1->0 [7] 2/-1/-1->1->0 [8] 3/-1/-1->1->2 [9] 3/-1/-1->1->2 [10] 0/-1/-1->1->-1 [11] 0/-1/-1->1->-1
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Channel 07/12 :    0   1   3   2
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO P2P Chunksize set to 524288
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Channel 08/12 :    0   2   3   1
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Channel 09/12 :    0   2   1   3
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Channel 10/12 :    0   3   1   2
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Channel 11/12 :    0   3   2   1
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Ring 00 : 3 -> 0 -> 1
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Ring 01 : 2 -> 0 -> 1
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Ring 02 : 1 -> 0 -> 2
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Ring 03 : 3 -> 0 -> 2
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Ring 04 : 2 -> 0 -> 3
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Ring 05 : 1 -> 0 -> 3
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Ring 06 : 3 -> 0 -> 1
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Ring 07 : 2 -> 0 -> 1
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Ring 08 : 1 -> 0 -> 2
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Ring 09 : 3 -> 0 -> 2
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Ring 10 : 2 -> 0 -> 3
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Ring 11 : 1 -> 0 -> 3
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1 [2] 2/-1/-1->0->-1 [3] 2/-1/-1->0->-1 [4] 3/-1/-1->0->1 [5] 3/-1/-1->0->1 [6] 1/-1/-1->0->-1 [7] 1/-1/-1->0->-1 [8] 2/-1/-1->0->-1 [9] 2/-1/-1->0->-1 [10] 3/-1/-1->0->1 [11] 3/-1/-1->0->1
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO P2P Chunksize set to 524288
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO 12 coll channels, 12 collnet channels, 0 nvls channels, 16 p2p channels, 4 p2p channels per peer
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO 12 coll channels, 12 collnet channels, 0 nvls channels, 16 p2p channels, 4 p2p channels per peer
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO 12 coll channels, 12 collnet channels, 0 nvls channels, 16 p2p channels, 4 p2p channels per peer
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO 12 coll channels, 12 collnet channels, 0 nvls channels, 16 p2p channels, 4 p2p channels per peer
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO CC Off, Multi-GPU CC Off, workFifoBytes 1048576
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v3 symbol.
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v3 symbol.
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v2 symbol, using internal tuner instead.
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v2 symbol, using internal tuner instead.
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v3 symbol.
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO ncclCommInitRank comm 0x55e68108a070 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 1a000 commId 0xa63a5f9a96a1df1e - Init COMPLETE
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO ncclCommInitRank comm 0x55fe42176e80 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId 1d000 commId 0xa63a5f9a96a1df1e - Init COMPLETE
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v2 symbol, using internal tuner instead.
+sg-fuxc2-260708-12652-default0-0:11662:11687 [0] NCCL INFO Init timings: rank 0 nranks 4 total 0.25 (kernels 0.19, bootstrap 0.01, allgathers 0.00, topo 0.01, graphs 0.01, connections 0.02, rest 0.01)
+sg-fuxc2-260708-12652-default0-0:11664:11690 [2] NCCL INFO Init timings: rank 2 nranks 4 total 0.24 (kernels 0.18, bootstrap 0.01, allgathers 0.01, topo 0.01, graphs 0.00, connections 0.01, rest 0.01)
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO ncclCommInitRank comm 0x55f39199d850 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId 1e000 commId 0xa63a5f9a96a1df1e - Init COMPLETE
+sg-fuxc2-260708-12652-default0-0:11665:11689 [3] NCCL INFO Init timings: rank 3 nranks 4 total 0.25 (kernels 0.19, bootstrap 0.01, allgathers 0.00, topo 0.01, graphs 0.01, connections 0.02, rest 0.01)
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v3 symbol.
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v2 symbol, using internal tuner instead.
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO ncclCommInitRank comm 0x55c02614f810 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 1c000 commId 0xa63a5f9a96a1df1e - Init COMPLETE
+sg-fuxc2-260708-12652-default0-0:11663:11688 [1] NCCL INFO Init timings: rank 1 nranks 4 total 0.25 (kernels 0.18, bootstrap 0.01, allgathers 0.00, topo 0.01, graphs 0.01, connections 0.01, rest 0.01)
+sg-fuxc2-260708-12652-default0-0:11665:11665 [3] NCCL INFO AllReduce: opCount 0 sendbuff 0x7f3027a00000 recvbuff 0x7f3027a00000 count 4 datatype 7 op 0 root 0 comm 0x55f39199d850 [nranks=4] stream 0x55f39199d700
+sg-fuxc2-260708-12652-default0-0:11663:11663 [1] NCCL INFO AllReduce: opCount 0 sendbuff 0x7fafb9a00000 recvbuff 0x7fafb9a00000 count 4 datatype 7 op 0 root 0 comm 0x55c02614f810 [nranks=4] stream 0x55c02614f6c0
+sg-fuxc2-260708-12652-default0-0:11664:11664 [2] NCCL INFO AllReduce: opCount 0 sendbuff 0x7fe80ba00000 recvbuff 0x7fe80ba00000 count 4 datatype 7 op 0 root 0 comm 0x55fe42176e80 [nranks=4] stream 0x55fe42176d30
+sg-fuxc2-260708-12652-default0-0:11662:11662 [0] NCCL INFO AllReduce: opCount 0 sendbuff 0x7f9901a00000 recvbuff 0x7f9901a00000 count 4 datatype 7 op 0 root 0 comm 0x55e68108a070 [nranks=4] stream 0x55e67a4c7010
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO New proxy recv connection 0 from local rank 2, transport 0
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7fe7d0004f40
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO New proxy recv connection 0 from local rank 1, transport 0
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO New proxy recv connection 0 from local rank 3, transport 0
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Connected to proxy localRank 1 -> connection 0x7faf7c004f40
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Connected to proxy localRank 3 -> connection 0x7f2fe4004f40
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO New proxy recv connection 0 from local rank 0, transport 0
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO Allocated shareable buffer 0x7fe805800000 size 10485760 ipcDesc 0x7fe7d0008bc0
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO Allocated shareable buffer 0x7fafb3800000 size 10485760 ipcDesc 0x7faf7c008bc0
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f98d8004fd0
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO New proxy recv connection 1 from local rank 2, transport 0
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7fe7d0004fb8
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO New proxy recv connection 1 from local rank 1, transport 0
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Connected to proxy localRank 1 -> connection 0x7faf7c004fb8
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO Allocated shareable buffer 0x7fe806200000 size 10485760 ipcDesc 0x7fe7d000a620
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO Allocated shareable buffer 0x7f3021800000 size 10485760 ipcDesc 0x7f2fe4008bc0
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO New proxy recv connection 2 from local rank 2, transport 0
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7fe7d0005030
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO Allocated shareable buffer 0x7f98fb800000 size 10485760 ipcDesc 0x7f98d8008bf0
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO New proxy recv connection 1 from local rank 0, transport 0
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO Allocated shareable buffer 0x7fafb4200000 size 10485760 ipcDesc 0x7faf7c00a620
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO New proxy recv connection 1 from local rank 3, transport 0
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f98d8005048
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Connected to proxy localRank 3 -> connection 0x7f2fe4004fb8
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO New proxy recv connection 2 from local rank 1, transport 0
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Connected to proxy localRank 1 -> connection 0x7faf7c005030
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO Allocated shareable buffer 0x7fe806c00000 size 10485760 ipcDesc 0x7fe7d000be20
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO New proxy recv connection 3 from local rank 2, transport 0
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7fe7d00050a8
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO Allocated shareable buffer 0x7fe807600000 size 10485760 ipcDesc 0x7fe7d000d600
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Channel 00/0 : 2[2] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO Allocated shareable buffer 0x7f98fc200000 size 10485760 ipcDesc 0x7f98d800a630
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO New proxy send connection 4 from local rank 2, transport 0
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO Allocated shareable buffer 0x7fafb4c00000 size 10485760 ipcDesc 0x7faf7c00be20
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7fe7d0005120
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO New proxy recv connection 2 from local rank 0, transport 0
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO Allocated shareable buffer 0x7f3022200000 size 10485760 ipcDesc 0x7f2fe400a620
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f98d80050c0
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO New proxy recv connection 3 from local rank 1, transport 0
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Connected to proxy localRank 1 -> connection 0x7faf7c0050a8
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO New proxy recv connection 2 from local rank 3, transport 0
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Connected to proxy localRank 3 -> connection 0x7f2fe4005030
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO Allocated shareable buffer 0x7fe808000000 size 2097152 ipcDesc 0x7fe7d000edc0
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Channel 02/0 : 2[2] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO New proxy send connection 5 from local rank 2, transport 0
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7fe7d0005198
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO Allocated shareable buffer 0x7f98fcc00000 size 10485760 ipcDesc 0x7f98d800be30
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO Allocated shareable buffer 0x7fafb5600000 size 10485760 ipcDesc 0x7faf7c00d600
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO New proxy recv connection 3 from local rank 0, transport 0
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO Allocated shareable buffer 0x7f3022c00000 size 10485760 ipcDesc 0x7f2fe400be20
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f98d8005138
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Channel 00/0 : 1[1] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO Allocated shareable buffer 0x7fe808200000 size 2097152 ipcDesc 0x7fe7d0010580
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO New proxy send connection 4 from local rank 1, transport 0
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Channel 06/0 : 2[2] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO New proxy recv connection 3 from local rank 3, transport 0
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Connected to proxy localRank 1 -> connection 0x7faf7c005120
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO New proxy send connection 6 from local rank 2, transport 0
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Connected to proxy localRank 3 -> connection 0x7f2fe40050a8
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7fe7d0005210
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO Allocated shareable buffer 0x7f98fd600000 size 10485760 ipcDesc 0x7f98d800d610
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO New proxy send connection 4 from local rank 0, transport 0
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f98d80051b0
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO Allocated shareable buffer 0x7f3023600000 size 10485760 ipcDesc 0x7f2fe400d600
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO Allocated shareable buffer 0x7fe808400000 size 2097152 ipcDesc 0x7fe7d0011d40
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Channel 00/0 : 3[3] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Channel 08/0 : 2[2] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO New proxy send connection 7 from local rank 2, transport 0
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7fe7d0005288
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO New proxy send connection 4 from local rank 3, transport 0
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Connected to proxy localRank 3 -> connection 0x7f2fe4005120
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO Allocated shareable buffer 0x7fafb6000000 size 2097152 ipcDesc 0x7faf7c00edc0
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO Allocated shareable buffer 0x7f98fe000000 size 2097152 ipcDesc 0x7f98d800edd0
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Channel 04/0 : 1[1] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO New proxy send connection 5 from local rank 0, transport 0
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO New proxy send connection 5 from local rank 1, transport 0
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f98d8005228
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Connected to proxy localRank 1 -> connection 0x7faf7c005198
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO Allocated shareable buffer 0x7f3024000000 size 2097152 ipcDesc 0x7f2fe400edc0
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO Allocated shareable buffer 0x7fe808600000 size 2097152 ipcDesc 0x7fe7d00134c0
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Channel 03/0 : 3[3] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO New proxy send connection 5 from local rank 3, transport 0
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Connected to proxy localRank 3 -> connection 0x7f2fe4005198
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO Allocated shareable buffer 0x7fafb6200000 size 2097152 ipcDesc 0x7faf7c010580
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO Allocated shareable buffer 0x7f98fe200000 size 2097152 ipcDesc 0x7f98d8010590
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Channel 06/0 : 1[1] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Channel 06/0 : 0[0] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO New proxy send connection 6 from local rank 0, transport 0
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f98d80052a0
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO New proxy send connection 6 from local rank 1, transport 0
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Connected to proxy localRank 1 -> connection 0x7faf7c005210
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO Allocated shareable buffer 0x7f3024200000 size 2097152 ipcDesc 0x7f2fe4010580
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Channel 06/0 : 3[3] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO New proxy send connection 6 from local rank 3, transport 0
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Connected to proxy localRank 3 -> connection 0x7f2fe4005210
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO Allocated shareable buffer 0x7f98fe400000 size 2097152 ipcDesc 0x7f98d8011d50
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Channel 07/0 : 0[0] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO New proxy send connection 7 from local rank 0, transport 0
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f98d8005318
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO Allocated shareable buffer 0x7fafb6400000 size 2097152 ipcDesc 0x7faf7c011d40
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Channel 10/0 : 1[1] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO New proxy send connection 7 from local rank 1, transport 0
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Connected to proxy localRank 1 -> connection 0x7faf7c005288
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO Allocated shareable buffer 0x7f3024400000 size 2097152 ipcDesc 0x7f2fe4011d40
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Channel 09/0 : 3[3] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO Allocated shareable buffer 0x7f98fe600000 size 2097152 ipcDesc 0x7f98d80134d0
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO New proxy send connection 7 from local rank 3, transport 0
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Connected to proxy localRank 3 -> connection 0x7f2fe4005288
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO Allocated shareable buffer 0x7fafb6600000 size 2097152 ipcDesc 0x7faf7c0134c0
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO Allocated shareable buffer 0x7f3024600000 size 2097152 ipcDesc 0x7f2fe40134c0
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO New proxy recv connection 8 from local rank 2, transport 0
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7fe7d0005300
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO New proxy recv connection 8 from local rank 1, transport 0
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Connected to proxy localRank 1 -> connection 0x7faf7c005300
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO New proxy recv connection 8 from local rank 0, transport 0
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f98d8005390
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO New proxy recv connection 8 from local rank 3, transport 0
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Connected to proxy localRank 3 -> connection 0x7f2fe4005300
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO Allocated shareable buffer 0x7fe808800000 size 10485760 ipcDesc 0x7fe7d0014c40
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO New proxy recv connection 9 from local rank 2, transport 0
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7fe7d0005378
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO Allocated shareable buffer 0x7fafb6800000 size 10485760 ipcDesc 0x7faf7c014c40
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO Allocated shareable buffer 0x7f98fe800000 size 10485760 ipcDesc 0x7f98d8014c50
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO New proxy recv connection 9 from local rank 0, transport 0
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO New proxy recv connection 9 from local rank 1, transport 0
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f98d8005408
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO Allocated shareable buffer 0x7f3024800000 size 10485760 ipcDesc 0x7f2fe4014c40
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Connected to proxy localRank 1 -> connection 0x7faf7c005378
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO New proxy recv connection 9 from local rank 3, transport 0
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Connected to proxy localRank 3 -> connection 0x7f2fe4005378
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO Allocated shareable buffer 0x7fe809200000 size 10485760 ipcDesc 0x7fe7d00163c0
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO New proxy recv connection 10 from local rank 2, transport 0
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7fe7d00053f0
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO Allocated shareable buffer 0x7f98ff200000 size 10485760 ipcDesc 0x7f98d80163d0
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO New proxy recv connection 10 from local rank 0, transport 0
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f98d8005480
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO Allocated shareable buffer 0x7fe809c00000 size 10485760 ipcDesc 0x7fe7d0017b40
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO Allocated shareable buffer 0x7fafb7200000 size 10485760 ipcDesc 0x7faf7c0163c0
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO New proxy recv connection 11 from local rank 2, transport 0
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7fe7d0005468
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO Allocated shareable buffer 0x7f3025200000 size 10485760 ipcDesc 0x7f2fe40163c0
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO New proxy recv connection 10 from local rank 1, transport 0
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Connected to proxy localRank 1 -> connection 0x7faf7c0053f0
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO New proxy recv connection 10 from local rank 3, transport 0
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Connected to proxy localRank 3 -> connection 0x7f2fe40053f0
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO Allocated shareable buffer 0x7f98ffc00000 size 10485760 ipcDesc 0x7f98d8017b50
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO New proxy recv connection 11 from local rank 0, transport 0
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f98d80054f8
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO Allocated shareable buffer 0x7fe80a600000 size 10485760 ipcDesc 0x7fe7d00192c0
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Channel 01/0 : 2[2] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO Allocated shareable buffer 0x7fafb7c00000 size 10485760 ipcDesc 0x7faf7c017b40
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO New proxy send connection 12 from local rank 2, transport 0
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO Allocated shareable buffer 0x7f3025c00000 size 10485760 ipcDesc 0x7f2fe4017b40
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7fe7d00054e0
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO New proxy recv connection 11 from local rank 1, transport 0
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Connected to proxy localRank 1 -> connection 0x7faf7c005468
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO Allocated shareable buffer 0x7f9900600000 size 10485760 ipcDesc 0x7f98d80192d0
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO New proxy recv connection 11 from local rank 3, transport 0
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Channel 02/0 : 0[0] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Connected to proxy localRank 3 -> connection 0x7f2fe4005468
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO New proxy send connection 12 from local rank 0, transport 0
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f98d8005570
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO Allocated shareable buffer 0x7fe80b000000 size 2097152 ipcDesc 0x7fe7d001aa40
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Channel 04/0 : 2[2] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO New proxy send connection 13 from local rank 2, transport 0
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7fe7d0005558
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO Allocated shareable buffer 0x7fe80b200000 size 2097152 ipcDesc 0x7fe7d001c1c0
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Channel 07/0 : 2[2] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO Allocated shareable buffer 0x7fafb8600000 size 10485760 ipcDesc 0x7faf7c0192c0
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO New proxy send connection 14 from local rank 2, transport 0
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO Allocated shareable buffer 0x7f9901000000 size 2097152 ipcDesc 0x7f98d801aa50
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7fe7d00055d0
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Channel 01/0 : 1[1] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Channel 03/0 : 0[0] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO Allocated shareable buffer 0x7f3026600000 size 10485760 ipcDesc 0x7f2fe40192c0
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO New proxy send connection 13 from local rank 0, transport 0
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO New proxy send connection 12 from local rank 1, transport 0
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f98d80055e8
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Channel 02/0 : 3[3] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Connected to proxy localRank 1 -> connection 0x7faf7c0054e0
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO New proxy send connection 12 from local rank 3, transport 0
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Connected to proxy localRank 3 -> connection 0x7f2fe40054e0
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO Allocated shareable buffer 0x7fe80b400000 size 2097152 ipcDesc 0x7fe7d001d940
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Channel 10/0 : 2[2] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO New proxy send connection 15 from local rank 2, transport 0
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7fe7d0005648
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO Allocated shareable buffer 0x7f9901200000 size 2097152 ipcDesc 0x7f98d801c1d0
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Channel 08/0 : 0[0] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO Allocated shareable buffer 0x7f3027000000 size 2097152 ipcDesc 0x7f2fe401aa40
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO New proxy send connection 14 from local rank 0, transport 0
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f98d8005660
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Channel 04/0 : 3[3] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO New proxy send connection 13 from local rank 3, transport 0
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Connected to proxy localRank 3 -> connection 0x7f2fe4005558
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO Allocated shareable buffer 0x7fafb9000000 size 2097152 ipcDesc 0x7faf7c01aa40
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO Allocated shareable buffer 0x7fe80b600000 size 2097152 ipcDesc 0x7fe7d001f0c0
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Channel 03/0 : 1[1] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO New proxy send connection 13 from local rank 1, transport 0
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Connected to proxy localRank 1 -> connection 0x7faf7c005558
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO Allocated shareable buffer 0x7f9901400000 size 2097152 ipcDesc 0x7f98d801d950
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Channel 09/0 : 0[0] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO New proxy send connection 15 from local rank 0, transport 0
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f98d80056d8
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO Allocated shareable buffer 0x7f3027200000 size 2097152 ipcDesc 0x7f2fe401c1c0
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Channel 08/0 : 3[3] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO New proxy send connection 14 from local rank 3, transport 0
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Connected to proxy localRank 3 -> connection 0x7f2fe40055d0
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO Allocated shareable buffer 0x7fafb9200000 size 2097152 ipcDesc 0x7faf7c01c1c0
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Channel 07/0 : 1[1] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO Allocated shareable buffer 0x7f9901600000 size 2097152 ipcDesc 0x7f98d801f0d0
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO New proxy send connection 14 from local rank 1, transport 0
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Connected to proxy localRank 1 -> connection 0x7faf7c0055d0
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO New proxy recv connection 16 from local rank 2, transport 0
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7fe7d00056c0
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO New proxy recv connection 16 from local rank 0, transport 0
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f98d8005750
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO Allocated shareable buffer 0x7f3027400000 size 2097152 ipcDesc 0x7f2fe401d940
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Channel 10/0 : 3[3] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO New proxy send connection 15 from local rank 3, transport 0
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Connected to proxy localRank 3 -> connection 0x7f2fe4005648
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO Allocated shareable buffer 0x7fafb9400000 size 2097152 ipcDesc 0x7faf7c01d940
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Channel 09/0 : 1[1] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO New proxy send connection 15 from local rank 1, transport 0
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Connected to proxy localRank 1 -> connection 0x7faf7c005648
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO Allocated shareable buffer 0x602000000 size 10485760 ipcDesc 0x7f98d8020850
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO New proxy recv connection 17 from local rank 0, transport 0
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f98d80057c8
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO Allocated shareable buffer 0x602000000 size 10485760 ipcDesc 0x7fe7d0020840
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO New proxy recv connection 17 from local rank 2, transport 0
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7fe7d0005738
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO Allocated shareable buffer 0x7fafb9600000 size 2097152 ipcDesc 0x7faf7c01f0c0
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO Allocated shareable buffer 0x7f3027600000 size 2097152 ipcDesc 0x7f2fe401f0c0
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO Allocated shareable buffer 0x602a00000 size 10485760 ipcDesc 0x7f98d80224c0
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO New proxy recv connection 18 from local rank 0, transport 0
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO Allocated shareable buffer 0x602a00000 size 10485760 ipcDesc 0x7fe7d00224b0
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f98d8005840
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO New proxy recv connection 18 from local rank 2, transport 0
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7fe7d00057b0
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO New proxy recv connection 16 from local rank 1, transport 0
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Connected to proxy localRank 1 -> connection 0x7faf7c0056c0
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO New proxy recv connection 16 from local rank 3, transport 0
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Connected to proxy localRank 3 -> connection 0x7f2fe40056c0
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO Allocated shareable buffer 0x603400000 size 10485760 ipcDesc 0x7f98d8023c40
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO New proxy recv connection 19 from local rank 0, transport 0
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f98d80058b8
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO Allocated shareable buffer 0x603400000 size 10485760 ipcDesc 0x7fe7d0023c30
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO New proxy recv connection 19 from local rank 2, transport 0
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7fe7d0005828
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO Allocated shareable buffer 0x602000000 size 10485760 ipcDesc 0x7faf7c020840
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO Allocated shareable buffer 0x602000000 size 10485760 ipcDesc 0x7f2fe4020840
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO New proxy recv connection 17 from local rank 1, transport 0
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Connected to proxy localRank 1 -> connection 0x7faf7c005738
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO New proxy recv connection 17 from local rank 3, transport 0
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Connected to proxy localRank 3 -> connection 0x7f2fe4005738
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO Allocated shareable buffer 0x604000000 size 10485760 ipcDesc 0x7f98d80253c0
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Channel 04/0 : 0[0] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO Allocated shareable buffer 0x604000000 size 10485760 ipcDesc 0x7fe7d00253b0
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Channel 03/0 : 2[2] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO New proxy send connection 20 from local rank 0, transport 0
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f98d8005930
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO New proxy send connection 20 from local rank 2, transport 0
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7fe7d00058a0
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO Allocated shareable buffer 0x602a00000 size 10485760 ipcDesc 0x7faf7c0224b0
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO New proxy recv connection 18 from local rank 1, transport 0
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Connected to proxy localRank 1 -> connection 0x7faf7c0057b0
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO Allocated shareable buffer 0x604a00000 size 2097152 ipcDesc 0x7fe7d0026f80
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Channel 05/0 : 2[2] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO New proxy send connection 21 from local rank 2, transport 0
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7fe7d0005918
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO Allocated shareable buffer 0x604a00000 size 2097152 ipcDesc 0x7f98d8026f90
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Channel 05/0 : 0[0] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO Allocated shareable buffer 0x602a00000 size 10485760 ipcDesc 0x7f2fe40224b0
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO New proxy send connection 21 from local rank 0, transport 0
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f98d80059a8
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO New proxy recv connection 18 from local rank 3, transport 0
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Connected to proxy localRank 3 -> connection 0x7f2fe40057b0
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO Allocated shareable buffer 0x603400000 size 10485760 ipcDesc 0x7faf7c023c30
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO New proxy recv connection 19 from local rank 1, transport 0
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Connected to proxy localRank 1 -> connection 0x7faf7c005828
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO Allocated shareable buffer 0x604c00000 size 2097152 ipcDesc 0x7fe7d0028700
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Channel 09/0 : 2[2] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO New proxy send connection 22 from local rank 2, transport 0
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7fe7d0005990
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO Allocated shareable buffer 0x604c00000 size 2097152 ipcDesc 0x7f98d8028710
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Channel 10/0 : 0[0] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO New proxy send connection 22 from local rank 0, transport 0
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f98d8005a20
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO Allocated shareable buffer 0x603400000 size 10485760 ipcDesc 0x7f2fe4023c30
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO New proxy recv connection 19 from local rank 3, transport 0
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Connected to proxy localRank 3 -> connection 0x7f2fe4005828
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO Allocated shareable buffer 0x604000000 size 10485760 ipcDesc 0x7faf7c0253b0
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Channel 02/0 : 1[1] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO New proxy send connection 20 from local rank 1, transport 0
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Connected to proxy localRank 1 -> connection 0x7faf7c0058a0
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO Allocated shareable buffer 0x604e00000 size 2097152 ipcDesc 0x7fe7d0029e80
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Channel 11/0 : 2[2] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO New proxy send connection 23 from local rank 2, transport 0
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Connected to proxy localRank 2 -> connection 0x7fe7d0005a08
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO Allocated shareable buffer 0x604e00000 size 2097152 ipcDesc 0x7f98d8029e90
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Channel 11/0 : 0[0] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO Allocated shareable buffer 0x604000000 size 10485760 ipcDesc 0x7f2fe40253b0
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO New proxy send connection 23 from local rank 0, transport 0
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f98d8005a98
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Channel 01/0 : 3[3] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO New proxy send connection 20 from local rank 3, transport 0
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Connected to proxy localRank 3 -> connection 0x7f2fe40058a0
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO Allocated shareable buffer 0x604a00000 size 2097152 ipcDesc 0x7faf7c026f80
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO Allocated shareable buffer 0x605000000 size 2097152 ipcDesc 0x7fe7d002b600
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Channel 05/0 : 1[1] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO Allocated shareable buffer 0x605000000 size 2097152 ipcDesc 0x7f98d802b610
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO New proxy send connection 21 from local rank 1, transport 0
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Connected to proxy localRank 1 -> connection 0x7faf7c005918
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO Allocated shareable buffer 0x604a00000 size 2097152 ipcDesc 0x7f2fe4026f80
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Channel 05/0 : 3[3] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO New proxy send connection 21 from local rank 3, transport 0
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO Allocated shareable buffer 0x604c00000 size 2097152 ipcDesc 0x7faf7c028700
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Connected to proxy localRank 3 -> connection 0x7f2fe4005918
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Channel 08/0 : 1[1] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO New proxy send connection 22 from local rank 1, transport 0
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Connected to proxy localRank 1 -> connection 0x7faf7c005990
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO Allocated shareable buffer 0x604c00000 size 2097152 ipcDesc 0x7f2fe4028700
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Channel 07/0 : 3[3] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO New proxy send connection 22 from local rank 3, transport 0
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO Allocated shareable buffer 0x604e00000 size 2097152 ipcDesc 0x7faf7c029e80
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Connected to proxy localRank 3 -> connection 0x7f2fe4005990
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Channel 11/0 : 1[1] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO New proxy send connection 23 from local rank 1, transport 0
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Connected to proxy localRank 1 -> connection 0x7faf7c005a08
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO Allocated shareable buffer 0x604e00000 size 2097152 ipcDesc 0x7f2fe4029e80
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Channel 11/0 : 3[3] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO New proxy send connection 23 from local rank 3, transport 0
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO Allocated shareable buffer 0x605000000 size 2097152 ipcDesc 0x7faf7c02b600
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Connected to proxy localRank 3 -> connection 0x7f2fe4005a08
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO Allocated shareable buffer 0x605000000 size 2097152 ipcDesc 0x7f2fe402b600
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO UDS converted handle 0x7fe7d0008c10 to fd 74 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO UDS converted handle 0x7faf7c008c10 to fd 73 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO UDS converted handle 0x7f2fe4008c10 to fd 73 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO UDS converted handle 0x7f98d8008c40 to fd 73 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x605200000
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x605200000
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x605200000
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x605200000
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO UDS converted handle 0x7f2fe400ee10 to fd 74 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO UDS converted handle 0x7faf7c00ee10 to fd 73 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO UDS converted handle 0x7f98d800ee20 to fd 73 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x605c00000
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x605c00000
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x605c00000
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO UDS converted handle 0x7fe7d000ee10 to fd 72 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO UDS converted handle 0x7faf7c00a670 to fd 73 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x606000000
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x605c00000
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO UDS converted handle 0x7f2fe400a670 to fd 72 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO UDS converted handle 0x7f98d80105e0 to fd 73 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x606000000
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO UDS converted handle 0x7f2fe40105d0 to fd 72 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO UDS converted handle 0x7fe7d00105d0 to fd 72 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x605e00000
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x606a00000
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO UDS converted handle 0x7faf7c0105d0 to fd 73 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x605e00000
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x606a00000
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO UDS converted handle 0x7fe7d000a670 to fd 73 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO UDS converted handle 0x7faf7c00be70 to fd 73 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO UDS converted handle 0x7f98d800a680 to fd 74 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO UDS converted handle 0x7f2fe400be70 to fd 72 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x606000000
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x606c00000
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x606c00000
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO UDS converted handle 0x7fe7d000be70 to fd 73 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x606000000
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO UDS converted handle 0x7f2fe4011d90 to fd 73 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO UDS converted handle 0x7faf7c011d90 to fd 73 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x607600000
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x606a00000
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x607600000
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO UDS converted handle 0x7f98d800be80 to fd 74 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO UDS converted handle 0x7f2fe400d650 to fd 73 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x608000000
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x606a00000
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO UDS converted handle 0x7faf7c00d650 to fd 74 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO UDS converted handle 0x7f98d8011da0 to fd 73 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x608000000
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO UDS converted handle 0x7faf7c013510 to fd 74 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x607400000
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO UDS converted handle 0x7fe7d0011d90 to fd 73 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO UDS converted handle 0x7f2fe4013510 to fd 73 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x608a00000
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x607400000
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO UDS converted handle 0x7f98d8013520 to fd 73 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x608a00000
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO UDS converted handle 0x7fe7d0013510 to fd 73 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x607600000
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO UDS converted handle 0x7f98d8014ca0 to fd 73 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x607600000
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO UDS converted handle 0x7fe7d001aa90 to fd 73 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x608c00000
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x608c00000
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO UDS converted handle 0x7fe7d000d650 to fd 73 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO UDS converted handle 0x7f98d800d660 to fd 73 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x608000000
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x608000000
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO UDS converted handle 0x7fe7d0014c90 to fd 74 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO UDS converted handle 0x7f98d801aaa0 to fd 73 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x608e00000
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x609600000
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO UDS converted handle 0x7f2fe4014c90 to fd 74 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO UDS converted handle 0x7faf7c01aa90 to fd 73 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO UDS converted handle 0x7fe7d0016410 to fd 73 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x608a00000
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO UDS converted handle 0x7f98d801c220 to fd 73 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x60a000000
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x608a00000
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x609800000
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO UDS converted handle 0x7f2fe401aa90 to fd 73 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO UDS converted handle 0x7fe7d001c210 to fd 73 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO UDS converted handle 0x7faf7c014c90 to fd 73 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x609400000
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x60aa00000
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO UDS converted handle 0x7f98d8016420 to fd 72 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x608c00000
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x60a000000
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO UDS converted handle 0x7fe7d001d990 to fd 72 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO UDS converted handle 0x7f2fe4016410 to fd 73 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x60ac00000
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO UDS converted handle 0x7faf7c01c210 to fd 73 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO UDS converted handle 0x7f98d8017ba0 to fd 72 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x609600000
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x609600000
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x60aa00000
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO UDS converted handle 0x7fe7d0017b90 to fd 73 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO UDS converted handle 0x7f2fe401c210 to fd 73 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x60ae00000
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO UDS converted handle 0x7faf7c016410 to fd 73 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO UDS converted handle 0x7f98d801d9a0 to fd 72 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x607800000
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x60b400000
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO UDS converted handle 0x7fe7d0019310 to fd 72 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x60a000000
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO UDS converted handle 0x7f2fe4017b90 to fd 73 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x60c000000
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO UDS converted handle 0x7f98d801f120 to fd 72 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x60b600000
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO UDS converted handle 0x7faf7c01d990 to fd 72 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x60a000000
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO UDS converted handle 0x7fe7d001f110 to fd 72 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x60aa00000
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO UDS converted handle 0x7f98d8019320 to fd 73 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x60ca00000
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x60c000000
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO UDS converted handle 0x7f2fe401d990 to fd 74 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO UDS converted handle 0x7faf7c017b90 to fd 73 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x60aa00000
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x60ac00000
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO UDS converted handle 0x7f2fe4026fd0 to fd 73 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO UDS converted handle 0x7faf7c026fd0 to fd 73 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x60ca00000
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x60cc00000
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO UDS converted handle 0x7f2fe4019310 to fd 74 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO UDS converted handle 0x7faf7c01f110 to fd 72 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x60ac00000
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x60b600000
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO UDS converted handle 0x7f2fe4020890 to fd 73 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO UDS converted handle 0x7faf7c020890 to fd 73 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x60ce00000
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x60cc00000
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO UDS converted handle 0x7f2fe401f110 to fd 74 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO UDS converted handle 0x7faf7c019310 to fd 72 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x60b600000
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x60c000000
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO UDS converted handle 0x7f2fe4022500 to fd 73 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO UDS converted handle 0x7faf7c022500 to fd 73 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x60e000000
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x60d600000
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO UDS converted handle 0x7fe7d0020890 to fd 72 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO UDS converted handle 0x7f98d80208a0 to fd 73 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO UDS converted handle 0x7faf7c028750 to fd 72 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x60ca00000
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x60c000000
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO UDS converted handle 0x7f2fe4028750 to fd 72 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x60ea00000
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x60b800000
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO UDS converted handle 0x7fe7d0026fd0 to fd 74 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO UDS converted handle 0x7faf7c029ed0 to fd 74 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO UDS converted handle 0x7f98d8026fe0 to fd 72 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x60ec00000
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x60ca00000
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO UDS converted handle 0x7f2fe4029ed0 to fd 73 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x60d400000
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x60ba00000
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO UDS converted handle 0x7f2fe4023c80 to fd 74 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO UDS converted handle 0x7f98d8022510 to fd 73 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO UDS converted handle 0x7faf7c023c80 to fd 74 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x60ee00000
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO UDS converted handle 0x7fe7d0022500 to fd 73 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x60e000000
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x60cc00000
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO UDS converted handle 0x7f2fe4025400 to fd 73 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x60d600000
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO UDS converted handle 0x7faf7c025400 to fd 73 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x610000000
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO UDS converted handle 0x7fe7d0028750 to fd 73 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x60ea00000
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO UDS converted handle 0x7faf7c02b650 to fd 74 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO UDS converted handle 0x7f98d8028760 to fd 73 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x60d600000
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x610a00000
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO UDS converted handle 0x7f2fe402b650 to fd 73 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x60b800000
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x60f400000
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO UDS converted handle 0x7f98d8023c90 to fd 73 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO UDS converted handle 0x7fe7d0023c80 to fd 73 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x60e000000
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x60e000000
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO UDS converted handle 0x7fe7d0029ed0 to fd 73 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO UDS converted handle 0x7f98d8029ee0 to fd 73 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x60ea00000
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x60ea00000
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO UDS converted handle 0x7f98d8025410 to fd 73 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO UDS converted handle 0x7fe7d0025400 to fd 73 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x60ec00000
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x60ec00000
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO UDS converted handle 0x7fe7d002b650 to fd 73 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO UDS converted handle 0x7f98d802b660 to fd 73 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x60f600000
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x60f600000
+sg-fuxc2-260708-12652-default0-0:11664:11701 [2] NCCL INFO Connected all rings
+sg-fuxc2-260708-12652-default0-0:11662:11702 [0] NCCL INFO Connected all rings
+sg-fuxc2-260708-12652-default0-0:11663:11700 [1] NCCL INFO Connected all rings
+sg-fuxc2-260708-12652-default0-0:11665:11699 [3] NCCL INFO Connected all rings
+[rank 2] all_reduce SUM -> [10.0, 10.0, 10.0, 10.0][rank 1] all_reduce SUM -> [10.0, 10.0, 10.0, 10.0]
+
+[rank 0] all_reduce SUM -> [10.0, 10.0, 10.0, 10.0]
+[rank 3] all_reduce SUM -> [10.0, 10.0, 10.0, 10.0]
+sg-fuxc2-260708-12652-default0-0:11663:11663 [1] NCCL INFO AllGather: opCount 1 sendbuff 0x7fafb9a00200 recvbuff 0x7fafb9a00c00 count 2 datatype 7 op 0 root 0 comm 0x55c02614f810 [nranks=4] stream 0x55c02614f6c0
+sg-fuxc2-260708-12652-default0-0:11664:11664 [2] NCCL INFO AllGather: opCount 1 sendbuff 0x7fe80ba00200 recvbuff 0x7fe80ba00c00 count 2 datatype 7 op 0 root 0 comm 0x55fe42176e80 [nranks=4] stream 0x55fe42176d30
+sg-fuxc2-260708-12652-default0-0:11662:11662 [0] NCCL INFO AllGather: opCount 1 sendbuff 0x7f9901a00200 recvbuff 0x7f9901a00c00 count 2 datatype 7 op 0 root 0 comm 0x55e68108a070 [nranks=4] stream 0x55e67a4c7010
+sg-fuxc2-260708-12652-default0-0:11665:11665 [3] NCCL INFO AllGather: opCount 1 sendbuff 0x7f3027a00200 recvbuff 0x7f3027a00c00 count 2 datatype 7 op 0 root 0 comm 0x55f39199d850 [nranks=4] stream 0x55f39199d700
+[rank 3] all_gather -> [[0.0, 0.0], [1.0, 1.0], [2.0, 2.0], [3.0, 3.0]][rank 0] all_gather -> [[0.0, 0.0], [1.0, 1.0], [2.0, 2.0], [3.0, 3.0]]
+
+[rank 2] all_gather -> [[0.0, 0.0], [1.0, 1.0], [2.0, 2.0], [3.0, 3.0]]
+[rank 1] all_gather -> [[0.0, 0.0], [1.0, 1.0], [2.0, 2.0], [3.0, 3.0]]
+sg-fuxc2-260708-12652-default0-0:11664:11664 [2] NCCL INFO ReduceScatter: opCount 2 sendbuff 0x7fe80ba00e00 recvbuff 0x7fe80ba00c00 count 2 datatype 7 op 0 root 0 comm 0x55fe42176e80 [nranks=4] stream 0x55fe42176d30
+sg-fuxc2-260708-12652-default0-0:11665:11665 [3] NCCL INFO ReduceScatter: opCount 2 sendbuff 0x7f3027a00e00 recvbuff 0x7f3027a00c00 count 2 datatype 7 op 0 root 0 comm 0x55f39199d850 [nranks=4] stream 0x55f39199d700
+sg-fuxc2-260708-12652-default0-0:11662:11662 [0] NCCL INFO ReduceScatter: opCount 2 sendbuff 0x7f9901a00e00 recvbuff 0x7f9901a00c00 count 2 datatype 7 op 0 root 0 comm 0x55e68108a070 [nranks=4] stream 0x55e67a4c7010
+sg-fuxc2-260708-12652-default0-0:11663:11663 [1] NCCL INFO ReduceScatter: opCount 2 sendbuff 0x7fafb9a00e00 recvbuff 0x7fafb9a00c00 count 2 datatype 7 op 0 root 0 comm 0x55c02614f810 [nranks=4] stream 0x55c02614f6c0
+[rank 3] reduce_scatter_tensor input=[300.0, 301.0, 302.0, 303.0, 304.0, 305.0, 306.0, 307.0] out=[624.0, 628.0][rank 0] reduce_scatter_tensor input=[0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0] out=[600.0, 604.0]
+
+[rank 2] reduce_scatter_tensor input=[200.0, 201.0, 202.0, 203.0, 204.0, 205.0, 206.0, 207.0] out=[616.0, 620.0]
+[rank 1] reduce_scatter_tensor input=[100.0, 101.0, 102.0, 103.0, 104.0, 105.0, 106.0, 107.0] out=[608.0, 612.0]
+sg-fuxc2-260708-12652-default0-0:11665:11665 [3] NCCL INFO AllReduce: opCount 3 sendbuff 0x7f3027a01200 recvbuff 0x7f3027a01200 count 1 datatype 1 op 0 root 0 comm 0x55f39199d850 [nranks=4] stream 0x55f39199d700
+sg-fuxc2-260708-12652-default0-0:11662:11662 [0] NCCL INFO AllReduce: opCount 3 sendbuff 0x7f9901a01200 recvbuff 0x7f9901a01200 count 1 datatype 1 op 0 root 0 comm 0x55e68108a070 [nranks=4] stream 0x55e67a4c7010
+sg-fuxc2-260708-12652-default0-0:11664:11664 [2] NCCL INFO AllReduce: opCount 3 sendbuff 0x7fe80ba01200 recvbuff 0x7fe80ba01200 count 1 datatype 1 op 0 root 0 comm 0x55fe42176e80 [nranks=4] stream 0x55fe42176d30
+sg-fuxc2-260708-12652-default0-0:11663:11663 [1] NCCL INFO AllReduce: opCount 3 sendbuff 0x7fafb9a01200 recvbuff 0x7fafb9a01200 count 1 datatype 1 op 0 root 0 comm 0x55c02614f810 [nranks=4] stream 0x55c02614f6c0
+sg-fuxc2-260708-12652-default0-0:11663:11705 [1] NCCL INFO socketProgressOpt: abort called
+sg-fuxc2-260708-12652-default0-0:11663:11705 [1] NCCL INFO misc/socket.cc:47 -> 3
+sg-fuxc2-260708-12652-default0-0:11663:11705 [1] NCCL INFO misc/socket.cc:550 -> 3
+sg-fuxc2-260708-12652-default0-0:11663:11705 [1] NCCL INFO misc/socket.cc:573 -> 3
+sg-fuxc2-260708-12652-default0-0:11663:11705 [1] NCCL INFO misc/socket.cc:621 -> 3
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO socketProgressOpt: abort called
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO misc/socket.cc:47 -> 3
+sg-fuxc2-260708-12652-default0-0:11663:11705 [1] NCCL INFO socketProgressOpt: abort called
+sg-fuxc2-260708-12652-default0-0:11663:11705 [1] NCCL INFO misc/socket.cc:47 -> 3
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO misc/socket.cc:752 -> 3
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO misc/socket.cc:428 -> 3
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO misc/socket.cc:564 -> 3
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO misc/socket.cc:668 -> 3
+sg-fuxc2-260708-12652-default0-0:11662:11703 [0] NCCL INFO socketProgressOpt: abort called
+sg-fuxc2-260708-12652-default0-0:11663:11705 [1] NCCL INFO misc/socket.cc:58 -> 3
+sg-fuxc2-260708-12652-default0-0:11664:11706 [2] NCCL INFO socketProgressOpt: abort called
+sg-fuxc2-260708-12652-default0-0:11662:11703 [0] NCCL INFO misc/socket.cc:47 -> 3
+sg-fuxc2-260708-12652-default0-0:11663:11705 [1] NCCL INFO misc/socket.cc:775 -> 3
+sg-fuxc2-260708-12652-default0-0:11664:11706 [2] NCCL INFO misc/socket.cc:47 -> 3
+sg-fuxc2-260708-12652-default0-0:11662:11703 [0] NCCL INFO misc/socket.cc:550 -> 3
+
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] proxy.cc:1458 NCCL WARN [Service thread] Accept failed Resource temporarily unavailable
+sg-fuxc2-260708-12652-default0-0:11664:11706 [2] NCCL INFO misc/socket.cc:550 -> 3
+sg-fuxc2-260708-12652-default0-0:11662:11703 [0] NCCL INFO misc/socket.cc:573 -> 3
+sg-fuxc2-260708-12652-default0-0:11665:11704 [3] NCCL INFO socketProgressOpt: abort called
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO socketProgressOpt: abort called
+sg-fuxc2-260708-12652-default0-0:11664:11706 [2] NCCL INFO misc/socket.cc:573 -> 3
+sg-fuxc2-260708-12652-default0-0:11662:11703 [0] NCCL INFO misc/socket.cc:621 -> 3
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] NCCL INFO misc/socket.cc:826 -> 3
+sg-fuxc2-260708-12652-default0-0:11665:11704 [3] NCCL INFO misc/socket.cc:47 -> 3
+sg-fuxc2-260708-12652-default0-0:11664:11706 [2] NCCL INFO misc/socket.cc:621 -> 3
+
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] proxy.cc:1497 NCCL WARN [Service thread] Could not receive type from localRank 1, res=3, closed=0
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO socketProgressOpt: abort called
+sg-fuxc2-260708-12652-default0-0:11665:11704 [3] NCCL INFO misc/socket.cc:550 -> 3
+
+sg-fuxc2-260708-12652-default0-0:11663:11697 [1] proxy.cc:1521 NCCL WARN [Proxy Service 1] Failed to execute operation Close from rank 1, retcode 3
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO socketProgressOpt: abort called
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO misc/socket.cc:47 -> 3
+sg-fuxc2-260708-12652-default0-0:11665:11704 [3] NCCL INFO misc/socket.cc:573 -> 3
+sg-fuxc2-260708-12652-default0-0:11664:11706 [2] NCCL INFO socketProgressOpt: abort called
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO misc/socket.cc:752 -> 3
+sg-fuxc2-260708-12652-default0-0:11665:11704 [3] NCCL INFO misc/socket.cc:621 -> 3
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO misc/socket.cc:428 -> 3
+sg-fuxc2-260708-12652-default0-0:11664:11706 [2] NCCL INFO misc/socket.cc:47 -> 3
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO misc/socket.cc:564 -> 3
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO socketProgressOpt: abort called
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO misc/socket.cc:668 -> 3
+sg-fuxc2-260708-12652-default0-0:11664:11706 [2] NCCL INFO misc/socket.cc:58 -> 3
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO misc/socket.cc:47 -> 3
+
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] proxy.cc:1458 NCCL WARN [Service thread] Accept failed Resource temporarily unavailable
+sg-fuxc2-260708-12652-default0-0:11664:11706 [2] NCCL INFO misc/socket.cc:775 -> 3
+sg-fuxc2-260708-12652-default0-0:11665:11704 [3] NCCL INFO socketProgressOpt: abort called
+sg-fuxc2-260708-12652-default0-0:11662:11703 [0] NCCL INFO socketProgressOpt: abort called
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO misc/socket.cc:47 -> 3
+sg-fuxc2-260708-12652-default0-0:11665:11704 [3] NCCL INFO misc/socket.cc:47 -> 3
+sg-fuxc2-260708-12652-default0-0:11662:11703 [0] NCCL INFO misc/socket.cc:47 -> 3
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO misc/socket.cc:752 -> 3
+sg-fuxc2-260708-12652-default0-0:11665:11704 [3] NCCL INFO misc/socket.cc:58 -> 3
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO misc/socket.cc:428 -> 3
+sg-fuxc2-260708-12652-default0-0:11662:11703 [0] NCCL INFO misc/socket.cc:58 -> 3
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO misc/socket.cc:564 -> 3
+sg-fuxc2-260708-12652-default0-0:11665:11704 [3] NCCL INFO misc/socket.cc:775 -> 3
+sg-fuxc2-260708-12652-default0-0:11662:11703 [0] NCCL INFO misc/socket.cc:775 -> 3
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO misc/socket.cc:668 -> 3
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO misc/socket.cc:752 -> 3
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO socketProgressOpt: abort called
+
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] proxy.cc:1458 NCCL WARN [Service thread] Accept failed Success
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO misc/socket.cc:428 -> 3
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] NCCL INFO misc/socket.cc:826 -> 3
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO misc/socket.cc:564 -> 3
+
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] proxy.cc:1497 NCCL WARN [Service thread] Could not receive type from localRank 0, res=3, closed=0
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO socketProgressOpt: abort called
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO misc/socket.cc:668 -> 3
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] NCCL INFO misc/socket.cc:826 -> 3
+
+sg-fuxc2-260708-12652-default0-0:11662:11691 [0] proxy.cc:1521 NCCL WARN [Proxy Service 0] Failed to execute operation Close from rank 0, retcode 3
+
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] proxy.cc:1458 NCCL WARN [Service thread] Accept failed Resource temporarily unavailable
+
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] proxy.cc:1497 NCCL WARN [Service thread] Could not receive type from localRank 2, res=3, closed=0
+
+sg-fuxc2-260708-12652-default0-0:11664:11695 [2] proxy.cc:1521 NCCL WARN [Proxy Service 2] Failed to execute operation Close from rank 2, retcode 3
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO socketProgressOpt: abort called
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] NCCL INFO misc/socket.cc:826 -> 3
+
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] proxy.cc:1497 NCCL WARN [Service thread] Could not receive type from localRank 3, res=3, closed=0
+
+sg-fuxc2-260708-12652-default0-0:11665:11692 [3] proxy.cc:1521 NCCL WARN [Proxy Service 3] Failed to execute operation Close from rank 3, retcode 3
+sg-fuxc2-260708-12652-default0-0:11663:11705 [1] NCCL INFO comm 0x55c02614f810 rank 1 nranks 4 cudaDev 1 busId 1c000 - Abort COMPLETE
+sg-fuxc2-260708-12652-default0-0:11663:11705 [1] NCCL INFO NET/Plugin: Closing net plugin 'IBext_v8'
+sg-fuxc2-260708-12652-default0-0:11663:11705 [1] NCCL INFO NET/Plugin: Closing collnet plugin 'SHARP'
+sg-fuxc2-260708-12652-default0-0:11665:11704 [3] NCCL INFO comm 0x55f39199d850 rank 3 nranks 4 cudaDev 3 busId 1e000 - Abort COMPLETE
+sg-fuxc2-260708-12652-default0-0:11665:11704 [3] NCCL INFO NET/Plugin: Closing net plugin 'IBext_v8'
+sg-fuxc2-260708-12652-default0-0:11665:11704 [3] NCCL INFO NET/Plugin: Closing collnet plugin 'SHARP'
+sg-fuxc2-260708-12652-default0-0:11662:11703 [0] NCCL INFO comm 0x55e68108a070 rank 0 nranks 4 cudaDev 0 busId 1a000 - Abort COMPLETE
+sg-fuxc2-260708-12652-default0-0:11662:11703 [0] NCCL INFO NET/Plugin: Closing net plugin 'IBext_v8'
+sg-fuxc2-260708-12652-default0-0:11662:11703 [0] NCCL INFO NET/Plugin: Closing collnet plugin 'SHARP'
+sg-fuxc2-260708-12652-default0-0:11664:11706 [2] NCCL INFO comm 0x55fe42176e80 rank 2 nranks 4 cudaDev 2 busId 1d000 - Abort COMPLETE
+sg-fuxc2-260708-12652-default0-0:11664:11706 [2] NCCL INFO NET/Plugin: Closing net plugin 'IBext_v8'
+sg-fuxc2-260708-12652-default0-0:11664:11706 [2] NCCL INFO NET/Plugin: Closing collnet plugin 'SHARP'

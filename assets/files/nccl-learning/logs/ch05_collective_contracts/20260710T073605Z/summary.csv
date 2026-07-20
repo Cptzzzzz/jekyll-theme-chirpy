@@ -1,0 +1,15 @@
+operation,variant,rank_rows,all_correct
+all_gather,into-tensor-rank-major,4,True
+all_gather,list-rank-major,4,True
+all_reduce,max-float32-in-place,4,True
+all_reduce,sum-int64-in-place,4,True
+all_reduce,zero-count,4,True
+all_to_all,equal-splits-source-major-output,4,True
+all_to_all,uneven-splits-source-major-output,4,True
+broadcast,invalid-root-rejected,4,True
+broadcast,root-0,4,True
+broadcast,root-2,4,True
+reduce,sum-root-0,4,True
+reduce,sum-root-3,4,True
+reduce_scatter,sum-contiguous-rank-chunk,4,True
+send_recv,grouped-ring,4,True

@@ -1,0 +1,4 @@
+case,ifname,expected_success,returncode,socket_path,failure_signature,pass
+eth0,eth0,1,0,1,,1
+loopback,lo,1,0,1,,1
+missing,definitely_missing,0,3,0,sg-fuxc2-260708-12652-default0-0:91842:91842 [0] bootstrap.cc:48 NCCL WARN Bootstrap : no socket interface found,1

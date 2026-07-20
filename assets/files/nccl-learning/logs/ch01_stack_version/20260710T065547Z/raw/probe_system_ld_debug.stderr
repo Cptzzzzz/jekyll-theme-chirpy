@@ -1,0 +1,59 @@
+     27786:	find library=libnccl.so.2 [0]; searching
+     27786:	 search cache=/etc/ld.so.cache
+     27786:	  trying file=/lib/x86_64-linux-gnu/libnccl.so.2
+     27786:	
+     27786:	find library=libc.so.6 [0]; searching
+     27786:	 search cache=/etc/ld.so.cache
+     27786:	  trying file=/lib/x86_64-linux-gnu/libc.so.6
+     27786:	
+     27786:	find library=libstdc++.so.6 [0]; searching
+     27786:	 search cache=/etc/ld.so.cache
+     27786:	  trying file=/lib/x86_64-linux-gnu/libstdc++.so.6
+     27786:	
+     27786:	find library=libm.so.6 [0]; searching
+     27786:	 search cache=/etc/ld.so.cache
+     27786:	  trying file=/lib/x86_64-linux-gnu/libm.so.6
+     27786:	
+     27786:	find library=libgcc_s.so.1 [0]; searching
+     27786:	 search cache=/etc/ld.so.cache
+     27786:	  trying file=/lib/x86_64-linux-gnu/libgcc_s.so.1
+     27786:	
+     27786:	
+     27786:	calling init: /lib64/ld-linux-x86-64.so.2
+     27786:	
+     27786:	
+     27786:	calling init: /lib/x86_64-linux-gnu/libc.so.6
+     27786:	
+     27786:	
+     27786:	calling init: /lib/x86_64-linux-gnu/libgcc_s.so.1
+     27786:	
+     27786:	
+     27786:	calling init: /lib/x86_64-linux-gnu/libm.so.6
+     27786:	
+     27786:	
+     27786:	calling init: /lib/x86_64-linux-gnu/libstdc++.so.6
+     27786:	
+     27786:	
+     27786:	calling init: /lib/x86_64-linux-gnu/libnccl.so.2
+     27786:	
+     27786:	
+     27786:	initialize program: /root/nccl-learning/logs/ch01_stack_version/20260710T065547Z/artifacts/build/nccl_version_probe
+     27786:	
+     27786:	
+     27786:	transferring control: /root/nccl-learning/logs/ch01_stack_version/20260710T065547Z/artifacts/build/nccl_version_probe
+     27786:	
+     27786:	
+     27786:	calling fini: /root/nccl-learning/logs/ch01_stack_version/20260710T065547Z/artifacts/build/nccl_version_probe [0]
+     27786:	
+     27786:	
+     27786:	calling fini: /lib/x86_64-linux-gnu/libnccl.so.2 [0]
+     27786:	
+     27786:	
+     27786:	calling fini: /lib/x86_64-linux-gnu/libstdc++.so.6 [0]
+     27786:	
+     27786:	
+     27786:	calling fini: /lib/x86_64-linux-gnu/libm.so.6 [0]
+     27786:	
+     27786:	
+     27786:	calling fini: /lib/x86_64-linux-gnu/libgcc_s.so.1 [0]
+     27786:	

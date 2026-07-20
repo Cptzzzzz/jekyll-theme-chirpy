@@ -1,0 +1,5 @@
+direct_kernel_instances=20
+decomposed_kernel_instances=40
+mode=direct instances=20 kernel=ncclDevKernel_AllReduce_Sum_u32_RING_LL(ncclDevKernelArgsStorage<(unsigned long)4096>)
+mode=decomposed instances=20 kernel=ncclDevKernel_ReduceScatter_Sum_u32_RING_LL(ncclDevKernelArgsStorage<(unsigned long)4096>)
+mode=decomposed instances=20 kernel=ncclDevKernel_AllGather_RING_LL(ncclDevKernelArgsStorage<(unsigned long)4096>)

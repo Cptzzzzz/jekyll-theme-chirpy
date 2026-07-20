@@ -1,0 +1,179 @@
+# nccl-tests version 2.19.5 nccl-headers=22203 nccl-library=22203
+# Collective test starting: all_reduce_perf
+# nThread 1 nGpus 4 minBytes 4096 maxBytes 4096 step: 128(factor) warmup iters: 1 iters: 1 agg iters: 1 validation: 1 graph: 0 unalign: 0
+#
+# Using devices
+#  Rank  0 Group  0 Pid  61785 on sg-fuxc2-260708-12652-default0-0 device  0 [0000:1a:00] Tesla V100-SXM2-32GB
+#  Rank  1 Group  0 Pid  61785 on sg-fuxc2-260708-12652-default0-0 device  1 [0000:1c:00] Tesla V100-SXM2-32GB
+#  Rank  2 Group  0 Pid  61785 on sg-fuxc2-260708-12652-default0-0 device  2 [0000:1d:00] Tesla V100-SXM2-32GB
+#  Rank  3 Group  0 Pid  61785 on sg-fuxc2-260708-12652-default0-0 device  3 [0000:1e:00] Tesla V100-SXM2-32GB
+sg-fuxc2-260708-12652-default0-0:61785:61785 [0] NCCL INFO Bootstrap : Using eth0:10.244.49.68<0>
+sg-fuxc2-260708-12652-default0-0:61785:61785 [0] NCCL INFO cudaDriverVersion 13000
+sg-fuxc2-260708-12652-default0-0:61785:61785 [0] NCCL INFO NCCL version 2.22.3+cuda12.6
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO Plugin Path : /opt/hpcx/nccl_rdma_sharp_plugin/lib/libnccl-net.so
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO P2P plugin IBext_v8
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO NET/IB : No device found.
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO NET/IB : No device found.
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO NET/Socket : Using [0]eth0:10.244.49.68<0>
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO Using network Socket
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO Using network Socket
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO Using network Socket
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO Using network Socket
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO ncclCommInitRank comm 0x55e7fcdf2aa0 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 1c000 commId 0x58b31bd60779b3ee - Init START
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO ncclCommInitRank comm 0x55e7fce2e6d0 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId 1d000 commId 0x58b31bd60779b3ee - Init START
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO ncclCommInitRank comm 0x55e7fcdb6ed0 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 1a000 commId 0x58b31bd60779b3ee - Init START
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO ncclCommInitRank comm 0x55e7fce6a1c0 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId 1e000 commId 0x58b31bd60779b3ee - Init START
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO === System : maxBw 40.0 totalBw 120.0 ===
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO CPU/0-0 (1/1/2)
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO + PCI[5000.0] - NIC/0-0
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO + PCI[12.0] - PCI/0-18000 (10b5879610b58796)
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO               + PCI[12.0] - GPU/0-1a000 (0)
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO               + PCI[12.0] - GPU/0-1c000 (1)
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO === System : maxBw 40.0 totalBw 120.0 ===
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO CPU/0-0 (1/1/2)
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO === System : maxBw 40.0 totalBw 120.0 ===
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO CPU/0-0 (1/1/2)
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO + PCI[5000.0] - NIC/0-0
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO + PCI[12.0] - PCI/0-18000 (10b5879610b58796)
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO               + PCI[12.0] - GPU/0-1a000 (0)
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO + PCI[5000.0] - NIC/0-0
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO + PCI[12.0] - PCI/0-18000 (10b5879610b58796)
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO               + PCI[12.0] - GPU/0-1a000 (0)
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO               + PCI[12.0] - GPU/0-1d000 (2)
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO               + PCI[12.0] - GPU/0-1c000 (1)
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO               + PCI[12.0] - GPU/0-1e000 (3)
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO               + PCI[12.0] - GPU/0-1c000 (1)
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO               + PCI[12.0] - GPU/0-1d000 (2)
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO               + PCI[12.0] - GPU/0-1e000 (3)
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO               + PCI[12.0] - GPU/0-1d000 (2)
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO ==========================================
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO GPU/1A000 :GPU/0-1a000 (0/5000.0/LOC) GPU/0-1c000 (1/40.0/NVL) GPU/0-1d000 (1/40.0/NVL) GPU/0-1e000 (1/40.0/NVL) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO GPU/1C000 :GPU/0-1a000 (1/40.0/NVL) GPU/0-1c000 (0/5000.0/LOC) GPU/0-1d000 (1/40.0/NVL) GPU/0-1e000 (1/40.0/NVL) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO               + PCI[12.0] - GPU/0-1e000 (3)
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO GPU/1D000 :GPU/0-1a000 (1/40.0/NVL) GPU/0-1c000 (1/40.0/NVL) GPU/0-1d000 (0/5000.0/LOC) GPU/0-1e000 (1/40.0/NVL) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO ==========================================
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO GPU/1A000 :GPU/0-1a000 (0/5000.0/LOC) GPU/0-1c000 (1/40.0/NVL) GPU/0-1d000 (1/40.0/NVL) GPU/0-1e000 (1/40.0/NVL) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO GPU/1E000 :GPU/0-1a000 (1/40.0/NVL) GPU/0-1c000 (1/40.0/NVL) GPU/0-1d000 (1/40.0/NVL) GPU/0-1e000 (0/5000.0/LOC) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO ==========================================
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO GPU/1C000 :GPU/0-1a000 (1/40.0/NVL) GPU/0-1c000 (0/5000.0/LOC) GPU/0-1d000 (1/40.0/NVL) GPU/0-1e000 (1/40.0/NVL) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO Setting affinity for GPU 1 to 5555,55555555,55555555
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO GPU/1D000 :GPU/0-1a000 (1/40.0/NVL) GPU/0-1c000 (1/40.0/NVL) GPU/0-1d000 (0/5000.0/LOC) GPU/0-1e000 (1/40.0/NVL) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO GPU/1A000 :GPU/0-1a000 (0/5000.0/LOC) GPU/0-1c000 (1/40.0/NVL) GPU/0-1d000 (1/40.0/NVL) GPU/0-1e000 (1/40.0/NVL) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO GPU/1E000 :GPU/0-1a000 (1/40.0/NVL) GPU/0-1c000 (1/40.0/NVL) GPU/0-1d000 (1/40.0/NVL) GPU/0-1e000 (0/5000.0/LOC) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO GPU/1C000 :GPU/0-1a000 (1/40.0/NVL) GPU/0-1c000 (0/5000.0/LOC) GPU/0-1d000 (1/40.0/NVL) GPU/0-1e000 (1/40.0/NVL) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO Setting affinity for GPU 2 to 5555,55555555,55555555
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO GPU/1D000 :GPU/0-1a000 (1/40.0/NVL) GPU/0-1c000 (1/40.0/NVL) GPU/0-1d000 (0/5000.0/LOC) GPU/0-1e000 (1/40.0/NVL) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO NVLS multicast support is not available on dev 1
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO GPU/1E000 :GPU/0-1a000 (1/40.0/NVL) GPU/0-1c000 (1/40.0/NVL) GPU/0-1d000 (1/40.0/NVL) GPU/0-1e000 (0/5000.0/LOC) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO NVLS multicast support is not available on dev 2
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO Setting affinity for GPU 3 to 5555,55555555,55555555
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO NCCL_GRAPH_FILE set by environment to /root/nccl-learning/logs/ch19_graph_search/20260711T044500Z/artifacts/graph_fixtures/invalid_device.xml
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO NVLS multicast support is not available on dev 3
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO NCCL_GRAPH_FILE set by environment to /root/nccl-learning/logs/ch19_graph_search/20260711T044500Z/artifacts/graph_fixtures/invalid_device.xml
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO NCCL_GRAPH_FILE set by environment to /root/nccl-learning/logs/ch19_graph_search/20260711T044500Z/artifacts/graph_fixtures/invalid_device.xml
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO === System : maxBw 40.0 totalBw 120.0 ===
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO CPU/0-0 (1/1/2)
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO + PCI[5000.0] - NIC/0-0
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO Loading graphs
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO Loading graphs
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO + PCI[12.0] - PCI/0-18000 (10b5879610b58796)
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO Loading graphs
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO               + PCI[12.0] - GPU/0-1a000 (0)
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO               + PCI[12.0] - GPU/0-1c000 (1)
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO               + PCI[12.0] - GPU/0-1d000 (2)
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO               + PCI[12.0] - GPU/0-1e000 (3)
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO ==========================================
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO GPU/1A000 :GPU/0-1a000 (0/5000.0/LOC) GPU/0-1c000 (1/40.0/NVL) GPU/0-1d000 (1/40.0/NVL) GPU/0-1e000 (1/40.0/NVL) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO GPU/1C000 :GPU/0-1a000 (1/40.0/NVL) GPU/0-1c000 (0/5000.0/LOC) GPU/0-1d000 (1/40.0/NVL) GPU/0-1e000 (1/40.0/NVL) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO GPU/1D000 :GPU/0-1a000 (1/40.0/NVL) GPU/0-1c000 (1/40.0/NVL) GPU/0-1d000 (0/5000.0/LOC) GPU/0-1e000 (1/40.0/NVL) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO GPU/1E000 :GPU/0-1a000 (1/40.0/NVL) GPU/0-1c000 (1/40.0/NVL) GPU/0-1d000 (1/40.0/NVL) GPU/0-1e000 (0/5000.0/LOC) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO Setting affinity for GPU 0 to 5555,55555555,55555555
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO NVLS multicast support is not available on dev 0
+
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] graph/search.cc:786 NCCL WARN XML Import Channel : dev 255 not found.
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO graph/search.cc:816 -> 2
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO NCCL_GRAPH_FILE set by environment to /root/nccl-learning/logs/ch19_graph_search/20260711T044500Z/artifacts/graph_fixtures/invalid_device.xml
+
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] graph/search.cc:786 NCCL WARN XML Import Channel : dev 255 not found.
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO graph/search.cc:816 -> 2
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO graph/search.cc:823 -> 2
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO graph/search.cc:823 -> 2
+
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] graph/search.cc:786 NCCL WARN XML Import Channel : dev 255 not found.
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO graph/search.cc:944 -> 2
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO graph/search.cc:944 -> 2
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO init.cc:853 -> 2
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO init.cc:853 -> 2
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO graph/search.cc:816 -> 2
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO Loading graphs
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO init.cc:1408 -> 2
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO init.cc:1408 -> 2
+sg-fuxc2-260708-12652-default0-0:61785:61794 [2] NCCL INFO group.cc:70 -> 2 [Async thread]
+sg-fuxc2-260708-12652-default0-0:61785:61795 [3] NCCL INFO group.cc:70 -> 2 [Async thread]
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO graph/search.cc:823 -> 2
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO graph/search.cc:944 -> 2
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO init.cc:853 -> 2
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO init.cc:1408 -> 2
+sg-fuxc2-260708-12652-default0-0:61785:61793 [1] NCCL INFO group.cc:70 -> 2 [Async thread]
+
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] graph/search.cc:786 NCCL WARN XML Import Channel : dev 255 not found.
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO graph/search.cc:816 -> 2
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO graph/search.cc:823 -> 2
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO graph/search.cc:944 -> 2
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO init.cc:853 -> 2
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO init.cc:1408 -> 2
+sg-fuxc2-260708-12652-default0-0:61785:61792 [0] NCCL INFO group.cc:70 -> 2 [Async thread]
+sg-fuxc2-260708-12652-default0-0:61785:61785 [3] NCCL INFO group.cc:420 -> 2
+sg-fuxc2-260708-12652-default0-0:61785:61785 [3] NCCL INFO group.cc:546 -> 2
+sg-fuxc2-260708-12652-default0-0:61785:61785 [3] NCCL INFO group.cc:101 -> 2
+sg-fuxc2-260708-12652-default0-0: Test NCCL failure common.cu:221 'unhandled system error (run with NCCL_DEBUG=INFO for details) / '
+ .. sg-fuxc2-260708-12652-default0-0 pid 61785: Test failure common.cu:1605
+ .. sg-fuxc2-260708-12652-default0-0 pid 61785: Test failure common.cu:1439

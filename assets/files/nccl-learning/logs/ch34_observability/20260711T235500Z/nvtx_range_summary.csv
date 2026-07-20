@@ -1,0 +1,7 @@
+range,start_ns,duration_ns
+ch34_seq0_bytes4096_allreduce,20711051,39616
+ch34_seq0_bytes4096_allreduce,20742012,8415
+ch34_seq1_bytes1048576_allreduce,21890254,60255
+ch34_seq1_bytes1048576_allreduce,21876520,73056
+ch34_seq2_bytes67108864_allreduce,22452294,1878074
+ch34_seq2_bytes67108864_allreduce,22470311,1870889

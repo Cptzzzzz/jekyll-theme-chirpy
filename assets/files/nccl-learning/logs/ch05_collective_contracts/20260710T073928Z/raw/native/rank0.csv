@@ -1,0 +1,10 @@
+rank,operation,variant,actual,expected,pointer_relation,correct
+0,all_reduce,out-of-place,10;46;12,10;46;12,sendbuff!=recvbuff,true
+0,all_reduce,in-place,10;46;12,10;46;12,sendbuff==recvbuff,true
+0,all_gather,out-of-place,0;10;100;1;11;101;2;12;102;3;13;103,0;10;100;1;11;101;2;12;102;3;13;103,sendbuff separate;recvbuff[nranks*sendcount],true
+0,all_gather,in-place-rank-offset,0;10;100;1;11;101;2;12;102;3;13;103,0;10;100;1;11;101;2;12;102;3;13;103,sendbuff==recvbuff+rank*sendcount,true
+0,reduce_scatter,out-of-place,600;604;608,600;604;608,sendbuff[nranks*recvcount];recvbuff separate,true
+0,reduce_scatter,in-place-rank-offset,600;604;608,600;604;608,recvbuff==sendbuff+rank*recvcount,true
+0,broadcast,out-of-place-root-2,20;21;22;23,20;21;22;23,sendbuff!=recvbuff;root is communicator rank,true
+0,broadcast,in-place-root-1,10;11;12;13,10;11;12;13,sendbuff==recvbuff,true
+0,reduce,out-of-place-root-3,undefined,undefined,non-root recvbuff==nullptr,true

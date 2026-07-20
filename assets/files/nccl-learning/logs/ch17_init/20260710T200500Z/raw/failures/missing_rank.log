@@ -1,0 +1,2 @@
+sg-fuxc2-260708-12652-default0-0:58970:58970 [0] NCCL INFO Bootstrap : Using eth0:10.244.49.68<0>
+MISSING_RANK entering ncclCommInitRank rank=0 nranks=2

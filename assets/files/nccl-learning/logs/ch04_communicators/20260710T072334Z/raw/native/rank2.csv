@@ -1,0 +1,2 @@
+pid,global_rank,world_size,cuda_device,pci_bus_id,unique_id_hash,comm_count,comm_rank,comm_device,color,key,split_count,split_rank,split_device,world_sum,split_sum,init_ms,correct
+30481,2,4,2,0000:1D:00.0,0x3865653fd1be492c,4,2,2,0,2,2,0,2,10.000,4.000,299.738,true

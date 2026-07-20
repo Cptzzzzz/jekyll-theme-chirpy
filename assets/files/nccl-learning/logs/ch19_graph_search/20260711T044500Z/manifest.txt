@@ -1,0 +1,13 @@
+experiment=ch19_graph_search_replay
+run_id=20260711T044500Z
+timestamp_utc=2026-07-11T13:13:35.868301+00:00
+hostname=sg-fuxc2-260708-12652-default0-0
+world_size=4
+search_configs=search_native,replay_exact,replay_custom_one,replay_ring_only,weak_fallback,postset_max4,postset_min16
+performance_configs=search_native,replay_exact,replay_custom_one,weak_fallback,postset_max4,postset_min16
+cycles=10
+iterations=20
+measurement_rows=360
+correctness=PASS
+invalid_graph_failure=PASS
+nccl_source_commit=178b6b759074597777ce13438efb0e0ba625e429

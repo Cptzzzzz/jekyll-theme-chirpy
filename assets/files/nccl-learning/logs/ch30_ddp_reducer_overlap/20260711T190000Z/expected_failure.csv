@@ -1,0 +1,2 @@
+case,returncode,signature,expected_failure,pass
+unused_without_detection,1,Expected to have finished reduction in the prior iteration,1,1

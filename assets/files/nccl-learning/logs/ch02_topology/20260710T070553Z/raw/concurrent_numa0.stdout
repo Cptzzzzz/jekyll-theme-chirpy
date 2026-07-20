@@ -1,0 +1,6 @@
+pattern=single_0_to_1 edges=1 median_aggregate_GBs=48.310 p95_GBs=48.322
+pattern=bidirectional_0_1 edges=2 median_aggregate_GBs=48.372 p95_GBs=48.375
+pattern=disjoint_pairs edges=2 median_aggregate_GBs=96.583 p95_GBs=96.618
+pattern=ring_4_edges edges=4 median_aggregate_GBs=48.356 p95_GBs=48.378
+pattern=fanin_to_0 edges=3 median_aggregate_GBs=48.403 p95_GBs=48.413
+output=/root/nccl-learning/logs/ch02_topology/20260710T070553Z/raw/concurrent_numa0.csv

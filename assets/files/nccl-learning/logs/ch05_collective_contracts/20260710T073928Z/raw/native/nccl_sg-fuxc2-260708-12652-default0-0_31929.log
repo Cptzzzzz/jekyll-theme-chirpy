@@ -1,0 +1,10 @@
+sg-fuxc2-260708-12652-default0-0:31929:31929 [2] NCCL INFO NCCL version 2.22.3+cuda12.6
+sg-fuxc2-260708-12652-default0-0:31929:31929 [2] NCCL INFO AllReduce: opCount 0 sendbuff 0x7f2930000000 recvbuff 0x7f2930000200 count 3 datatype 2 op 0 root 0 comm 0x558895626d90 [nranks=4] stream 0x558899064ed0
+sg-fuxc2-260708-12652-default0-0:31929:31929 [2] NCCL INFO AllReduce: opCount 1 sendbuff 0x7f2930000000 recvbuff 0x7f2930000000 count 3 datatype 2 op 0 root 0 comm 0x558895626d90 [nranks=4] stream 0x558899064ed0
+sg-fuxc2-260708-12652-default0-0:31929:31929 [2] NCCL INFO AllGather: opCount 2 sendbuff 0x7f2930000000 recvbuff 0x7f2930000200 count 3 datatype 2 op 0 root 0 comm 0x558895626d90 [nranks=4] stream 0x558899064ed0
+sg-fuxc2-260708-12652-default0-0:31929:31929 [2] NCCL INFO AllGather: opCount 3 sendbuff 0x7f2930000218 recvbuff 0x7f2930000200 count 3 datatype 2 op 0 root 0 comm 0x558895626d90 [nranks=4] stream 0x558899064ed0
+sg-fuxc2-260708-12652-default0-0:31929:31929 [2] NCCL INFO ReduceScatter: opCount 4 sendbuff 0x7f2930000000 recvbuff 0x7f2930000200 count 3 datatype 2 op 0 root 0 comm 0x558895626d90 [nranks=4] stream 0x558899064ed0
+sg-fuxc2-260708-12652-default0-0:31929:31929 [2] NCCL INFO ReduceScatter: opCount 5 sendbuff 0x7f2930000000 recvbuff 0x7f2930000018 count 3 datatype 2 op 0 root 0 comm 0x558895626d90 [nranks=4] stream 0x558899064ed0
+sg-fuxc2-260708-12652-default0-0:31929:31929 [2] NCCL INFO Broadcast: opCount 6 sendbuff 0x7f2930000000 recvbuff 0x7f2930000200 count 4 datatype 2 op 0 root 2 comm 0x558895626d90 [nranks=4] stream 0x558899064ed0
+sg-fuxc2-260708-12652-default0-0:31929:31929 [2] NCCL INFO Broadcast: opCount 7 sendbuff 0x7f2930000000 recvbuff 0x7f2930000000 count 4 datatype 2 op 0 root 1 comm 0x558895626d90 [nranks=4] stream 0x558899064ed0
+sg-fuxc2-260708-12652-default0-0:31929:31929 [2] NCCL INFO Reduce: opCount 8 sendbuff 0x7f2930000000 recvbuff (nil) count 2 datatype 2 op 0 root 3 comm 0x558895626d90 [nranks=4] stream 0x558899064ed0

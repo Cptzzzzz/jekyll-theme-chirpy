@@ -1,0 +1,13 @@
+config,expected_variant,observed_variants,variant_count,connection_lines,correctness_pass,read_mode,copy_engine_sides,shm_locality
+direct_write,P2P/direct pointer,P2P/direct pointer,1,48,1,0,0,0
+direct_read,P2P/direct pointer/read,P2P/direct pointer/read,1,48,1,1,0,0
+cumem,P2P/CUMEM,P2P/CUMEM,1,48,1,0,0,0
+legacy_ipc,P2P/IPC,P2P/IPC,1,92,1,0,0,0
+p2p_ce,P2P/CUMEM/CE,P2P/CUMEM/CE,1,48,1,0,1,0
+level_nvl,P2P/direct pointer,P2P/direct pointer,1,48,1,0,0,0
+level_loc,SHM/direct/direct,SHM/direct/direct,1,12,1,0,0,0
+shm_recv_local,SHM/direct/direct,SHM/direct/direct,1,12,1,0,0,2
+shm_send_local,SHM/direct/direct,SHM/direct/direct,1,12,1,0,0,1
+shm_ce_send,SHM/CE/direct,SHM/CE/direct,1,12,1,0,1,2
+shm_ce_recv,SHM/direct/CE,SHM/direct/CE,1,12,1,0,1,2
+shm_ce_both,SHM/CE/CE,SHM/CE/CE,1,12,1,0,2,2

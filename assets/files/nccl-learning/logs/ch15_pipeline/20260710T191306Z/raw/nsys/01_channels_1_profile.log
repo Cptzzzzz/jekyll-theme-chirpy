@@ -1,0 +1,77 @@
+# nccl-tests version 2.19.5 nccl-headers=22203 nccl-library=22203
+# Collective test starting: all_reduce_perf
+# nThread 1 nGpus 4 minBytes 1048576 maxBytes 1048576 step: 1048576(bytes) warmup iters: 2 iters: 5 agg iters: 1 validation: 0 graph: 0 unalign: 0
+#
+# Using devices
+#  Rank  0 Group  0 Pid  53978 on sg-fuxc2-260708-12652-default0-0 device  0 [0000:1a:00] Tesla V100-SXM2-32GB
+#  Rank  1 Group  0 Pid  53978 on sg-fuxc2-260708-12652-default0-0 device  1 [0000:1c:00] Tesla V100-SXM2-32GB
+#  Rank  2 Group  0 Pid  53978 on sg-fuxc2-260708-12652-default0-0 device  2 [0000:1d:00] Tesla V100-SXM2-32GB
+#  Rank  3 Group  0 Pid  53978 on sg-fuxc2-260708-12652-default0-0 device  3 [0000:1e:00] Tesla V100-SXM2-32GB
+sg-fuxc2-260708-12652-default0-0:53978:53978 [0] NCCL INFO NCCL version 2.22.3+cuda12.6
+sg-fuxc2-260708-12652-default0-0:53978:53998 [0] NCCL INFO NCCL_MAX_NCHANNELS set by environment to 1.
+sg-fuxc2-260708-12652-default0-0:53978:53998 [0] NCCL INFO NCCL_MIN_NCHANNELS set by environment to 1.
+sg-fuxc2-260708-12652-default0-0:53978:53998 [0] NCCL INFO NCCL_BUFFSIZE set by environment to 4194304.
+sg-fuxc2-260708-12652-default0-0:53978:53998 [0] NCCL INFO NCCL_NTHREADS set by environment to 512.
+sg-fuxc2-260708-12652-default0-0:53978:53998 [0] NCCL INFO NCCL_PROTO set by environment to Simple
+sg-fuxc2-260708-12652-default0-0:53978:53998 [0] NCCL INFO NCCL_ALGO set by environment to Ring
+sg-fuxc2-260708-12652-default0-0:53978:53998 [0] NCCL INFO   Algorithm   |                            Tree                  |                            Ring                  |                   CollNetDirect                  |
+sg-fuxc2-260708-12652-default0-0:53978:53998 [0] NCCL INFO   Protocol    |             LL |          LL128 |         Simple |             LL |          LL128 |         Simple |             LL |          LL128 |         Simple |
+sg-fuxc2-260708-12652-default0-0:53978:53998 [0] NCCL INFO  Max NThreads |            512 |            640 |            512 |            512 |            640 |            512 |              0 |              0 |            640 |
+sg-fuxc2-260708-12652-default0-0:53978:53998 [0] NCCL INFO     Broadcast |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     9.0/   0.0 |    21.6/   0.0 |   120.4/ 120.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |
+sg-fuxc2-260708-12652-default0-0:53978:53998 [0] NCCL INFO        Reduce |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     9.0/   0.0 |    21.6/   0.0 |   120.4/ 120.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |
+sg-fuxc2-260708-12652-default0-0:53978:53998 [0] NCCL INFO     AllGather |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     8.4/   0.0 |    19.7/   0.0 |    18.6/ 160.0 |     2.4/   0.0 |     2.4/   0.0 |    40.8/   0.0 |
+sg-fuxc2-260708-12652-default0-0:53978:53998 [0] NCCL INFO ReduceScatter |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     8.4/   0.0 |    19.7/   0.0 |    18.6/ 160.0 |     2.4/   0.0 |     2.4/   0.0 |    40.8/   0.0 |
+sg-fuxc2-260708-12652-default0-0:53978:53998 [0] NCCL INFO     AllReduce |    10.4/   0.0 |    21.5/   0.0 |   168.0/   0.0 |    10.2/   0.0 |    25.4/   0.0 |    28.8/  80.0 |     2.4/   0.0 |     2.4/   0.0 |    40.8/   0.0 |
+sg-fuxc2-260708-12652-default0-0:53978:53998 [0] NCCL INFO   Algorithm   |                    CollNetChain                  |                            NVLS                  |                        NVLSTree                  |
+sg-fuxc2-260708-12652-default0-0:53978:53998 [0] NCCL INFO   Protocol    |             LL |          LL128 |         Simple |             LL |          LL128 |         Simple |             LL |          LL128 |         Simple |
+sg-fuxc2-260708-12652-default0-0:53978:53998 [0] NCCL INFO  Max NThreads |              0 |              0 |            640 |              0 |              0 |            640 |              0 |              0 |            640 |
+sg-fuxc2-260708-12652-default0-0:53978:53998 [0] NCCL INFO     Broadcast |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |
+sg-fuxc2-260708-12652-default0-0:53978:53998 [0] NCCL INFO        Reduce |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |
+sg-fuxc2-260708-12652-default0-0:53978:53998 [0] NCCL INFO     AllGather |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |
+sg-fuxc2-260708-12652-default0-0:53978:53998 [0] NCCL INFO ReduceScatter |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |
+sg-fuxc2-260708-12652-default0-0:53978:53998 [0] NCCL INFO     AllReduce |     0.0/   0.0 |     0.0/   0.0 |    46.8/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |
+sg-fuxc2-260708-12652-default0-0:53978:53999 [1] NCCL INFO NCCL_PROTO set by environment to Simple
+sg-fuxc2-260708-12652-default0-0:53978:53999 [1] NCCL INFO NCCL_ALGO set by environment to Ring
+sg-fuxc2-260708-12652-default0-0:53978:54000 [2] NCCL INFO NCCL_PROTO set by environment to Simple
+sg-fuxc2-260708-12652-default0-0:53978:54000 [2] NCCL INFO NCCL_ALGO set by environment to Ring
+sg-fuxc2-260708-12652-default0-0:53978:54001 [3] NCCL INFO NCCL_PROTO set by environment to Simple
+sg-fuxc2-260708-12652-default0-0:53978:54001 [3] NCCL INFO NCCL_ALGO set by environment to Ring
+sg-fuxc2-260708-12652-default0-0:53978:53998 [0] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v3 symbol.
+sg-fuxc2-260708-12652-default0-0:53978:53998 [0] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v2 symbol, using internal tuner instead.
+#
+#                                                              out-of-place                       in-place          
+#       size         count      type   redop    root     time   algbw   busbw  #wrong     time   algbw   busbw  #wrong 
+#        (B)    (elements)                               (us)  (GB/s)  (GB/s)             (us)  (GB/s)  (GB/s)         
+sg-fuxc2-260708-12652-default0-0:53978:53978 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.907200
+sg-fuxc2-260708-12652-default0-0:53978:53978 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.907200
+     1048576        262144     float     sum      -1sg-fuxc2-260708-12652-default0-0:53978:53978 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.907200
+sg-fuxc2-260708-12652-default0-0:53978:53978 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.907200
+sg-fuxc2-260708-12652-default0-0:53978:53978 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.907200
+sg-fuxc2-260708-12652-default0-0:53978:53978 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.907200
+sg-fuxc2-260708-12652-default0-0:53978:53978 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.907200
+sg-fuxc2-260708-12652-default0-0:53978:53978 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.907200
+   138.72    7.56   11.34    N/Asg-fuxc2-260708-12652-default0-0:53978:53978 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.907200
+sg-fuxc2-260708-12652-default0-0:53978:53978 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.907200
+sg-fuxc2-260708-12652-default0-0:53978:53978 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.907200
+sg-fuxc2-260708-12652-default0-0:53978:53978 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.907200
+sg-fuxc2-260708-12652-default0-0:53978:53978 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.907200
+sg-fuxc2-260708-12652-default0-0:53978:53978 [0] NCCL INFO 1048576 Bytes -> Algo 1 proto 2 time 41.907200
+   135.09    7.76   11.64    N/A
+# Out of bounds values : 0 OK
+# Avg bus bandwidth    : 11.4908 
+#
+# Collective test concluded: all_reduce_perf
+#
+
+Generating '/tmp/nsys-report-5262.qdstrm'
+
+[1/1] [0%                          ] 01_channels_1.nsys-rep
+[1/1] [0%                          ] 01_channels_1.nsys-rep
+[1/1] [5%                          ] 01_channels_1.nsys-rep
+[1/1] [6%                          ] 01_channels_1.nsys-rep
+[1/1] [====================83%     ] 01_channels_1.nsys-rep
+[1/1] [====================85%     ] 01_channels_1.nsys-rep
+[1/1] [========================100%] 01_channels_1.nsys-rep
+[1/1] [========================100%] 01_channels_1.nsys-rep
+Generated:
+    /root/nccl-learning/private/ch15_pipeline/20260710T191306Z/01_channels_1.nsys-rep

@@ -1,0 +1,24 @@
+FROM node:24-bookworm AS js
+WORKDIR /src
+COPY package.json package*.json ./
+RUN npm install --registry=https://registry.npmmirror.com
+COPY . .
+RUN npm run build
+
+FROM ruby:3.2-bookworm AS site
+WORKDIR /srv/jekyll
+ENV BUNDLE_PATH=/usr/local/bundle \
+    JEKYLL_ENV=production
+COPY Gemfile jekyll-theme-chirpy.gemspec ./
+RUN bundle config set mirror.https://rubygems.org https://gems.ruby-china.com \
+    && bundle install
+COPY . .
+COPY --from=js /src/assets/js/dist/ /srv/jekyll/assets/js/dist/
+RUN bundle exec jekyll build
+
+FROM nginx:alpine
+COPY --from=site /srv/jekyll/_site/ /usr/share/nginx/html/
+# Experiment evidence is intentionally published as raw downloadable artifacts.
+# Copy it after Jekyll so CSV/TXT/stdout files cannot be dropped by site filtering.
+COPY --from=site /srv/jekyll/assets/files/ /usr/share/nginx/html/assets/files/
+EXPOSE 80

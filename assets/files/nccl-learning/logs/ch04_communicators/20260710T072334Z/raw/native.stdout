@@ -1,0 +1,4 @@
+global_rank=0 cuda_device=0 pci=0000:1A:00.0 comm_rank=0 color=0 key=4 split_rank=1 world_sum=10 split_sum=4 correct=1
+global_rank=2 cuda_device=2 pci=0000:1D:00.0 comm_rank=2 color=0 key=2 split_rank=0 world_sum=10 split_sum=4 correct=1
+global_rank=1 cuda_device=1 pci=0000:1C:00.0 comm_rank=1 color=1 key=3 split_rank=1 world_sum=10 split_sum=6 correct=1
+global_rank=3 cuda_device=3 pci=0000:1E:00.0 comm_rank=3 color=1 key=1 split_rank=0 world_sum=10 split_sum=6 correct=1

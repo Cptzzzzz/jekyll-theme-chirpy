@@ -1,0 +1,898 @@
+W0710 07:39:34.954000 140686484451776 torch/distributed/run.py:793] 
+W0710 07:39:34.954000 140686484451776 torch/distributed/run.py:793] *****************************************
+W0710 07:39:34.954000 140686484451776 torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0710 07:39:34.954000 140686484451776 torch/distributed/run.py:793] *****************************************
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] NCCL INFO NCCL version 2.22.3+cuda12.6
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] NCCL INFO NCCL version 2.22.3+cuda12.6
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] NCCL INFO NCCL version 2.22.3+cuda12.6
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] NCCL INFO NCCL version 2.22.3+cuda12.6
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] NCCL INFO AllReduce: opCount 0 sendbuff 0x7fa8c3a00000 recvbuff 0x7fa8c3a00000 count 5 datatype 4 op 0 root 0 comm 0x55f43e32f2e0 [nranks=4] stream 0x55f43e313360
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] NCCL INFO AllReduce: opCount 0 sendbuff 0x7f0e13a00000 recvbuff 0x7f0e13a00000 count 5 datatype 4 op 0 root 0 comm 0x558a27367300 [nranks=4] stream 0x558a273671b0
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] NCCL INFO AllReduce: opCount 0 sendbuff 0x7f0217a00000 recvbuff 0x7f0217a00000 count 5 datatype 4 op 0 root 0 comm 0x557b070fa380 [nranks=4] stream 0x557b070fa230
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] NCCL INFO AllReduce: opCount 0 sendbuff 0x7f5537a00000 recvbuff 0x7f5537a00000 count 5 datatype 4 op 0 root 0 comm 0x55f6076d98f0 [nranks=4] stream 0x55f6076d97a0
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x7fa8bd800000 size 10485760 ipcDesc 0x7fa890008bf0
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x7f5531800000 size 10485760 ipcDesc 0x7f54e4008bc0
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x7f0e0d800000 size 10485760 ipcDesc 0x7f0dc4008bc0
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x7f0211800000 size 10485760 ipcDesc 0x7f01c4008bc0
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x7fa8be200000 size 10485760 ipcDesc 0x7fa89000a630
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x7f5532200000 size 10485760 ipcDesc 0x7f54e400a620
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x7f0e0e200000 size 10485760 ipcDesc 0x7f0dc400a620
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x7fa8bec00000 size 10485760 ipcDesc 0x7fa89000be30
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x7f5532c00000 size 10485760 ipcDesc 0x7f54e400be20
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x7f0212200000 size 10485760 ipcDesc 0x7f01c400a620
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x7f0e0ec00000 size 10485760 ipcDesc 0x7f0dc400be20
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x7f0212c00000 size 10485760 ipcDesc 0x7f01c400be20
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x7f5533600000 size 10485760 ipcDesc 0x7f54e400d600
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Channel 00/0 : 2[2] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x7fa8bf600000 size 10485760 ipcDesc 0x7fa89000d610
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x7f0e0f600000 size 10485760 ipcDesc 0x7f0dc400d600
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Channel 00/0 : 3[3] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x7f0213600000 size 10485760 ipcDesc 0x7f01c400d600
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x7f5534000000 size 2097152 ipcDesc 0x7f54e400edc0
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Channel 00/0 : 1[1] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Channel 02/0 : 2[2] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x7fa8c0000000 size 2097152 ipcDesc 0x7fa89000edd0
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x7f5534200000 size 2097152 ipcDesc 0x7f54e4010580
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Channel 06/0 : 2[2] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x7f0e10000000 size 2097152 ipcDesc 0x7f0dc400edc0
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x7fa8c0200000 size 2097152 ipcDesc 0x7fa890010590
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Channel 03/0 : 3[3] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Channel 06/0 : 0[0] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x7f0214000000 size 2097152 ipcDesc 0x7f01c400edc0
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Channel 04/0 : 1[1] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x7f5534400000 size 2097152 ipcDesc 0x7f54e4011d40
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Channel 08/0 : 2[2] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x7fa8c0400000 size 2097152 ipcDesc 0x7fa890011d50
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Channel 07/0 : 0[0] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x7f0214200000 size 2097152 ipcDesc 0x7f01c4010580
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Channel 06/0 : 1[1] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x7f5534600000 size 2097152 ipcDesc 0x7f54e40134c0
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x7f0e10200000 size 2097152 ipcDesc 0x7f0dc4010580
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Channel 06/0 : 3[3] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x7fa8c0600000 size 2097152 ipcDesc 0x7fa8900134d0
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x7f0214400000 size 2097152 ipcDesc 0x7f01c4011d40
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Channel 10/0 : 1[1] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x7f0e10400000 size 2097152 ipcDesc 0x7f0dc4011d40
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Channel 09/0 : 3[3] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x7f0214600000 size 2097152 ipcDesc 0x7f01c40134c0
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x7f0e10600000 size 2097152 ipcDesc 0x7f0dc40134c0
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x7fa8c0800000 size 10485760 ipcDesc 0x7fa890014c50
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x7f5534800000 size 10485760 ipcDesc 0x7f54e4014c40
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x7f0214800000 size 10485760 ipcDesc 0x7f01c4014c40
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x7fa8c1200000 size 10485760 ipcDesc 0x7fa8900163d0
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x7f0e10800000 size 10485760 ipcDesc 0x7f0dc4014c40
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x7f5535200000 size 10485760 ipcDesc 0x7f54e40163c0
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x7f0215200000 size 10485760 ipcDesc 0x7f01c40163c0
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x7fa8c1c00000 size 10485760 ipcDesc 0x7fa890017b50
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x7f0e11200000 size 10485760 ipcDesc 0x7f0dc40163c0
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x7f5535c00000 size 10485760 ipcDesc 0x7f54e4017b40
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x7f0215c00000 size 10485760 ipcDesc 0x7f01c4017b40
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x7fa8c2600000 size 10485760 ipcDesc 0x7fa8900192d0
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Channel 02/0 : 0[0] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x7f0e11c00000 size 10485760 ipcDesc 0x7f0dc4017b40
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x7f5536600000 size 10485760 ipcDesc 0x7f54e40192c0
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Channel 01/0 : 2[2] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x7f0216600000 size 10485760 ipcDesc 0x7f01c40192c0
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x7fa8c3000000 size 2097152 ipcDesc 0x7fa89001aa50
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Channel 01/0 : 1[1] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Channel 03/0 : 0[0] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x7f0e12600000 size 10485760 ipcDesc 0x7f0dc40192c0
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Channel 02/0 : 3[3] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x7f5537000000 size 2097152 ipcDesc 0x7f54e401aa40
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Channel 04/0 : 2[2] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x7f0217000000 size 2097152 ipcDesc 0x7f01c401aa40
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x7fa8c3200000 size 2097152 ipcDesc 0x7fa89001c1d0
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Channel 03/0 : 1[1] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Channel 08/0 : 0[0] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x7f5537200000 size 2097152 ipcDesc 0x7f54e401c1c0
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Channel 07/0 : 2[2] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x7f0e13000000 size 2097152 ipcDesc 0x7f0dc401aa40
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Channel 04/0 : 3[3] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x7fa8c3400000 size 2097152 ipcDesc 0x7fa89001d950
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Channel 09/0 : 0[0] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x7f0217200000 size 2097152 ipcDesc 0x7f01c401c1c0
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Channel 07/0 : 1[1] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x7f5537400000 size 2097152 ipcDesc 0x7f54e401d940
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Channel 10/0 : 2[2] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x7f0e13200000 size 2097152 ipcDesc 0x7f0dc401c1c0
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Channel 08/0 : 3[3] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x7fa8c3600000 size 2097152 ipcDesc 0x7fa89001f0d0
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x7f0217400000 size 2097152 ipcDesc 0x7f01c401d940
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Channel 09/0 : 1[1] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x7f5537600000 size 2097152 ipcDesc 0x7f54e401f0c0
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x7f0e13400000 size 2097152 ipcDesc 0x7f0dc401d940
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Channel 10/0 : 3[3] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x7f0217600000 size 2097152 ipcDesc 0x7f01c401f0c0
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x7f0e13600000 size 2097152 ipcDesc 0x7f0dc401f0c0
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x602000000 size 10485760 ipcDesc 0x7f54e4020840
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x602000000 size 10485760 ipcDesc 0x7fa890020850
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x602a00000 size 10485760 ipcDesc 0x7fa8900224c0
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x602a00000 size 10485760 ipcDesc 0x7f54e40224b0
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x602000000 size 10485760 ipcDesc 0x7f01c4020840
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x602000000 size 10485760 ipcDesc 0x7f0dc4020840
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x603400000 size 10485760 ipcDesc 0x7fa890023c40
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x603400000 size 10485760 ipcDesc 0x7f54e4023c30
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x602a00000 size 10485760 ipcDesc 0x7f01c40224b0
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x602a00000 size 10485760 ipcDesc 0x7f0dc40224b0
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x604000000 size 10485760 ipcDesc 0x7fa8900253c0
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Channel 04/0 : 0[0] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x604000000 size 10485760 ipcDesc 0x7f54e40253b0
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Channel 03/0 : 2[2] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x603400000 size 10485760 ipcDesc 0x7f01c4023c30
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x603400000 size 10485760 ipcDesc 0x7f0dc4023c30
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x604a00000 size 2097152 ipcDesc 0x7fa890026f90
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Channel 05/0 : 0[0] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x604a00000 size 2097152 ipcDesc 0x7f54e4026f80
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Channel 05/0 : 2[2] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x604000000 size 10485760 ipcDesc 0x7f01c40253b0
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x604000000 size 10485760 ipcDesc 0x7f0dc40253b0
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Channel 02/0 : 1[1] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x604c00000 size 2097152 ipcDesc 0x7fa890028710
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Channel 01/0 : 3[3] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Channel 10/0 : 0[0] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x604c00000 size 2097152 ipcDesc 0x7f54e4028700
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Channel 09/0 : 2[2] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x604a00000 size 2097152 ipcDesc 0x7f01c4026f80
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x604e00000 size 2097152 ipcDesc 0x7fa890029e90
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Channel 05/0 : 1[1] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Channel 11/0 : 0[0] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x604a00000 size 2097152 ipcDesc 0x7f0dc4026f80
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Channel 05/0 : 3[3] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x604e00000 size 2097152 ipcDesc 0x7f54e4029e80
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Channel 11/0 : 2[2] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x604c00000 size 2097152 ipcDesc 0x7f01c4028700
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Channel 08/0 : 1[1] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x605000000 size 2097152 ipcDesc 0x7fa89002b610
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x605000000 size 2097152 ipcDesc 0x7f54e402b600
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x604c00000 size 2097152 ipcDesc 0x7f0dc4028700
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Channel 07/0 : 3[3] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x604e00000 size 2097152 ipcDesc 0x7f01c4029e80
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Channel 11/0 : 1[1] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x604e00000 size 2097152 ipcDesc 0x7f0dc4029e80
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Channel 11/0 : 3[3] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x605000000 size 2097152 ipcDesc 0x7f01c402b600
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x605000000 size 2097152 ipcDesc 0x7f0dc402b600
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO UDS converted handle 0x7f54e4008c10 to fd 81 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO UDS converted handle 0x7f01c4008c10 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO UDS converted handle 0x7f0dc4008c10 to fd 80 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO UDS converted handle 0x7fa890008c40 to fd 80 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x605200000
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x605200000
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x605200000
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x605200000
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO UDS converted handle 0x7fa89000ee20 to fd 81 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO UDS converted handle 0x7f01c400ee10 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO UDS converted handle 0x7f0dc400ee10 to fd 80 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x605c00000
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x605c00000
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO UDS converted handle 0x7f54e400ee10 to fd 80 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x605c00000
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO UDS converted handle 0x7f0dc400a670 to fd 80 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x605c00000
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO UDS converted handle 0x7fa8900105e0 to fd 80 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x606000000
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO UDS converted handle 0x7f01c400a670 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x605e00000
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO UDS converted handle 0x7f54e40105d0 to fd 80 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x606000000
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO UDS converted handle 0x7f01c40105d0 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x605e00000
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO UDS converted handle 0x7f54e400a670 to fd 80 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x606a00000
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO UDS converted handle 0x7f0dc40105d0 to fd 80 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x606000000
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x606a00000
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO UDS converted handle 0x7fa89000a680 to fd 81 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO UDS converted handle 0x7f0dc400be70 to fd 81 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO UDS converted handle 0x7f54e400be70 to fd 80 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x606000000
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO UDS converted handle 0x7f01c400be70 to fd 79 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x606c00000
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x606a00000
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x606c00000
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO UDS converted handle 0x7fa89000be80 to fd 80 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO UDS converted handle 0x7f01c4011d90 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x607600000
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x606a00000
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO UDS converted handle 0x7f0dc4011d90 to fd 81 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO UDS converted handle 0x7fa890011da0 to fd 80 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x607600000
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO UDS converted handle 0x7f0dc400d650 to fd 81 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO UDS converted handle 0x7f54e4011d90 to fd 79 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x607400000
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x608000000
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO UDS converted handle 0x7f01c400d650 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x607400000
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x608000000
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO UDS converted handle 0x7fa890013520 to fd 81 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO UDS converted handle 0x7f01c4013510 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO UDS converted handle 0x7f54e4013510 to fd 80 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x607600000
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x608a00000
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO UDS converted handle 0x7f0dc4013510 to fd 79 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x607600000
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO UDS converted handle 0x7f54e400d650 to fd 80 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO UDS converted handle 0x7fa890014ca0 to fd 80 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x608a00000
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x608000000
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x608c00000
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO UDS converted handle 0x7fa89000d660 to fd 80 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO UDS converted handle 0x7f54e401aa90 to fd 80 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO UDS converted handle 0x7f0dc4014c90 to fd 80 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x608c00000
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO UDS converted handle 0x7fa89001aaa0 to fd 79 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x608000000
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x609600000
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x608a00000
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO UDS converted handle 0x7f54e4014c90 to fd 81 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO UDS converted handle 0x7f01c401aa90 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO UDS converted handle 0x7fa89001c220 to fd 79 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x608e00000
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x609800000
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO UDS converted handle 0x7f0dc401aa90 to fd 79 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x608a00000
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x609400000
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO UDS converted handle 0x7f54e4016410 to fd 81 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO UDS converted handle 0x7fa890016420 to fd 80 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO UDS converted handle 0x7f01c4014c90 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x60a000000
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO UDS converted handle 0x7f0dc4016410 to fd 80 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x60a000000
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x608c00000
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x609600000
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO UDS converted handle 0x7f54e401c210 to fd 81 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO UDS converted handle 0x7fa890017ba0 to fd 80 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO UDS converted handle 0x7f01c401c210 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x60aa00000
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x60aa00000
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO UDS converted handle 0x7f0dc401c210 to fd 80 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x609600000
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO UDS converted handle 0x7f54e401d990 to fd 80 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x607800000
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO UDS converted handle 0x7fa89001d9a0 to fd 80 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x60ac00000
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO UDS converted handle 0x7f01c4016410 to fd 81 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO UDS converted handle 0x7f0dc4017b90 to fd 80 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x60b400000
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x60a000000
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO UDS converted handle 0x7f54e4017b90 to fd 80 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x60a000000
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x60ae00000
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO UDS converted handle 0x7fa89001f120 to fd 80 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO UDS converted handle 0x7f01c401d990 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x60b600000
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO UDS converted handle 0x7f54e4019310 to fd 80 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO UDS converted handle 0x7f0dc401d990 to fd 79 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x60aa00000
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x60c000000
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO UDS converted handle 0x7fa890019320 to fd 80 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO UDS converted handle 0x7f01c4017b90 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x60aa00000
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x60c000000
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO UDS converted handle 0x7f54e401f110 to fd 80 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x60ac00000
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x60ca00000
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO UDS converted handle 0x7f0dc4019310 to fd 80 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO UDS converted handle 0x7f01c401f110 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x60ac00000
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO UDS converted handle 0x7f0dc4026fd0 to fd 79 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x60ca00000
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x60b600000
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO UDS converted handle 0x7f0dc401f110 to fd 81 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO UDS converted handle 0x7f01c4026fd0 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x60cc00000
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x60b600000
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO UDS converted handle 0x7f01c4020890 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x60cc00000
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO UDS converted handle 0x7f0dc4020890 to fd 81 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO UDS converted handle 0x7fa8900208a0 to fd 81 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO UDS converted handle 0x7f01c4019310 to fd 79 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x60ce00000
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x60c000000
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO UDS converted handle 0x7f01c4022500 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x60c000000
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO UDS converted handle 0x7f0dc4022500 to fd 80 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x60d600000
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO UDS converted handle 0x7f54e4026fd0 to fd 80 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x60e000000
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x60ca00000
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO UDS converted handle 0x7f54e4020890 to fd 81 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO UDS converted handle 0x7f0dc4028750 to fd 80 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO UDS converted handle 0x7f01c4028750 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x60ea00000
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x60ca00000
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x60b800000
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO UDS converted handle 0x7fa890022510 to fd 80 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO UDS converted handle 0x7f01c4029ed0 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO UDS converted handle 0x7f0dc4029ed0 to fd 80 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x60ec00000
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x60cc00000
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO UDS converted handle 0x7fa890026fe0 to fd 80 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x60ba00000
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO UDS converted handle 0x7f0dc4023c80 to fd 80 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x60d400000
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO UDS converted handle 0x7f54e4028750 to fd 80 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x60ee00000
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO UDS converted handle 0x7f01c4023c80 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO UDS converted handle 0x7f54e4022500 to fd 80 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x60e000000
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x60d600000
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO UDS converted handle 0x7f0dc4025400 to fd 80 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x60d600000
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x610000000
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO UDS converted handle 0x7fa890023c90 to fd 81 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO UDS converted handle 0x7f01c4025400 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x60ea00000
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x60e000000
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO UDS converted handle 0x7fa890028760 to fd 80 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO UDS converted handle 0x7f01c402b650 to fd 79 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO UDS converted handle 0x7f0dc402b650 to fd 81 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO UDS converted handle 0x7f54e4029ed0 to fd 79 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x60b800000
+sg-fuxc2-260708-12652-default0-0:32036:32085 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x610a00000
+sg-fuxc2-260708-12652-default0-0:32038:32088 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x60f400000
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x60ea00000
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO UDS converted handle 0x7f54e4023c80 to fd 80 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO UDS converted handle 0x7fa890025410 to fd 80 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x60e000000
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x60ec00000
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO UDS converted handle 0x7fa890029ee0 to fd 80 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO UDS converted handle 0x7f54e402b650 to fd 80 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x60ea00000
+sg-fuxc2-260708-12652-default0-0:32037:32087 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x60f600000
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO UDS converted handle 0x7f54e4025400 to fd 80 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x60ec00000
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO UDS converted handle 0x7fa89002b660 to fd 80 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32039:32086 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x60f600000
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] NCCL INFO AllReduce: opCount 1 sendbuff 0x7f0217a00200 recvbuff 0x7f0217a00200 count 3 datatype 7 op 2 root 0 comm 0x557b070fa380 [nranks=4] stream 0x557b070fa230
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] NCCL INFO AllReduce: opCount 1 sendbuff 0x7fa8c3a00200 recvbuff 0x7fa8c3a00200 count 3 datatype 7 op 2 root 0 comm 0x55f43e32f2e0 [nranks=4] stream 0x55f43e313360
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] NCCL INFO AllReduce: opCount 1 sendbuff 0x7f0e13a00200 recvbuff 0x7f0e13a00200 count 3 datatype 7 op 2 root 0 comm 0x558a27367300 [nranks=4] stream 0x558a273671b0
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] NCCL INFO AllReduce: opCount 1 sendbuff 0x7f5537a00200 recvbuff 0x7f5537a00200 count 3 datatype 7 op 2 root 0 comm 0x55f6076d98f0 [nranks=4] stream 0x55f6076d97a0
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] NCCL INFO AllReduce: opCount 2 sendbuff (nil) recvbuff (nil) count 0 datatype 7 op 0 root 0 comm 0x557b070fa380 [nranks=4] stream 0x557b070fa230
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] NCCL INFO AllReduce: opCount 2 sendbuff (nil) recvbuff (nil) count 0 datatype 7 op 0 root 0 comm 0x55f43e32f2e0 [nranks=4] stream 0x55f43e313360
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] NCCL INFO AllReduce: opCount 2 sendbuff (nil) recvbuff (nil) count 0 datatype 7 op 0 root 0 comm 0x55f6076d98f0 [nranks=4] stream 0x55f6076d97a0
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] NCCL INFO AllReduce: opCount 2 sendbuff (nil) recvbuff (nil) count 0 datatype 7 op 0 root 0 comm 0x558a27367300 [nranks=4] stream 0x558a273671b0
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] NCCL INFO Broadcast: opCount 2 sendbuff 0x7fa8c3a00000 recvbuff 0x7fa8c3a00000 count 4 datatype 2 op 0 root 0 comm 0x55f43e32f2e0 [nranks=4] stream 0x55f43e313360
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] NCCL INFO Broadcast: opCount 2 sendbuff 0x7f0217a00000 recvbuff 0x7f0217a00000 count 4 datatype 2 op 0 root 0 comm 0x557b070fa380 [nranks=4] stream 0x557b070fa230
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] NCCL INFO Broadcast: opCount 2 sendbuff 0x7f0e13a00000 recvbuff 0x7f0e13a00000 count 4 datatype 2 op 0 root 0 comm 0x558a27367300 [nranks=4] stream 0x558a273671b0
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] NCCL INFO Broadcast: opCount 2 sendbuff 0x7f5537a00000 recvbuff 0x7f5537a00000 count 4 datatype 2 op 0 root 0 comm 0x55f6076d98f0 [nranks=4] stream 0x55f6076d97a0
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] NCCL INFO Broadcast: opCount 3 sendbuff 0x7f0217a00200 recvbuff 0x7f0217a00200 count 4 datatype 2 op 0 root 2 comm 0x557b070fa380 [nranks=4] stream 0x557b070fa230
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] NCCL INFO Broadcast: opCount 3 sendbuff 0x7fa8c3a00200 recvbuff 0x7fa8c3a00200 count 4 datatype 2 op 0 root 2 comm 0x55f43e32f2e0 [nranks=4] stream 0x55f43e313360
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] NCCL INFO Broadcast: opCount 3 sendbuff 0x7f0e13a00200 recvbuff 0x7f0e13a00200 count 4 datatype 2 op 0 root 2 comm 0x558a27367300 [nranks=4] stream 0x558a273671b0
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] NCCL INFO Broadcast: opCount 3 sendbuff 0x7f5537a00200 recvbuff 0x7f5537a00200 count 4 datatype 2 op 0 root 2 comm 0x55f6076d98f0 [nranks=4] stream 0x55f6076d97a0
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] NCCL INFO Reduce: opCount 4 sendbuff 0x7f0217a00000 recvbuff 0x7f0217a00000 count 2 datatype 4 op 0 root 0 comm 0x557b070fa380 [nranks=4] stream 0x557b070fa230
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] NCCL INFO Reduce: opCount 4 sendbuff 0x7fa8c3a00000 recvbuff 0x7fa8c3a00000 count 2 datatype 4 op 0 root 0 comm 0x55f43e32f2e0 [nranks=4] stream 0x55f43e313360
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] NCCL INFO Reduce: opCount 4 sendbuff 0x7f5537a00000 recvbuff 0x7f5537a00000 count 2 datatype 4 op 0 root 0 comm 0x55f6076d98f0 [nranks=4] stream 0x55f6076d97a0
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] NCCL INFO Reduce: opCount 4 sendbuff 0x7f0e13a00000 recvbuff 0x7f0e13a00000 count 2 datatype 4 op 0 root 0 comm 0x558a27367300 [nranks=4] stream 0x558a273671b0
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] NCCL INFO Reduce: opCount 5 sendbuff 0x7f0217a00200 recvbuff 0x7f0217a00200 count 2 datatype 4 op 0 root 3 comm 0x557b070fa380 [nranks=4] stream 0x557b070fa230
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] NCCL INFO Reduce: opCount 5 sendbuff 0x7f5537a00200 recvbuff 0x7f5537a00200 count 2 datatype 4 op 0 root 3 comm 0x55f6076d98f0 [nranks=4] stream 0x55f6076d97a0
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] NCCL INFO Reduce: opCount 5 sendbuff 0x7fa8c3a00200 recvbuff 0x7fa8c3a00200 count 2 datatype 4 op 0 root 3 comm 0x55f43e32f2e0 [nranks=4] stream 0x55f43e313360
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] NCCL INFO Reduce: opCount 5 sendbuff 0x7f0e13a00200 recvbuff 0x7f0e13a00200 count 2 datatype 4 op 0 root 3 comm 0x558a27367300 [nranks=4] stream 0x558a273671b0
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] NCCL INFO AllGather: opCount 6 sendbuff 0x7f0217a00000 recvbuff 0x7f0217a00c00 count 3 datatype 4 op 0 root 0 comm 0x557b070fa380 [nranks=4] stream 0x557b070fa230
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] NCCL INFO AllGather: opCount 6 sendbuff 0x7fa8c3a00000 recvbuff 0x7fa8c3a00c00 count 3 datatype 4 op 0 root 0 comm 0x55f43e32f2e0 [nranks=4] stream 0x55f43e313360
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] NCCL INFO AllGather: opCount 6 sendbuff 0x7f5537a00000 recvbuff 0x7f5537a00c00 count 3 datatype 4 op 0 root 0 comm 0x55f6076d98f0 [nranks=4] stream 0x55f6076d97a0
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] NCCL INFO AllGather: opCount 6 sendbuff 0x7f0e13a00000 recvbuff 0x7f0e13a00c00 count 3 datatype 4 op 0 root 0 comm 0x558a27367300 [nranks=4] stream 0x558a273671b0
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] NCCL INFO AllGather: opCount 7 sendbuff 0x7fa8c3a00000 recvbuff 0x7fa8c3a00e00 count 3 datatype 4 op 0 root 0 comm 0x55f43e32f2e0 [nranks=4] stream 0x55f43e313360
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] NCCL INFO AllGather: opCount 7 sendbuff 0x7f0217a00000 recvbuff 0x7f0217a00c00 count 3 datatype 4 op 0 root 0 comm 0x557b070fa380 [nranks=4] stream 0x557b070fa230
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] NCCL INFO AllGather: opCount 7 sendbuff 0x7f0e13a00000 recvbuff 0x7f0e13a00e00 count 3 datatype 4 op 0 root 0 comm 0x558a27367300 [nranks=4] stream 0x558a273671b0
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] NCCL INFO AllGather: opCount 7 sendbuff 0x7f5537a00000 recvbuff 0x7f5537a00e00 count 3 datatype 4 op 0 root 0 comm 0x55f6076d98f0 [nranks=4] stream 0x55f6076d97a0
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] NCCL INFO ReduceScatter: opCount 8 sendbuff 0x7f0217a01200 recvbuff 0x7f0217a01000 count 3 datatype 4 op 0 root 0 comm 0x557b070fa380 [nranks=4] stream 0x557b070fa230
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] NCCL INFO ReduceScatter: opCount 8 sendbuff 0x7fa8c3a01200 recvbuff 0x7fa8c3a01000 count 3 datatype 4 op 0 root 0 comm 0x55f43e32f2e0 [nranks=4] stream 0x55f43e313360
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] NCCL INFO ReduceScatter: opCount 8 sendbuff 0x7f5537a01200 recvbuff 0x7f5537a01000 count 3 datatype 4 op 0 root 0 comm 0x55f6076d98f0 [nranks=4] stream 0x55f6076d97a0
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] NCCL INFO ReduceScatter: opCount 8 sendbuff 0x7f0e13a01200 recvbuff 0x7f0e13a01000 count 3 datatype 4 op 0 root 0 comm 0x558a27367300 [nranks=4] stream 0x558a273671b0
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] NCCL INFO Send: opCount 9 sendbuff (nil) recvbuff 0x7fa8c3a01400 count 2 datatype 4 op 0 root 0 comm 0x55f43e32f2e0 [nranks=4] stream 0x55f43e313360
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] NCCL INFO Recv: opCount 9 sendbuff (nil) recvbuff 0x7fa8c3a01600 count 2 datatype 4 op 0 root 0 comm 0x55f43e32f2e0 [nranks=4] stream 0x55f43e313360
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] NCCL INFO Send: opCount 9 sendbuff (nil) recvbuff 0x7f0e13a01400 count 2 datatype 4 op 0 root 0 comm 0x558a27367300 [nranks=4] stream 0x558a273671b0
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] NCCL INFO Send: opCount 9 sendbuff (nil) recvbuff 0x7fa8c3a01410 count 2 datatype 4 op 0 root 1 comm 0x55f43e32f2e0 [nranks=4] stream 0x55f43e313360
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] NCCL INFO Recv: opCount 9 sendbuff (nil) recvbuff 0x7fa8c3a01610 count 2 datatype 4 op 0 root 1 comm 0x55f43e32f2e0 [nranks=4] stream 0x55f43e313360
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] NCCL INFO Recv: opCount 9 sendbuff (nil) recvbuff 0x7f0e13a01600 count 2 datatype 4 op 0 root 0 comm 0x558a27367300 [nranks=4] stream 0x558a273671b0
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] NCCL INFO Send: opCount 9 sendbuff (nil) recvbuff 0x7fa8c3a01420 count 2 datatype 4 op 0 root 2 comm 0x55f43e32f2e0 [nranks=4] stream 0x55f43e313360
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] NCCL INFO Send: opCount 9 sendbuff (nil) recvbuff 0x7f0217a01400 count 2 datatype 4 op 0 root 0 comm 0x557b070fa380 [nranks=4] stream 0x557b070fa230
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] NCCL INFO Send: opCount 9 sendbuff (nil) recvbuff 0x7f5537a01400 count 2 datatype 4 op 0 root 0 comm 0x55f6076d98f0 [nranks=4] stream 0x55f6076d97a0
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] NCCL INFO Send: opCount 9 sendbuff (nil) recvbuff 0x7f0e13a01410 count 2 datatype 4 op 0 root 1 comm 0x558a27367300 [nranks=4] stream 0x558a273671b0
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] NCCL INFO Recv: opCount 9 sendbuff (nil) recvbuff 0x7fa8c3a01620 count 2 datatype 4 op 0 root 2 comm 0x55f43e32f2e0 [nranks=4] stream 0x55f43e313360
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] NCCL INFO Recv: opCount 9 sendbuff (nil) recvbuff 0x7f0217a01600 count 2 datatype 4 op 0 root 0 comm 0x557b070fa380 [nranks=4] stream 0x557b070fa230
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] NCCL INFO Recv: opCount 9 sendbuff (nil) recvbuff 0x7f0e13a01610 count 2 datatype 4 op 0 root 1 comm 0x558a27367300 [nranks=4] stream 0x558a273671b0
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] NCCL INFO Send: opCount 9 sendbuff (nil) recvbuff 0x7fa8c3a01430 count 2 datatype 4 op 0 root 3 comm 0x55f43e32f2e0 [nranks=4] stream 0x55f43e313360
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] NCCL INFO Recv: opCount 9 sendbuff (nil) recvbuff 0x7f5537a01600 count 2 datatype 4 op 0 root 0 comm 0x55f6076d98f0 [nranks=4] stream 0x55f6076d97a0
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] NCCL INFO Send: opCount 9 sendbuff (nil) recvbuff 0x7f0217a01410 count 2 datatype 4 op 0 root 1 comm 0x557b070fa380 [nranks=4] stream 0x557b070fa230
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] NCCL INFO Send: opCount 9 sendbuff (nil) recvbuff 0x7f0e13a01420 count 2 datatype 4 op 0 root 2 comm 0x558a27367300 [nranks=4] stream 0x558a273671b0
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] NCCL INFO Recv: opCount 9 sendbuff (nil) recvbuff 0x7fa8c3a01630 count 2 datatype 4 op 0 root 3 comm 0x55f43e32f2e0 [nranks=4] stream 0x55f43e313360
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] NCCL INFO Recv: opCount 9 sendbuff (nil) recvbuff 0x7f0217a01610 count 2 datatype 4 op 0 root 1 comm 0x557b070fa380 [nranks=4] stream 0x557b070fa230
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] NCCL INFO Send: opCount 9 sendbuff (nil) recvbuff 0x7f5537a01410 count 2 datatype 4 op 0 root 1 comm 0x55f6076d98f0 [nranks=4] stream 0x55f6076d97a0
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] NCCL INFO Recv: opCount 9 sendbuff (nil) recvbuff 0x7f0e13a01620 count 2 datatype 4 op 0 root 2 comm 0x558a27367300 [nranks=4] stream 0x558a273671b0
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] NCCL INFO Send: opCount 9 sendbuff (nil) recvbuff 0x7f0217a01420 count 2 datatype 4 op 0 root 2 comm 0x557b070fa380 [nranks=4] stream 0x557b070fa230
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] NCCL INFO Recv: opCount 9 sendbuff (nil) recvbuff 0x7f5537a01610 count 2 datatype 4 op 0 root 1 comm 0x55f6076d98f0 [nranks=4] stream 0x55f6076d97a0
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] NCCL INFO Send: opCount 9 sendbuff (nil) recvbuff 0x7f0e13a01430 count 2 datatype 4 op 0 root 3 comm 0x558a27367300 [nranks=4] stream 0x558a273671b0
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] NCCL INFO Recv: opCount 9 sendbuff (nil) recvbuff 0x7f0217a01620 count 2 datatype 4 op 0 root 2 comm 0x557b070fa380 [nranks=4] stream 0x557b070fa230
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] NCCL INFO Recv: opCount 9 sendbuff (nil) recvbuff 0x7f0e13a01630 count 2 datatype 4 op 0 root 3 comm 0x558a27367300 [nranks=4] stream 0x558a273671b0
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] NCCL INFO Send: opCount 9 sendbuff (nil) recvbuff 0x7f5537a01420 count 2 datatype 4 op 0 root 2 comm 0x55f6076d98f0 [nranks=4] stream 0x55f6076d97a0
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] NCCL INFO Send: opCount 9 sendbuff (nil) recvbuff 0x7f0217a01430 count 2 datatype 4 op 0 root 3 comm 0x557b070fa380 [nranks=4] stream 0x557b070fa230
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] NCCL INFO Recv: opCount 9 sendbuff (nil) recvbuff 0x7f5537a01620 count 2 datatype 4 op 0 root 2 comm 0x55f6076d98f0 [nranks=4] stream 0x55f6076d97a0
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] NCCL INFO Recv: opCount 9 sendbuff (nil) recvbuff 0x7f0217a01630 count 2 datatype 4 op 0 root 3 comm 0x557b070fa380 [nranks=4] stream 0x557b070fa230
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] NCCL INFO Send: opCount 9 sendbuff (nil) recvbuff 0x7f5537a01430 count 2 datatype 4 op 0 root 3 comm 0x55f6076d98f0 [nranks=4] stream 0x55f6076d97a0
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] NCCL INFO Recv: opCount 9 sendbuff (nil) recvbuff 0x7f5537a01630 count 2 datatype 4 op 0 root 3 comm 0x55f6076d98f0 [nranks=4] stream 0x55f6076d97a0
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x610000000 size 10485760 ipcDesc 0x7f01c402cd80
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x610000000 size 10485760 ipcDesc 0x7f0dc402cd80
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x611200000 size 10485760 ipcDesc 0x7fa89002cd90
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x610000000 size 10485760 ipcDesc 0x7f54e402cd80
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x610a00000 size 10485760 ipcDesc 0x7f01c402e950
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x610a00000 size 10485760 ipcDesc 0x7f0dc402e950
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x612000000 size 10485760 ipcDesc 0x7fa89002e790
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x611400000 size 10485760 ipcDesc 0x7f01c40300d0
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x610a00000 size 10485760 ipcDesc 0x7f54e402e950
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x611400000 size 10485760 ipcDesc 0x7f0dc40300d0
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x612a00000 size 10485760 ipcDesc 0x7fa890030360
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x612000000 size 10485760 ipcDesc 0x7f01c4031850
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Channel 01/1 : 1[1] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x612000000 size 10485760 ipcDesc 0x7f0dc4031850
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x611400000 size 10485760 ipcDesc 0x7f54e40300d0
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Channel 01/1 : 3[3] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x613400000 size 10485760 ipcDesc 0x7fa890031ae0
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Channel 01/1 : 0[0] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x612a00000 size 2097152 ipcDesc 0x7f01c4033420
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Channel 05/1 : 1[1] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x613e00000 size 2097152 ipcDesc 0x7fa890033260
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Channel 05/1 : 0[0] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x612a00000 size 2097152 ipcDesc 0x7f0dc4033420
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Channel 05/1 : 3[3] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x612000000 size 10485760 ipcDesc 0x7f54e4031850
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Channel 01/1 : 2[2] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x612c00000 size 2097152 ipcDesc 0x7f01c4034ba0
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Channel 09/1 : 1[1] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x611c00000 size 2097152 ipcDesc 0x7fa890034940
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x612c00000 size 2097152 ipcDesc 0x7f0dc4034ba0
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Channel 09/1 : 0[0] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Channel 09/1 : 3[3] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x612e00000 size 2097152 ipcDesc 0x7f01c4036320
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Channel 13/1 : 1[1] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x612a00000 size 2097152 ipcDesc 0x7f54e4033420
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Channel 05/1 : 2[2] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x612e00000 size 2097152 ipcDesc 0x7f0dc4036320
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Channel 13/1 : 3[3] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x611e00000 size 2097152 ipcDesc 0x7fa8900360c0
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Channel 13/1 : 0[0] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x613000000 size 2097152 ipcDesc 0x7f01c4037aa0
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x613000000 size 2097152 ipcDesc 0x7f0dc4037aa0
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x612c00000 size 2097152 ipcDesc 0x7f54e4034ba0
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x60f800000 size 2097152 ipcDesc 0x7fa890037520
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Channel 09/1 : 2[2] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x612e00000 size 2097152 ipcDesc 0x7f54e4036320
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Channel 13/1 : 2[2] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x614000000 size 10485760 ipcDesc 0x7fa890038ca0
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x613000000 size 2097152 ipcDesc 0x7f54e4037aa0
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x614a00000 size 10485760 ipcDesc 0x7fa89003a5f0
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x615400000 size 10485760 ipcDesc 0x7fa89003bd70
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x613200000 size 10485760 ipcDesc 0x7f01c4039220
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x613200000 size 10485760 ipcDesc 0x7f54e4039220
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x616000000 size 10485760 ipcDesc 0x7fa89003d4f0
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Channel 03/1 : 0[0] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x613200000 size 10485760 ipcDesc 0x7f0dc4039220
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x616a00000 size 2097152 ipcDesc 0x7fa89003f0c0
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Channel 07/1 : 0[0] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x614000000 size 10485760 ipcDesc 0x7f01c403a9a0
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x614000000 size 10485760 ipcDesc 0x7f54e403a9a0
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x614000000 size 10485760 ipcDesc 0x7f0dc403a9a0
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x616c00000 size 2097152 ipcDesc 0x7fa890040840
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Channel 11/1 : 0[0] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x614a00000 size 10485760 ipcDesc 0x7f0dc403c570
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x614a00000 size 10485760 ipcDesc 0x7f01c403c570
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x614a00000 size 10485760 ipcDesc 0x7f54e403c570
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x615400000 size 10485760 ipcDesc 0x7f0dc403dcf0
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Channel 03/1 : 3[3] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x616e00000 size 2097152 ipcDesc 0x7fa890041fc0
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Channel 15/1 : 0[0] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x615400000 size 10485760 ipcDesc 0x7f01c403dcf0
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Channel 03/1 : 1[1] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x615400000 size 10485760 ipcDesc 0x7f54e403dcf0
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Channel 03/1 : 2[2] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x615e00000 size 2097152 ipcDesc 0x7f0dc403f470
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Channel 07/1 : 3[3] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x617000000 size 2097152 ipcDesc 0x7fa890043740
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x615e00000 size 2097152 ipcDesc 0x7f01c403f470
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Channel 07/1 : 1[1] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x613c00000 size 2097152 ipcDesc 0x7f0dc4040b50
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Channel 11/1 : 3[3] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x615e00000 size 2097152 ipcDesc 0x7f54e403f470
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Channel 07/1 : 2[2] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x613c00000 size 2097152 ipcDesc 0x7f01c4040b50
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Channel 11/1 : 1[1] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x613e00000 size 2097152 ipcDesc 0x7f0dc40422d0
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Channel 15/1 : 3[3] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x613e00000 size 2097152 ipcDesc 0x7f01c40422d0
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Channel 15/1 : 1[1] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x613c00000 size 2097152 ipcDesc 0x7f54e4040b50
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Channel 11/1 : 2[2] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x611e00000 size 2097152 ipcDesc 0x7f0dc4043730
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x613e00000 size 2097152 ipcDesc 0x7f54e40422d0
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x611e00000 size 2097152 ipcDesc 0x7f01c4043730
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Channel 15/1 : 2[2] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x611e00000 size 2097152 ipcDesc 0x7f54e4043730
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x616000000 size 10485760 ipcDesc 0x7f0dc4044b90
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x616000000 size 10485760 ipcDesc 0x7f01c4044b90
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x617200000 size 10485760 ipcDesc 0x7fa890044ec0
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x616a00000 size 10485760 ipcDesc 0x7f0dc40464e0
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x616a00000 size 10485760 ipcDesc 0x7f01c40464e0
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x616000000 size 10485760 ipcDesc 0x7f54e4044b90
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x618000000 size 10485760 ipcDesc 0x7fa890046640
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x617400000 size 10485760 ipcDesc 0x7f0dc4047c60
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x617400000 size 10485760 ipcDesc 0x7f01c4047c60
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x618a00000 size 10485760 ipcDesc 0x7fa890048210
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x618000000 size 10485760 ipcDesc 0x7f0dc40493e0
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Channel 02/1 : 3[3] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x616a00000 size 10485760 ipcDesc 0x7f54e40464e0
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x618000000 size 10485760 ipcDesc 0x7f01c40493e0
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Channel 02/1 : 1[1] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x619400000 size 10485760 ipcDesc 0x7fa890049990
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Channel 02/1 : 0[0] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x618a00000 size 2097152 ipcDesc 0x7f0dc404afb0
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Channel 06/1 : 3[3] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x618a00000 size 2097152 ipcDesc 0x7f01c404afb0
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Channel 06/1 : 1[1] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x617400000 size 10485760 ipcDesc 0x7f54e4047c60
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x619e00000 size 2097152 ipcDesc 0x7fa89004b110
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Channel 06/1 : 0[0] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x618c00000 size 2097152 ipcDesc 0x7f0dc404c730
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Channel 10/1 : 3[3] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x618c00000 size 2097152 ipcDesc 0x7f01c404c730
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Channel 10/1 : 1[1] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x617c00000 size 2097152 ipcDesc 0x7fa89004c7f0
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Channel 10/1 : 0[0] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x618000000 size 10485760 ipcDesc 0x7f54e40493e0
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Channel 02/1 : 2[2] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x618e00000 size 2097152 ipcDesc 0x7f0dc404deb0
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Channel 14/1 : 3[3] -> 2[2] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x618e00000 size 2097152 ipcDesc 0x7f01c404deb0
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Channel 14/1 : 1[1] -> 0[0] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x617e00000 size 2097152 ipcDesc 0x7fa89004df70
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Channel 14/1 : 0[0] -> 3[3] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO Allocated shareable buffer 0x619000000 size 2097152 ipcDesc 0x7f0dc404f630
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO Allocated shareable buffer 0x619000000 size 2097152 ipcDesc 0x7f01c404f630
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x618a00000 size 2097152 ipcDesc 0x7f54e404afb0
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Channel 06/1 : 2[2] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO Allocated shareable buffer 0x615e00000 size 2097152 ipcDesc 0x7fa89004f3d0
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x618c00000 size 2097152 ipcDesc 0x7f54e404c730
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Channel 10/1 : 2[2] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO UDS converted handle 0x7f01c402cdd0 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x618e00000 size 2097152 ipcDesc 0x7f54e404deb0
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Channel 14/1 : 2[2] -> 1[1] via P2P/CUMEM
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x61a000000
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO Allocated shareable buffer 0x619000000 size 2097152 ipcDesc 0x7f54e404f630
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO UDS converted handle 0x7f0dc4033470 to fd 80 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO UDS converted handle 0x7f54e402cdd0 to fd 80 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO UDS converted handle 0x7fa89002cde0 to fd 80 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x61aa00000
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO UDS converted handle 0x7f0dc402cdd0 to fd 80 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x619200000
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x619200000
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO UDS converted handle 0x7f01c402e9a0 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x619200000
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO UDS converted handle 0x7f54e4033470 to fd 80 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x61ac00000
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x619c00000
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO UDS converted handle 0x7fa8900332b0 to fd 81 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO UDS converted handle 0x7f01c4033470 to fd 79 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO UDS converted handle 0x7f0dc4034bf0 to fd 79 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x619c00000
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x619c00000
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO UDS converted handle 0x7fa89002e7e0 to fd 80 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x61b600000
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO UDS converted handle 0x7f54e402e9a0 to fd 80 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO UDS converted handle 0x7f0dc402e9a0 to fd 80 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x61a000000
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO UDS converted handle 0x7f01c4030120 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x61a000000
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x61c000000
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO UDS converted handle 0x7f54e4034bf0 to fd 80 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x61a000000
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO UDS converted handle 0x7fa890034990 to fd 80 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x61aa00000
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO UDS converted handle 0x7f01c4034bf0 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO UDS converted handle 0x7f0dc4036370 to fd 80 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x61aa00000
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO UDS converted handle 0x7fa8900303b0 to fd 79 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x61aa00000
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x61ca00000
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x61ac00000
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO UDS converted handle 0x7f54e4030120 to fd 80 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO UDS converted handle 0x7f01c40318a0 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO UDS converted handle 0x7f0dc4030120 to fd 80 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x61cc00000
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x61ac00000
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO UDS converted handle 0x7f54e4036370 to fd 80 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x61ac00000
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x61b600000
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO UDS converted handle 0x7f0dc4037af0 to fd 81 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO UDS converted handle 0x7f01c4036370 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO UDS converted handle 0x7fa890036110 to fd 80 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x61b600000
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x61d600000
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x61b600000
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO UDS converted handle 0x7fa890031b30 to fd 81 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO UDS converted handle 0x7f0dc40318a0 to fd 81 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO UDS converted handle 0x7f54e4039270 to fd 80 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x61c000000
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x61c000000
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x61e000000
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO UDS converted handle 0x7f54e40318a0 to fd 80 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO UDS converted handle 0x7f01c4037af0 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO UDS converted handle 0x7f54e4037af0 to fd 80 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x61c000000
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x61ca00000
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x61ca00000
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO UDS converted handle 0x7f54e403f4c0 to fd 80 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO UDS converted handle 0x7fa890037570 to fd 81 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO UDS converted handle 0x7f01c4039270 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x61ea00000
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x61cc00000
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x61ca00000
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO UDS converted handle 0x7fa890038cf0 to fd 81 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO UDS converted handle 0x7f54e403a9f0 to fd 80 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO UDS converted handle 0x7f01c403f4c0 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x61cc00000
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO UDS converted handle 0x7f0dc4039270 to fd 80 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x61ec00000
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x61d600000
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x61cc00000
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO UDS converted handle 0x7fa89003f110 to fd 81 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO UDS converted handle 0x7f54e4040ba0 to fd 80 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO UDS converted handle 0x7f01c403a9f0 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x61f600000
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x61d600000
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO UDS converted handle 0x7f0dc403f4c0 to fd 80 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x61e000000
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO UDS converted handle 0x7f54e403c5c0 to fd 81 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO UDS converted handle 0x7fa89003a640 to fd 80 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x61d600000
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO UDS converted handle 0x7f01c4040ba0 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x620000000
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x61e000000
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x61ea00000
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO UDS converted handle 0x7f0dc403a9f0 to fd 79 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO UDS converted handle 0x7f54e4042320 to fd 81 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO UDS converted handle 0x7fa890040890 to fd 80 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO UDS converted handle 0x7f01c403c5c0 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x61e000000
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x620a00000
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x61ea00000
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x61ec00000
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO UDS converted handle 0x7f54e403dd40 to fd 80 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO UDS converted handle 0x7f0dc4040ba0 to fd 80 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO UDS converted handle 0x7f01c4042320 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO UDS converted handle 0x7fa89003bdc0 to fd 80 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x620c00000
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x61ea00000
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x61f600000
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x61ec00000
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO UDS converted handle 0x7f54e4043780 to fd 80 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO UDS converted handle 0x7f0dc403c5c0 to fd 81 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO UDS converted handle 0x7f01c403dd40 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO UDS converted handle 0x7fa890042010 to fd 79 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x621600000
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x61ec00000
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x620000000
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x61f600000
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO UDS converted handle 0x7f0dc4044be0 to fd 80 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO UDS converted handle 0x7f01c4043780 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO UDS converted handle 0x7fa89003d540 to fd 80 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x622000000
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x620a00000
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO UDS converted handle 0x7f0dc4042320 to fd 80 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO UDS converted handle 0x7f01c404b000 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x620000000
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x61f600000
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x622a00000
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO UDS converted handle 0x7f54e4044be0 to fd 81 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO UDS converted handle 0x7fa890043790 to fd 80 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO UDS converted handle 0x7f0dc403dd40 to fd 80 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x620a00000
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x620c00000
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO UDS converted handle 0x7f01c4044be0 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x620000000
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO UDS converted handle 0x7f0dc4046530 to fd 80 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO UDS converted handle 0x7fa89004b160 to fd 80 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x620c00000
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x621600000
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x622c00000
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO UDS converted handle 0x7f0dc4043780 to fd 80 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO UDS converted handle 0x7f01c404c780 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x620a00000
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO UDS converted handle 0x7f54e4046530 to fd 81 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO UDS converted handle 0x7f0dc404b000 to fd 80 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x623600000
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x622000000
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x621600000
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO UDS converted handle 0x7fa890044f10 to fd 80 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO UDS converted handle 0x7f0dc4047cb0 to fd 80 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x620c00000
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO UDS converted handle 0x7f01c4046530 to fd 80 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x624000000
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO UDS converted handle 0x7fa89004c840 to fd 80 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x622000000
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO UDS converted handle 0x7f54e404b000 to fd 79 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO UDS converted handle 0x7f01c404df00 to fd 79 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x622a00000
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO UDS converted handle 0x7f0dc404c780 to fd 79 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x621600000
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x624a00000
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x622a00000
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO UDS converted handle 0x7f54e4047cb0 to fd 80 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO UDS converted handle 0x7f0dc4049430 to fd 81 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO UDS converted handle 0x7fa890046690 to fd 80 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x622c00000
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO UDS converted handle 0x7f01c4047cb0 to fd 79 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Imported shareable buffer device 0 size 10485760 ptr 0x624c00000
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x622000000
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x622c00000
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO UDS converted handle 0x7f01c404f680 to fd 81 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO UDS converted handle 0x7fa89004dfc0 to fd 80 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32036:32089 [0] NCCL INFO Imported shareable buffer device 0 size 2097152 ptr 0x625600000
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x623600000
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO UDS converted handle 0x7f0dc404df00 to fd 81 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO UDS converted handle 0x7f54e404c780 to fd 79 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x623600000
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x622a00000
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO UDS converted handle 0x7f01c4049430 to fd 81 on remote peer 1
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO UDS converted handle 0x7f54e4049430 to fd 79 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Imported shareable buffer device 2 size 10485760 ptr 0x624000000
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO UDS converted handle 0x7fa890048260 to fd 79 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Imported shareable buffer device 3 size 10485760 ptr 0x624000000
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO UDS converted handle 0x7f0dc404f680 to fd 80 on remote peer 3
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x622c00000
+sg-fuxc2-260708-12652-default0-0:32038:32092 [2] NCCL INFO Imported shareable buffer device 2 size 2097152 ptr 0x624a00000
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO UDS converted handle 0x7fa89004f420 to fd 79 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO UDS converted handle 0x7f54e404df00 to fd 80 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32039:32090 [3] NCCL INFO Imported shareable buffer device 3 size 2097152 ptr 0x624a00000
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x623600000
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO UDS converted handle 0x7fa8900499e0 to fd 80 on remote peer 0
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Imported shareable buffer device 1 size 10485760 ptr 0x624000000
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO UDS converted handle 0x7f54e404f680 to fd 80 on remote peer 2
+sg-fuxc2-260708-12652-default0-0:32037:32091 [1] NCCL INFO Imported shareable buffer device 1 size 2097152 ptr 0x624a00000
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] NCCL INFO Send: opCount a sendbuff (nil) recvbuff 0x7fa8c3a01800 count 1 datatype 4 op 0 root 0 comm 0x55f43e32f2e0 [nranks=4] stream 0x55f43e313360
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] NCCL INFO Recv: opCount a sendbuff (nil) recvbuff 0x7fa8c3a01a00 count 1 datatype 4 op 0 root 0 comm 0x55f43e32f2e0 [nranks=4] stream 0x55f43e313360
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] NCCL INFO Send: opCount a sendbuff (nil) recvbuff 0x7fa8c3a01808 count 2 datatype 4 op 0 root 1 comm 0x55f43e32f2e0 [nranks=4] stream 0x55f43e313360
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] NCCL INFO Send: opCount a sendbuff (nil) recvbuff 0x7f5537a01800 count 3 datatype 4 op 0 root 0 comm 0x55f6076d98f0 [nranks=4] stream 0x55f6076d97a0
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] NCCL INFO Recv: opCount a sendbuff (nil) recvbuff 0x7fa8c3a01a08 count 2 datatype 4 op 0 root 1 comm 0x55f43e32f2e0 [nranks=4] stream 0x55f43e313360
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] NCCL INFO Send: opCount a sendbuff (nil) recvbuff 0x7f0e13a01800 count 4 datatype 4 op 0 root 0 comm 0x558a27367300 [nranks=4] stream 0x558a273671b0
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] NCCL INFO Send: opCount a sendbuff (nil) recvbuff 0x7f0217a01800 count 2 datatype 4 op 0 root 0 comm 0x557b070fa380 [nranks=4] stream 0x557b070fa230
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] NCCL INFO Recv: opCount a sendbuff (nil) recvbuff 0x7f0e13a01a00 count 4 datatype 4 op 0 root 0 comm 0x558a27367300 [nranks=4] stream 0x558a273671b0
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] NCCL INFO Send: opCount a sendbuff (nil) recvbuff 0x7fa8c3a01818 count 3 datatype 4 op 0 root 2 comm 0x55f43e32f2e0 [nranks=4] stream 0x55f43e313360
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] NCCL INFO Recv: opCount a sendbuff (nil) recvbuff 0x7f5537a01a00 count 3 datatype 4 op 0 root 0 comm 0x55f6076d98f0 [nranks=4] stream 0x55f6076d97a0
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] NCCL INFO Send: opCount a sendbuff (nil) recvbuff 0x7f0e13a01820 count 5 datatype 4 op 0 root 1 comm 0x558a27367300 [nranks=4] stream 0x558a273671b0
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] NCCL INFO Recv: opCount a sendbuff (nil) recvbuff 0x7fa8c3a01a18 count 3 datatype 4 op 0 root 2 comm 0x55f43e32f2e0 [nranks=4] stream 0x55f43e313360
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] NCCL INFO Recv: opCount a sendbuff (nil) recvbuff 0x7f0217a01a00 count 2 datatype 4 op 0 root 0 comm 0x557b070fa380 [nranks=4] stream 0x557b070fa230
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] NCCL INFO Send: opCount a sendbuff (nil) recvbuff 0x7f5537a01818 count 4 datatype 4 op 0 root 1 comm 0x55f6076d98f0 [nranks=4] stream 0x55f6076d97a0
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] NCCL INFO Recv: opCount a sendbuff (nil) recvbuff 0x7f0e13a01a20 count 5 datatype 4 op 0 root 1 comm 0x558a27367300 [nranks=4] stream 0x558a273671b0
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] NCCL INFO Send: opCount a sendbuff (nil) recvbuff 0x7fa8c3a01830 count 4 datatype 4 op 0 root 3 comm 0x55f43e32f2e0 [nranks=4] stream 0x55f43e313360
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] NCCL INFO Recv: opCount a sendbuff (nil) recvbuff 0x7f5537a01a18 count 4 datatype 4 op 0 root 1 comm 0x55f6076d98f0 [nranks=4] stream 0x55f6076d97a0
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] NCCL INFO Send: opCount a sendbuff (nil) recvbuff 0x7f0217a01810 count 3 datatype 4 op 0 root 1 comm 0x557b070fa380 [nranks=4] stream 0x557b070fa230
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] NCCL INFO Send: opCount a sendbuff (nil) recvbuff 0x7f0e13a01848 count 6 datatype 4 op 0 root 2 comm 0x558a27367300 [nranks=4] stream 0x558a273671b0
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] NCCL INFO Recv: opCount a sendbuff (nil) recvbuff 0x7fa8c3a01a30 count 4 datatype 4 op 0 root 3 comm 0x55f43e32f2e0 [nranks=4] stream 0x55f43e313360
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] NCCL INFO Send: opCount a sendbuff (nil) recvbuff 0x7f5537a01838 count 5 datatype 4 op 0 root 2 comm 0x55f6076d98f0 [nranks=4] stream 0x55f6076d97a0
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] NCCL INFO Recv: opCount a sendbuff (nil) recvbuff 0x7f0e13a01a48 count 6 datatype 4 op 0 root 2 comm 0x558a27367300 [nranks=4] stream 0x558a273671b0
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] NCCL INFO Recv: opCount a sendbuff (nil) recvbuff 0x7f0217a01a10 count 3 datatype 4 op 0 root 1 comm 0x557b070fa380 [nranks=4] stream 0x557b070fa230
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] NCCL INFO Recv: opCount a sendbuff (nil) recvbuff 0x7f5537a01a38 count 5 datatype 4 op 0 root 2 comm 0x55f6076d98f0 [nranks=4] stream 0x55f6076d97a0
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] NCCL INFO Send: opCount a sendbuff (nil) recvbuff 0x7f0e13a01878 count 7 datatype 4 op 0 root 3 comm 0x558a27367300 [nranks=4] stream 0x558a273671b0
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] NCCL INFO Send: opCount a sendbuff (nil) recvbuff 0x7f5537a01860 count 6 datatype 4 op 0 root 3 comm 0x55f6076d98f0 [nranks=4] stream 0x55f6076d97a0
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] NCCL INFO Send: opCount a sendbuff (nil) recvbuff 0x7f0217a01828 count 4 datatype 4 op 0 root 2 comm 0x557b070fa380 [nranks=4] stream 0x557b070fa230
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] NCCL INFO Recv: opCount a sendbuff (nil) recvbuff 0x7f0e13a01a78 count 7 datatype 4 op 0 root 3 comm 0x558a27367300 [nranks=4] stream 0x558a273671b0
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] NCCL INFO Recv: opCount a sendbuff (nil) recvbuff 0x7f5537a01a60 count 6 datatype 4 op 0 root 3 comm 0x55f6076d98f0 [nranks=4] stream 0x55f6076d97a0
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] NCCL INFO Recv: opCount a sendbuff (nil) recvbuff 0x7f0217a01a28 count 4 datatype 4 op 0 root 2 comm 0x557b070fa380 [nranks=4] stream 0x557b070fa230
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] NCCL INFO Send: opCount a sendbuff (nil) recvbuff 0x7f0217a01848 count 5 datatype 4 op 0 root 3 comm 0x557b070fa380 [nranks=4] stream 0x557b070fa230
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] NCCL INFO Recv: opCount a sendbuff (nil) recvbuff 0x7f0217a01a48 count 5 datatype 4 op 0 root 3 comm 0x557b070fa380 [nranks=4] stream 0x557b070fa230
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] NCCL INFO Send: opCount b sendbuff (nil) recvbuff 0x7f5537a01c00 count 2 datatype 4 op 0 root 3 comm 0x55f6076d98f0 [nranks=4] stream 0x55f6076d97a0
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] NCCL INFO Send: opCount b sendbuff (nil) recvbuff 0x7f0e13a01c00 count 2 datatype 4 op 0 root 0 comm 0x558a27367300 [nranks=4] stream 0x558a273671b0
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] NCCL INFO Send: opCount b sendbuff (nil) recvbuff 0x7fa8c3a01c00 count 2 datatype 4 op 0 root 1 comm 0x55f43e32f2e0 [nranks=4] stream 0x55f43e313360
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] NCCL INFO Recv: opCount b sendbuff (nil) recvbuff 0x7f5537a01e00 count 2 datatype 4 op 0 root 1 comm 0x55f6076d98f0 [nranks=4] stream 0x55f6076d97a0
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] NCCL INFO Recv: opCount b sendbuff (nil) recvbuff 0x7f0e13a01e00 count 2 datatype 4 op 0 root 2 comm 0x558a27367300 [nranks=4] stream 0x558a273671b0
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] NCCL INFO Recv: opCount b sendbuff (nil) recvbuff 0x7fa8c3a01e00 count 2 datatype 4 op 0 root 3 comm 0x55f43e32f2e0 [nranks=4] stream 0x55f43e313360
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] NCCL INFO Send: opCount b sendbuff (nil) recvbuff 0x7f0217a01c00 count 2 datatype 4 op 0 root 2 comm 0x557b070fa380 [nranks=4] stream 0x557b070fa230
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] NCCL INFO Recv: opCount b sendbuff (nil) recvbuff 0x7f0217a01e00 count 2 datatype 4 op 0 root 0 comm 0x557b070fa380 [nranks=4] stream 0x557b070fa230
+
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] misc/argcheck.cc:48 NCCL WARN Broadcast : invalid root 4 (root should be in the 0..4 range)
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] NCCL INFO enqueue.cc:2063 -> 4
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] NCCL INFO enqueue.cc:2075 -> 4
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] NCCL INFO collectives.cc:135 -> 4
+
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] misc/argcheck.cc:48 NCCL WARN Broadcast : invalid root 4 (root should be in the 0..4 range)
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] NCCL INFO collectives.cc:143 -> 4
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] NCCL INFO enqueue.cc:2063 -> 4
+
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] misc/argcheck.cc:48 NCCL WARN Broadcast : invalid root 4 (root should be in the 0..4 range)
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] NCCL INFO enqueue.cc:2075 -> 4
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] NCCL INFO enqueue.cc:2063 -> 4
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] NCCL INFO collectives.cc:135 -> 4
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] NCCL INFO enqueue.cc:2075 -> 4
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] NCCL INFO collectives.cc:143 -> 4
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] NCCL INFO collectives.cc:135 -> 4
+
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] misc/argcheck.cc:48 NCCL WARN Broadcast : invalid root 4 (root should be in the 0..4 range)
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] NCCL INFO collectives.cc:143 -> 4
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] NCCL INFO enqueue.cc:2063 -> 4
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] NCCL INFO enqueue.cc:2075 -> 4
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] NCCL INFO collectives.cc:135 -> 4
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] NCCL INFO collectives.cc:143 -> 4
+sg-fuxc2-260708-12652-default0-0:32039:32039 [3] NCCL INFO AllReduce: opCount c sendbuff 0x7f0e13a02400 recvbuff 0x7f0e13a02400 count 1 datatype 1 op 0 root 0 comm 0x558a27367300 [nranks=4] stream 0x558a273671b0
+sg-fuxc2-260708-12652-default0-0:32036:32036 [0] NCCL INFO AllReduce: opCount c sendbuff 0x7fa8c3a02400 recvbuff 0x7fa8c3a02400 count 1 datatype 1 op 0 root 0 comm 0x55f43e32f2e0 [nranks=4] stream 0x55f43e313360
+sg-fuxc2-260708-12652-default0-0:32037:32037 [1] NCCL INFO AllReduce: opCount c sendbuff 0x7f0217a02400 recvbuff 0x7f0217a02400 count 1 datatype 1 op 0 root 0 comm 0x557b070fa380 [nranks=4] stream 0x557b070fa230
+sg-fuxc2-260708-12652-default0-0:32038:32038 [2] NCCL INFO AllReduce: opCount c sendbuff 0x7f5537a02400 recvbuff 0x7f5537a02400 count 1 datatype 1 op 0 root 0 comm 0x55f6076d98f0 [nranks=4] stream 0x55f6076d97a0
+rows_per_rank=14 output_dir=/root/nccl-learning/logs/ch05_collective_contracts/20260710T073928Z/raw/results
+[W710 07:39:37.385684508 ProcessGroupNCCL.cpp:1207] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+sg-fuxc2-260708-12652-default0-0:32036:32093 [0] NCCL INFO misc/socket.cc:47 -> 3
+sg-fuxc2-260708-12652-default0-0:32036:32093 [0] NCCL INFO misc/socket.cc:550 -> 3
+sg-fuxc2-260708-12652-default0-0:32036:32093 [0] NCCL INFO misc/socket.cc:573 -> 3
+sg-fuxc2-260708-12652-default0-0:32036:32093 [0] NCCL INFO misc/socket.cc:621 -> 3
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO misc/socket.cc:47 -> 3
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO misc/socket.cc:752 -> 3
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO misc/socket.cc:428 -> 3
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO misc/socket.cc:564 -> 3
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO misc/socket.cc:668 -> 3
+sg-fuxc2-260708-12652-default0-0:32036:32093 [0] NCCL INFO misc/socket.cc:47 -> 3
+
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] proxy.cc:1458 NCCL WARN [Service thread] Accept failed Resource temporarily unavailable
+sg-fuxc2-260708-12652-default0-0:32036:32093 [0] NCCL INFO misc/socket.cc:58 -> 3
+sg-fuxc2-260708-12652-default0-0:32036:32093 [0] NCCL INFO misc/socket.cc:775 -> 3
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] NCCL INFO misc/socket.cc:826 -> 3
+
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] proxy.cc:1497 NCCL WARN [Service thread] Could not receive type from localRank 0, res=3, closed=0
+
+sg-fuxc2-260708-12652-default0-0:32036:32081 [0] proxy.cc:1521 NCCL WARN [Proxy Service 0] Failed to execute operation Close from rank 0, retcode 3
+sg-fuxc2-260708-12652-default0-0:32037:32094 [1] NCCL INFO misc/socket.cc:47 -> 3
+sg-fuxc2-260708-12652-default0-0:32037:32094 [1] NCCL INFO misc/socket.cc:550 -> 3
+sg-fuxc2-260708-12652-default0-0:32037:32094 [1] NCCL INFO misc/socket.cc:573 -> 3
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO misc/socket.cc:47 -> 3
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO misc/socket.cc:752 -> 3
+sg-fuxc2-260708-12652-default0-0:32037:32094 [1] NCCL INFO misc/socket.cc:621 -> 3
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO misc/socket.cc:428 -> 3
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO misc/socket.cc:564 -> 3
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO misc/socket.cc:668 -> 3
+
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] proxy.cc:1458 NCCL WARN [Service thread] Accept failed Resource temporarily unavailable
+sg-fuxc2-260708-12652-default0-0:32037:32094 [1] NCCL INFO misc/socket.cc:47 -> 3
+sg-fuxc2-260708-12652-default0-0:32037:32094 [1] NCCL INFO misc/socket.cc:58 -> 3
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] NCCL INFO misc/socket.cc:826 -> 3
+
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] proxy.cc:1497 NCCL WARN [Service thread] Could not receive type from localRank 1, res=3, closed=0
+sg-fuxc2-260708-12652-default0-0:32037:32094 [1] NCCL INFO misc/socket.cc:775 -> 3
+
+sg-fuxc2-260708-12652-default0-0:32037:32083 [1] proxy.cc:1521 NCCL WARN [Proxy Service 1] Failed to execute operation Close from rank 1, retcode 3
+sg-fuxc2-260708-12652-default0-0:32039:32095 [3] NCCL INFO misc/socket.cc:47 -> 3
+sg-fuxc2-260708-12652-default0-0:32039:32095 [3] NCCL INFO misc/socket.cc:550 -> 3
+sg-fuxc2-260708-12652-default0-0:32039:32095 [3] NCCL INFO misc/socket.cc:573 -> 3
+sg-fuxc2-260708-12652-default0-0:32039:32095 [3] NCCL INFO misc/socket.cc:621 -> 3
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO misc/socket.cc:47 -> 3
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO misc/socket.cc:752 -> 3
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO misc/socket.cc:428 -> 3
+sg-fuxc2-260708-12652-default0-0:32039:32095 [3] NCCL INFO misc/socket.cc:47 -> 3
+sg-fuxc2-260708-12652-default0-0:32039:32095 [3] NCCL INFO misc/socket.cc:58 -> 3
+sg-fuxc2-260708-12652-default0-0:32039:32095 [3] NCCL INFO misc/socket.cc:775 -> 3
+sg-fuxc2-260708-12652-default0-0:32038:32096 [2] NCCL INFO misc/socket.cc:47 -> 3
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO misc/socket.cc:564 -> 3
+sg-fuxc2-260708-12652-default0-0:32038:32096 [2] NCCL INFO misc/socket.cc:550 -> 3
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO misc/socket.cc:668 -> 3
+sg-fuxc2-260708-12652-default0-0:32038:32096 [2] NCCL INFO misc/socket.cc:573 -> 3
+sg-fuxc2-260708-12652-default0-0:32038:32096 [2] NCCL INFO misc/socket.cc:621 -> 3
+
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] proxy.cc:1458 NCCL WARN [Service thread] Accept failed Resource temporarily unavailable
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO misc/socket.cc:47 -> 3
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] NCCL INFO misc/socket.cc:826 -> 3
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO misc/socket.cc:752 -> 3
+
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] proxy.cc:1497 NCCL WARN [Service thread] Could not receive type from localRank 3, res=3, closed=0
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO misc/socket.cc:428 -> 3
+
+sg-fuxc2-260708-12652-default0-0:32039:32077 [3] proxy.cc:1521 NCCL WARN [Proxy Service 3] Failed to execute operation Close from rank 3, retcode 3
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO misc/socket.cc:564 -> 3
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO misc/socket.cc:668 -> 3
+sg-fuxc2-260708-12652-default0-0:32038:32096 [2] NCCL INFO misc/socket.cc:47 -> 3
+sg-fuxc2-260708-12652-default0-0:32038:32096 [2] NCCL INFO misc/socket.cc:58 -> 3
+
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] proxy.cc:1458 NCCL WARN [Service thread] Accept failed Resource temporarily unavailable
+sg-fuxc2-260708-12652-default0-0:32038:32096 [2] NCCL INFO misc/socket.cc:775 -> 3
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] NCCL INFO misc/socket.cc:826 -> 3
+
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] proxy.cc:1497 NCCL WARN [Service thread] Could not receive type from localRank 2, res=3, closed=0
+
+sg-fuxc2-260708-12652-default0-0:32038:32079 [2] proxy.cc:1521 NCCL WARN [Proxy Service 2] Failed to execute operation Close from rank 2, retcode 3

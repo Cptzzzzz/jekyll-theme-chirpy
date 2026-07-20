@@ -1,0 +1,11 @@
+experiment=ch36_capstone
+run_id=20260712T003000Z
+timestamp_utc=2026-07-11T18:42:54.792087+00:00
+prediction_acceptance=8/8 PASS
+callgraph_model=35/35 PASS
+nsys_devices=4/4 PASS
+replica_equality=PASS
+channel1_step_regression_percent=245.93
+raw_logs_and_profiles=NOT_FOR_PUBLICATION
+pytorch_runtime=2.5.0a0+872d972e41.nv24.08
+nccl_runtime=2.22.3

@@ -1,0 +1,4 @@
+pg,high_priority,rank_operations,expected_comm_creations,observed_comm_creations,cache_reuse_after_first,correct
+world,0,12,4,4,1,1
+standard,0,12,4,4,1,1
+high_priority,1,12,4,4,1,1

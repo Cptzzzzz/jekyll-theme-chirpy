@@ -1,0 +1,14 @@
+experiment=ch27_multinic_pxn
+run_id=20260711T170000Z
+timestamp_utc=2026-07-11T16:27:49.076268+00:00
+hostname=sg-fuxc2-260708-12652-default0-0
+negative_control_rows=180
+path_rows=18
+source_model_rows=39
+correctness=PASS
+single_nic_negative_paths=18/18 PASS
+hca_filter_runtime=3/3 PASS
+multinic_pxn_source_model=39/39 PASS
+multinic_rail_performance=HARDWARE_BLOCKED
+nccl_runtime=2.22.3
+nccl_source_commit=178b6b759074597777ce13438efb0e0ba625e429

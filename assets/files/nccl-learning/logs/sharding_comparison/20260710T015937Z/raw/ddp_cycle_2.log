@@ -1,0 +1,5 @@
+W0710 01:59:53.049000 140501302948288 torch/distributed/run.py:793] 
+W0710 01:59:53.049000 140501302948288 torch/distributed/run.py:793] *****************************************
+W0710 01:59:53.049000 140501302948288 torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0710 01:59:53.049000 140501302948288 torch/distributed/run.py:793] *****************************************
+RESULT_JSON={"allocated_bytes": 1023936512, "max_step_ms": 11.901599884033203, "median_step_ms": 11.746351718902588, "min_step_ms": 11.59119987487793, "mode": "ddp", "p95_step_ms": 11.901599884033203, "parameter_bytes": 201326592, "parameters_equal": true, "peak_allocated_bytes": 1225261568}

@@ -1,0 +1,4 @@
+scenario,cases,fp16_mismatch_count,fp16_nonfinite_count,fp32_mismatch_count,unique_fp16_results,correct_replication_and_fp32_reference
+finite-overflow,24,8,8,0,-inf/0.0/inf,True
+lost-unit-10000,24,16,0,0,0.0/1.0,True
+lost-unit-2048,24,8,0,0,0.0/1.0,True

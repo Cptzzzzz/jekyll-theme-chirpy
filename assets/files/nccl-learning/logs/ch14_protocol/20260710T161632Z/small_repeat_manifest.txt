@@ -1,0 +1,19 @@
+experiment=ch14_small_stability_repeat
+timestamp_utc=2026-07-10T18:39:03.362816+00:00
+source_run=/root/nccl-learning/logs/ch14_protocol/20260710T161632Z
+threshold_percent=5.0
+combinations=Ring+LL,Ring+LL128,Ring+Simple,Tree+LL,Tree+LL128
+sizes=4B..64KiB_factor2
+cycles=20
+iterations=20
+rows=3000
+command_01=NCCL_ALGO=Ring NCCL_PROTO=LL NCCL_MIN_NCHANNELS=12 NCCL_MAX_NCHANNELS=12 /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 4 -e 64K -f 2 -g 4 -w 5 -n 20 -N 20 -c 1 -I 0 -z 0 -u 0 -C 0 -a 3 -d float -o sum
+command_02=NCCL_ALGO=Ring NCCL_PROTO=LL128 NCCL_MIN_NCHANNELS=12 NCCL_MAX_NCHANNELS=12 /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 4 -e 64K -f 2 -g 4 -w 5 -n 20 -N 20 -c 1 -I 0 -z 0 -u 0 -C 0 -a 3 -d float -o sum
+command_03=NCCL_ALGO=Ring NCCL_PROTO=Simple NCCL_MIN_NCHANNELS=12 NCCL_MAX_NCHANNELS=12 /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 4 -e 64K -f 2 -g 4 -w 5 -n 20 -N 20 -c 1 -I 0 -z 0 -u 0 -C 0 -a 3 -d float -o sum
+command_04=NCCL_ALGO=Tree NCCL_PROTO=LL NCCL_MIN_NCHANNELS=12 NCCL_MAX_NCHANNELS=12 /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 4 -e 64K -f 2 -g 4 -w 5 -n 20 -N 20 -c 1 -I 0 -z 0 -u 0 -C 0 -a 3 -d float -o sum
+command_05=NCCL_ALGO=Tree NCCL_PROTO=LL128 NCCL_MIN_NCHANNELS=12 NCCL_MAX_NCHANNELS=12 /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 4 -e 64K -f 2 -g 4 -w 5 -n 20 -N 20 -c 1 -I 0 -z 0 -u 0 -C 0 -a 3 -d float -o sum
+command_06=NCCL_ALGO=Tree NCCL_PROTO=LL128 NCCL_MIN_NCHANNELS=12 NCCL_MAX_NCHANNELS=12 /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 4 -e 64K -f 2 -g 4 -w 5 -n 20 -N 20 -c 1 -I 0 -z 0 -u 0 -C 0 -a 3 -d float -o sum
+command_07=NCCL_ALGO=Tree NCCL_PROTO=LL NCCL_MIN_NCHANNELS=12 NCCL_MAX_NCHANNELS=12 /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 4 -e 64K -f 2 -g 4 -w 5 -n 20 -N 20 -c 1 -I 0 -z 0 -u 0 -C 0 -a 3 -d float -o sum
+command_08=NCCL_ALGO=Ring NCCL_PROTO=Simple NCCL_MIN_NCHANNELS=12 NCCL_MAX_NCHANNELS=12 /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 4 -e 64K -f 2 -g 4 -w 5 -n 20 -N 20 -c 1 -I 0 -z 0 -u 0 -C 0 -a 3 -d float -o sum
+command_09=NCCL_ALGO=Ring NCCL_PROTO=LL128 NCCL_MIN_NCHANNELS=12 NCCL_MAX_NCHANNELS=12 /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 4 -e 64K -f 2 -g 4 -w 5 -n 20 -N 20 -c 1 -I 0 -z 0 -u 0 -C 0 -a 3 -d float -o sum
+command_10=NCCL_ALGO=Ring NCCL_PROTO=LL NCCL_MIN_NCHANNELS=12 NCCL_MAX_NCHANNELS=12 /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 4 -e 64K -f 2 -g 4 -w 5 -n 20 -N 20 -c 1 -I 0 -z 0 -u 0 -C 0 -a 3 -d float -o sum

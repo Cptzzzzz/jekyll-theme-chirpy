@@ -1,0 +1,13 @@
+config,size_bytes,samples,median_time_us,median_busbw_GBs
+auto,4096,10,465.575,0.01
+auto,524288,10,812.935,0.97
+auto,67108864,10,47105.8,2.135
+ib_disabled,4096,10,451.735,0.01
+ib_disabled,524288,10,829.71,0.95
+ib_disabled,67108864,10,46958.45,2.145
+missing_hca,4096,10,471.735,0.01
+missing_hca,524288,10,796.61,0.985
+missing_hca,67108864,10,47258.2,2.13
+socket_forced,4096,10,467.565,0.01
+socket_forced,524288,10,811.815,0.97
+socket_forced,67108864,10,47273.2,2.13

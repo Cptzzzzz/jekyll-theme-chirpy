@@ -1,0 +1,14 @@
+layer,item,available,detail
+cuda_gpu,gpu0,1,gdr_attr=1;dmabuf_attr=0
+cuda_gpu,gpu1,1,gdr_attr=1;dmabuf_attr=0
+cuda_gpu,gpu2,1,gdr_attr=1;dmabuf_attr=0
+cuda_gpu,gpu3,1,gdr_attr=1;dmabuf_attr=0
+host_container,dev_infiniband,0,absent
+host_container,dev_gdrdrv,0,absent
+host_container,peermem_legacy,0,absent
+host_container,peermem_new,0,absent
+host_container,module_nvidia_peermem,0,absent
+host_container,module_mlx4_ib,1,present
+host_container,sysfs_mlx4_0,1,present
+host_container,libgdrapi,1,present
+end_to_end,gdrdma_usable,0,no /dev/infiniband and no peermem/DMA-BUF path

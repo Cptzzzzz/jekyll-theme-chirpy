@@ -1,0 +1,40 @@
+topic,case,expected,observed,pass
+group_mapping,tp0,"(0, 1)","(0, 1)",1
+group_mapping,tp1,"(2, 3)","(2, 3)",1
+group_mapping,dp0,"(0, 2)","(0, 2)",1
+group_mapping,dp1,"(1, 3)","(1, 3)",1
+rank_coordinate,rank0_tp,0,0,1
+rank_coordinate,rank0_dp,0,0,1
+rank_coordinate,rank1_tp,1,1,1
+rank_coordinate,rank1_dp,0,0,1
+rank_coordinate,rank2_tp,0,0,1
+rank_coordinate,rank2_dp,1,1,1
+rank_coordinate,rank3_tp,1,1,1
+rank_coordinate,rank3_dp,1,1,1
+tp_payload,row_parallel_allreduce,131072,131072,1
+tp_payload,sequence_shard,65536,65536,1
+tp_payload,local_parameter_bytes,2097152,2097152,1
+tp_collectives,ar_forward_backward,2,2,1
+tp_collectives,sp_rs_ag_forward_backward,4,4,1
+autograd_dual,AllReduce,AllReduce,AllReduce,1
+autograd_dual,AllGather,ReduceScatter,ReduceScatter,1
+autograd_dual,ReduceScatter,AllGather,AllGather,1
+autograd_dual,AllToAll,AllToAll,AllToAll,1
+pipeline_p2p,microbatches_1,2,2,1
+pipeline_p2p,microbatches_2,4,4,1
+pipeline_p2p,microbatches_8,16,16,1
+expert_load,balanced_rank0,32,32,1
+expert_load,balanced_rank1,32,32,1
+expert_load,skewed_rank0,56,56,1
+expert_load,skewed_rank1,8,8,1
+expert_collectives,forward_dispatch_combine,2,2,1
+expert_collectives,forward_backward_total,4,4,1
+group_creation,same_global_order,1,1,1
+pipeline_autograd,explicit_activation_gradient,1,1,1
+dp_sync,same_shard_or_stage_only,1,1,1
+tp_colwise,weight_shard_dim,0,0,1
+tp_rowwise,weight_shard_dim,1,1,1
+rowwise_output,partial_to_replicate,AllReduce,AllReduce,1
+rowwise_output,partial_to_sequence_shard,ReduceScatter,ReduceScatter,1
+moe_route,dispatch_axis,token,token,1
+moe_route,variable_splits_encode_load,1,1,1

@@ -1,0 +1,7 @@
+algorithm,algorithm_id,protocol,protocol_id,base_latency_us,algorithm_bandwidth_GBs,available
+Tree,0,LL,0,10.4,14.5,1
+Tree,0,LL128,1,21.5,42.9,1
+Tree,0,Simple,2,168.0,55.2,1
+Ring,1,LL,0,10.2,26.0,1
+Ring,1,LL128,1,25.4,73.6,1
+Ring,1,Simple,2,28.8,80.0,1

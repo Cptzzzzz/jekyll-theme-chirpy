@@ -1,0 +1,6 @@
+buffer_bytes,fifo_steps,simple_data_bytes_per_step,allreduce_chunk_steps,allreduce_slice_steps,slices_per_chunk,nominal_chunk_bytes,nominal_slice_bytes,simple_grain_bytes
+65536,8,8192,4,2,2,32768,16384,512
+262144,8,32768,4,2,2,131072,65536,512
+1048576,8,131072,4,2,2,524288,262144,512
+4194304,8,524288,4,2,2,2097152,1048576,512
+16777216,8,2097152,4,2,2,8388608,4194304,512

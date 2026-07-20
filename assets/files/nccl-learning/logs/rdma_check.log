@@ -1,0 +1,36 @@
+== RDMA devices ==
+0 HCAs found:
+
+
+== RDMA links ==
+rdma command not installed
+
+== Network interfaces ==
+ip command not installed
+10.244.49.68 
+
+== GPU / NIC topology ==
+	[4mGPU0	GPU1	GPU2	GPU3	CPU Affinity	NUMA Affinity	GPU NUMA ID[0m
+GPU0	 X 	NV2	NV2	NV2	0,2,4,6,8,10	0		N/A
+GPU1	NV2	 X 	NV2	NV2	0,2,4,6,8,10	0		N/A
+GPU2	NV2	NV2	 X 	NV2	0,2,4,6,8,10	0		N/A
+GPU3	NV2	NV2	NV2	 X 	0,2,4,6,8,10	0		N/A
+
+Legend:
+
+  X    = Self
+  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)
+  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node
+  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)
+  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)
+  PIX  = Connection traversing at most a single PCIe bridge
+  NV#  = Connection traversing a bonded set of # NVLinks
+
+== NCCL multi-node env template ==
+# Set these only after confirming your fabric and interface names.
+export NCCL_DEBUG=INFO
+export NCCL_DEBUG_SUBSYS=INIT,NET,GRAPH,COLL,ENV
+export NCCL_IB_DISABLE=0
+export NCCL_SOCKET_IFNAME=<bootstrap_iface_or_prefix>
+export NCCL_IB_HCA=<mlx5_device_or_prefix>
+export NCCL_IB_GID_INDEX=<roce_gid_index_if_needed>

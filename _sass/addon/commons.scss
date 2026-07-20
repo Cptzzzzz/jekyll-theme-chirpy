@@ -700,6 +700,36 @@ figure .mfp-title {
   text-align: center;
 }
 
+.diagram-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  -webkit-overflow-scrolling: touch;
+
+  .mermaid svg {
+    width: 100% !important;
+    max-width: none !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .diagram-scroll .mermaid {
+    min-width: 52rem;
+  }
+}
+
+.diagram-scroll--wide .mermaid {
+  min-width: 72rem;
+}
+
+.diagram-scroll--xwide .mermaid {
+  min-width: 96rem;
+}
+
+.diagram-scroll--xxwide .mermaid {
+  min-width: 168rem;
+}
+
 /* MathJax */
 mjx-container {
   overflow-y: hidden;

@@ -1,0 +1,10 @@
+RESULT mode=graph ops=4 replays=5 bytes=1048576 host_us=976.795 total_us=1455.989 graph_nodes=12 correct=1
+Generating '/tmp/nsys-report-2096.qdstrm'
+
+[1/1] [0%                          ] nsys_graph.nsys-rep
+[1/1] [0%                          ] nsys_graph.nsys-rep
+[1/1] [======================91%   ] nsys_graph.nsys-rep
+[1/1] [========================100%] nsys_graph.nsys-rep
+[1/1] [========================100%] nsys_graph.nsys-rep
+Generated:
+    /root/nccl-learning/logs/ch22_enqueue_plan/20260711T151500Z/private/nsys_graph.nsys-rep

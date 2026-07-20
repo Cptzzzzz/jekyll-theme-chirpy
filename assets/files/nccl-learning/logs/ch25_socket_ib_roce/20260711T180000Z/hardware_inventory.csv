@@ -1,0 +1,5 @@
+check,returncode,first_line,hca_usable
+ibv_devinfo,255,No IB devices found,0
+dev_infiniband,2,ls: cannot access '/dev/infiniband': No such file or directory,0
+sys_class_infiniband,1,/sys/class/infiniband -> ,0
+loaded_modules,0,bash: line 1: lsmod: command not found,0

@@ -1,0 +1,63 @@
+#       size         count      type   redop    root     time   algbw   busbw  #wrong     time   algbw   busbw  #wrong 
+        1024           256     float     sum      -1sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 10.239385
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 10.239385
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 10.239385
+    60.94    0.02    0.03       0sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 10.239385
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 10.239385
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 1024 Bytes -> Algo 1 proto 0 time 10.239385
+        4096          1024     float     sum      -1sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 10.357538
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 10.357538
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 10.357538
+    35.90    0.11    0.17       0sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 10.357538
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 10.357538
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 4096 Bytes -> Algo 1 proto 0 time 10.357538
+       16384          4096     float     sum      -1sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 10.830153
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 10.830153
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 10.830153
+    38.82    0.42    0.63       0sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 10.830153
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 10.830153
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 16384 Bytes -> Algo 1 proto 0 time 10.830153
+       65536         16384     float     sum      -1sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 12.720615
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 12.720615
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 12.720615
+    40.34    1.62    2.44       0sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 12.720615
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 12.720615
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 65536 Bytes -> Algo 1 proto 0 time 12.720615
+      262144         65536     float     sum      -1sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.282461
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.282461
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.282461
+    48.87    5.36    8.05       0sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.282461
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.282461
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 262144 Bytes -> Algo 1 proto 0 time 20.282461
+     1048576        262144     float     sum      -1sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 1048576 Bytes -> Algo 1 proto 1 time 39.646954
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 1048576 Bytes -> Algo 1 proto 1 time 39.646954
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 1048576 Bytes -> Algo 1 proto 1 time 39.646954
+    82.34   12.73   19.10       0sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 1048576 Bytes -> Algo 1 proto 1 time 39.646954
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 1048576 Bytes -> Algo 1 proto 1 time 39.646954
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 1048576 Bytes -> Algo 1 proto 1 time 39.646954
+     4194304       1048576     float     sum      -1sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 81.228798
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 81.228798
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 81.228798
+   135.97   30.85   46.27       0sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 81.228798
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 81.228798
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 4194304 Bytes -> Algo 1 proto 2 time 81.228798
+    16777216       4194304     float     sum      -1sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 238.515198
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 238.515198
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 238.515198
+   298.65   56.18   84.26       0sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 238.515198
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 238.515198
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 16777216 Bytes -> Algo 1 proto 2 time 238.515198
+    67108864      16777216     float     sum      -1sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 867.660767
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 867.660767
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 867.660767
+   913.68   73.45  110.17       0sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 867.660767
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 867.660767
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 67108864 Bytes -> Algo 1 proto 2 time 867.660767
+   268435456      67108864     float     sum      -1sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 3384.243164
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 3384.243164
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 3384.243164
+  3379.60   79.43  119.14       0sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 3384.243164
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 3384.243164
+sg-fuxc2-260708-12652-default0-0:19110:19110 [3] NCCL INFO 268435456 Bytes -> Algo 1 proto 2 time 3384.243164
+# Out of bounds values : 0 OK
+# Avg bus bandwidth    : 39.1274 

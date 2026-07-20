@@ -1,0 +1,5 @@
+item,value,detail
+nvml_nic_count,1,mlx4_0
+verbs_device_count,0,ibv_devinfo: No IB devices found
+active_socket_data_devices,1,NET/Socket/0 eth0
+gpu_nic_distance,1,all four GPU rows report NODE to NIC0

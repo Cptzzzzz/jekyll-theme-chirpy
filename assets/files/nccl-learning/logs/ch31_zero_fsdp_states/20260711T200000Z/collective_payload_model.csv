@@ -1,0 +1,7 @@
+config,logical_parameter_bytes,allreduce_input_bytes,forward_allgather_logical_bytes,backward_allgather_logical_bytes,reduce_scatter_input_bytes,observed_allreduce_kernels_per_rank,observed_allgather_kernels_per_rank,observed_reducescatter_kernels_per_rank,observed_broadcast_kernels_per_rank
+zero0_ddp,134217728,134217728,0,0,0,2.0,0.0,0.0,0.0
+zero1_zro,134217728,134217728,0,0,0,2.0,0.0,0.0,8.0
+zero2_fsdp,134217728,0,134217728,0,134217728,0.0,8.0,8.0,0.0
+zero3_pre,134217728,0,134217728,134217728,134217728,0.0,16.0,8.0,0.0
+zero3_post,134217728,0,134217728,134217728,134217728,0.0,16.0,8.0,0.0
+zero3_none,134217728,0,134217728,134217728,134217728,0.0,16.0,8.0,0.0

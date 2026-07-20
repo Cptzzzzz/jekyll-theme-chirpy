@@ -1,0 +1,2 @@
+case,exit_status,signature,signature_count,nccl_system_error_visible,observed
+p2p_shm_net_intra_disabled,-11,No transport found for rank,4,0,1

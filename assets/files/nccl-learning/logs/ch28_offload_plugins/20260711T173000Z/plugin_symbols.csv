@@ -1,0 +1,9 @@
+kind,version,symbol,exported
+net,5,ncclNetPlugin_v5,1
+net,6,ncclNetPlugin_v6,1
+net,7,ncclNetPlugin_v7,1
+net,8,ncclNetPlugin_v8,1
+collnet,5,ncclCollNetPlugin_v5,1
+collnet,6,ncclCollNetPlugin_v6,1
+collnet,7,ncclCollNetPlugin_v7,1
+collnet,8,ncclCollNetPlugin_v8,1

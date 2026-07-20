@@ -1,0 +1,4 @@
+mode,nvtx_instances,kernel_instances,total_time_ns,average_ns,kernel_name
+direct,1,20,17188698,859434.9,ncclDevKernel_AllReduce_Sum_u32_RING_LL(ncclDevKernelArgsStorage<(unsigned long)4096>)
+decomposed,1,20,10167526,508376.3,ncclDevKernel_ReduceScatter_Sum_u32_RING_LL(ncclDevKernelArgsStorage<(unsigned long)4096>)
+decomposed,1,20,9106350,455317.5,ncclDevKernel_AllGather_RING_LL(ncclDevKernelArgsStorage<(unsigned long)4096>)

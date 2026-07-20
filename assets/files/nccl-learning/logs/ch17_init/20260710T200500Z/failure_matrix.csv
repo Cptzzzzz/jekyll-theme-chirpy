@@ -1,0 +1,4 @@
+case,exit_status,wall_s,expected_signature,observed
+invalid_comm_id,3,0.18206372391432524,Invalid NCCL_COMM_ID,1
+duplicate_gpu,0,0.1687646983191371,ncclCommInitAll early invalid usage code=5,1
+missing_rank,124,5.121829861775041,external timeout while bootstrap root waits rank 1,1

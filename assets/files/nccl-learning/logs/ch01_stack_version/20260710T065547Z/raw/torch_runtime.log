@@ -1,0 +1,14 @@
+torch_version=2.5.0a0+872d972e41.nv24.08
+torch_git_version=Unknown
+torch_cuda_version=12.6
+torch_compiled_nccl_version=2.22.3
+torch_compiled_nccl_version_code=22203
+ctypes_runtime_nccl_version_code=22203
+torch_module=/usr/local/lib/python3.10/dist-packages/torch/__init__.py
+mapped_nccl_lines=6
+mapped_nccl_0=7f3100e41000-7f3100e73000 r--p 00000000 00:21e 52202011                  /usr/lib/x86_64-linux-gnu/libnccl.so.2.22.3
+mapped_nccl_1=7f3100e73000-7f3100f96000 r-xp 00032000 00:21e 52202011                  /usr/lib/x86_64-linux-gnu/libnccl.so.2.22.3
+mapped_nccl_2=7f3100f96000-7f310f9cd000 r--p 00155000 00:21e 52202011                  /usr/lib/x86_64-linux-gnu/libnccl.so.2.22.3
+mapped_nccl_3=7f310f9cd000-7f310f9ce000 ---p 0eb8c000 00:21e 52202011                  /usr/lib/x86_64-linux-gnu/libnccl.so.2.22.3
+mapped_nccl_4=7f310f9ce000-7f310f9d7000 r--p 0eb8c000 00:21e 52202011                  /usr/lib/x86_64-linux-gnu/libnccl.so.2.22.3
+mapped_nccl_5=7f310f9d7000-7f310f9e5000 rw-p 0eb95000 00:21e 52202011                  /usr/lib/x86_64-linux-gnu/libnccl.so.2.22.3

@@ -1,0 +1,15 @@
+experiment=ch07_decomposition
+run_id=20260710T081207Z
+timestamp_utc=2026-07-10T08:12:07Z
+hostname=sg-fuxc2-260708-12652-default0-0
+world_size=4
+sizes_bytes=1024,65536,1048576,16777216,268435456
+warmups=3
+cycles=10
+memory_bytes=268435456
+trace_bytes=67108864
+trace_warmups=2
+trace_iterations=5
+nccl_source_commit=178b6b759074597777ce13438efb0e0ba625e429
+torch=2.5.0a0+872d972e41.nv24.08
+nsys=NVIDIA Nsight Systems version 2024.4.2.133-244234382004v0

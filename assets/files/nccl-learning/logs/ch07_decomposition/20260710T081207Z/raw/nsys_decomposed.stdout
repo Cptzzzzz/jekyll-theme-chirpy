@@ -1,0 +1,5 @@
+mode=decomposed bytes=67108864 iterations=5 correct=1
+Generating '/tmp/nsys-report-ee67.qdstrm'
+[1/1] [0%                          ] decomposed.nsys-rep[1/1] [0%                          ] decomposed.nsys-rep[1/1] [0%                          ] decomposed.nsys-rep[1/1] [==20%                       ] decomposed.nsys-rep[1/1] [========41%                 ] decomposed.nsys-rep[1/1] [==============63%           ] decomposed.nsys-rep[1/1] [====================85%     ] decomposed.nsys-rep[1/1] [========================98% ] decomposed.nsys-rep[1/1] [========================99% ] decomposed.nsys-rep[1/1] [========================100%] decomposed.nsys-rep[1/1] [========================100%] decomposed.nsys-rep
+Generated:
+    /root/nccl-learning/logs/ch07_decomposition/20260710T081207Z/artifacts/decomposed.nsys-rep

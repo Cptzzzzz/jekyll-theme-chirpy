@@ -1,0 +1,261 @@
+# nccl-tests version 2.19.5 nccl-headers=22203 nccl-library=22203
+# Collective test starting: all_reduce_perf
+# nThread 1 nGpus 4 minBytes 1024 maxBytes 67108864 step: 256(factor) warmup iters: 0 iters: 1 agg iters: 1 validation: 0 graph: 0 unalign: 0
+#
+# Using devices
+#  Rank  0 Group  0 Pid  42614 on sg-fuxc2-260708-12652-default0-0 device  0 [0000:1a:00] Tesla V100-SXM2-32GB
+#  Rank  1 Group  0 Pid  42614 on sg-fuxc2-260708-12652-default0-0 device  1 [0000:1c:00] Tesla V100-SXM2-32GB
+#  Rank  2 Group  0 Pid  42614 on sg-fuxc2-260708-12652-default0-0 device  2 [0000:1d:00] Tesla V100-SXM2-32GB
+#  Rank  3 Group  0 Pid  42614 on sg-fuxc2-260708-12652-default0-0 device  3 [0000:1e:00] Tesla V100-SXM2-32GB
+sg-fuxc2-260708-12652-default0-0:42614:42614 [0] NCCL INFO Bootstrap : Using eth0:10.244.49.68<0>
+sg-fuxc2-260708-12652-default0-0:42614:42614 [0] NCCL INFO cudaDriverVersion 13000
+sg-fuxc2-260708-12652-default0-0:42614:42614 [0] NCCL INFO NCCL version 2.22.3+cuda12.6
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO Plugin Path : /opt/hpcx/nccl_rdma_sharp_plugin/lib/libnccl-net.so
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO P2P plugin IBext_v8
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO NET/IB : No device found.
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO NET/IB : No device found.
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO NET/Socket : Using [0]eth0:10.244.49.68<0>
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO Using network Socket
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO Using network Socket
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO Using network Socket
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO Using network Socket
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO ncclCommInitRank comm 0x55be05e8a440 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId 1e000 commId 0x5f8f7d6d7e60ba2c - Init START
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO ncclCommInitRank comm 0x55be05dd7150 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 1a000 commId 0x5f8f7d6d7e60ba2c - Init START
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO ncclCommInitRank comm 0x55be05e12d20 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 1c000 commId 0x5f8f7d6d7e60ba2c - Init START
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO ncclCommInitRank comm 0x55be05e4e950 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId 1d000 commId 0x5f8f7d6d7e60ba2c - Init START
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO NCCL_P2P_LEVEL set by environment to LOC
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO NCCL_P2P_LEVEL set by environment to LOC
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO === System : maxBw 12.0 totalBw 120.0 ===
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO CPU/0-0 (1/1/2)
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO === System : maxBw 12.0 totalBw 120.0 ===
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO + PCI[5000.0] - NIC/0-0
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO CPU/0-0 (1/1/2)
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO + PCI[5000.0] - NIC/0-0
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO + PCI[12.0] - PCI/0-18000 (10b5879610b58796)
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO               + PCI[12.0] - GPU/0-1a000 (0)
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO + PCI[12.0] - PCI/0-18000 (10b5879610b58796)
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO               + PCI[12.0] - GPU/0-1a000 (0)
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO               + PCI[12.0] - GPU/0-1c000 (1)
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO               + PCI[12.0] - GPU/0-1c000 (1)
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO               + PCI[12.0] - GPU/0-1d000 (2)
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO               + PCI[12.0] - GPU/0-1d000 (2)
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO               + PCI[12.0] - GPU/0-1e000 (3)
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO ==========================================
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO               + PCI[12.0] - GPU/0-1e000 (3)
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO GPU/1A000 :GPU/0-1a000 (0/5000.0/LOC) GPU/0-1c000 (4/12.0/PHB) GPU/0-1d000 (4/12.0/PHB) GPU/0-1e000 (4/12.0/PHB) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO GPU/1C000 :GPU/0-1a000 (4/12.0/PHB) GPU/0-1c000 (0/5000.0/LOC) GPU/0-1d000 (4/12.0/PHB) GPU/0-1e000 (4/12.0/PHB) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO GPU/1D000 :GPU/0-1a000 (4/12.0/PHB) GPU/0-1c000 (4/12.0/PHB) GPU/0-1d000 (0/5000.0/LOC) GPU/0-1e000 (4/12.0/PHB) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO ==========================================
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO GPU/1E000 :GPU/0-1a000 (4/12.0/PHB) GPU/0-1c000 (4/12.0/PHB) GPU/0-1d000 (4/12.0/PHB) GPU/0-1e000 (0/5000.0/LOC) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO GPU/1A000 :GPU/0-1a000 (0/5000.0/LOC) GPU/0-1c000 (4/12.0/PHB) GPU/0-1d000 (4/12.0/PHB) GPU/0-1e000 (4/12.0/PHB) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO GPU/1C000 :GPU/0-1a000 (4/12.0/PHB) GPU/0-1c000 (0/5000.0/LOC) GPU/0-1d000 (4/12.0/PHB) GPU/0-1e000 (4/12.0/PHB) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO NVLS multicast support is not available on dev 1
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO GPU/1D000 :GPU/0-1a000 (4/12.0/PHB) GPU/0-1c000 (4/12.0/PHB) GPU/0-1d000 (0/5000.0/LOC) GPU/0-1e000 (4/12.0/PHB) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO GPU/1E000 :GPU/0-1a000 (4/12.0/PHB) GPU/0-1c000 (4/12.0/PHB) GPU/0-1d000 (4/12.0/PHB) GPU/0-1e000 (0/5000.0/LOC) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO NVLS multicast support is not available on dev 0
+
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] graph/search.cc:1096 NCCL WARN Could not find a path for pattern 4, falling back to simple order
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO Pattern 4, crossNic 0, nChannels 1, bw 0.100000/0.100000, type SYS/SYS, sameChannels 1
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO  0 : GPU/0 GPU/1 GPU/2 GPU/3
+
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] graph/search.cc:1096 NCCL WARN Could not find a path for pattern 4, falling back to simple order
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO Pattern 4, crossNic 0, nChannels 1, bw 0.100000/0.100000, type SYS/SYS, sameChannels 1
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO  0 : GPU/0 GPU/1 GPU/2 GPU/3
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO Pattern 1, crossNic 0, nChannels 1, bw 3.000000/3.000000, type PHB/PIX, sameChannels 1
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO  0 : GPU/0 GPU/1 GPU/2 GPU/3
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO Pattern 1, crossNic 0, nChannels 1, bw 3.000000/3.000000, type PHB/PIX, sameChannels 1
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO  0 : GPU/0 GPU/1 GPU/2 GPU/3
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO === System : maxBw 12.0 totalBw 120.0 ===
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO CPU/0-0 (1/1/2)
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO + PCI[5000.0] - NIC/0-0
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO + PCI[12.0] - PCI/0-18000 (10b5879610b58796)
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO               + PCI[12.0] - GPU/0-1a000 (0)
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO               + PCI[12.0] - GPU/0-1c000 (1)
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO               + PCI[12.0] - GPU/0-1d000 (2)
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO               + PCI[12.0] - GPU/0-1e000 (3)
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO ==========================================
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO GPU/1A000 :GPU/0-1a000 (0/5000.0/LOC) GPU/0-1c000 (4/12.0/PHB) GPU/0-1d000 (4/12.0/PHB) GPU/0-1e000 (4/12.0/PHB) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO GPU/1C000 :GPU/0-1a000 (4/12.0/PHB) GPU/0-1c000 (0/5000.0/LOC) GPU/0-1d000 (4/12.0/PHB) GPU/0-1e000 (4/12.0/PHB) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO GPU/1D000 :GPU/0-1a000 (4/12.0/PHB) GPU/0-1c000 (4/12.0/PHB) GPU/0-1d000 (0/5000.0/LOC) GPU/0-1e000 (4/12.0/PHB) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO GPU/1E000 :GPU/0-1a000 (4/12.0/PHB) GPU/0-1c000 (4/12.0/PHB) GPU/0-1d000 (4/12.0/PHB) GPU/0-1e000 (0/5000.0/LOC) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO NVLS multicast support is not available on dev 2
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO === System : maxBw 12.0 totalBw 120.0 ===
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO CPU/0-0 (1/1/2)
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO + PCI[5000.0] - NIC/0-0
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO + PCI[12.0] - PCI/0-18000 (10b5879610b58796)
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO               + PCI[12.0] - GPU/0-1a000 (0)
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO               + PCI[12.0] - GPU/0-1c000 (1)
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO               + PCI[12.0] - GPU/0-1d000 (2)
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO                             + NVL[40.0] - GPU/1E000
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO               + PCI[12.0] - GPU/0-1e000 (3)
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO                             + NVL[40.0] - GPU/1D000
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO                             + NVL[40.0] - GPU/1C000
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO                             + NVL[40.0] - GPU/1A000
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO ==========================================
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO GPU/1A000 :GPU/0-1a000 (0/5000.0/LOC) GPU/0-1c000 (4/12.0/PHB) GPU/0-1d000 (4/12.0/PHB) GPU/0-1e000 (4/12.0/PHB) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO GPU/1C000 :GPU/0-1a000 (4/12.0/PHB) GPU/0-1c000 (0/5000.0/LOC) GPU/0-1d000 (4/12.0/PHB) GPU/0-1e000 (4/12.0/PHB) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO GPU/1D000 :GPU/0-1a000 (4/12.0/PHB) GPU/0-1c000 (4/12.0/PHB) GPU/0-1d000 (0/5000.0/LOC) GPU/0-1e000 (4/12.0/PHB) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO GPU/1E000 :GPU/0-1a000 (4/12.0/PHB) GPU/0-1c000 (4/12.0/PHB) GPU/0-1d000 (4/12.0/PHB) GPU/0-1e000 (0/5000.0/LOC) CPU/0-0 (2/12.0/PHB) 
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO NVLS multicast support is not available on dev 3
+
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] graph/search.cc:1096 NCCL WARN Could not find a path for pattern 4, falling back to simple order
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO Pattern 4, crossNic 0, nChannels 1, bw 0.100000/0.100000, type SYS/SYS, sameChannels 1
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO  0 : GPU/0 GPU/1 GPU/2 GPU/3
+
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] graph/search.cc:1096 NCCL WARN Could not find a path for pattern 4, falling back to simple order
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO Pattern 4, crossNic 0, nChannels 1, bw 0.100000/0.100000, type SYS/SYS, sameChannels 1
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO  0 : GPU/0 GPU/1 GPU/2 GPU/3
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO Pattern 1, crossNic 0, nChannels 1, bw 3.000000/3.000000, type PHB/PIX, sameChannels 1
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO  0 : GPU/0 GPU/1 GPU/2 GPU/3
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO Pattern 1, crossNic 0, nChannels 1, bw 3.000000/3.000000, type PHB/PIX, sameChannels 1
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO  0 : GPU/0 GPU/1 GPU/2 GPU/3
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO comm 0x55be05e8a440 rank 3 nRanks 4 nNodes 1 localRanks 4 localRank 3 MNNVL 0
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO comm 0x55be05e4e950 rank 2 nRanks 4 nNodes 1 localRanks 4 localRank 2 MNNVL 0
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO comm 0x55be05e12d20 rank 1 nRanks 4 nNodes 1 localRanks 4 localRank 1 MNNVL 0
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO Ring 00 : 2 -> 3 -> 0
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO comm 0x55be05dd7150 rank 0 nRanks 4 nNodes 1 localRanks 4 localRank 0 MNNVL 0
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO Tree 0 : 0 -> 1 -> 2/-1/-1
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO Tree 1 : 0 -> 1 -> 2/-1/-1
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO Ring 00 : 1 -> 2 -> 3
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO Ring 01 : 2 -> 3 -> 0
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO Ring 01 : 1 -> 2 -> 3
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO Trees [0] -1/-1/-1->3->2 [1] -1/-1/-1->3->2
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO Ring 00 : 0 -> 1 -> 2
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO Tree 0 : -1 -> 0 -> 1/-1/-1
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO Ring 01 : 0 -> 1 -> 2
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO Tree 1 : -1 -> 0 -> 1/-1/-1
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO P2P Chunksize set to 131072
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO Channel 00/02 :    0   1   2   3
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 3/-1/-1->2->1
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO Trees [0] 2/-1/-1->1->0 [1] 2/-1/-1->1->0
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO P2P Chunksize set to 131072
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO Channel 01/02 :    0   1   2   3
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO P2P Chunksize set to 131072
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO Ring 00 : 3 -> 0 -> 1
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO Ring 01 : 3 -> 0 -> 1
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO P2P Chunksize set to 131072
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO   Algorithm   |                            Tree                  |                            Ring                  |                   CollNetDirect                  |
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO   Protocol    |             LL |          LL128 |         Simple |             LL |          LL128 |         Simple |             LL |          LL128 |         Simple |
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO  Max NThreads |            512 |            640 |            512 |            512 |            640 |            256 |              0 |              0 |            640 |
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO     Broadcast |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     7.6/   0.1 |    16.5/   0.0 |    14.1/   0.1 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO        Reduce |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     7.6/   0.1 |    16.5/   0.0 |    14.1/   0.1 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO     AllGather |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     9.6/   0.1 |    21.5/   0.0 |    25.5/   0.1 |     2.4/   0.0 |     2.4/   0.0 |    40.8/   0.0 |
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO ReduceScatter |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     9.6/   0.1 |    21.5/   0.0 |    25.5/   0.1 |     2.4/   0.0 |     2.4/   0.0 |    40.8/   0.0 |
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO     AllReduce |    12.8/   0.4 |    25.4/   0.0 |   168.0/   1.4 |    12.6/   0.0 |    29.0/   0.0 |    42.6/   0.1 |     2.4/   0.0 |     2.4/   0.0 |    40.8/   0.0 |
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO   Algorithm   |                    CollNetChain                  |                            NVLS                  |                        NVLSTree                  |
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO   Protocol    |             LL |          LL128 |         Simple |             LL |          LL128 |         Simple |             LL |          LL128 |         Simple |
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO  Max NThreads |              0 |              0 |            640 |              0 |              0 |            640 |              0 |              0 |            640 |
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO     Broadcast |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO        Reduce |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO     AllGather |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO ReduceScatter |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO     AllReduce |     0.0/   0.0 |     0.0/   0.0 |    46.8/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO CC Off, Multi-GPU CC Off, workFifoBytes 1048576
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v3 symbol.
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v2 symbol, using internal tuner instead.
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO ncclCommInitRank comm 0x55be05e4e950 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId 1d000 commId 0x5f8f7d6d7e60ba2c - Init COMPLETE
+sg-fuxc2-260708-12652-default0-0:42614:42623 [2] NCCL INFO Init timings: rank 2 nranks 4 total 0.72 (kernels 0.45, bootstrap 0.16, allgathers 0.07, topo 0.02, graphs 0.00, connections 0.02, rest 0.00)
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO ncclCommInitRank comm 0x55be05dd7150 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 1a000 commId 0x5f8f7d6d7e60ba2c - Init COMPLETE
+sg-fuxc2-260708-12652-default0-0:42614:42621 [0] NCCL INFO Init timings: rank 0 nranks 4 total 0.72 (kernels 0.45, bootstrap 0.16, allgathers 0.04, topo 0.05, graphs 0.00, connections 0.00, rest 0.01)
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO ncclCommInitRank comm 0x55be05e8a440 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId 1e000 commId 0x5f8f7d6d7e60ba2c - Init COMPLETE
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO ncclCommInitRank comm 0x55be05e12d20 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 1c000 commId 0x5f8f7d6d7e60ba2c - Init COMPLETE
+sg-fuxc2-260708-12652-default0-0:42614:42624 [3] NCCL INFO Init timings: rank 3 nranks 4 total 0.72 (kernels 0.45, bootstrap 0.16, allgathers 0.07, topo 0.02, graphs 0.00, connections 0.00, rest 0.01)
+sg-fuxc2-260708-12652-default0-0:42614:42622 [1] NCCL INFO Init timings: rank 1 nranks 4 total 0.72 (kernels 0.45, bootstrap 0.16, allgathers 0.05, topo 0.04, graphs 0.00, connections 0.00, rest 0.01)
+#
+#                                                              out-of-place                       in-place          
+#       size         count      type   redop    root     time   algbw   busbw  #wrong     time   algbw   busbw  #wrong 
+#        (B)    (elements)                               (us)  (GB/s)  (GB/s)             (us)  (GB/s)  (GB/s)         
+        1024           256     float     sum      -1sg-fuxc2-260708-12652-default0-0:42614:42614 [0] NCCL INFO 1024 Bytes -> Algo 0 proto 0 time 15.933012
+sg-fuxc2-260708-12652-default0-0:42614:42637 [0] NCCL INFO Channel 00 : 0[0] -> 1[1] via SHM/direct/direct
+sg-fuxc2-260708-12652-default0-0:42614:42637 [0] NCCL INFO Channel 01 : 0[0] -> 1[1] via SHM/direct/direct
+sg-fuxc2-260708-12652-default0-0:42614:42636 [1] NCCL INFO Channel 00 : 1[1] -> 2[2] via SHM/direct/direct
+sg-fuxc2-260708-12652-default0-0:42614:42636 [1] NCCL INFO Channel 01 : 1[1] -> 2[2] via SHM/direct/direct
+sg-fuxc2-260708-12652-default0-0:42614:42635 [2] NCCL INFO Channel 00 : 2[2] -> 3[3] via SHM/direct/direct
+sg-fuxc2-260708-12652-default0-0:42614:42635 [2] NCCL INFO Channel 01 : 2[2] -> 3[3] via SHM/direct/direct
+sg-fuxc2-260708-12652-default0-0:42614:42634 [3] NCCL INFO Channel 00 : 3[3] -> 2[2] via SHM/direct/direct
+sg-fuxc2-260708-12652-default0-0:42614:42634 [3] NCCL INFO Channel 01 : 3[3] -> 2[2] via SHM/direct/direct
+sg-fuxc2-260708-12652-default0-0:42614:42635 [2] NCCL INFO Channel 00 : 2[2] -> 1[1] via SHM/direct/direct
+sg-fuxc2-260708-12652-default0-0:42614:42635 [2] NCCL INFO Channel 01 : 2[2] -> 1[1] via SHM/direct/direct
+sg-fuxc2-260708-12652-default0-0:42614:42636 [1] NCCL INFO Channel 00 : 1[1] -> 0[0] via SHM/direct/direct
+sg-fuxc2-260708-12652-default0-0:42614:42636 [1] NCCL INFO Channel 01 : 1[1] -> 0[0] via SHM/direct/direct
+sg-fuxc2-260708-12652-default0-0:42614:42634 [3] NCCL INFO Connected all trees
+sg-fuxc2-260708-12652-default0-0:42614:42637 [0] NCCL INFO Connected all trees
+sg-fuxc2-260708-12652-default0-0:42614:42635 [2] NCCL INFO Connected all trees
+sg-fuxc2-260708-12652-default0-0:42614:42636 [1] NCCL INFO Connected all trees
+sg-fuxc2-260708-12652-default0-0:42614:42614 [0] NCCL INFO 1024 Bytes -> Algo 0 proto 0 time 15.933012
+    80.01    0.01    0.02    N/Asg-fuxc2-260708-12652-default0-0:42614:42614 [0] NCCL INFO 1024 Bytes -> Algo 0 proto 0 time 15.933012
+sg-fuxc2-260708-12652-default0-0:42614:42614 [0] NCCL INFO 1024 Bytes -> Algo 0 proto 0 time 15.933012
+    41.66    0.02    0.04    N/A
+      262144         65536     float     sum      -1sg-fuxc2-260708-12652-default0-0:42614:42614 [0] NCCL INFO 262144 Bytes -> Algo 0 proto 2 time 547.918823
+sg-fuxc2-260708-12652-default0-0:42614:42614 [0] NCCL INFO 262144 Bytes -> Algo 0 proto 2 time 547.918823
+   246.71    1.06    1.59    N/Asg-fuxc2-260708-12652-default0-0:42614:42614 [0] NCCL INFO 262144 Bytes -> Algo 0 proto 2 time 547.918823
+sg-fuxc2-260708-12652-default0-0:42614:42614 [0] NCCL INFO 262144 Bytes -> Algo 0 proto 2 time 547.918823
+   243.82    1.08    1.61    N/A
+    67108864      16777216     float     sum      -1sg-fuxc2-260708-12652-default0-0:42614:42614 [0] NCCL INFO 67108864 Bytes -> Algo 0 proto 2 time 60955.015625
+sg-fuxc2-260708-12652-default0-0:42614:42614 [0] NCCL INFO 67108864 Bytes -> Algo 0 proto 2 time 60955.015625
+  39334.4    1.71    2.56    N/Asg-fuxc2-260708-12652-default0-0:42614:42614 [0] NCCL INFO 67108864 Bytes -> Algo 0 proto 2 time 60955.015625
+sg-fuxc2-260708-12652-default0-0:42614:42614 [0] NCCL INFO 67108864 Bytes -> Algo 0 proto 2 time 60955.015625
+  39131.4    1.71    2.57    N/A
+sg-fuxc2-260708-12652-default0-0:42614:42614 [0] NCCL INFO comm 0x55be05dd7150 rank 0 nranks 4 cudaDev 0 busId 1a000 - Destroy COMPLETE
+sg-fuxc2-260708-12652-default0-0:42614:42614 [3] NCCL INFO comm 0x55be05e8a440 rank 3 nranks 4 cudaDev 3 busId 1e000 - Destroy COMPLETE
+sg-fuxc2-260708-12652-default0-0:42614:42614 [2] NCCL INFO comm 0x55be05e4e950 rank 2 nranks 4 cudaDev 2 busId 1d000 - Destroy COMPLETE
+sg-fuxc2-260708-12652-default0-0:42614:42614 [1] NCCL INFO comm 0x55be05e12d20 rank 1 nranks 4 cudaDev 1 busId 1c000 - Destroy COMPLETE
+# Out of bounds values : 0 OK
+# Avg bus bandwidth    : 1.39904 
+#
+# Collective test concluded: all_reduce_perf
+#
+

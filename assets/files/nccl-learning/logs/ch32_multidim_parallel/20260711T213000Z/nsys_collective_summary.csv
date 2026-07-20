@@ -1,0 +1,21 @@
+config,device,profile_private,allreduce_count,allreduce_duration_us,allgather_count,allgather_duration_us,reducescatter_count,reducescatter_duration_us,sendrecv_count,sendrecv_duration_us
+tp_ar_b128,Tesla V100-SXM2-32GB (0),1,4,1150.493,0,0.0,0,0.0,0,0.0
+tp_ar_b128,Tesla V100-SXM2-32GB (1),1,4,160.191,0,0.0,0,0.0,0,0.0
+tp_ar_b128,Tesla V100-SXM2-32GB (2),1,4,1718.398,0,0.0,0,0.0,0,0.0
+tp_ar_b128,Tesla V100-SXM2-32GB (3),1,4,1635.808,0,0.0,0,0.0,0,0.0
+tp_sp_b128,Tesla V100-SXM2-32GB (0),1,2,104.768,2,1178.078,2,1573.469,0,0.0
+tp_sp_b128,Tesla V100-SXM2-32GB (1),1,2,342.396,2,53.216,2,33.664,0,0.0
+tp_sp_b128,Tesla V100-SXM2-32GB (2),1,2,804.96,2,889.886,2,1592.157,0,0.0
+tp_sp_b128,Tesla V100-SXM2-32GB (3),1,2,104.896,2,45.664,2,30.432,0,0.0
+pp_mb8,Tesla V100-SXM2-32GB (0),1,1,75.008,0,0.0,0,0.0,16,10228.016
+pp_mb8,Tesla V100-SXM2-32GB (1),1,1,76.383,0,0.0,0,0.0,16,1096.693
+pp_mb8,Tesla V100-SXM2-32GB (2),1,1,151.84,0,0.0,0,0.0,16,7462.739
+pp_mb8,Tesla V100-SXM2-32GB (3),1,1,144.704,0,0.0,0,0.0,16,2668.032
+ep_balanced,Tesla V100-SXM2-32GB (0),1,1,971.678,0,0.0,0,0.0,4,4700.79
+ep_balanced,Tesla V100-SXM2-32GB (1),1,1,52.992,0,0.0,0,0.0,4,66.688
+ep_balanced,Tesla V100-SXM2-32GB (2),1,1,53.28,0,0.0,0,0.0,4,65.888
+ep_balanced,Tesla V100-SXM2-32GB (3),1,1,1663.039,0,0.0,0,0.0,4,2631.741
+ep_skewed,Tesla V100-SXM2-32GB (0),1,1,61.984,0,0.0,0,0.0,4,61.025
+ep_skewed,Tesla V100-SXM2-32GB (1),1,1,707.353,0,0.0,0,0.0,4,1032.213
+ep_skewed,Tesla V100-SXM2-32GB (2),1,1,327.967,0,0.0,0,0.0,4,1501.597
+ep_skewed,Tesla V100-SXM2-32GB (3),1,1,58.08,0,0.0,0,0.0,4,57.92

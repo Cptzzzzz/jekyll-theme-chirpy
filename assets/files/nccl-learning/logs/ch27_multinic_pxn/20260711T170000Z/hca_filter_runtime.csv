@@ -1,0 +1,4 @@
+case,spec,env_logged,ib_match_count,socket_fallback,correct
+prefix,mlx4,1,0,1,1
+exact,=mlx4_0:1,1,0,1,1
+exclude,^=mlx4_0:2,1,0,1,1

@@ -1,0 +1,17 @@
+rank,kind,variant,cycle,host_us,device_us,event_ready_after_group_end,correct,detail
+1,semantic,group-end-without-start,-1,0,0,-1,true,result=invalid usage (run with NCCL_DEBUG=WARN for details)
+1,semantic,nested-depth-two,-1,86752.5,0,-1,true,three ordered allreduces;inner and outer end success
+1,semantic,two-user-streams,-1,0,0,-1,true,one group;one allreduce per stream
+1,semantic,async-error-after-success,-1,0,0,-1,true,async=no error
+1,semantic,invalid-root-group-cleanup,-1,0,0,-1,true,api=invalid argument (run with NCCL_DEBUG=WARN for details);group_end=invalid argument (run with NCCL_DEBUG=WARN for details)
+1,semantic,valid-op-after-group-error,-1,0,0,-1,true,balanced group cleanup restored subsequent use
+1,completion,grouped-256MiB-allreduce,0,17.038,3558.14,0,true,host group interval versus CUDA event interval
+1,completion,grouped-256MiB-allreduce,1,14.367,3522.37,0,true,host group interval versus CUDA event interval
+1,completion,grouped-256MiB-allreduce,2,14.338,3518.91,0,true,host group interval versus CUDA event interval
+1,completion,grouped-256MiB-allreduce,3,15.147,3528.9,0,true,host group interval versus CUDA event interval
+1,completion,grouped-256MiB-allreduce,4,14.718,3546.56,0,true,host group interval versus CUDA event interval
+1,completion,grouped-256MiB-allreduce,5,15.522,3543.55,0,true,host group interval versus CUDA event interval
+1,completion,grouped-256MiB-allreduce,6,24.825,3541.5,0,true,host group interval versus CUDA event interval
+1,completion,grouped-256MiB-allreduce,7,15.355,3539.52,0,true,host group interval versus CUDA event interval
+1,completion,grouped-256MiB-allreduce,8,14.285,3528.93,0,true,host group interval versus CUDA event interval
+1,completion,grouped-256MiB-allreduce,9,15.498,3521.95,0,true,host group interval versus CUDA event interval

@@ -1,0 +1,28 @@
+protocol,case,fifo_steps,expected_outcome,observed_outcome,event_at_step,detail,pass
+Simple,normal,2,complete,complete,64,credit head+NCCL_STEPS permits send; tail permits recv,1
+Simple,drop_recv_head,2,deadlock,deadlock,2,producer cannot reuse a slot after all credits are consumed,1
+Simple,publish_tail_before_data,2,corruption,corruption,1,forced consumer runs after tail publication but before payload store,1
+LL,normal_dual_flag,2,complete,complete,64,both 32-bit flags equal NCCL_LL_FLAG(step+1),1
+LL,missing_second_flag,2,blocked,blocked,1,readLL requires flag1 and flag2 to match,1
+LL,constant_flag_after_wrap,2,stale_accept,stale_accept,2,"without monotonic flag, slot reuse creates an ABA ambiguity",1
+LL128,normal_line_flag,2,complete,complete,64,15 data words plus one flag word per 128-byte line,1
+LL128,missing_flag_word,2,blocked,blocked,1,flag thread keeps warp-wide any_sync reload loop active,1
+LL128,flag_before_data,2,corruption,corruption,1,forced publication ordering violation exposes incomplete line,1
+Simple,normal,4,complete,complete,64,credit head+NCCL_STEPS permits send; tail permits recv,1
+Simple,drop_recv_head,4,deadlock,deadlock,4,producer cannot reuse a slot after all credits are consumed,1
+Simple,publish_tail_before_data,4,corruption,corruption,1,forced consumer runs after tail publication but before payload store,1
+LL,normal_dual_flag,4,complete,complete,64,both 32-bit flags equal NCCL_LL_FLAG(step+1),1
+LL,missing_second_flag,4,blocked,blocked,1,readLL requires flag1 and flag2 to match,1
+LL,constant_flag_after_wrap,4,stale_accept,stale_accept,4,"without monotonic flag, slot reuse creates an ABA ambiguity",1
+LL128,normal_line_flag,4,complete,complete,64,15 data words plus one flag word per 128-byte line,1
+LL128,missing_flag_word,4,blocked,blocked,1,flag thread keeps warp-wide any_sync reload loop active,1
+LL128,flag_before_data,4,corruption,corruption,1,forced publication ordering violation exposes incomplete line,1
+Simple,normal,8,complete,complete,64,credit head+NCCL_STEPS permits send; tail permits recv,1
+Simple,drop_recv_head,8,deadlock,deadlock,8,producer cannot reuse a slot after all credits are consumed,1
+Simple,publish_tail_before_data,8,corruption,corruption,1,forced consumer runs after tail publication but before payload store,1
+LL,normal_dual_flag,8,complete,complete,64,both 32-bit flags equal NCCL_LL_FLAG(step+1),1
+LL,missing_second_flag,8,blocked,blocked,1,readLL requires flag1 and flag2 to match,1
+LL,constant_flag_after_wrap,8,stale_accept,stale_accept,8,"without monotonic flag, slot reuse creates an ABA ambiguity",1
+LL128,normal_line_flag,8,complete,complete,64,15 data words plus one flag word per 128-byte line,1
+LL128,missing_flag_word,8,blocked,blocked,1,flag thread keeps warp-wide any_sync reload loop active,1
+LL128,flag_before_data,8,corruption,corruption,1,forced publication ordering violation exposes incomplete line,1

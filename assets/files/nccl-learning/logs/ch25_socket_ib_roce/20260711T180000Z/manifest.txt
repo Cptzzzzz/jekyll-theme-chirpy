@@ -1,0 +1,14 @@
+experiment=ch25_socket_ib_roce
+run_id=20260711T180000Z
+timestamp_utc=2026-07-11T16:00:46.989555+00:00
+hostname=sg-fuxc2-260708-12652-default0-0
+performance_rows=120
+path_rows=8
+source_model_rows=29
+correctness=PASS
+socket_fallback=8/8 PASS
+interface_cases=3/3 PASS
+hca_usable=NO
+ib_roce_performance=HARDWARE_BLOCKED
+nccl_runtime=2.22.3
+nccl_source_commit=178b6b759074597777ce13438efb0e0ba625e429

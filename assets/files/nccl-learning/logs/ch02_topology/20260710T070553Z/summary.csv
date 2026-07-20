@@ -1,0 +1,11 @@
+metric,value
+gpu_count,4
+directed_nvlink_xml_entries,12
+links_per_gpu_pair,2.0
+reported_per_link_GBs,25.781
+reported_pair_theoretical_GBs,51.562
+largest_message_median_GBs,48.334
+largest_message_link_efficiency_percent,93.739
+largest_message_max_pair_cv_percent,0.049165
+largest_message_max_reverse_asymmetry_percent,0.100505
+numa_max_abs_delta_percent,0.034

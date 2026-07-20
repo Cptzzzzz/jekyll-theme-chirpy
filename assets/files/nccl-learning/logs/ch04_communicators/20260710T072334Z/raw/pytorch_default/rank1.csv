@@ -1,0 +1,2 @@
+pid,rank,local_rank,world_size,visible_device_ordinal,physical_uuid,physical_pci_bus_id,cuda_visible_devices,parity_members,parity_group_rank,parity_group_size,parity_sum,pair_members,pair_group_rank,pair_group_size,pair_sum,world_sum,correct
+30604,1,1,4,1,01707108-c8af-0c59-683e-245462fe241b,00000000:1c:00.0,"0,1,2,3",1-3,0,2,6.0,0-1,1,2,3.0,10.0,True

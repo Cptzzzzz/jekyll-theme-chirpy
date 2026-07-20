@@ -1,0 +1,72 @@
+# nccl-tests version 2.19.5 nccl-headers=22203 nccl-library=22203
+# Collective test starting: all_reduce_perf
+# nThread 1 nGpus 4 minBytes 1048576 maxBytes 1048576 step: 1048576(bytes) warmup iters: 2 iters: 5 agg iters: 1 validation: 0 graph: 0 unalign: 0
+#
+# Using devices
+#  Rank  0 Group  0 Pid  47594 on sg-fuxc2-260708-12652-default0-0 device  0 [0000:1a:00] Tesla V100-SXM2-32GB
+#  Rank  1 Group  0 Pid  47594 on sg-fuxc2-260708-12652-default0-0 device  1 [0000:1c:00] Tesla V100-SXM2-32GB
+#  Rank  2 Group  0 Pid  47594 on sg-fuxc2-260708-12652-default0-0 device  2 [0000:1d:00] Tesla V100-SXM2-32GB
+#  Rank  3 Group  0 Pid  47594 on sg-fuxc2-260708-12652-default0-0 device  3 [0000:1e:00] Tesla V100-SXM2-32GB
+sg-fuxc2-260708-12652-default0-0:47594:47594 [0] NCCL INFO NCCL version 2.22.3+cuda12.6
+sg-fuxc2-260708-12652-default0-0:47594:47617 [3] NCCL INFO NCCL_MAX_NCHANNELS set by environment to 12.
+sg-fuxc2-260708-12652-default0-0:47594:47617 [3] NCCL INFO NCCL_MIN_NCHANNELS set by environment to 12.
+sg-fuxc2-260708-12652-default0-0:47594:47614 [0] NCCL INFO NCCL_PROTO set by environment to LL128
+sg-fuxc2-260708-12652-default0-0:47594:47614 [0] NCCL INFO NCCL_ALGO set by environment to Tree
+sg-fuxc2-260708-12652-default0-0:47594:47614 [0] NCCL INFO   Algorithm   |                            Tree                  |                            Ring                  |                   CollNetDirect                  |
+sg-fuxc2-260708-12652-default0-0:47594:47614 [0] NCCL INFO   Protocol    |             LL |          LL128 |         Simple |             LL |          LL128 |         Simple |             LL |          LL128 |         Simple |
+sg-fuxc2-260708-12652-default0-0:47594:47614 [0] NCCL INFO  Max NThreads |            512 |            640 |            512 |            512 |            640 |            512 |              0 |              0 |            640 |
+sg-fuxc2-260708-12652-default0-0:47594:47614 [0] NCCL INFO     Broadcast |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     9.0/   0.0 |    21.6/ 110.4 |   120.4/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |
+sg-fuxc2-260708-12652-default0-0:47594:47614 [0] NCCL INFO        Reduce |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     9.0/   0.0 |    21.6/ 110.4 |   120.4/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |
+sg-fuxc2-260708-12652-default0-0:47594:47614 [0] NCCL INFO     AllGather |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     8.4/   0.0 |    19.7/ 147.2 |    18.6/   0.0 |     2.4/   0.0 |     2.4/   0.0 |    40.8/   0.0 |
+sg-fuxc2-260708-12652-default0-0:47594:47614 [0] NCCL INFO ReduceScatter |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     8.4/   0.0 |    19.7/ 147.2 |    18.6/   0.0 |     2.4/   0.0 |     2.4/   0.0 |    40.8/   0.0 |
+sg-fuxc2-260708-12652-default0-0:47594:47614 [0] NCCL INFO     AllReduce |    10.4/   0.0 |    21.5/  42.9 |   168.0/   0.0 |    10.2/   0.0 |    25.4/   0.0 |    28.8/   0.0 |     2.4/   0.0 |     2.4/   0.0 |    40.8/   0.0 |
+sg-fuxc2-260708-12652-default0-0:47594:47614 [0] NCCL INFO   Algorithm   |                    CollNetChain                  |                            NVLS                  |                        NVLSTree                  |
+sg-fuxc2-260708-12652-default0-0:47594:47614 [0] NCCL INFO   Protocol    |             LL |          LL128 |         Simple |             LL |          LL128 |         Simple |             LL |          LL128 |         Simple |
+sg-fuxc2-260708-12652-default0-0:47594:47614 [0] NCCL INFO  Max NThreads |              0 |              0 |            640 |              0 |              0 |            640 |              0 |              0 |            640 |
+sg-fuxc2-260708-12652-default0-0:47594:47614 [0] NCCL INFO     Broadcast |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |
+sg-fuxc2-260708-12652-default0-0:47594:47614 [0] NCCL INFO        Reduce |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |
+sg-fuxc2-260708-12652-default0-0:47594:47614 [0] NCCL INFO     AllGather |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |
+sg-fuxc2-260708-12652-default0-0:47594:47614 [0] NCCL INFO ReduceScatter |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |
+sg-fuxc2-260708-12652-default0-0:47594:47614 [0] NCCL INFO     AllReduce |     0.0/   0.0 |     0.0/   0.0 |    46.8/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |
+sg-fuxc2-260708-12652-default0-0:47594:47617 [3] NCCL INFO NCCL_PROTO set by environment to LL128
+sg-fuxc2-260708-12652-default0-0:47594:47617 [3] NCCL INFO NCCL_ALGO set by environment to Tree
+sg-fuxc2-260708-12652-default0-0:47594:47616 [2] NCCL INFO NCCL_PROTO set by environment to LL128
+sg-fuxc2-260708-12652-default0-0:47594:47616 [2] NCCL INFO NCCL_ALGO set by environment to Tree
+sg-fuxc2-260708-12652-default0-0:47594:47615 [1] NCCL INFO NCCL_PROTO set by environment to LL128
+sg-fuxc2-260708-12652-default0-0:47594:47615 [1] NCCL INFO NCCL_ALGO set by environment to Tree
+sg-fuxc2-260708-12652-default0-0:47594:47614 [0] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v3 symbol.
+sg-fuxc2-260708-12652-default0-0:47594:47614 [0] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v2 symbol, using internal tuner instead.
+#
+#                                                              out-of-place                       in-place          
+#       size         count      type   redop    root     time   algbw   busbw  #wrong     time   algbw   busbw  #wrong 
+#        (B)    (elements)                               (us)  (GB/s)  (GB/s)             (us)  (GB/s)  (GB/s)         
+sg-fuxc2-260708-12652-default0-0:47594:47594 [0] NCCL INFO 1048576 Bytes -> Algo 0 proto 1 time 62.205585
+sg-fuxc2-260708-12652-default0-0:47594:47594 [0] NCCL INFO 1048576 Bytes -> Algo 0 proto 1 time 62.205585
+     1048576        262144     float     sum      -1sg-fuxc2-260708-12652-default0-0:47594:47594 [0] NCCL INFO 1048576 Bytes -> Algo 0 proto 1 time 62.205585
+sg-fuxc2-260708-12652-default0-0:47594:47594 [0] NCCL INFO 1048576 Bytes -> Algo 0 proto 1 time 62.205585
+sg-fuxc2-260708-12652-default0-0:47594:47594 [0] NCCL INFO 1048576 Bytes -> Algo 0 proto 1 time 62.205585
+sg-fuxc2-260708-12652-default0-0:47594:47594 [0] NCCL INFO 1048576 Bytes -> Algo 0 proto 1 time 62.205585
+sg-fuxc2-260708-12652-default0-0:47594:47594 [0] NCCL INFO 1048576 Bytes -> Algo 0 proto 1 time 62.205585
+sg-fuxc2-260708-12652-default0-0:47594:47594 [0] NCCL INFO 1048576 Bytes -> Algo 0 proto 1 time 62.205585
+    77.98   13.45   20.17    N/Asg-fuxc2-260708-12652-default0-0:47594:47594 [0] NCCL INFO 1048576 Bytes -> Algo 0 proto 1 time 62.205585
+sg-fuxc2-260708-12652-default0-0:47594:47594 [0] NCCL INFO 1048576 Bytes -> Algo 0 proto 1 time 62.205585
+sg-fuxc2-260708-12652-default0-0:47594:47594 [0] NCCL INFO 1048576 Bytes -> Algo 0 proto 1 time 62.205585
+sg-fuxc2-260708-12652-default0-0:47594:47594 [0] NCCL INFO 1048576 Bytes -> Algo 0 proto 1 time 62.205585
+sg-fuxc2-260708-12652-default0-0:47594:47594 [0] NCCL INFO 1048576 Bytes -> Algo 0 proto 1 time 62.205585
+sg-fuxc2-260708-12652-default0-0:47594:47594 [0] NCCL INFO 1048576 Bytes -> Algo 0 proto 1 time 62.205585
+    76.79   13.66   20.48    N/A
+# Out of bounds values : 0 OK
+# Avg bus bandwidth    : 20.3267 
+#
+# Collective test concluded: all_reduce_perf
+#
+
+Generating '/tmp/nsys-report-ce46.qdstrm'
+
+[1/1] [0%                          ] 05_tree_ll128_1m.nsys-rep
+[1/1] [0%                          ] 05_tree_ll128_1m.nsys-rep
+[1/1] [======================91%   ] 05_tree_ll128_1m.nsys-rep
+[1/1] [========================100%] 05_tree_ll128_1m.nsys-rep
+[1/1] [========================100%] 05_tree_ll128_1m.nsys-rep
+Generated:
+    /root/nccl-learning/private/ch14_protocol/20260710T161632Z/05_tree_ll128_1m.nsys-rep

@@ -1,0 +1,40 @@
+sg-fuxc2-260708-12652-default0-0:82453:82453 [0] NCCL INFO NCCL version 2.22.3+cuda12.6
+sg-fuxc2-260708-12652-default0-0:82453:82457 [0] NCCL INFO   Algorithm   |                            Tree                  |                            Ring                  |                   CollNetDirect                  |
+sg-fuxc2-260708-12652-default0-0:82453:82457 [0] NCCL INFO   Protocol    |             LL |          LL128 |         Simple |             LL |          LL128 |         Simple |             LL |          LL128 |         Simple |
+sg-fuxc2-260708-12652-default0-0:82453:82457 [0] NCCL INFO  Max NThreads |            512 |            640 |            512 |            512 |            640 |            512 |              0 |              0 |            640 |
+sg-fuxc2-260708-12652-default0-0:82453:82457 [0] NCCL INFO     Broadcast |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     9.0/  39.0 |    21.6/   0.0 |   120.4/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |
+sg-fuxc2-260708-12652-default0-0:82453:82457 [0] NCCL INFO        Reduce |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     9.0/  39.0 |    21.6/   0.0 |   120.4/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |
+sg-fuxc2-260708-12652-default0-0:82453:82457 [0] NCCL INFO     AllGather |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     8.4/  52.0 |    19.7/   0.0 |    18.6/   0.0 |     2.4/   0.0 |     2.4/   0.0 |    40.8/   0.0 |
+sg-fuxc2-260708-12652-default0-0:82453:82457 [0] NCCL INFO ReduceScatter |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     8.4/  52.0 |    19.7/   0.0 |    18.6/   0.0 |     2.4/   0.0 |     2.4/   0.0 |    40.8/   0.0 |
+sg-fuxc2-260708-12652-default0-0:82453:82457 [0] NCCL INFO     AllReduce |    10.4/   0.0 |    21.5/   0.0 |   168.0/   0.0 |    10.2/  26.0 |    25.4/   0.0 |    28.8/   0.0 |     2.4/   0.0 |     2.4/   0.0 |    40.8/   0.0 |
+sg-fuxc2-260708-12652-default0-0:82453:82457 [0] NCCL INFO   Algorithm   |                    CollNetChain                  |                            NVLS                  |                        NVLSTree                  |
+sg-fuxc2-260708-12652-default0-0:82453:82457 [0] NCCL INFO   Protocol    |             LL |          LL128 |         Simple |             LL |          LL128 |         Simple |             LL |          LL128 |         Simple |
+sg-fuxc2-260708-12652-default0-0:82453:82457 [0] NCCL INFO  Max NThreads |              0 |              0 |            640 |              0 |              0 |            640 |              0 |              0 |            640 |
+sg-fuxc2-260708-12652-default0-0:82453:82457 [0] NCCL INFO     Broadcast |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |
+sg-fuxc2-260708-12652-default0-0:82453:82457 [0] NCCL INFO        Reduce |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |
+sg-fuxc2-260708-12652-default0-0:82453:82457 [0] NCCL INFO     AllGather |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |
+sg-fuxc2-260708-12652-default0-0:82453:82457 [0] NCCL INFO ReduceScatter |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |
+sg-fuxc2-260708-12652-default0-0:82453:82457 [0] NCCL INFO     AllReduce |     0.0/   0.0 |     0.0/   0.0 |    46.8/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |     0.0/   0.0 |
+sg-fuxc2-260708-12652-default0-0:82453:82457 [0] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v3 symbol.
+sg-fuxc2-260708-12652-default0-0:82453:82457 [0] NCCL INFO TUNER/Plugin: Failed to find ncclTunerPlugin_v2 symbol, using internal tuner instead.
+sg-fuxc2-260708-12652-default0-0:82453:82453 [0] NCCL INFO AllReduce: opCount 0 sendbuff 0x7fb521800000 recvbuff 0x7fb525800000 count 16777216 datatype 7 op 0 root 0 comm 0x557d8b1a3210 [nranks=4] stream 0x557d8b182770
+sg-fuxc2-260708-12652-default0-0:82453:82453 [1] NCCL INFO AllReduce: opCount 0 sendbuff 0x7fb52a000000 recvbuff 0x7fb52e000000 count 16777216 datatype 7 op 0 root 0 comm 0x557d8b1d9d80 [nranks=4] stream 0x557d8ae3be20
+sg-fuxc2-260708-12652-default0-0:82453:82453 [2] NCCL INFO AllReduce: opCount 0 sendbuff 0x7fb532000000 recvbuff 0x7fb53e000000 count 16777216 datatype 7 op 0 root 0 comm 0x557d8b20fee0 [nranks=4] stream 0x557d8b28e2d0
+sg-fuxc2-260708-12652-default0-0:82453:82453 [3] NCCL INFO AllReduce: opCount 0 sendbuff 0x7fb542000000 recvbuff 0x7fb546000000 count 16777216 datatype 7 op 0 root 0 comm 0x557d8b246000 [nranks=4] stream 0x557d8b290010
+sg-fuxc2-260708-12652-default0-0:82453:82453 [3] 1052.454753 topoGetAlgoInfo:1615 NCCL TRACE 67108864 Bytes -> Algo 1 proto 0 time 2591.310059
+sg-fuxc2-260708-12652-default0-0:82453:82453 [3] 1052.461891 topoGetAlgoInfo:1615 NCCL TRACE 67108864 Bytes -> Algo 1 proto 0 time 2591.310059
+sg-fuxc2-260708-12652-default0-0:82453:82453 [3] 1052.464585 topoGetAlgoInfo:1615 NCCL TRACE 67108864 Bytes -> Algo 1 proto 0 time 2591.310059
+sg-fuxc2-260708-12652-default0-0:82453:82453 [3] NCCL INFO 67108864 Bytes -> Algo 1 proto 0 time 2591.310059
+sg-fuxc2-260708-12652-default0-0:82453:82453 [3] 1052.467712 topoGetAlgoInfo:1615 NCCL TRACE 67108864 Bytes -> Algo 1 proto 0 time 2591.310059
+sg-fuxc2-260708-12652-default0-0:82453:82453 [0] 1065.756973 scheduleCollTasksToPlan:774 NCCL TRACE Collective AllReduce(Sum, ncclFloat32, RING, LL) count=16777216 devFuncId=209 channel{Lo..Hi}={0..0} count{Lo,Mid,Hi}={16777216,0,0} chunkBytes{Lo,Mid,Hi}={32768,0,0}
+sg-fuxc2-260708-12652-default0-0:82453:82453 [0] NCCL INFO AllReduce: opCount 1 sendbuff 0x7fb521800000 recvbuff 0x7fb525800000 count 16777216 datatype 7 op 0 root 0 comm 0x557d8b1a3210 [nranks=4] stream 0x557d8b182770
+sg-fuxc2-260708-12652-default0-0:82453:82453 [1] NCCL INFO AllReduce: opCount 1 sendbuff 0x7fb52a000000 recvbuff 0x7fb52e000000 count 16777216 datatype 7 op 0 root 0 comm 0x557d8b1d9d80 [nranks=4] stream 0x557d8ae3be20
+sg-fuxc2-260708-12652-default0-0:82453:82453 [2] NCCL INFO AllReduce: opCount 1 sendbuff 0x7fb532000000 recvbuff 0x7fb53e000000 count 16777216 datatype 7 op 0 root 0 comm 0x557d8b20fee0 [nranks=4] stream 0x557d8b28e2d0
+sg-fuxc2-260708-12652-default0-0:82453:82453 [3] NCCL INFO AllReduce: opCount 1 sendbuff 0x7fb542000000 recvbuff 0x7fb546000000 count 16777216 datatype 7 op 0 root 0 comm 0x557d8b246000 [nranks=4] stream 0x557d8b290010
+sg-fuxc2-260708-12652-default0-0:82453:82453 [3] 1101.547274 topoGetAlgoInfo:1615 NCCL TRACE 67108864 Bytes -> Algo 1 proto 0 time 2591.310059
+sg-fuxc2-260708-12652-default0-0:82453:82453 [3] 1101.552850 topoGetAlgoInfo:1615 NCCL TRACE 67108864 Bytes -> Algo 1 proto 0 time 2591.310059
+sg-fuxc2-260708-12652-default0-0:82453:82453 [3] 1101.554917 topoGetAlgoInfo:1615 NCCL TRACE 67108864 Bytes -> Algo 1 proto 0 time 2591.310059
+sg-fuxc2-260708-12652-default0-0:82453:82453 [3] NCCL INFO 67108864 Bytes -> Algo 1 proto 0 time 2591.310059
+sg-fuxc2-260708-12652-default0-0:82453:82453 [3] 1101.557840 topoGetAlgoInfo:1615 NCCL TRACE 67108864 Bytes -> Algo 1 proto 0 time 2591.310059
+sg-fuxc2-260708-12652-default0-0:82453:82453 [0] 1101.568237 scheduleCollTasksToPlan:774 NCCL TRACE Collective AllReduce(Sum, ncclFloat32, RING, LL) count=16777216 devFuncId=209 channel{Lo..Hi}={0..0} count{Lo,Mid,Hi}={16777216,0,0} chunkBytes{Lo,Mid,Hi}={32768,0,0}
+RESULT mode=grouped ops=1 replays=1 bytes=67108864 host_us=83.056 total_us=23378.142 graph_nodes=0 correct=1

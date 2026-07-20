@@ -1,0 +1,2 @@
+message_bytes,selected_algorithm,selected_algorithm_id,selected_protocol,selected_protocol_id,requested_channels,kernel_names,kernel_instances,grid_x_values,block_x_values,median_kernel_us,p95_kernel_us,private_profile_retained
+67108864,Tree,0,Simple,2,2,ncclDevKernel_AllReduce_Sum_f32_TREE_LL,64,2,640,3354.4885,3386.22905,1

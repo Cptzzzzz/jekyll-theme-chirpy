@@ -1,0 +1,81 @@
+case,ordinal,kind,rank,evidence
+control,0,marker,0,CH33_EVENT rank=0 case=control event=pg_initialized mono_ns=4965376631923736
+control,1,marker,1,CH33_EVENT rank=1 case=control event=pg_initialized mono_ns=4965376825651082
+control,2,marker,1,CH33_EVENT rank=1 case=control event=healthy_collective_complete mono_ns=4965377072532073 seq=0
+control,3,marker,1,CH33_EVENT rank=1 case=control event=collective_enter mono_ns=4965377072749882 seq=1 op=allreduce count=1
+control,4,marker,0,CH33_EVENT rank=0 case=control event=healthy_collective_complete mono_ns=4965377082425224 seq=0
+control,5,marker,0,CH33_EVENT rank=0 case=control event=collective_enter mono_ns=4965377082705010 seq=1 op=allreduce count=1
+control,6,marker,0,CH33_EVENT rank=0 case=control event=collective_complete mono_ns=4965377083203053 seq=1 value=3.0
+control,7,marker,1,CH33_EVENT rank=1 case=control event=collective_complete mono_ns=4965377083240288 seq=1 value=3.0
+op_detail,0,marker,1,CH33_EVENT rank=1 case=op_mismatch event=pg_initialized mono_ns=4965381822355126
+op_detail,1,marker,0,CH33_EVENT rank=0 case=op_mismatch event=pg_initialized mono_ns=4965381822907093
+op_detail,2,marker,0,CH33_EVENT rank=0 case=op_mismatch event=healthy_collective_complete mono_ns=4965382247765145 seq=0
+op_detail,3,marker,0,CH33_EVENT rank=0 case=op_mismatch event=collective_enter mono_ns=4965382247975879 seq=1 op=broadcast count=1
+op_detail,4,marker,1,CH33_EVENT rank=1 case=op_mismatch event=healthy_collective_complete mono_ns=4965382257828851 seq=0
+op_detail,5,marker,1,CH33_EVENT rank=1 case=op_mismatch event=collective_enter mono_ns=4965382258063394 seq=1 op=allreduce count=1
+op_detail,6,fingerprint,0,"Detected mismatch between collectives on ranks. Rank 0 is running collective: CollectiveFingerPrint(SequenceNumber=1, OpType=BROADCAST, TensorShape=[1], TensorDtypes=Float, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt))), but Rank 1 is running collective: CollectiveFingerPrint(SequenceNumber=1, OpType=ALLREDUCE, TensorShape=[1], TensorDtypes=Float, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt))).Collectives differ in the followi"
+op_detail,7,fingerprint,1,"Detected mismatch between collectives on ranks. Rank 1 is running collective: CollectiveFingerPrint(SequenceNumber=1, OpType=ALLREDUCE, TensorShape=[1], TensorDtypes=Float, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt))), but Rank 0 is running collective: CollectiveFingerPrint(SequenceNumber=1, OpType=BROADCAST, TensorShape=[1], TensorDtypes=Float, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt))).Collectives differ in the followi"
+op_detail,8,child_failed,,ChildFailedError(
+op_detail,9,child_failed,,ChildFailedError: 
+shape_detail,0,marker,1,CH33_EVENT rank=1 case=shape_mismatch event=pg_initialized mono_ns=4965386643360309
+shape_detail,1,marker,0,CH33_EVENT rank=0 case=shape_mismatch event=pg_initialized mono_ns=4965386643734815
+shape_detail,2,marker,0,CH33_EVENT rank=0 case=shape_mismatch event=healthy_collective_complete mono_ns=4965387062522385 seq=0
+shape_detail,3,marker,0,CH33_EVENT rank=0 case=shape_mismatch event=collective_enter mono_ns=4965387070771646 seq=1 op=allreduce count=4
+shape_detail,4,marker,1,CH33_EVENT rank=1 case=shape_mismatch event=healthy_collective_complete mono_ns=4965387072451359 seq=0
+shape_detail,5,marker,1,CH33_EVENT rank=1 case=shape_mismatch event=collective_enter mono_ns=4965387082514800 seq=1 op=allreduce count=8
+shape_detail,6,fingerprint,1,"Detected mismatch between collectives on ranks. Rank 1 is running collective: CollectiveFingerPrint(SequenceNumber=1, OpType=ALLREDUCE, TensorShape=[8], TensorDtypes=Float, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt))), but Rank 0 is running collective: CollectiveFingerPrint(SequenceNumber=1, OpType=ALLREDUCE, TensorShape=[4], TensorDtypes=Float, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt))).Collectives differ in the followi"
+shape_detail,7,fingerprint,0,"Detected mismatch between collectives on ranks. Rank 0 is running collective: CollectiveFingerPrint(SequenceNumber=1, OpType=ALLREDUCE, TensorShape=[4], TensorDtypes=Float, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt))), but Rank 1 is running collective: CollectiveFingerPrint(SequenceNumber=1, OpType=ALLREDUCE, TensorShape=[8], TensorDtypes=Float, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt))).Collectives differ in the followi"
+shape_detail,8,child_failed,,ChildFailedError(
+shape_detail,9,child_failed,,ChildFailedError: 
+order_detail,0,marker,1,CH33_EVENT rank=1 case=order_mismatch event=pg_initialized mono_ns=4965391603980486
+order_detail,1,marker,0,CH33_EVENT rank=0 case=order_mismatch event=pg_initialized mono_ns=4965391604253208
+order_detail,2,marker,1,CH33_EVENT rank=1 case=order_mismatch event=healthy_collective_complete mono_ns=4965392023458106 seq=0
+order_detail,3,marker,1,CH33_EVENT rank=1 case=order_mismatch event=collective_enter mono_ns=4965392023701495 seq=1 op=allreduce count=1
+order_detail,4,marker,0,CH33_EVENT rank=0 case=order_mismatch event=healthy_collective_complete mono_ns=4965392033456035 seq=0
+order_detail,5,marker,0,CH33_EVENT rank=0 case=order_mismatch event=collective_enter mono_ns=4965392033669860 seq=1 op=broadcast count=1
+order_detail,6,fingerprint,0,"Detected mismatch between collectives on ranks. Rank 0 is running collective: CollectiveFingerPrint(SequenceNumber=1, OpType=BROADCAST, TensorShape=[1], TensorDtypes=Float, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt))), but Rank 1 is running collective: CollectiveFingerPrint(SequenceNumber=1, OpType=ALLREDUCE, TensorShape=[1], TensorDtypes=Float, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt))).Collectives differ in the followi"
+order_detail,7,fingerprint,1,"Detected mismatch between collectives on ranks. Rank 1 is running collective: CollectiveFingerPrint(SequenceNumber=1, OpType=ALLREDUCE, TensorShape=[1], TensorDtypes=Float, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt))), but Rank 0 is running collective: CollectiveFingerPrint(SequenceNumber=1, OpType=BROADCAST, TensorShape=[1], TensorDtypes=Float, TensorDeviceTypes=TensorOptions(dtype=float (default), device=cuda, layout=Strided (default), requires_grad=false (default), pinned_memory=false (default), memory_format=(nullopt))).Collectives differ in the followi"
+order_detail,8,child_failed,,ChildFailedError(
+order_detail,9,child_failed,,ChildFailedError: 
+op_raw,0,marker,0,CH33_EVENT rank=0 case=op_mismatch event=pg_initialized mono_ns=4965396431730551
+op_raw,1,marker,1,CH33_EVENT rank=1 case=op_mismatch event=pg_initialized mono_ns=4965396553973942
+op_raw,2,marker,0,CH33_EVENT rank=0 case=op_mismatch event=healthy_collective_complete mono_ns=4965396824078807 seq=0
+op_raw,3,marker,0,CH33_EVENT rank=0 case=op_mismatch event=collective_enter mono_ns=4965396824302856 seq=1 op=broadcast count=1
+op_raw,4,marker,0,CH33_EVENT rank=0 case=op_mismatch event=unexpected_collective_return mono_ns=4965396824687175 seq=1 value=1.0
+op_raw,5,marker,1,CH33_EVENT rank=1 case=op_mismatch event=healthy_collective_complete mono_ns=4965396834147804 seq=0
+op_raw,6,marker,1,CH33_EVENT rank=1 case=op_mismatch event=collective_enter mono_ns=4965396834372036 seq=1 op=allreduce count=1
+op_raw,7,watchdog_timeout,,"Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2, OpType=ALLREDUCE, NumelIn=1, NumelOut=1, Timeout(ms)=4000) ran for 4010 milliseconds before timing out."
+op_raw,8,watchdog_timeout,,"Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2, OpType=ALLREDUCE, NumelIn=1, NumelOut=1, Timeout(ms)=4000) ran for 4010 milliseconds before timing out."
+op_raw,9,child_failed,,ChildFailedError(
+op_raw,10,child_failed,,ChildFailedError: 
+steady_skip,0,marker,0,CH33_EVENT rank=0 case=skip event=pg_initialized mono_ns=4965405537671496
+steady_skip,1,marker,1,CH33_EVENT rank=1 case=skip event=pg_initialized mono_ns=4965405685942153
+steady_skip,2,marker,0,CH33_EVENT rank=0 case=skip event=healthy_collective_complete mono_ns=4965405961146059 seq=0
+steady_skip,3,marker,0,CH33_EVENT rank=0 case=skip event=collective_enter mono_ns=4965405969835984 seq=1 op=allreduce count=1
+steady_skip,4,marker,1,CH33_EVENT rank=1 case=skip event=healthy_collective_complete mono_ns=4965405971049550 seq=0
+steady_skip,5,marker,1,CH33_EVENT rank=1 case=skip event=fault_injected_skip mono_ns=4965405971084778 seq=1
+steady_skip,6,watchdog_timeout,,"Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2, OpType=ALLREDUCE, NumelIn=1, NumelOut=1, Timeout(ms)=4000) ran for 4008 milliseconds before timing out."
+steady_skip,7,watchdog_timeout,,"Watchdog caught collective operation timeout: WorkNCCL(SeqNum=2, OpType=ALLREDUCE, NumelIn=1, NumelOut=1, Timeout(ms)=4000) ran for 4008 milliseconds before timing out."
+steady_skip,8,child_failed,,ChildFailedError(
+steady_skip,9,child_failed,,ChildFailedError: 
+lazy_skip,0,marker,0,CH33_EVENT rank=0 case=lazy_skip event=pg_initialized mono_ns=4965414345945940
+lazy_skip,1,marker,1,CH33_EVENT rank=1 case=lazy_skip event=pg_initialized mono_ns=4965414505905198
+lazy_skip,2,marker,1,CH33_EVENT rank=1 case=lazy_skip event=fault_injected_skip mono_ns=4965414505961458 seq=0
+lazy_skip,3,marker,0,CH33_EVENT rank=0 case=lazy_skip event=collective_enter mono_ns=4965414533744518 seq=0 op=allreduce count=1
+rank_exit,0,marker,0,CH33_EVENT rank=0 case=rank_exit event=pg_initialized mono_ns=4965431120773141
+rank_exit,1,marker,1,CH33_EVENT rank=1 case=rank_exit event=pg_initialized mono_ns=4965431321284470
+rank_exit,2,marker,0,CH33_EVENT rank=0 case=rank_exit event=healthy_collective_complete mono_ns=4965431581511637 seq=0
+rank_exit,3,marker,0,CH33_EVENT rank=0 case=rank_exit event=collective_enter mono_ns=4965431590122247 seq=1 op=allreduce count=1
+rank_exit,4,marker,1,CH33_EVENT rank=1 case=rank_exit event=healthy_collective_complete mono_ns=4965431591351768 seq=0
+rank_exit,5,marker,1,CH33_EVENT rank=1 case=rank_exit event=fault_injected_process_exit mono_ns=4965431591385227 exitcode=42
+rank_exit,6,child_failed,,ChildFailedError(
+rank_exit,7,child_failed,,ChildFailedError: 
+peer_exception,0,marker,0,CH33_EVENT rank=0 case=peer_exception event=pg_initialized mono_ns=4965435166756980
+peer_exception,1,marker,1,CH33_EVENT rank=1 case=peer_exception event=pg_initialized mono_ns=4965435354035827
+peer_exception,2,marker,0,CH33_EVENT rank=0 case=peer_exception event=healthy_collective_complete mono_ns=4965435607006027 seq=0
+peer_exception,3,marker,1,CH33_EVENT rank=1 case=peer_exception event=healthy_collective_complete mono_ns=4965435607103848 seq=0
+peer_exception,4,marker,1,CH33_EVENT rank=1 case=peer_exception event=fault_injected_application_exception mono_ns=4965435607142679
+peer_exception,5,application_exception,,RuntimeError: CH33 injected application failure before collective
+peer_exception,6,marker,0,CH33_EVENT rank=0 case=peer_exception event=collective_enter mono_ns=4965435615648625 seq=1 op=allreduce count=1
+peer_exception,7,child_failed,,ChildFailedError(
+peer_exception,8,child_failed,,ChildFailedError: 

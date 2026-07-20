@@ -1,0 +1,15 @@
+config,replicate,gdr_disabled_log,gdrdma_connector,socket_connector,correct
+baseline,1,1,0,1,1
+gdr_level_loc,1,1,0,1,1
+gdr_level_sys,1,1,0,1,1
+gdr_read_0,1,1,0,1,1
+gdr_read_1,1,1,0,1,1
+dmabuf_0,1,1,0,1,1
+dmabuf_1,1,1,0,1,1
+dmabuf_1,2,1,0,1,1
+dmabuf_0,2,1,0,1,1
+gdr_read_1,2,1,0,1,1
+gdr_read_0,2,1,0,1,1
+gdr_level_sys,2,1,0,1,1
+gdr_level_loc,2,1,0,1,1
+baseline,2,1,0,1,1

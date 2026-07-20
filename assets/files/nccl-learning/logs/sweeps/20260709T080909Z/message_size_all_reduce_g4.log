@@ -1,0 +1,25 @@
+# nccl-tests version 2.19.5 nccl-headers=22203 nccl-library=22203
+# Collective test starting: all_reduce_perf
+# nThread 1 nGpus 4 minBytes 8192 maxBytes 268435456 step: 8(factor) warmup iters: 1 iters: 20 agg iters: 1 validation: 1 graph: 0 unalign: 0
+#
+# Using devices
+#  Rank  0 Group  0 Pid  12520 on sg-fuxc2-260708-12652-default0-0 device  0 [0000:1a:00] Tesla V100-SXM2-32GB
+#  Rank  1 Group  0 Pid  12520 on sg-fuxc2-260708-12652-default0-0 device  1 [0000:1c:00] Tesla V100-SXM2-32GB
+#  Rank  2 Group  0 Pid  12520 on sg-fuxc2-260708-12652-default0-0 device  2 [0000:1d:00] Tesla V100-SXM2-32GB
+#  Rank  3 Group  0 Pid  12520 on sg-fuxc2-260708-12652-default0-0 device  3 [0000:1e:00] Tesla V100-SXM2-32GB
+#
+#                                                              out-of-place                       in-place          
+#       size         count      type   redop    root     time   algbw   busbw  #wrong     time   algbw   busbw  #wrong 
+#        (B)    (elements)                               (us)  (GB/s)  (GB/s)             (us)  (GB/s)  (GB/s)         
+        8192          2048     float     sum      -1    19.22    0.43    0.64       0    19.44    0.42    0.63       0
+       65536         16384     float     sum      -1    20.01    3.28    4.91       0    20.00    3.28    4.92       0
+      524288        131072     float     sum      -1    29.16   17.98   26.97       0    28.75   18.23   27.35       0
+     4194304       1048576     float     sum      -1   110.58   37.93   56.90       0   109.82   38.19   57.29       0
+    33554432       8388608     float     sum      -1   465.59   72.07  108.10       0   468.78   71.58  107.37       0
+   268435456      67108864     float     sum      -1  3319.90   80.86  121.28       0  3298.16   81.39  122.08       0
+# Out of bounds values : 0 OK
+# Avg bus bandwidth    : 53.2039 
+#
+# Collective test concluded: all_reduce_perf
+#
+

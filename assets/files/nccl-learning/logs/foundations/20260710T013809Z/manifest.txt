@@ -1,0 +1,10 @@
+run_id=20260710T013809Z
+started_at=2026-07-10T01:38:09Z
+hostname=sg-fuxc2-260708-12652-default0-0
+command=./scripts/15_run_foundations.sh
+p2p_bytes_mib=256
+p2p_warmup=5
+p2p_iters=20
+p2p_cycles=10
+async_all_reduce_bytes_mib=256
+completed_at=2026-07-10T01:38:48Z

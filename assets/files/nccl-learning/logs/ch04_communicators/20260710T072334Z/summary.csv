@@ -1,0 +1,9 @@
+metric,value
+native_ranks,4
+native_unique_id_hashes,1
+native_init_median_ms,299.739
+pytorch_default_init_nranks4,4
+pytorch_default_init_nranks2,8
+pytorch_remap_init_nranks4,4
+pytorch_remap_init_nranks2,8
+duplicate_gpu_detected,true

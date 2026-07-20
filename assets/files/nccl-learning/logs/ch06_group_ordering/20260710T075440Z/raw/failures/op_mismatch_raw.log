@@ -1,0 +1,64 @@
+W0710 07:55:01.511000 139738255503808 torch/distributed/run.py:793] 
+W0710 07:55:01.511000 139738255503808 torch/distributed/run.py:793] *****************************************
+W0710 07:55:01.511000 139738255503808 torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0710 07:55:01.511000 139738255503808 torch/distributed/run.py:793] *****************************************
+NCCL version 2.22.3+cuda12.6
+rank=0 case=op_mismatch phase=warmup-complete
+rank=0 seq=1 operation=broadcast
+rank=0 op_mismatch_returned value=10.0
+rank=1 case=op_mismatch phase=warmup-complete
+rank=1 seq=1 operation=all_reduce
+[rank1]:[E710 07:55:09.370851794 ProcessGroupNCCL.cpp:603] [Rank 1] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=3, OpType=ALLREDUCE, NumelIn=1, NumelOut=1, Timeout(ms)=6000) ran for 6009 milliseconds before timing out.
+[rank1]:[E710 07:55:09.371388249 ProcessGroupNCCL.cpp:666] [Rank 1] Work WorkNCCL(SeqNum=3, OpType=ALLREDUCE, NumelIn=1, NumelOut=1, Timeout(ms)=6000) timed out in blocking wait (TORCH_NCCL_BLOCKING_WAIT=1).
+
+sg-fuxc2-260708-12652-default0-0:33685:33700 [1] proxy.cc:1458 NCCL WARN [Service thread] Accept failed Resource temporarily unavailable
+
+sg-fuxc2-260708-12652-default0-0:33685:33700 [1] proxy.cc:1497 NCCL WARN [Service thread] Could not receive type from localRank 1, res=3, closed=0
+
+sg-fuxc2-260708-12652-default0-0:33685:33700 [1] proxy.cc:1521 NCCL WARN [Proxy Service 1] Failed to execute operation Close from rank 1, retcode 3
+[rank1]:[E710 07:55:10.857808470 ProcessGroupNCCL.cpp:617] [Rank 1] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank1]:[E710 07:55:10.857845534 ProcessGroupNCCL.cpp:623] [Rank 1] To avoid data inconsistency, we are taking the entire process down.
+[rank1]:[E710 07:55:10.864470181 ProcessGroupNCCL.cpp:1709] [PG 0 (default_pg) Rank 1] Exception (either an error or timeout) detected by watchdog at work: 3, last enqueued NCCL work: 3, last completed NCCL work: 2.
+[rank1]:[E710 07:55:10.864501017 ProcessGroupNCCL.cpp:1756] [PG 0 (default_pg) Rank 1] Timeout at NCCL work: 3, last enqueued NCCL work: 3, last completed NCCL work: 2.
+[rank1]:[E710 07:55:10.864515177 ProcessGroupNCCL.cpp:617] [Rank 1] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/root/nccl-learning/scripts/30_ch06_order_worker.py", line 94, in <module>
+[rank1]:     main()
+[rank1]:   File "/root/nccl-learning/scripts/30_ch06_order_worker.py", line 64, in main
+[rank1]:     dist.all_reduce(value)
+[rank1]:   File "/usr/local/lib/python3.10/dist-packages/torch/distributed/c10d_logger.py", line 83, in wrapper
+[rank1]:     return func(*args, **kwargs)
+[rank1]:   File "/usr/local/lib/python3.10/dist-packages/torch/distributed/distributed_c10d.py", line 2491, in all_reduce
+[rank1]:     work.wait()
+[rank1]: torch.distributed.DistBackendError: [Rank 1] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=3, OpType=ALLREDUCE, NumelIn=1, NumelOut=1, Timeout(ms)=6000) ran for 6009 milliseconds before timing out.
+W0710 07:55:10.686000 139738255503808 torch/distributed/elastic/multiprocessing/api.py:891] Sending process 33684 closing signal SIGTERM
+E0710 07:55:10.850000 139738255503808 torch/distributed/elastic/multiprocessing/api.py:863] failed (exitcode: 1) local_rank: 1 (pid: 33685) of binary: /usr/bin/python
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.5.0a0+872d972e41.nv24.8', 'console_scripts', 'torchrun')())
+  File "/usr/local/lib/python3.10/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/usr/local/lib/python3.10/dist-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.10/dist-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/usr/local/lib/python3.10/dist-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/root/nccl-learning/scripts/30_ch06_order_worker.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-07-10_07:55:10
+  host      : sg-fuxc2-260708-12652-default0-0.sg-fuxc2-260708-12652.crater-workspace.svc.cluster.local
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 33685)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

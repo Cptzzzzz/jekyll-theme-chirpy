@@ -1,0 +1,69 @@
+Generating SQLite file /root/nccl-learning/logs/nsys_allreduce/20260710T014759Z/artifacts/allreduce_64m.sqlite from /root/nccl-learning/logs/nsys_allreduce/20260710T014759Z/artifacts/allreduce_64m.nsys-rep
+Processing [/root/nccl-learning/logs/nsys_allreduce/20260710T014759Z/artifacts/allreduce_64m.sqlite] with [/usr/local/cuda-12.6/NsightSystems-cli-2024.4.2/target-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+
+ ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):
+
+ Time (%)  Total Time (ns)  Instances   Avg (ns)    Med (ns)   Min (ns)  Max (ns)  StdDev (ns)                                                  Name                                                
+ --------  ---------------  ---------  ----------  ----------  --------  --------  -----------  ----------------------------------------------------------------------------------------------------
+     55.3        131251483          8  16406435.4  16435328.5  16274572  16489136      84985.0  void <unnamed>::verifyPrepared<unsigned int>(const T1 *, const T1 *, long, unsigned int, long *)    
+     32.2         76409183         64   1193893.5    869213.0    858173  12457157    1677204.4  ncclDevKernel_AllReduce_Sum_f32_RING_LL(ncclDevKernelArgsStorage<(unsigned long)4096>)              
+      9.7         23028045         16   1439252.8   1439478.5   1437468   1440892       1212.8  void <unnamed>::prepareInput2<float, <unnamed>::ReduceSum>(T1 *, long, T2, int, int, unsigned long,…
+      2.7          6442300         16    402643.8    402380.5    402111    404123        673.2  void <unnamed>::prepareExpected2<float, <unnamed>::ReduceSum>(T1 *, long, T2, int, unsigned long, l…
+
+Processing [/root/nccl-learning/logs/nsys_allreduce/20260710T014759Z/artifacts/allreduce_64m.sqlite] with [/usr/local/cuda-12.6/NsightSystems-cli-2024.4.2/target-linux-x64/reports/cuda_api_sum.py]... 
+
+ ** CUDA API Summary (cuda_api_sum):
+
+ Time (%)  Total Time (ns)  Num Calls   Avg (ns)    Med (ns)   Min (ns)  Max (ns)  StdDev (ns)                     Name                   
+ --------  ---------------  ---------  ----------  ----------  --------  --------  -----------  ------------------------------------------
+     28.8        189332003        388    487969.1    408641.5     67424   2332352     303555.8  cuMemSetAccess                            
+     24.6        161587271         24   6732803.0   1918291.5   1817102  16495483    6991089.8  cudaDeviceSynchronize                     
+     14.8         97479587        292    333834.2     96104.5     67115   1639606     381460.1  cuMemUnmap                                
+      9.8         64622452          1  64622452.0  64622452.0  64622452  64622452          0.0  cudaDeviceReset                           
+      4.3         27973708        584     47900.2     19551.0        90    714306      78205.2  cuMemRelease                              
+      3.2         20851777        292     71410.2     49955.0     28713    424667      51127.2  cuMemMap                                  
+      3.1         20324072         40    508101.8      4403.5      3441   8852020    1673921.5  cudaLaunchKernel                          
+      3.0         19918230        292     68213.1     49708.5     21921    588266      62681.8  cuMemCreate                               
+      2.5         16543438         64    258491.2      3567.0      2933   5027403    1021331.6  cuLaunchKernelEx                          
+      1.2          7882126        292     26993.6      1270.5       545    652978      86973.8  cuMemRetainAllocationHandle               
+      1.1          6989521         14    499251.5     66791.5     22338   1666354     732879.6  cudaHostAlloc                             
+      0.8          5069754         12    422479.5    386439.0    362158    574770      78721.5  cudaMalloc                                
+      0.6          3835874         16    239742.1    300784.5     23363    351898     127913.6  cudaFree                                  
+      0.6          3624379        292     12412.3      8097.0      2262     76488      13349.5  cuMemAddressReserve                       
+      0.5          3365106         14    240364.7     45879.5     21492    857483     327551.2  cudaFreeHost                              
+      0.3          2026126        420      4824.1      3502.5      2532     22379       2631.2  cudaMemcpyAsync                           
+      0.2          1349778        292      4622.5      3220.5      1052     35213       4292.1  cuMemAddressFree                          
+      0.2          1288097        196      6571.9      5608.0      4302     40954       4037.7  cudaMemsetAsync                           
+      0.1           737195         20     36859.8     35150.0     13516     87167      17992.3  cudaMemGetInfo                            
+      0.1           596093       1648       361.7       229.0       164      5624        384.4  cudaThreadExchangeStreamCaptureMode_v10010
+      0.1           455465         76      5993.0      5893.5      1556     11748       1664.7  cudaStreamSynchronize                     
+      0.0           238698         12     19891.5     19618.5      8804     32973       9173.4  cudaStreamCreateWithFlags                 
+      0.0           173842        208       835.8       662.0       425      3534        482.3  cudaStreamWaitEvent                       
+      0.0           140976         16      8811.0      7585.0      4772     17066       3632.7  cudaMemset                                
+      0.0           102344        132       775.3       519.5       399      5844        868.5  cudaEventRecord                           
+      0.0            95540          8     11942.5     11887.5      5133     28696       7558.5  cudaStreamDestroy                         
+      0.0            85857        292       294.0       173.0       121      1393        238.2  cuMemGetAllocationGranularity             
+      0.0            80784        412       196.1       138.0        76      4312        276.3  cuGetProcAddress_v2                       
+      0.0            42708         64       667.3       259.5       212     16088       2027.3  cudaStreamGetCaptureInfo_v2_v11030        
+      0.0            26516          8      3314.5      3249.5      1463      5808       1736.9  cudaEventCreateWithFlags                  
+      0.0            14187          8      1773.4      1370.0       823      4882       1325.7  cudaEventDestroy                          
+      0.0            13515         64       211.2       107.0        94      1448        242.9  cudaGetFuncBySymbol_v11000                
+      0.0             7958         31       256.7       234.0       185       677         86.1  cudaGetDriverEntryPoint_v11030            
+      0.0             4728          1      4728.0      4728.0      4728      4728          0.0  cuCtxSynchronize                          
+      0.0             2687          1      2687.0      2687.0      2687      2687          0.0  cuInit                                    
+      0.0             1174          2       587.0       587.0       107      1067        678.8  cuModuleGetLoadingMode                    
+
+Processing [/root/nccl-learning/logs/nsys_allreduce/20260710T014759Z/artifacts/allreduce_64m.sqlite] with [/usr/local/cuda-12.6/NsightSystems-cli-2024.4.2/target-linux-x64/reports/nvtx_sum.py]... 
+
+ ** NVTX Range Summary (nvtx_sum):
+
+ Time (%)  Total Time (ns)  Instances   Avg (ns)   Med (ns)   Min (ns)  Max (ns)   StdDev (ns)   Style              Range           
+ --------  ---------------  ---------  ----------  ---------  --------  ---------  -----------  -------  ---------------------------
+     72.3        721443338         18  40080185.4    37703.5      1868  659639051  155288613.2  PushPop  NCCL:ncclGroupEnd          
+     25.9        258738720          4  64684680.0      940.5       316  258736523  129367895.3  PushPop  NCCL:ncclCommDestroy       
+      0.8          8163754          4   2040938.5  1786406.0   1693073    2897869     573066.8  PushPop  NCCL:ncclCommInitRankConfig
+      0.5          5146286         12    428857.2   392443.5    367877     584675      79550.0  PushPop  NCCL:ncclMemAlloc          
+      0.4          3784330         12    315360.8   314981.5    291344     362038      20055.2  PushPop  NCCL:ncclMemFree           
+      0.0           248073         64      3876.1     1642.5       868      59705       8250.4  PushPop  NCCL:ncclAllReduce         
+      0.0            25954         18      1441.9      420.5       140      14569       3392.1  PushPop  NCCL:ncclGroupStart        
+

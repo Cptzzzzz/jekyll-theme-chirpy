@@ -1,0 +1,9 @@
+check,expected,observed,pass
+payload,67108864,67108864,1
+bucket_count,1,1,1
+algorithm,1,1,1
+protocol,2,2,1
+channels,12,12,1
+p2p_present,1,1,1
+regression_channels,1,1,1
+regression_detected,1,1,1

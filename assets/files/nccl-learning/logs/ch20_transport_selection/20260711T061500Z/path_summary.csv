@@ -1,0 +1,9 @@
+config,workload,expected_transport,observed_transports,connection_lines,logged_conn_indexes,expected_conn_index,index_visible_in_transport_log,transport_variants,correctness_pass
+baseline,all_reduce,P2P,P2P,48,0,0,1,direct,1
+baseline,sendrecv,P2P,P2P,16,1,1,1,direct,1
+shm_disabled,all_reduce,P2P,P2P,48,0,0,1,direct,1
+shm_disabled,sendrecv,P2P,P2P,16,1,1,1,direct,1
+p2p_disabled,all_reduce,SHM,SHM,12,,0,0,direct/direct,1
+p2p_disabled,sendrecv,SHM,SHM,8,,1,0,direct/direct,1
+p2p_shm_disabled,all_reduce,NET,NET,16,0,0,1,Socket/0,1
+p2p_shm_disabled,sendrecv,NET,NET,16,1,1,1,Socket/0/Shared,1

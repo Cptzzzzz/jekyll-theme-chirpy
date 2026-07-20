@@ -1,0 +1,4 @@
+mode,ops,replays,nvtx_gpu_ops,expected_gpu_ops,unique_grid_x,unique_block_x,kernel_names,profile_private
+sequential,4,1,16,16,12,640,1,1
+grouped,4,1,4,4,12,544,1,1
+graph,4,5,20,20,12,544,1,1

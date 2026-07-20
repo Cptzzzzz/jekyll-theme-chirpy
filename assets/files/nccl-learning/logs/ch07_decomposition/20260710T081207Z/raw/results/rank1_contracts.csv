@@ -1,0 +1,6 @@
+rank,name,correct,detail
+1,exact-sum-equivalence,True,int64 full tensor direct==RS+AG==CPU formula
+1,wrong-shard-order-rejected,True,rank-major chunks rotated by one rank
+1,wrong-reduction-op-rejected,True,direct SUM compared with ReduceScatter MAX plus AllGather
+1,padding-and-trim-equivalence,True,logical=1003;padded=1004;identity=0
+1,nondivisible-without-padding-rejected,True,input tensor must be the same size as output size times world size

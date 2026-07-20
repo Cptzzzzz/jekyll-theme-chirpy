@@ -1,0 +1,44 @@
+== Experiment metadata ==
+2026-07-10T01:41:41Z
+sg-fuxc2-260708-12652-default0-0
+Linux sg-fuxc2-260708-12652-default0-0 5.15.0-177-generic #187-Ubuntu SMP Sat Apr 11 22:54:33 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+
+== Driver and CUDA toolkit ==
+580.159.03
+nvcc is not on PATH; using /usr/local/cuda/bin/nvcc
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2024 NVIDIA Corporation
+Built on Fri_Jun_14_16:34:21_PDT_2024
+Cuda compilation tools, release 12.6, V12.6.20
+Build cuda_12.6.r12.6/compiler.34431801_0
+
+== PyTorch runtime ==
+python_executable: /usr/bin/python3
+python_version: 3.10.12 (main, Jul 29 2024, 16:56:48) [GCC 11.4.0]
+torch_version: 2.5.0a0+872d972e41.nv24.08
+torch_cuda_version: 12.6
+torch_nccl_version: 2.22.3
+torch_path: /usr/local/lib/python3.10/dist-packages/torch/__init__.py
+cuda_available: True
+cuda_device_count: 4
+
+== Dynamic linker NCCL entries ==
+	libnccl_wrapper.so.0 (libc6,x86-64) => /opt/hpcx/clusterkit/lib/libnccl_wrapper.so.0
+	libnccl_wrapper.so (libc6,x86-64) => /opt/hpcx/clusterkit/lib/libnccl_wrapper.so
+	libnccl.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnccl.so.2
+	libnccl.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libnccl.so
+
+== nccl-tests linkage ==
+binary: /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf
+	libcudart.so.12 => /usr/local/cuda/targets/x86_64-linux/lib/libcudart.so.12 (0x00007f2fa2c00000)
+	libnccl.so.2 => /lib/x86_64-linux-gnu/libnccl.so.2 (0x00007f2f94041000)
+	libstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f2f93e15000)
+
+== Installed NCCL packages ==
+libnccl-dev	2.22.3-1+cuda12.6
+libnccl2	2.22.3-1+cuda12.6
+
+== Source revisions ==
+/root/nccl-learning/third_party/nccl-2.22.3	178b6b759074597777ce13438efb0e0ba625e429 2024-06-11T01:28:01-07:00 2.22.3-1
+/root/nccl-learning/third_party/nccl	5067397c2676d5aed50042fc39e5c8ee96eb0027 2026-06-11T11:44:19-07:00 Merge nccl4py v0.3.1 release to master
+/root/nccl-learning/third_party/nccl-tests	5bcd45d2ee8365e37895e118c9d11b0ebc15aa69 2026-07-07T10:48:17-07:00 NCCL_TESTS_VERSION 2.19.5

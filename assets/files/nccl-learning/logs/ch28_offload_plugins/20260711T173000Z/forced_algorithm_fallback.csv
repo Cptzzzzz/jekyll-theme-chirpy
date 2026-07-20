@@ -1,0 +1,5 @@
+requested,returncode,observed_algorithm_id,observed_algorithm,fallback,wrong
+CollNetDirect,0,1,Ring,1,0
+CollNetChain,0,1,Ring,1,0
+NVLS,0,1,Ring,1,0
+NVLSTree,0,1,Ring,1,0

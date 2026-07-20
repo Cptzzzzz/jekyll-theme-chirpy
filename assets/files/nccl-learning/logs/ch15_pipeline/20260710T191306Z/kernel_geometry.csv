@@ -1,0 +1,8 @@
+label,message_bytes,requested_channels,buffer_bytes,requested_nthreads,selected_algo_id,selected_proto_id,kernel_name,instances,grid_x_values,block_x_values,grid_matches_requested_channels,median_kernel_us,p95_kernel_us,private_report_retained
+channels_1,1048576,1,4194304,512,1,2,ncclDevKernel_AllReduce_Sum_f32_RING_LL,56,1,544,1,124.7835,1026.56475,1
+channels_4,1048576,4,4194304,512,1,2,ncclDevKernel_AllReduce_Sum_f32_RING_LL,56,4,544,1,73.0235,992.628,1
+channels_12,1048576,12,4194304,512,1,2,ncclDevKernel_AllReduce_Sum_f32_RING_LL,56,12,544,1,67.10300000000001,971.516,1
+threads_64,1048576,12,4194304,64,1,2,ncclDevKernel_AllReduce_Sum_f32_RING_LL,56,12,128,1,61.583,752.7505,1
+threads_128,1048576,12,4194304,128,1,2,ncclDevKernel_AllReduce_Sum_f32_RING_LL,56,12,160,1,57.903499999999994,736.11175,1
+threads_256,1048576,12,4194304,256,1,2,ncclDevKernel_AllReduce_Sum_f32_RING_LL,56,12,288,1,66.144,960.085,1
+tiny_4k_requested_ch12_t512,4096,12,4194304,512,1,2,ncclDevKernel_AllReduce_Sum_f32_RING_LL,56,1,128,0,42.0165,943.0207500000001,1

@@ -1,0 +1,66 @@
+# nccl-tests version 2.19.5 nccl-headers=22203 nccl-library=22203
+# Collective test starting: all_reduce_perf
+# nThread 1 nGpus 4 minBytes 4096 maxBytes 67108864 step: 128(factor) warmup iters: 5 iters: 20 agg iters: 1 validation: 1 graph: 0 unalign: 0
+#
+# Using devices
+#  Rank  0 Group  0 Pid  61877 on sg-fuxc2-260708-12652-default0-0 device  0 [0000:1a:00] Tesla V100-SXM2-32GB
+#  Rank  1 Group  0 Pid  61877 on sg-fuxc2-260708-12652-default0-0 device  1 [0000:1c:00] Tesla V100-SXM2-32GB
+#  Rank  2 Group  0 Pid  61877 on sg-fuxc2-260708-12652-default0-0 device  2 [0000:1d:00] Tesla V100-SXM2-32GB
+#  Rank  3 Group  0 Pid  61877 on sg-fuxc2-260708-12652-default0-0 device  3 [0000:1e:00] Tesla V100-SXM2-32GB
+NCCL version 2.22.3+cuda12.6
+
+sg-fuxc2-260708-12652-default0-0:61877:61886 [2] graph/search.cc:1096 NCCL WARN Could not find a path for pattern 4, falling back to simple order
+
+sg-fuxc2-260708-12652-default0-0:61877:61886 [2] graph/search.cc:1096 NCCL WARN Could not find a path for pattern 1, falling back to simple order
+
+sg-fuxc2-260708-12652-default0-0:61877:61887 [3] graph/search.cc:1096 NCCL WARN Could not find a path for pattern 4, falling back to simple order
+
+sg-fuxc2-260708-12652-default0-0:61877:61887 [3] graph/search.cc:1096 NCCL WARN Could not find a path for pattern 1, falling back to simple order
+
+sg-fuxc2-260708-12652-default0-0:61877:61885 [1] graph/search.cc:1096 NCCL WARN Could not find a path for pattern 4, falling back to simple order
+
+sg-fuxc2-260708-12652-default0-0:61877:61885 [1] graph/search.cc:1096 NCCL WARN Could not find a path for pattern 1, falling back to simple order
+
+sg-fuxc2-260708-12652-default0-0:61877:61884 [0] graph/search.cc:1096 NCCL WARN Could not find a path for pattern 4, falling back to simple order
+
+sg-fuxc2-260708-12652-default0-0:61877:61884 [0] graph/search.cc:1096 NCCL WARN Could not find a path for pattern 1, falling back to simple order
+#
+#                                                              out-of-place                       in-place          
+#       size         count      type   redop    root     time   algbw   busbw  #wrong     time   algbw   busbw  #wrong 
+#        (B)    (elements)                               (us)  (GB/s)  (GB/s)             (us)  (GB/s)  (GB/s)         
+        4096          1024     float     sum      -1    34.47    0.12    0.18       0    33.83    0.12    0.18       0
+      524288        131072     float     sum      -1    62.14    8.44   12.66       0    62.00    8.46   12.68       0
+    67108864      16777216     float     sum      -1  2852.44   23.53   35.29       0  2861.10   23.46   35.18       0
+        4096          1024     float     sum      -1    34.64    0.12    0.18       0    33.68    0.12    0.18       0
+      524288        131072     float     sum      -1    62.50    8.39   12.58       0    61.94    8.46   12.70       0
+    67108864      16777216     float     sum      -1  2853.78   23.52   35.27       0  2857.67   23.48   35.23       0
+        4096          1024     float     sum      -1    34.80    0.12    0.18       0    33.69    0.12    0.18       0
+      524288        131072     float     sum      -1    62.45    8.40   12.59       0    62.00    8.46   12.68       0
+    67108864      16777216     float     sum      -1  2855.21   23.50   35.26       0  2858.42   23.48   35.22       0
+        4096          1024     float     sum      -1    34.64    0.12    0.18       0    33.78    0.12    0.18       0
+      524288        131072     float     sum      -1    62.47    8.39   12.59       0    62.26    8.42   12.63       0
+    67108864      16777216     float     sum      -1  2851.64   23.53   35.30       0  2860.29   23.46   35.19       0
+        4096          1024     float     sum      -1    34.55    0.12    0.18       0    33.69    0.12    0.18       0
+      524288        131072     float     sum      -1    62.30    8.42   12.62       0    62.72    8.36   12.54       0
+    67108864      16777216     float     sum      -1  2854.80   23.51   35.26       0  2857.96   23.48   35.22       0
+        4096          1024     float     sum      -1    34.48    0.12    0.18       0    33.58    0.12    0.18       0
+      524288        131072     float     sum      -1    62.37    8.41   12.61       0    61.88    8.47   12.71       0
+    67108864      16777216     float     sum      -1  2851.50   23.53   35.30       0  2859.16   23.47   35.21       0
+        4096          1024     float     sum      -1    34.44    0.12    0.18       0    33.65    0.12    0.18       0
+      524288        131072     float     sum      -1    62.12    8.44   12.66       0    62.24    8.42   12.64       0
+    67108864      16777216     float     sum      -1  2854.09   23.51   35.27       0  2859.10   23.47   35.21       0
+        4096          1024     float     sum      -1    34.47    0.12    0.18       0    33.66    0.12    0.18       0
+      524288        131072     float     sum      -1    62.29    8.42   12.62       0    62.61    8.37   12.56       0
+    67108864      16777216     float     sum      -1  2852.77   23.52   35.29       0  2859.50   23.47   35.20       0
+        4096          1024     float     sum      -1    34.46    0.12    0.18       0    33.91    0.12    0.18       0
+      524288        131072     float     sum      -1    62.16    8.43   12.65       0    75.21    6.97   10.46       0
+    67108864      16777216     float     sum      -1  2854.17   23.51   35.27       0  2861.48   23.45   35.18       0
+        4096          1024     float     sum      -1    34.57    0.12    0.18       0    33.63    0.12    0.18       0
+      524288        131072     float     sum      -1    62.12    8.44   12.66       0    62.06    8.45   12.67       0
+    67108864      16777216     float     sum      -1  2851.49   23.53   35.30       0  2856.80   23.49   35.24       0
+# Out of bounds values : 0 OK
+# Avg bus bandwidth    : 15.9834 
+#
+# Collective test concluded: all_reduce_perf
+#
+

@@ -1,0 +1,10 @@
+case,worker_case,debug,blocking_wait,returncode,external_timeout,duration_s,expected_root,observed_root,event_count,accepted
+control,control,OFF,1,0,0,4.952,success,success,8,1
+op_detail,op_mismatch,DETAIL,1,1,0,4.998,fingerprint,fingerprint,10,1
+shape_detail,shape_mismatch,DETAIL,1,1,0,4.886,fingerprint,fingerprint,10,1
+order_detail,order_mismatch,DETAIL,1,1,0,4.907,fingerprint,fingerprint,10,1
+op_raw,op_mismatch,OFF,1,1,0,9.226,raw_mismatch,raw_mismatch,11,1
+steady_skip,skip,OFF,1,1,0,8.991,skip_timeout,skip_timeout,10,1
+lazy_skip,lazy_skip,OFF,1,124,1,16.459,lazy_init_external_timeout,lazy_init_external_timeout,4,1
+rank_exit,rank_exit,OFF,1,1,0,4.293,rank_exit,rank_exit,8,1
+peer_exception,peer_exception,OFF,1,1,0,4.815,application_exception,application_exception,9,1

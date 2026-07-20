@@ -1,0 +1,6 @@
+metric,value
+samples,40
+median_host_wait_us,5.441500
+median_sleep_gpu_us,130135.375977
+free_stream_before_wait_stream_rate,1.000000
+completed_after_wait_rate,0.000000

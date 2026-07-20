@@ -1,0 +1,5 @@
+W0710 01:56:51.029000 139703188484544 torch/distributed/run.py:793] 
+W0710 01:56:51.029000 139703188484544 torch/distributed/run.py:793] *****************************************
+W0710 01:56:51.029000 139703188484544 torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0710 01:56:51.029000 139703188484544 torch/distributed/run.py:793] *****************************************
+RESULT_JSON={"avg_backward_comm_time_ns": 7847725, "avg_backward_compute_time_ns": 10284532, "avg_backward_overlap_time_ns": 1696753, "bucket_cap_bytes": 67108864, "bucket_cap_mb": 64, "has_rebuilt_buckets": 1, "initial_bucket_sizes": "201326592", "max_step_ms": 6.886879920959473, "median_step_ms": 6.734079837799072, "min_step_ms": 6.562655925750732, "p95_step_ms": 6.886879920959473, "parameter_bytes": 201326592, "parameters_equal": true, "peak_memory_bytes": 621806592, "rebuilt_bucket_sizes": "67108864, 67108864, 67108864", "single_weight_bytes": 16777216}

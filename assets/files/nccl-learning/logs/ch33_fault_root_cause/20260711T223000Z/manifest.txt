@@ -1,0 +1,15 @@
+experiment=ch33_fault_root_cause
+run_id=20260711T223000Z
+timestamp_utc=2026-07-11T18:17:41.828769+00:00
+hostname=sg-fuxc2-260708-12652-default0-0
+cases=9
+event_rows=80
+source_model_rows=37
+case_acceptance=9/9 PASS
+root_cause_classification=PASS
+network_interruption=BLOCKED_SINGLE_NODE
+raw_logs=NOT_FOR_PUBLICATION
+pytorch_runtime=2.5.0a0+872d972e41.nv24.08
+nccl_runtime=2.22.3
+process_group_nccl_sha256=c9b1a13c309d3a085908a332157b0a5cb7a8c68c0ade6e78cd0b62da2bb854b3
+nccl_init_sha256=832c449755827d73f8df7ec31db483eefb40971ef70ab8c3d9f1dc7aaf91ea0f

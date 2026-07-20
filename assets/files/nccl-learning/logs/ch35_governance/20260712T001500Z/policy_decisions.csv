@@ -1,0 +1,8 @@
+case,layer,observed,threshold,status,action
+baseline,all,116.81 GB/s,>=90% baseline,PASS,promote canary
+channel1,performance,-83.42%,-10%,FAIL,block and inspect channel config
+no_p2p,path+performance,P2P=0 SHM=12 -97.81%,path unchanged and -10%,FAIL,block and inspect topology/transport
+wrong_result_injected,correctness,#wrong=1,0,FAIL,immediate block
+version_mismatch_injected,version,2.22.3 -> 2.23.x,exact approved manifest,FAIL,separate A/B canary
+topology_mismatch_injected,topology,fingerprint changed,exact node class,FAIL,quarantine node
+high_noise_injected,statistics,CV=25%,CV<=5%,INCONCLUSIVE,rerun and isolate noise

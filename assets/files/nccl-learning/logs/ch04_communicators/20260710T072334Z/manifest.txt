@@ -1,0 +1,9 @@
+experiment=ch04_communicators
+run_id=20260710T072334Z
+timestamp_utc=2026-07-10T07:23:34Z
+hostname=sg-fuxc2-260708-12652-default0-0
+nccl_source_commit=178b6b759074597777ce13438efb0e0ba625e429
+torch=2.5.0a0+872d972e41.nv24.08
+mpi_prefix=/opt/hpcx/ompi
+default_cuda_visible_devices=0,1,2,3
+remapped_cuda_visible_devices=2,0,3,1

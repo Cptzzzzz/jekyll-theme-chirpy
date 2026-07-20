@@ -1,0 +1,4 @@
+protocol,wire_line_bytes,data_bytes_per_line,payload_efficiency_percent,default_buffer_bytes,wire_bytes_per_step,data_bytes_per_step,sync_metadata
+LL,16,8,50.0,524288,65536,32768,two_32bit_flags_per_16B_line
+LL128,128,120,93.75,4915200,614400,576000,one_64bit_flag_per_128B_line
+Simple,0,0,100.0,4194304,524288,524288,separate_connection_step_head_tail

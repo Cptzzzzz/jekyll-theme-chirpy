@@ -1,0 +1,6 @@
+api,calls
+cudaEventRecord,112
+cudaStreamWaitEvent,144
+cudaEventQuery,41
+cudaStreamSynchronize,88
+cudaDeviceSynchronize,16

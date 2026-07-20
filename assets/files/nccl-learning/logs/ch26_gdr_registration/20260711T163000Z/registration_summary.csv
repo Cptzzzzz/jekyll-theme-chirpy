@@ -1,0 +1,4 @@
+bytes,samples,median_reg_us,median_dereg_us,actual_net_registrations
+4096,20,28.597,0.5465,0
+1048576,20,30.64,0.348,0
+67108864,20,30.4125,0.554,0

@@ -1,0 +1,2113 @@
+rank,config,iteration,phase,operation,group,payload_bytes,note,replicate
+0,tp_ar_b32,0,forward,AllReduce,tp0,65536,row-parallel partial output,1
+0,tp_ar_b32,0,backward,AllReduce,tp0,65536,autograd dual of AllReduce,1
+0,tp_ar_b32,0,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+0,tp_ar_b32,0,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+0,tp_ar_b32,1,forward,AllReduce,tp0,65536,row-parallel partial output,1
+0,tp_ar_b32,1,backward,AllReduce,tp0,65536,autograd dual of AllReduce,1
+0,tp_ar_b32,1,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+0,tp_ar_b32,1,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+0,tp_ar_b32,2,forward,AllReduce,tp0,65536,row-parallel partial output,1
+0,tp_ar_b32,2,backward,AllReduce,tp0,65536,autograd dual of AllReduce,1
+0,tp_ar_b32,2,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+0,tp_ar_b32,2,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+0,tp_ar_b32,3,forward,AllReduce,tp0,65536,row-parallel partial output,1
+0,tp_ar_b32,3,backward,AllReduce,tp0,65536,autograd dual of AllReduce,1
+0,tp_ar_b32,3,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+0,tp_ar_b32,3,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+0,tp_ar_b32,4,forward,AllReduce,tp0,65536,row-parallel partial output,1
+0,tp_ar_b32,4,backward,AllReduce,tp0,65536,autograd dual of AllReduce,1
+0,tp_ar_b32,4,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+0,tp_ar_b32,4,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+0,tp_ar_b32,5,forward,AllReduce,tp0,65536,row-parallel partial output,1
+0,tp_ar_b32,5,backward,AllReduce,tp0,65536,autograd dual of AllReduce,1
+0,tp_ar_b32,5,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+0,tp_ar_b32,5,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+1,tp_ar_b32,0,forward,AllReduce,tp0,65536,row-parallel partial output,1
+1,tp_ar_b32,0,backward,AllReduce,tp0,65536,autograd dual of AllReduce,1
+1,tp_ar_b32,0,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+1,tp_ar_b32,0,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+1,tp_ar_b32,1,forward,AllReduce,tp0,65536,row-parallel partial output,1
+1,tp_ar_b32,1,backward,AllReduce,tp0,65536,autograd dual of AllReduce,1
+1,tp_ar_b32,1,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+1,tp_ar_b32,1,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+1,tp_ar_b32,2,forward,AllReduce,tp0,65536,row-parallel partial output,1
+1,tp_ar_b32,2,backward,AllReduce,tp0,65536,autograd dual of AllReduce,1
+1,tp_ar_b32,2,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+1,tp_ar_b32,2,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+1,tp_ar_b32,3,forward,AllReduce,tp0,65536,row-parallel partial output,1
+1,tp_ar_b32,3,backward,AllReduce,tp0,65536,autograd dual of AllReduce,1
+1,tp_ar_b32,3,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+1,tp_ar_b32,3,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+1,tp_ar_b32,4,forward,AllReduce,tp0,65536,row-parallel partial output,1
+1,tp_ar_b32,4,backward,AllReduce,tp0,65536,autograd dual of AllReduce,1
+1,tp_ar_b32,4,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+1,tp_ar_b32,4,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+1,tp_ar_b32,5,forward,AllReduce,tp0,65536,row-parallel partial output,1
+1,tp_ar_b32,5,backward,AllReduce,tp0,65536,autograd dual of AllReduce,1
+1,tp_ar_b32,5,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+1,tp_ar_b32,5,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+2,tp_ar_b32,0,forward,AllReduce,tp1,65536,row-parallel partial output,1
+2,tp_ar_b32,0,backward,AllReduce,tp1,65536,autograd dual of AllReduce,1
+2,tp_ar_b32,0,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+2,tp_ar_b32,0,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+2,tp_ar_b32,1,forward,AllReduce,tp1,65536,row-parallel partial output,1
+2,tp_ar_b32,1,backward,AllReduce,tp1,65536,autograd dual of AllReduce,1
+2,tp_ar_b32,1,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+2,tp_ar_b32,1,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+2,tp_ar_b32,2,forward,AllReduce,tp1,65536,row-parallel partial output,1
+2,tp_ar_b32,2,backward,AllReduce,tp1,65536,autograd dual of AllReduce,1
+2,tp_ar_b32,2,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+2,tp_ar_b32,2,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+2,tp_ar_b32,3,forward,AllReduce,tp1,65536,row-parallel partial output,1
+2,tp_ar_b32,3,backward,AllReduce,tp1,65536,autograd dual of AllReduce,1
+2,tp_ar_b32,3,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+2,tp_ar_b32,3,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+2,tp_ar_b32,4,forward,AllReduce,tp1,65536,row-parallel partial output,1
+2,tp_ar_b32,4,backward,AllReduce,tp1,65536,autograd dual of AllReduce,1
+2,tp_ar_b32,4,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+2,tp_ar_b32,4,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+2,tp_ar_b32,5,forward,AllReduce,tp1,65536,row-parallel partial output,1
+2,tp_ar_b32,5,backward,AllReduce,tp1,65536,autograd dual of AllReduce,1
+2,tp_ar_b32,5,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+2,tp_ar_b32,5,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+3,tp_ar_b32,0,forward,AllReduce,tp1,65536,row-parallel partial output,1
+3,tp_ar_b32,0,backward,AllReduce,tp1,65536,autograd dual of AllReduce,1
+3,tp_ar_b32,0,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+3,tp_ar_b32,0,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+3,tp_ar_b32,1,forward,AllReduce,tp1,65536,row-parallel partial output,1
+3,tp_ar_b32,1,backward,AllReduce,tp1,65536,autograd dual of AllReduce,1
+3,tp_ar_b32,1,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+3,tp_ar_b32,1,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+3,tp_ar_b32,2,forward,AllReduce,tp1,65536,row-parallel partial output,1
+3,tp_ar_b32,2,backward,AllReduce,tp1,65536,autograd dual of AllReduce,1
+3,tp_ar_b32,2,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+3,tp_ar_b32,2,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+3,tp_ar_b32,3,forward,AllReduce,tp1,65536,row-parallel partial output,1
+3,tp_ar_b32,3,backward,AllReduce,tp1,65536,autograd dual of AllReduce,1
+3,tp_ar_b32,3,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+3,tp_ar_b32,3,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+3,tp_ar_b32,4,forward,AllReduce,tp1,65536,row-parallel partial output,1
+3,tp_ar_b32,4,backward,AllReduce,tp1,65536,autograd dual of AllReduce,1
+3,tp_ar_b32,4,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+3,tp_ar_b32,4,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+3,tp_ar_b32,5,forward,AllReduce,tp1,65536,row-parallel partial output,1
+3,tp_ar_b32,5,backward,AllReduce,tp1,65536,autograd dual of AllReduce,1
+3,tp_ar_b32,5,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+3,tp_ar_b32,5,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+0,tp_ar_b128,0,forward,AllReduce,tp0,262144,row-parallel partial output,1
+0,tp_ar_b128,0,backward,AllReduce,tp0,262144,autograd dual of AllReduce,1
+0,tp_ar_b128,0,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+0,tp_ar_b128,0,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+0,tp_ar_b128,1,forward,AllReduce,tp0,262144,row-parallel partial output,1
+0,tp_ar_b128,1,backward,AllReduce,tp0,262144,autograd dual of AllReduce,1
+0,tp_ar_b128,1,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+0,tp_ar_b128,1,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+0,tp_ar_b128,2,forward,AllReduce,tp0,262144,row-parallel partial output,1
+0,tp_ar_b128,2,backward,AllReduce,tp0,262144,autograd dual of AllReduce,1
+0,tp_ar_b128,2,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+0,tp_ar_b128,2,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+0,tp_ar_b128,3,forward,AllReduce,tp0,262144,row-parallel partial output,1
+0,tp_ar_b128,3,backward,AllReduce,tp0,262144,autograd dual of AllReduce,1
+0,tp_ar_b128,3,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+0,tp_ar_b128,3,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+0,tp_ar_b128,4,forward,AllReduce,tp0,262144,row-parallel partial output,1
+0,tp_ar_b128,4,backward,AllReduce,tp0,262144,autograd dual of AllReduce,1
+0,tp_ar_b128,4,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+0,tp_ar_b128,4,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+0,tp_ar_b128,5,forward,AllReduce,tp0,262144,row-parallel partial output,1
+0,tp_ar_b128,5,backward,AllReduce,tp0,262144,autograd dual of AllReduce,1
+0,tp_ar_b128,5,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+0,tp_ar_b128,5,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+1,tp_ar_b128,0,forward,AllReduce,tp0,262144,row-parallel partial output,1
+1,tp_ar_b128,0,backward,AllReduce,tp0,262144,autograd dual of AllReduce,1
+1,tp_ar_b128,0,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+1,tp_ar_b128,0,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+1,tp_ar_b128,1,forward,AllReduce,tp0,262144,row-parallel partial output,1
+1,tp_ar_b128,1,backward,AllReduce,tp0,262144,autograd dual of AllReduce,1
+1,tp_ar_b128,1,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+1,tp_ar_b128,1,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+1,tp_ar_b128,2,forward,AllReduce,tp0,262144,row-parallel partial output,1
+1,tp_ar_b128,2,backward,AllReduce,tp0,262144,autograd dual of AllReduce,1
+1,tp_ar_b128,2,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+1,tp_ar_b128,2,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+1,tp_ar_b128,3,forward,AllReduce,tp0,262144,row-parallel partial output,1
+1,tp_ar_b128,3,backward,AllReduce,tp0,262144,autograd dual of AllReduce,1
+1,tp_ar_b128,3,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+1,tp_ar_b128,3,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+1,tp_ar_b128,4,forward,AllReduce,tp0,262144,row-parallel partial output,1
+1,tp_ar_b128,4,backward,AllReduce,tp0,262144,autograd dual of AllReduce,1
+1,tp_ar_b128,4,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+1,tp_ar_b128,4,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+1,tp_ar_b128,5,forward,AllReduce,tp0,262144,row-parallel partial output,1
+1,tp_ar_b128,5,backward,AllReduce,tp0,262144,autograd dual of AllReduce,1
+1,tp_ar_b128,5,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+1,tp_ar_b128,5,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+2,tp_ar_b128,0,forward,AllReduce,tp1,262144,row-parallel partial output,1
+2,tp_ar_b128,0,backward,AllReduce,tp1,262144,autograd dual of AllReduce,1
+2,tp_ar_b128,0,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+2,tp_ar_b128,0,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+2,tp_ar_b128,1,forward,AllReduce,tp1,262144,row-parallel partial output,1
+2,tp_ar_b128,1,backward,AllReduce,tp1,262144,autograd dual of AllReduce,1
+2,tp_ar_b128,1,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+2,tp_ar_b128,1,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+2,tp_ar_b128,2,forward,AllReduce,tp1,262144,row-parallel partial output,1
+2,tp_ar_b128,2,backward,AllReduce,tp1,262144,autograd dual of AllReduce,1
+2,tp_ar_b128,2,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+2,tp_ar_b128,2,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+2,tp_ar_b128,3,forward,AllReduce,tp1,262144,row-parallel partial output,1
+2,tp_ar_b128,3,backward,AllReduce,tp1,262144,autograd dual of AllReduce,1
+2,tp_ar_b128,3,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+2,tp_ar_b128,3,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+2,tp_ar_b128,4,forward,AllReduce,tp1,262144,row-parallel partial output,1
+2,tp_ar_b128,4,backward,AllReduce,tp1,262144,autograd dual of AllReduce,1
+2,tp_ar_b128,4,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+2,tp_ar_b128,4,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+2,tp_ar_b128,5,forward,AllReduce,tp1,262144,row-parallel partial output,1
+2,tp_ar_b128,5,backward,AllReduce,tp1,262144,autograd dual of AllReduce,1
+2,tp_ar_b128,5,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+2,tp_ar_b128,5,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+3,tp_ar_b128,0,forward,AllReduce,tp1,262144,row-parallel partial output,1
+3,tp_ar_b128,0,backward,AllReduce,tp1,262144,autograd dual of AllReduce,1
+3,tp_ar_b128,0,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+3,tp_ar_b128,0,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+3,tp_ar_b128,1,forward,AllReduce,tp1,262144,row-parallel partial output,1
+3,tp_ar_b128,1,backward,AllReduce,tp1,262144,autograd dual of AllReduce,1
+3,tp_ar_b128,1,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+3,tp_ar_b128,1,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+3,tp_ar_b128,2,forward,AllReduce,tp1,262144,row-parallel partial output,1
+3,tp_ar_b128,2,backward,AllReduce,tp1,262144,autograd dual of AllReduce,1
+3,tp_ar_b128,2,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+3,tp_ar_b128,2,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+3,tp_ar_b128,3,forward,AllReduce,tp1,262144,row-parallel partial output,1
+3,tp_ar_b128,3,backward,AllReduce,tp1,262144,autograd dual of AllReduce,1
+3,tp_ar_b128,3,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+3,tp_ar_b128,3,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+3,tp_ar_b128,4,forward,AllReduce,tp1,262144,row-parallel partial output,1
+3,tp_ar_b128,4,backward,AllReduce,tp1,262144,autograd dual of AllReduce,1
+3,tp_ar_b128,4,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+3,tp_ar_b128,4,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+3,tp_ar_b128,5,forward,AllReduce,tp1,262144,row-parallel partial output,1
+3,tp_ar_b128,5,backward,AllReduce,tp1,262144,autograd dual of AllReduce,1
+3,tp_ar_b128,5,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+3,tp_ar_b128,5,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+0,tp_sp_b128,0,forward,ReduceScatter,tp0,262144,partial output to sequence shard,1
+0,tp_sp_b128,0,forward,AllGather,tp0,131072,sequence shard to replicated loss input,1
+0,tp_sp_b128,0,backward,ReduceScatter,tp0,262144,AllGather backward,1
+0,tp_sp_b128,0,backward,AllGather,tp0,131072,ReduceScatter backward,1
+0,tp_sp_b128,0,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+0,tp_sp_b128,0,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+0,tp_sp_b128,1,forward,ReduceScatter,tp0,262144,partial output to sequence shard,1
+0,tp_sp_b128,1,forward,AllGather,tp0,131072,sequence shard to replicated loss input,1
+0,tp_sp_b128,1,backward,ReduceScatter,tp0,262144,AllGather backward,1
+0,tp_sp_b128,1,backward,AllGather,tp0,131072,ReduceScatter backward,1
+0,tp_sp_b128,1,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+0,tp_sp_b128,1,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+0,tp_sp_b128,2,forward,ReduceScatter,tp0,262144,partial output to sequence shard,1
+0,tp_sp_b128,2,forward,AllGather,tp0,131072,sequence shard to replicated loss input,1
+0,tp_sp_b128,2,backward,ReduceScatter,tp0,262144,AllGather backward,1
+0,tp_sp_b128,2,backward,AllGather,tp0,131072,ReduceScatter backward,1
+0,tp_sp_b128,2,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+0,tp_sp_b128,2,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+0,tp_sp_b128,3,forward,ReduceScatter,tp0,262144,partial output to sequence shard,1
+0,tp_sp_b128,3,forward,AllGather,tp0,131072,sequence shard to replicated loss input,1
+0,tp_sp_b128,3,backward,ReduceScatter,tp0,262144,AllGather backward,1
+0,tp_sp_b128,3,backward,AllGather,tp0,131072,ReduceScatter backward,1
+0,tp_sp_b128,3,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+0,tp_sp_b128,3,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+0,tp_sp_b128,4,forward,ReduceScatter,tp0,262144,partial output to sequence shard,1
+0,tp_sp_b128,4,forward,AllGather,tp0,131072,sequence shard to replicated loss input,1
+0,tp_sp_b128,4,backward,ReduceScatter,tp0,262144,AllGather backward,1
+0,tp_sp_b128,4,backward,AllGather,tp0,131072,ReduceScatter backward,1
+0,tp_sp_b128,4,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+0,tp_sp_b128,4,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+0,tp_sp_b128,5,forward,ReduceScatter,tp0,262144,partial output to sequence shard,1
+0,tp_sp_b128,5,forward,AllGather,tp0,131072,sequence shard to replicated loss input,1
+0,tp_sp_b128,5,backward,ReduceScatter,tp0,262144,AllGather backward,1
+0,tp_sp_b128,5,backward,AllGather,tp0,131072,ReduceScatter backward,1
+0,tp_sp_b128,5,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+0,tp_sp_b128,5,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+1,tp_sp_b128,0,forward,ReduceScatter,tp0,262144,partial output to sequence shard,1
+1,tp_sp_b128,0,forward,AllGather,tp0,131072,sequence shard to replicated loss input,1
+1,tp_sp_b128,0,backward,ReduceScatter,tp0,262144,AllGather backward,1
+1,tp_sp_b128,0,backward,AllGather,tp0,131072,ReduceScatter backward,1
+1,tp_sp_b128,0,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+1,tp_sp_b128,0,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+1,tp_sp_b128,1,forward,ReduceScatter,tp0,262144,partial output to sequence shard,1
+1,tp_sp_b128,1,forward,AllGather,tp0,131072,sequence shard to replicated loss input,1
+1,tp_sp_b128,1,backward,ReduceScatter,tp0,262144,AllGather backward,1
+1,tp_sp_b128,1,backward,AllGather,tp0,131072,ReduceScatter backward,1
+1,tp_sp_b128,1,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+1,tp_sp_b128,1,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+1,tp_sp_b128,2,forward,ReduceScatter,tp0,262144,partial output to sequence shard,1
+1,tp_sp_b128,2,forward,AllGather,tp0,131072,sequence shard to replicated loss input,1
+1,tp_sp_b128,2,backward,ReduceScatter,tp0,262144,AllGather backward,1
+1,tp_sp_b128,2,backward,AllGather,tp0,131072,ReduceScatter backward,1
+1,tp_sp_b128,2,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+1,tp_sp_b128,2,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+1,tp_sp_b128,3,forward,ReduceScatter,tp0,262144,partial output to sequence shard,1
+1,tp_sp_b128,3,forward,AllGather,tp0,131072,sequence shard to replicated loss input,1
+1,tp_sp_b128,3,backward,ReduceScatter,tp0,262144,AllGather backward,1
+1,tp_sp_b128,3,backward,AllGather,tp0,131072,ReduceScatter backward,1
+1,tp_sp_b128,3,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+1,tp_sp_b128,3,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+1,tp_sp_b128,4,forward,ReduceScatter,tp0,262144,partial output to sequence shard,1
+1,tp_sp_b128,4,forward,AllGather,tp0,131072,sequence shard to replicated loss input,1
+1,tp_sp_b128,4,backward,ReduceScatter,tp0,262144,AllGather backward,1
+1,tp_sp_b128,4,backward,AllGather,tp0,131072,ReduceScatter backward,1
+1,tp_sp_b128,4,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+1,tp_sp_b128,4,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+1,tp_sp_b128,5,forward,ReduceScatter,tp0,262144,partial output to sequence shard,1
+1,tp_sp_b128,5,forward,AllGather,tp0,131072,sequence shard to replicated loss input,1
+1,tp_sp_b128,5,backward,ReduceScatter,tp0,262144,AllGather backward,1
+1,tp_sp_b128,5,backward,AllGather,tp0,131072,ReduceScatter backward,1
+1,tp_sp_b128,5,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+1,tp_sp_b128,5,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+2,tp_sp_b128,0,forward,ReduceScatter,tp1,262144,partial output to sequence shard,1
+2,tp_sp_b128,0,forward,AllGather,tp1,131072,sequence shard to replicated loss input,1
+2,tp_sp_b128,0,backward,ReduceScatter,tp1,262144,AllGather backward,1
+2,tp_sp_b128,0,backward,AllGather,tp1,131072,ReduceScatter backward,1
+2,tp_sp_b128,0,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+2,tp_sp_b128,0,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+2,tp_sp_b128,1,forward,ReduceScatter,tp1,262144,partial output to sequence shard,1
+2,tp_sp_b128,1,forward,AllGather,tp1,131072,sequence shard to replicated loss input,1
+2,tp_sp_b128,1,backward,ReduceScatter,tp1,262144,AllGather backward,1
+2,tp_sp_b128,1,backward,AllGather,tp1,131072,ReduceScatter backward,1
+2,tp_sp_b128,1,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+2,tp_sp_b128,1,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+2,tp_sp_b128,2,forward,ReduceScatter,tp1,262144,partial output to sequence shard,1
+2,tp_sp_b128,2,forward,AllGather,tp1,131072,sequence shard to replicated loss input,1
+2,tp_sp_b128,2,backward,ReduceScatter,tp1,262144,AllGather backward,1
+2,tp_sp_b128,2,backward,AllGather,tp1,131072,ReduceScatter backward,1
+2,tp_sp_b128,2,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+2,tp_sp_b128,2,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+2,tp_sp_b128,3,forward,ReduceScatter,tp1,262144,partial output to sequence shard,1
+2,tp_sp_b128,3,forward,AllGather,tp1,131072,sequence shard to replicated loss input,1
+2,tp_sp_b128,3,backward,ReduceScatter,tp1,262144,AllGather backward,1
+2,tp_sp_b128,3,backward,AllGather,tp1,131072,ReduceScatter backward,1
+2,tp_sp_b128,3,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+2,tp_sp_b128,3,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+2,tp_sp_b128,4,forward,ReduceScatter,tp1,262144,partial output to sequence shard,1
+2,tp_sp_b128,4,forward,AllGather,tp1,131072,sequence shard to replicated loss input,1
+2,tp_sp_b128,4,backward,ReduceScatter,tp1,262144,AllGather backward,1
+2,tp_sp_b128,4,backward,AllGather,tp1,131072,ReduceScatter backward,1
+2,tp_sp_b128,4,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+2,tp_sp_b128,4,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+2,tp_sp_b128,5,forward,ReduceScatter,tp1,262144,partial output to sequence shard,1
+2,tp_sp_b128,5,forward,AllGather,tp1,131072,sequence shard to replicated loss input,1
+2,tp_sp_b128,5,backward,ReduceScatter,tp1,262144,AllGather backward,1
+2,tp_sp_b128,5,backward,AllGather,tp1,131072,ReduceScatter backward,1
+2,tp_sp_b128,5,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,1
+2,tp_sp_b128,5,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,1
+3,tp_sp_b128,0,forward,ReduceScatter,tp1,262144,partial output to sequence shard,1
+3,tp_sp_b128,0,forward,AllGather,tp1,131072,sequence shard to replicated loss input,1
+3,tp_sp_b128,0,backward,ReduceScatter,tp1,262144,AllGather backward,1
+3,tp_sp_b128,0,backward,AllGather,tp1,131072,ReduceScatter backward,1
+3,tp_sp_b128,0,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+3,tp_sp_b128,0,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+3,tp_sp_b128,1,forward,ReduceScatter,tp1,262144,partial output to sequence shard,1
+3,tp_sp_b128,1,forward,AllGather,tp1,131072,sequence shard to replicated loss input,1
+3,tp_sp_b128,1,backward,ReduceScatter,tp1,262144,AllGather backward,1
+3,tp_sp_b128,1,backward,AllGather,tp1,131072,ReduceScatter backward,1
+3,tp_sp_b128,1,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+3,tp_sp_b128,1,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+3,tp_sp_b128,2,forward,ReduceScatter,tp1,262144,partial output to sequence shard,1
+3,tp_sp_b128,2,forward,AllGather,tp1,131072,sequence shard to replicated loss input,1
+3,tp_sp_b128,2,backward,ReduceScatter,tp1,262144,AllGather backward,1
+3,tp_sp_b128,2,backward,AllGather,tp1,131072,ReduceScatter backward,1
+3,tp_sp_b128,2,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+3,tp_sp_b128,2,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+3,tp_sp_b128,3,forward,ReduceScatter,tp1,262144,partial output to sequence shard,1
+3,tp_sp_b128,3,forward,AllGather,tp1,131072,sequence shard to replicated loss input,1
+3,tp_sp_b128,3,backward,ReduceScatter,tp1,262144,AllGather backward,1
+3,tp_sp_b128,3,backward,AllGather,tp1,131072,ReduceScatter backward,1
+3,tp_sp_b128,3,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+3,tp_sp_b128,3,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+3,tp_sp_b128,4,forward,ReduceScatter,tp1,262144,partial output to sequence shard,1
+3,tp_sp_b128,4,forward,AllGather,tp1,131072,sequence shard to replicated loss input,1
+3,tp_sp_b128,4,backward,ReduceScatter,tp1,262144,AllGather backward,1
+3,tp_sp_b128,4,backward,AllGather,tp1,131072,ReduceScatter backward,1
+3,tp_sp_b128,4,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+3,tp_sp_b128,4,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+3,tp_sp_b128,5,forward,ReduceScatter,tp1,262144,partial output to sequence shard,1
+3,tp_sp_b128,5,forward,AllGather,tp1,131072,sequence shard to replicated loss input,1
+3,tp_sp_b128,5,backward,ReduceScatter,tp1,262144,AllGather backward,1
+3,tp_sp_b128,5,backward,AllGather,tp1,131072,ReduceScatter backward,1
+3,tp_sp_b128,5,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,1
+3,tp_sp_b128,5,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,1
+0,pp_mb1,0,forward,Send,pp0,262144,microbatch=0;stage=0->1,1
+0,pp_mb1,0,backward,Recv,pp0,262144,microbatch=0;activation gradient,1
+0,pp_mb1,0,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,1
+0,pp_mb1,1,forward,Send,pp0,262144,microbatch=0;stage=0->1,1
+0,pp_mb1,1,backward,Recv,pp0,262144,microbatch=0;activation gradient,1
+0,pp_mb1,1,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,1
+0,pp_mb1,2,forward,Send,pp0,262144,microbatch=0;stage=0->1,1
+0,pp_mb1,2,backward,Recv,pp0,262144,microbatch=0;activation gradient,1
+0,pp_mb1,2,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,1
+0,pp_mb1,3,forward,Send,pp0,262144,microbatch=0;stage=0->1,1
+0,pp_mb1,3,backward,Recv,pp0,262144,microbatch=0;activation gradient,1
+0,pp_mb1,3,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,1
+0,pp_mb1,4,forward,Send,pp0,262144,microbatch=0;stage=0->1,1
+0,pp_mb1,4,backward,Recv,pp0,262144,microbatch=0;activation gradient,1
+0,pp_mb1,4,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,1
+0,pp_mb1,5,forward,Send,pp0,262144,microbatch=0;stage=0->1,1
+0,pp_mb1,5,backward,Recv,pp0,262144,microbatch=0;activation gradient,1
+0,pp_mb1,5,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,1
+1,pp_mb1,0,forward,Recv,pp0,262144,microbatch=0;stage=0->1,1
+1,pp_mb1,0,backward,Send,pp0,262144,microbatch=0;activation gradient,1
+1,pp_mb1,0,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,1
+1,pp_mb1,1,forward,Recv,pp0,262144,microbatch=0;stage=0->1,1
+1,pp_mb1,1,backward,Send,pp0,262144,microbatch=0;activation gradient,1
+1,pp_mb1,1,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,1
+1,pp_mb1,2,forward,Recv,pp0,262144,microbatch=0;stage=0->1,1
+1,pp_mb1,2,backward,Send,pp0,262144,microbatch=0;activation gradient,1
+1,pp_mb1,2,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,1
+1,pp_mb1,3,forward,Recv,pp0,262144,microbatch=0;stage=0->1,1
+1,pp_mb1,3,backward,Send,pp0,262144,microbatch=0;activation gradient,1
+1,pp_mb1,3,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,1
+1,pp_mb1,4,forward,Recv,pp0,262144,microbatch=0;stage=0->1,1
+1,pp_mb1,4,backward,Send,pp0,262144,microbatch=0;activation gradient,1
+1,pp_mb1,4,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,1
+1,pp_mb1,5,forward,Recv,pp0,262144,microbatch=0;stage=0->1,1
+1,pp_mb1,5,backward,Send,pp0,262144,microbatch=0;activation gradient,1
+1,pp_mb1,5,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,1
+2,pp_mb1,0,forward,Send,pp1,262144,microbatch=0;stage=0->1,1
+2,pp_mb1,0,backward,Recv,pp1,262144,microbatch=0;activation gradient,1
+2,pp_mb1,0,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,1
+2,pp_mb1,1,forward,Send,pp1,262144,microbatch=0;stage=0->1,1
+2,pp_mb1,1,backward,Recv,pp1,262144,microbatch=0;activation gradient,1
+2,pp_mb1,1,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,1
+2,pp_mb1,2,forward,Send,pp1,262144,microbatch=0;stage=0->1,1
+2,pp_mb1,2,backward,Recv,pp1,262144,microbatch=0;activation gradient,1
+2,pp_mb1,2,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,1
+2,pp_mb1,3,forward,Send,pp1,262144,microbatch=0;stage=0->1,1
+2,pp_mb1,3,backward,Recv,pp1,262144,microbatch=0;activation gradient,1
+2,pp_mb1,3,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,1
+2,pp_mb1,4,forward,Send,pp1,262144,microbatch=0;stage=0->1,1
+2,pp_mb1,4,backward,Recv,pp1,262144,microbatch=0;activation gradient,1
+2,pp_mb1,4,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,1
+2,pp_mb1,5,forward,Send,pp1,262144,microbatch=0;stage=0->1,1
+2,pp_mb1,5,backward,Recv,pp1,262144,microbatch=0;activation gradient,1
+2,pp_mb1,5,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,1
+3,pp_mb1,0,forward,Recv,pp1,262144,microbatch=0;stage=0->1,1
+3,pp_mb1,0,backward,Send,pp1,262144,microbatch=0;activation gradient,1
+3,pp_mb1,0,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,1
+3,pp_mb1,1,forward,Recv,pp1,262144,microbatch=0;stage=0->1,1
+3,pp_mb1,1,backward,Send,pp1,262144,microbatch=0;activation gradient,1
+3,pp_mb1,1,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,1
+3,pp_mb1,2,forward,Recv,pp1,262144,microbatch=0;stage=0->1,1
+3,pp_mb1,2,backward,Send,pp1,262144,microbatch=0;activation gradient,1
+3,pp_mb1,2,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,1
+3,pp_mb1,3,forward,Recv,pp1,262144,microbatch=0;stage=0->1,1
+3,pp_mb1,3,backward,Send,pp1,262144,microbatch=0;activation gradient,1
+3,pp_mb1,3,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,1
+3,pp_mb1,4,forward,Recv,pp1,262144,microbatch=0;stage=0->1,1
+3,pp_mb1,4,backward,Send,pp1,262144,microbatch=0;activation gradient,1
+3,pp_mb1,4,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,1
+3,pp_mb1,5,forward,Recv,pp1,262144,microbatch=0;stage=0->1,1
+3,pp_mb1,5,backward,Send,pp1,262144,microbatch=0;activation gradient,1
+3,pp_mb1,5,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,1
+0,pp_mb8,0,forward,Send,pp0,32768,microbatch=0;stage=0->1,1
+0,pp_mb8,0,forward,Send,pp0,32768,microbatch=1;stage=0->1,1
+0,pp_mb8,0,forward,Send,pp0,32768,microbatch=2;stage=0->1,1
+0,pp_mb8,0,forward,Send,pp0,32768,microbatch=3;stage=0->1,1
+0,pp_mb8,0,forward,Send,pp0,32768,microbatch=4;stage=0->1,1
+0,pp_mb8,0,forward,Send,pp0,32768,microbatch=5;stage=0->1,1
+0,pp_mb8,0,forward,Send,pp0,32768,microbatch=6;stage=0->1,1
+0,pp_mb8,0,forward,Send,pp0,32768,microbatch=7;stage=0->1,1
+0,pp_mb8,0,backward,Recv,pp0,32768,microbatch=7;activation gradient,1
+0,pp_mb8,0,backward,Recv,pp0,32768,microbatch=6;activation gradient,1
+0,pp_mb8,0,backward,Recv,pp0,32768,microbatch=5;activation gradient,1
+0,pp_mb8,0,backward,Recv,pp0,32768,microbatch=4;activation gradient,1
+0,pp_mb8,0,backward,Recv,pp0,32768,microbatch=3;activation gradient,1
+0,pp_mb8,0,backward,Recv,pp0,32768,microbatch=2;activation gradient,1
+0,pp_mb8,0,backward,Recv,pp0,32768,microbatch=1;activation gradient,1
+0,pp_mb8,0,backward,Recv,pp0,32768,microbatch=0;activation gradient,1
+0,pp_mb8,0,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,1
+0,pp_mb8,1,forward,Send,pp0,32768,microbatch=0;stage=0->1,1
+0,pp_mb8,1,forward,Send,pp0,32768,microbatch=1;stage=0->1,1
+0,pp_mb8,1,forward,Send,pp0,32768,microbatch=2;stage=0->1,1
+0,pp_mb8,1,forward,Send,pp0,32768,microbatch=3;stage=0->1,1
+0,pp_mb8,1,forward,Send,pp0,32768,microbatch=4;stage=0->1,1
+0,pp_mb8,1,forward,Send,pp0,32768,microbatch=5;stage=0->1,1
+0,pp_mb8,1,forward,Send,pp0,32768,microbatch=6;stage=0->1,1
+0,pp_mb8,1,forward,Send,pp0,32768,microbatch=7;stage=0->1,1
+0,pp_mb8,1,backward,Recv,pp0,32768,microbatch=7;activation gradient,1
+0,pp_mb8,1,backward,Recv,pp0,32768,microbatch=6;activation gradient,1
+0,pp_mb8,1,backward,Recv,pp0,32768,microbatch=5;activation gradient,1
+0,pp_mb8,1,backward,Recv,pp0,32768,microbatch=4;activation gradient,1
+0,pp_mb8,1,backward,Recv,pp0,32768,microbatch=3;activation gradient,1
+0,pp_mb8,1,backward,Recv,pp0,32768,microbatch=2;activation gradient,1
+0,pp_mb8,1,backward,Recv,pp0,32768,microbatch=1;activation gradient,1
+0,pp_mb8,1,backward,Recv,pp0,32768,microbatch=0;activation gradient,1
+0,pp_mb8,1,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,1
+0,pp_mb8,2,forward,Send,pp0,32768,microbatch=0;stage=0->1,1
+0,pp_mb8,2,forward,Send,pp0,32768,microbatch=1;stage=0->1,1
+0,pp_mb8,2,forward,Send,pp0,32768,microbatch=2;stage=0->1,1
+0,pp_mb8,2,forward,Send,pp0,32768,microbatch=3;stage=0->1,1
+0,pp_mb8,2,forward,Send,pp0,32768,microbatch=4;stage=0->1,1
+0,pp_mb8,2,forward,Send,pp0,32768,microbatch=5;stage=0->1,1
+0,pp_mb8,2,forward,Send,pp0,32768,microbatch=6;stage=0->1,1
+0,pp_mb8,2,forward,Send,pp0,32768,microbatch=7;stage=0->1,1
+0,pp_mb8,2,backward,Recv,pp0,32768,microbatch=7;activation gradient,1
+0,pp_mb8,2,backward,Recv,pp0,32768,microbatch=6;activation gradient,1
+0,pp_mb8,2,backward,Recv,pp0,32768,microbatch=5;activation gradient,1
+0,pp_mb8,2,backward,Recv,pp0,32768,microbatch=4;activation gradient,1
+0,pp_mb8,2,backward,Recv,pp0,32768,microbatch=3;activation gradient,1
+0,pp_mb8,2,backward,Recv,pp0,32768,microbatch=2;activation gradient,1
+0,pp_mb8,2,backward,Recv,pp0,32768,microbatch=1;activation gradient,1
+0,pp_mb8,2,backward,Recv,pp0,32768,microbatch=0;activation gradient,1
+0,pp_mb8,2,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,1
+0,pp_mb8,3,forward,Send,pp0,32768,microbatch=0;stage=0->1,1
+0,pp_mb8,3,forward,Send,pp0,32768,microbatch=1;stage=0->1,1
+0,pp_mb8,3,forward,Send,pp0,32768,microbatch=2;stage=0->1,1
+0,pp_mb8,3,forward,Send,pp0,32768,microbatch=3;stage=0->1,1
+0,pp_mb8,3,forward,Send,pp0,32768,microbatch=4;stage=0->1,1
+0,pp_mb8,3,forward,Send,pp0,32768,microbatch=5;stage=0->1,1
+0,pp_mb8,3,forward,Send,pp0,32768,microbatch=6;stage=0->1,1
+0,pp_mb8,3,forward,Send,pp0,32768,microbatch=7;stage=0->1,1
+0,pp_mb8,3,backward,Recv,pp0,32768,microbatch=7;activation gradient,1
+0,pp_mb8,3,backward,Recv,pp0,32768,microbatch=6;activation gradient,1
+0,pp_mb8,3,backward,Recv,pp0,32768,microbatch=5;activation gradient,1
+0,pp_mb8,3,backward,Recv,pp0,32768,microbatch=4;activation gradient,1
+0,pp_mb8,3,backward,Recv,pp0,32768,microbatch=3;activation gradient,1
+0,pp_mb8,3,backward,Recv,pp0,32768,microbatch=2;activation gradient,1
+0,pp_mb8,3,backward,Recv,pp0,32768,microbatch=1;activation gradient,1
+0,pp_mb8,3,backward,Recv,pp0,32768,microbatch=0;activation gradient,1
+0,pp_mb8,3,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,1
+0,pp_mb8,4,forward,Send,pp0,32768,microbatch=0;stage=0->1,1
+0,pp_mb8,4,forward,Send,pp0,32768,microbatch=1;stage=0->1,1
+0,pp_mb8,4,forward,Send,pp0,32768,microbatch=2;stage=0->1,1
+0,pp_mb8,4,forward,Send,pp0,32768,microbatch=3;stage=0->1,1
+0,pp_mb8,4,forward,Send,pp0,32768,microbatch=4;stage=0->1,1
+0,pp_mb8,4,forward,Send,pp0,32768,microbatch=5;stage=0->1,1
+0,pp_mb8,4,forward,Send,pp0,32768,microbatch=6;stage=0->1,1
+0,pp_mb8,4,forward,Send,pp0,32768,microbatch=7;stage=0->1,1
+0,pp_mb8,4,backward,Recv,pp0,32768,microbatch=7;activation gradient,1
+0,pp_mb8,4,backward,Recv,pp0,32768,microbatch=6;activation gradient,1
+0,pp_mb8,4,backward,Recv,pp0,32768,microbatch=5;activation gradient,1
+0,pp_mb8,4,backward,Recv,pp0,32768,microbatch=4;activation gradient,1
+0,pp_mb8,4,backward,Recv,pp0,32768,microbatch=3;activation gradient,1
+0,pp_mb8,4,backward,Recv,pp0,32768,microbatch=2;activation gradient,1
+0,pp_mb8,4,backward,Recv,pp0,32768,microbatch=1;activation gradient,1
+0,pp_mb8,4,backward,Recv,pp0,32768,microbatch=0;activation gradient,1
+0,pp_mb8,4,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,1
+0,pp_mb8,5,forward,Send,pp0,32768,microbatch=0;stage=0->1,1
+0,pp_mb8,5,forward,Send,pp0,32768,microbatch=1;stage=0->1,1
+0,pp_mb8,5,forward,Send,pp0,32768,microbatch=2;stage=0->1,1
+0,pp_mb8,5,forward,Send,pp0,32768,microbatch=3;stage=0->1,1
+0,pp_mb8,5,forward,Send,pp0,32768,microbatch=4;stage=0->1,1
+0,pp_mb8,5,forward,Send,pp0,32768,microbatch=5;stage=0->1,1
+0,pp_mb8,5,forward,Send,pp0,32768,microbatch=6;stage=0->1,1
+0,pp_mb8,5,forward,Send,pp0,32768,microbatch=7;stage=0->1,1
+0,pp_mb8,5,backward,Recv,pp0,32768,microbatch=7;activation gradient,1
+0,pp_mb8,5,backward,Recv,pp0,32768,microbatch=6;activation gradient,1
+0,pp_mb8,5,backward,Recv,pp0,32768,microbatch=5;activation gradient,1
+0,pp_mb8,5,backward,Recv,pp0,32768,microbatch=4;activation gradient,1
+0,pp_mb8,5,backward,Recv,pp0,32768,microbatch=3;activation gradient,1
+0,pp_mb8,5,backward,Recv,pp0,32768,microbatch=2;activation gradient,1
+0,pp_mb8,5,backward,Recv,pp0,32768,microbatch=1;activation gradient,1
+0,pp_mb8,5,backward,Recv,pp0,32768,microbatch=0;activation gradient,1
+0,pp_mb8,5,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,1
+1,pp_mb8,0,forward,Recv,pp0,32768,microbatch=0;stage=0->1,1
+1,pp_mb8,0,forward,Recv,pp0,32768,microbatch=1;stage=0->1,1
+1,pp_mb8,0,forward,Recv,pp0,32768,microbatch=2;stage=0->1,1
+1,pp_mb8,0,forward,Recv,pp0,32768,microbatch=3;stage=0->1,1
+1,pp_mb8,0,forward,Recv,pp0,32768,microbatch=4;stage=0->1,1
+1,pp_mb8,0,forward,Recv,pp0,32768,microbatch=5;stage=0->1,1
+1,pp_mb8,0,forward,Recv,pp0,32768,microbatch=6;stage=0->1,1
+1,pp_mb8,0,forward,Recv,pp0,32768,microbatch=7;stage=0->1,1
+1,pp_mb8,0,backward,Send,pp0,32768,microbatch=7;activation gradient,1
+1,pp_mb8,0,backward,Send,pp0,32768,microbatch=6;activation gradient,1
+1,pp_mb8,0,backward,Send,pp0,32768,microbatch=5;activation gradient,1
+1,pp_mb8,0,backward,Send,pp0,32768,microbatch=4;activation gradient,1
+1,pp_mb8,0,backward,Send,pp0,32768,microbatch=3;activation gradient,1
+1,pp_mb8,0,backward,Send,pp0,32768,microbatch=2;activation gradient,1
+1,pp_mb8,0,backward,Send,pp0,32768,microbatch=1;activation gradient,1
+1,pp_mb8,0,backward,Send,pp0,32768,microbatch=0;activation gradient,1
+1,pp_mb8,0,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,1
+1,pp_mb8,1,forward,Recv,pp0,32768,microbatch=0;stage=0->1,1
+1,pp_mb8,1,forward,Recv,pp0,32768,microbatch=1;stage=0->1,1
+1,pp_mb8,1,forward,Recv,pp0,32768,microbatch=2;stage=0->1,1
+1,pp_mb8,1,forward,Recv,pp0,32768,microbatch=3;stage=0->1,1
+1,pp_mb8,1,forward,Recv,pp0,32768,microbatch=4;stage=0->1,1
+1,pp_mb8,1,forward,Recv,pp0,32768,microbatch=5;stage=0->1,1
+1,pp_mb8,1,forward,Recv,pp0,32768,microbatch=6;stage=0->1,1
+1,pp_mb8,1,forward,Recv,pp0,32768,microbatch=7;stage=0->1,1
+1,pp_mb8,1,backward,Send,pp0,32768,microbatch=7;activation gradient,1
+1,pp_mb8,1,backward,Send,pp0,32768,microbatch=6;activation gradient,1
+1,pp_mb8,1,backward,Send,pp0,32768,microbatch=5;activation gradient,1
+1,pp_mb8,1,backward,Send,pp0,32768,microbatch=4;activation gradient,1
+1,pp_mb8,1,backward,Send,pp0,32768,microbatch=3;activation gradient,1
+1,pp_mb8,1,backward,Send,pp0,32768,microbatch=2;activation gradient,1
+1,pp_mb8,1,backward,Send,pp0,32768,microbatch=1;activation gradient,1
+1,pp_mb8,1,backward,Send,pp0,32768,microbatch=0;activation gradient,1
+1,pp_mb8,1,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,1
+1,pp_mb8,2,forward,Recv,pp0,32768,microbatch=0;stage=0->1,1
+1,pp_mb8,2,forward,Recv,pp0,32768,microbatch=1;stage=0->1,1
+1,pp_mb8,2,forward,Recv,pp0,32768,microbatch=2;stage=0->1,1
+1,pp_mb8,2,forward,Recv,pp0,32768,microbatch=3;stage=0->1,1
+1,pp_mb8,2,forward,Recv,pp0,32768,microbatch=4;stage=0->1,1
+1,pp_mb8,2,forward,Recv,pp0,32768,microbatch=5;stage=0->1,1
+1,pp_mb8,2,forward,Recv,pp0,32768,microbatch=6;stage=0->1,1
+1,pp_mb8,2,forward,Recv,pp0,32768,microbatch=7;stage=0->1,1
+1,pp_mb8,2,backward,Send,pp0,32768,microbatch=7;activation gradient,1
+1,pp_mb8,2,backward,Send,pp0,32768,microbatch=6;activation gradient,1
+1,pp_mb8,2,backward,Send,pp0,32768,microbatch=5;activation gradient,1
+1,pp_mb8,2,backward,Send,pp0,32768,microbatch=4;activation gradient,1
+1,pp_mb8,2,backward,Send,pp0,32768,microbatch=3;activation gradient,1
+1,pp_mb8,2,backward,Send,pp0,32768,microbatch=2;activation gradient,1
+1,pp_mb8,2,backward,Send,pp0,32768,microbatch=1;activation gradient,1
+1,pp_mb8,2,backward,Send,pp0,32768,microbatch=0;activation gradient,1
+1,pp_mb8,2,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,1
+1,pp_mb8,3,forward,Recv,pp0,32768,microbatch=0;stage=0->1,1
+1,pp_mb8,3,forward,Recv,pp0,32768,microbatch=1;stage=0->1,1
+1,pp_mb8,3,forward,Recv,pp0,32768,microbatch=2;stage=0->1,1
+1,pp_mb8,3,forward,Recv,pp0,32768,microbatch=3;stage=0->1,1
+1,pp_mb8,3,forward,Recv,pp0,32768,microbatch=4;stage=0->1,1
+1,pp_mb8,3,forward,Recv,pp0,32768,microbatch=5;stage=0->1,1
+1,pp_mb8,3,forward,Recv,pp0,32768,microbatch=6;stage=0->1,1
+1,pp_mb8,3,forward,Recv,pp0,32768,microbatch=7;stage=0->1,1
+1,pp_mb8,3,backward,Send,pp0,32768,microbatch=7;activation gradient,1
+1,pp_mb8,3,backward,Send,pp0,32768,microbatch=6;activation gradient,1
+1,pp_mb8,3,backward,Send,pp0,32768,microbatch=5;activation gradient,1
+1,pp_mb8,3,backward,Send,pp0,32768,microbatch=4;activation gradient,1
+1,pp_mb8,3,backward,Send,pp0,32768,microbatch=3;activation gradient,1
+1,pp_mb8,3,backward,Send,pp0,32768,microbatch=2;activation gradient,1
+1,pp_mb8,3,backward,Send,pp0,32768,microbatch=1;activation gradient,1
+1,pp_mb8,3,backward,Send,pp0,32768,microbatch=0;activation gradient,1
+1,pp_mb8,3,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,1
+1,pp_mb8,4,forward,Recv,pp0,32768,microbatch=0;stage=0->1,1
+1,pp_mb8,4,forward,Recv,pp0,32768,microbatch=1;stage=0->1,1
+1,pp_mb8,4,forward,Recv,pp0,32768,microbatch=2;stage=0->1,1
+1,pp_mb8,4,forward,Recv,pp0,32768,microbatch=3;stage=0->1,1
+1,pp_mb8,4,forward,Recv,pp0,32768,microbatch=4;stage=0->1,1
+1,pp_mb8,4,forward,Recv,pp0,32768,microbatch=5;stage=0->1,1
+1,pp_mb8,4,forward,Recv,pp0,32768,microbatch=6;stage=0->1,1
+1,pp_mb8,4,forward,Recv,pp0,32768,microbatch=7;stage=0->1,1
+1,pp_mb8,4,backward,Send,pp0,32768,microbatch=7;activation gradient,1
+1,pp_mb8,4,backward,Send,pp0,32768,microbatch=6;activation gradient,1
+1,pp_mb8,4,backward,Send,pp0,32768,microbatch=5;activation gradient,1
+1,pp_mb8,4,backward,Send,pp0,32768,microbatch=4;activation gradient,1
+1,pp_mb8,4,backward,Send,pp0,32768,microbatch=3;activation gradient,1
+1,pp_mb8,4,backward,Send,pp0,32768,microbatch=2;activation gradient,1
+1,pp_mb8,4,backward,Send,pp0,32768,microbatch=1;activation gradient,1
+1,pp_mb8,4,backward,Send,pp0,32768,microbatch=0;activation gradient,1
+1,pp_mb8,4,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,1
+1,pp_mb8,5,forward,Recv,pp0,32768,microbatch=0;stage=0->1,1
+1,pp_mb8,5,forward,Recv,pp0,32768,microbatch=1;stage=0->1,1
+1,pp_mb8,5,forward,Recv,pp0,32768,microbatch=2;stage=0->1,1
+1,pp_mb8,5,forward,Recv,pp0,32768,microbatch=3;stage=0->1,1
+1,pp_mb8,5,forward,Recv,pp0,32768,microbatch=4;stage=0->1,1
+1,pp_mb8,5,forward,Recv,pp0,32768,microbatch=5;stage=0->1,1
+1,pp_mb8,5,forward,Recv,pp0,32768,microbatch=6;stage=0->1,1
+1,pp_mb8,5,forward,Recv,pp0,32768,microbatch=7;stage=0->1,1
+1,pp_mb8,5,backward,Send,pp0,32768,microbatch=7;activation gradient,1
+1,pp_mb8,5,backward,Send,pp0,32768,microbatch=6;activation gradient,1
+1,pp_mb8,5,backward,Send,pp0,32768,microbatch=5;activation gradient,1
+1,pp_mb8,5,backward,Send,pp0,32768,microbatch=4;activation gradient,1
+1,pp_mb8,5,backward,Send,pp0,32768,microbatch=3;activation gradient,1
+1,pp_mb8,5,backward,Send,pp0,32768,microbatch=2;activation gradient,1
+1,pp_mb8,5,backward,Send,pp0,32768,microbatch=1;activation gradient,1
+1,pp_mb8,5,backward,Send,pp0,32768,microbatch=0;activation gradient,1
+1,pp_mb8,5,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,1
+2,pp_mb8,0,forward,Send,pp1,32768,microbatch=0;stage=0->1,1
+2,pp_mb8,0,forward,Send,pp1,32768,microbatch=1;stage=0->1,1
+2,pp_mb8,0,forward,Send,pp1,32768,microbatch=2;stage=0->1,1
+2,pp_mb8,0,forward,Send,pp1,32768,microbatch=3;stage=0->1,1
+2,pp_mb8,0,forward,Send,pp1,32768,microbatch=4;stage=0->1,1
+2,pp_mb8,0,forward,Send,pp1,32768,microbatch=5;stage=0->1,1
+2,pp_mb8,0,forward,Send,pp1,32768,microbatch=6;stage=0->1,1
+2,pp_mb8,0,forward,Send,pp1,32768,microbatch=7;stage=0->1,1
+2,pp_mb8,0,backward,Recv,pp1,32768,microbatch=7;activation gradient,1
+2,pp_mb8,0,backward,Recv,pp1,32768,microbatch=6;activation gradient,1
+2,pp_mb8,0,backward,Recv,pp1,32768,microbatch=5;activation gradient,1
+2,pp_mb8,0,backward,Recv,pp1,32768,microbatch=4;activation gradient,1
+2,pp_mb8,0,backward,Recv,pp1,32768,microbatch=3;activation gradient,1
+2,pp_mb8,0,backward,Recv,pp1,32768,microbatch=2;activation gradient,1
+2,pp_mb8,0,backward,Recv,pp1,32768,microbatch=1;activation gradient,1
+2,pp_mb8,0,backward,Recv,pp1,32768,microbatch=0;activation gradient,1
+2,pp_mb8,0,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,1
+2,pp_mb8,1,forward,Send,pp1,32768,microbatch=0;stage=0->1,1
+2,pp_mb8,1,forward,Send,pp1,32768,microbatch=1;stage=0->1,1
+2,pp_mb8,1,forward,Send,pp1,32768,microbatch=2;stage=0->1,1
+2,pp_mb8,1,forward,Send,pp1,32768,microbatch=3;stage=0->1,1
+2,pp_mb8,1,forward,Send,pp1,32768,microbatch=4;stage=0->1,1
+2,pp_mb8,1,forward,Send,pp1,32768,microbatch=5;stage=0->1,1
+2,pp_mb8,1,forward,Send,pp1,32768,microbatch=6;stage=0->1,1
+2,pp_mb8,1,forward,Send,pp1,32768,microbatch=7;stage=0->1,1
+2,pp_mb8,1,backward,Recv,pp1,32768,microbatch=7;activation gradient,1
+2,pp_mb8,1,backward,Recv,pp1,32768,microbatch=6;activation gradient,1
+2,pp_mb8,1,backward,Recv,pp1,32768,microbatch=5;activation gradient,1
+2,pp_mb8,1,backward,Recv,pp1,32768,microbatch=4;activation gradient,1
+2,pp_mb8,1,backward,Recv,pp1,32768,microbatch=3;activation gradient,1
+2,pp_mb8,1,backward,Recv,pp1,32768,microbatch=2;activation gradient,1
+2,pp_mb8,1,backward,Recv,pp1,32768,microbatch=1;activation gradient,1
+2,pp_mb8,1,backward,Recv,pp1,32768,microbatch=0;activation gradient,1
+2,pp_mb8,1,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,1
+2,pp_mb8,2,forward,Send,pp1,32768,microbatch=0;stage=0->1,1
+2,pp_mb8,2,forward,Send,pp1,32768,microbatch=1;stage=0->1,1
+2,pp_mb8,2,forward,Send,pp1,32768,microbatch=2;stage=0->1,1
+2,pp_mb8,2,forward,Send,pp1,32768,microbatch=3;stage=0->1,1
+2,pp_mb8,2,forward,Send,pp1,32768,microbatch=4;stage=0->1,1
+2,pp_mb8,2,forward,Send,pp1,32768,microbatch=5;stage=0->1,1
+2,pp_mb8,2,forward,Send,pp1,32768,microbatch=6;stage=0->1,1
+2,pp_mb8,2,forward,Send,pp1,32768,microbatch=7;stage=0->1,1
+2,pp_mb8,2,backward,Recv,pp1,32768,microbatch=7;activation gradient,1
+2,pp_mb8,2,backward,Recv,pp1,32768,microbatch=6;activation gradient,1
+2,pp_mb8,2,backward,Recv,pp1,32768,microbatch=5;activation gradient,1
+2,pp_mb8,2,backward,Recv,pp1,32768,microbatch=4;activation gradient,1
+2,pp_mb8,2,backward,Recv,pp1,32768,microbatch=3;activation gradient,1
+2,pp_mb8,2,backward,Recv,pp1,32768,microbatch=2;activation gradient,1
+2,pp_mb8,2,backward,Recv,pp1,32768,microbatch=1;activation gradient,1
+2,pp_mb8,2,backward,Recv,pp1,32768,microbatch=0;activation gradient,1
+2,pp_mb8,2,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,1
+2,pp_mb8,3,forward,Send,pp1,32768,microbatch=0;stage=0->1,1
+2,pp_mb8,3,forward,Send,pp1,32768,microbatch=1;stage=0->1,1
+2,pp_mb8,3,forward,Send,pp1,32768,microbatch=2;stage=0->1,1
+2,pp_mb8,3,forward,Send,pp1,32768,microbatch=3;stage=0->1,1
+2,pp_mb8,3,forward,Send,pp1,32768,microbatch=4;stage=0->1,1
+2,pp_mb8,3,forward,Send,pp1,32768,microbatch=5;stage=0->1,1
+2,pp_mb8,3,forward,Send,pp1,32768,microbatch=6;stage=0->1,1
+2,pp_mb8,3,forward,Send,pp1,32768,microbatch=7;stage=0->1,1
+2,pp_mb8,3,backward,Recv,pp1,32768,microbatch=7;activation gradient,1
+2,pp_mb8,3,backward,Recv,pp1,32768,microbatch=6;activation gradient,1
+2,pp_mb8,3,backward,Recv,pp1,32768,microbatch=5;activation gradient,1
+2,pp_mb8,3,backward,Recv,pp1,32768,microbatch=4;activation gradient,1
+2,pp_mb8,3,backward,Recv,pp1,32768,microbatch=3;activation gradient,1
+2,pp_mb8,3,backward,Recv,pp1,32768,microbatch=2;activation gradient,1
+2,pp_mb8,3,backward,Recv,pp1,32768,microbatch=1;activation gradient,1
+2,pp_mb8,3,backward,Recv,pp1,32768,microbatch=0;activation gradient,1
+2,pp_mb8,3,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,1
+2,pp_mb8,4,forward,Send,pp1,32768,microbatch=0;stage=0->1,1
+2,pp_mb8,4,forward,Send,pp1,32768,microbatch=1;stage=0->1,1
+2,pp_mb8,4,forward,Send,pp1,32768,microbatch=2;stage=0->1,1
+2,pp_mb8,4,forward,Send,pp1,32768,microbatch=3;stage=0->1,1
+2,pp_mb8,4,forward,Send,pp1,32768,microbatch=4;stage=0->1,1
+2,pp_mb8,4,forward,Send,pp1,32768,microbatch=5;stage=0->1,1
+2,pp_mb8,4,forward,Send,pp1,32768,microbatch=6;stage=0->1,1
+2,pp_mb8,4,forward,Send,pp1,32768,microbatch=7;stage=0->1,1
+2,pp_mb8,4,backward,Recv,pp1,32768,microbatch=7;activation gradient,1
+2,pp_mb8,4,backward,Recv,pp1,32768,microbatch=6;activation gradient,1
+2,pp_mb8,4,backward,Recv,pp1,32768,microbatch=5;activation gradient,1
+2,pp_mb8,4,backward,Recv,pp1,32768,microbatch=4;activation gradient,1
+2,pp_mb8,4,backward,Recv,pp1,32768,microbatch=3;activation gradient,1
+2,pp_mb8,4,backward,Recv,pp1,32768,microbatch=2;activation gradient,1
+2,pp_mb8,4,backward,Recv,pp1,32768,microbatch=1;activation gradient,1
+2,pp_mb8,4,backward,Recv,pp1,32768,microbatch=0;activation gradient,1
+2,pp_mb8,4,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,1
+2,pp_mb8,5,forward,Send,pp1,32768,microbatch=0;stage=0->1,1
+2,pp_mb8,5,forward,Send,pp1,32768,microbatch=1;stage=0->1,1
+2,pp_mb8,5,forward,Send,pp1,32768,microbatch=2;stage=0->1,1
+2,pp_mb8,5,forward,Send,pp1,32768,microbatch=3;stage=0->1,1
+2,pp_mb8,5,forward,Send,pp1,32768,microbatch=4;stage=0->1,1
+2,pp_mb8,5,forward,Send,pp1,32768,microbatch=5;stage=0->1,1
+2,pp_mb8,5,forward,Send,pp1,32768,microbatch=6;stage=0->1,1
+2,pp_mb8,5,forward,Send,pp1,32768,microbatch=7;stage=0->1,1
+2,pp_mb8,5,backward,Recv,pp1,32768,microbatch=7;activation gradient,1
+2,pp_mb8,5,backward,Recv,pp1,32768,microbatch=6;activation gradient,1
+2,pp_mb8,5,backward,Recv,pp1,32768,microbatch=5;activation gradient,1
+2,pp_mb8,5,backward,Recv,pp1,32768,microbatch=4;activation gradient,1
+2,pp_mb8,5,backward,Recv,pp1,32768,microbatch=3;activation gradient,1
+2,pp_mb8,5,backward,Recv,pp1,32768,microbatch=2;activation gradient,1
+2,pp_mb8,5,backward,Recv,pp1,32768,microbatch=1;activation gradient,1
+2,pp_mb8,5,backward,Recv,pp1,32768,microbatch=0;activation gradient,1
+2,pp_mb8,5,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,1
+3,pp_mb8,0,forward,Recv,pp1,32768,microbatch=0;stage=0->1,1
+3,pp_mb8,0,forward,Recv,pp1,32768,microbatch=1;stage=0->1,1
+3,pp_mb8,0,forward,Recv,pp1,32768,microbatch=2;stage=0->1,1
+3,pp_mb8,0,forward,Recv,pp1,32768,microbatch=3;stage=0->1,1
+3,pp_mb8,0,forward,Recv,pp1,32768,microbatch=4;stage=0->1,1
+3,pp_mb8,0,forward,Recv,pp1,32768,microbatch=5;stage=0->1,1
+3,pp_mb8,0,forward,Recv,pp1,32768,microbatch=6;stage=0->1,1
+3,pp_mb8,0,forward,Recv,pp1,32768,microbatch=7;stage=0->1,1
+3,pp_mb8,0,backward,Send,pp1,32768,microbatch=7;activation gradient,1
+3,pp_mb8,0,backward,Send,pp1,32768,microbatch=6;activation gradient,1
+3,pp_mb8,0,backward,Send,pp1,32768,microbatch=5;activation gradient,1
+3,pp_mb8,0,backward,Send,pp1,32768,microbatch=4;activation gradient,1
+3,pp_mb8,0,backward,Send,pp1,32768,microbatch=3;activation gradient,1
+3,pp_mb8,0,backward,Send,pp1,32768,microbatch=2;activation gradient,1
+3,pp_mb8,0,backward,Send,pp1,32768,microbatch=1;activation gradient,1
+3,pp_mb8,0,backward,Send,pp1,32768,microbatch=0;activation gradient,1
+3,pp_mb8,0,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,1
+3,pp_mb8,1,forward,Recv,pp1,32768,microbatch=0;stage=0->1,1
+3,pp_mb8,1,forward,Recv,pp1,32768,microbatch=1;stage=0->1,1
+3,pp_mb8,1,forward,Recv,pp1,32768,microbatch=2;stage=0->1,1
+3,pp_mb8,1,forward,Recv,pp1,32768,microbatch=3;stage=0->1,1
+3,pp_mb8,1,forward,Recv,pp1,32768,microbatch=4;stage=0->1,1
+3,pp_mb8,1,forward,Recv,pp1,32768,microbatch=5;stage=0->1,1
+3,pp_mb8,1,forward,Recv,pp1,32768,microbatch=6;stage=0->1,1
+3,pp_mb8,1,forward,Recv,pp1,32768,microbatch=7;stage=0->1,1
+3,pp_mb8,1,backward,Send,pp1,32768,microbatch=7;activation gradient,1
+3,pp_mb8,1,backward,Send,pp1,32768,microbatch=6;activation gradient,1
+3,pp_mb8,1,backward,Send,pp1,32768,microbatch=5;activation gradient,1
+3,pp_mb8,1,backward,Send,pp1,32768,microbatch=4;activation gradient,1
+3,pp_mb8,1,backward,Send,pp1,32768,microbatch=3;activation gradient,1
+3,pp_mb8,1,backward,Send,pp1,32768,microbatch=2;activation gradient,1
+3,pp_mb8,1,backward,Send,pp1,32768,microbatch=1;activation gradient,1
+3,pp_mb8,1,backward,Send,pp1,32768,microbatch=0;activation gradient,1
+3,pp_mb8,1,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,1
+3,pp_mb8,2,forward,Recv,pp1,32768,microbatch=0;stage=0->1,1
+3,pp_mb8,2,forward,Recv,pp1,32768,microbatch=1;stage=0->1,1
+3,pp_mb8,2,forward,Recv,pp1,32768,microbatch=2;stage=0->1,1
+3,pp_mb8,2,forward,Recv,pp1,32768,microbatch=3;stage=0->1,1
+3,pp_mb8,2,forward,Recv,pp1,32768,microbatch=4;stage=0->1,1
+3,pp_mb8,2,forward,Recv,pp1,32768,microbatch=5;stage=0->1,1
+3,pp_mb8,2,forward,Recv,pp1,32768,microbatch=6;stage=0->1,1
+3,pp_mb8,2,forward,Recv,pp1,32768,microbatch=7;stage=0->1,1
+3,pp_mb8,2,backward,Send,pp1,32768,microbatch=7;activation gradient,1
+3,pp_mb8,2,backward,Send,pp1,32768,microbatch=6;activation gradient,1
+3,pp_mb8,2,backward,Send,pp1,32768,microbatch=5;activation gradient,1
+3,pp_mb8,2,backward,Send,pp1,32768,microbatch=4;activation gradient,1
+3,pp_mb8,2,backward,Send,pp1,32768,microbatch=3;activation gradient,1
+3,pp_mb8,2,backward,Send,pp1,32768,microbatch=2;activation gradient,1
+3,pp_mb8,2,backward,Send,pp1,32768,microbatch=1;activation gradient,1
+3,pp_mb8,2,backward,Send,pp1,32768,microbatch=0;activation gradient,1
+3,pp_mb8,2,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,1
+3,pp_mb8,3,forward,Recv,pp1,32768,microbatch=0;stage=0->1,1
+3,pp_mb8,3,forward,Recv,pp1,32768,microbatch=1;stage=0->1,1
+3,pp_mb8,3,forward,Recv,pp1,32768,microbatch=2;stage=0->1,1
+3,pp_mb8,3,forward,Recv,pp1,32768,microbatch=3;stage=0->1,1
+3,pp_mb8,3,forward,Recv,pp1,32768,microbatch=4;stage=0->1,1
+3,pp_mb8,3,forward,Recv,pp1,32768,microbatch=5;stage=0->1,1
+3,pp_mb8,3,forward,Recv,pp1,32768,microbatch=6;stage=0->1,1
+3,pp_mb8,3,forward,Recv,pp1,32768,microbatch=7;stage=0->1,1
+3,pp_mb8,3,backward,Send,pp1,32768,microbatch=7;activation gradient,1
+3,pp_mb8,3,backward,Send,pp1,32768,microbatch=6;activation gradient,1
+3,pp_mb8,3,backward,Send,pp1,32768,microbatch=5;activation gradient,1
+3,pp_mb8,3,backward,Send,pp1,32768,microbatch=4;activation gradient,1
+3,pp_mb8,3,backward,Send,pp1,32768,microbatch=3;activation gradient,1
+3,pp_mb8,3,backward,Send,pp1,32768,microbatch=2;activation gradient,1
+3,pp_mb8,3,backward,Send,pp1,32768,microbatch=1;activation gradient,1
+3,pp_mb8,3,backward,Send,pp1,32768,microbatch=0;activation gradient,1
+3,pp_mb8,3,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,1
+3,pp_mb8,4,forward,Recv,pp1,32768,microbatch=0;stage=0->1,1
+3,pp_mb8,4,forward,Recv,pp1,32768,microbatch=1;stage=0->1,1
+3,pp_mb8,4,forward,Recv,pp1,32768,microbatch=2;stage=0->1,1
+3,pp_mb8,4,forward,Recv,pp1,32768,microbatch=3;stage=0->1,1
+3,pp_mb8,4,forward,Recv,pp1,32768,microbatch=4;stage=0->1,1
+3,pp_mb8,4,forward,Recv,pp1,32768,microbatch=5;stage=0->1,1
+3,pp_mb8,4,forward,Recv,pp1,32768,microbatch=6;stage=0->1,1
+3,pp_mb8,4,forward,Recv,pp1,32768,microbatch=7;stage=0->1,1
+3,pp_mb8,4,backward,Send,pp1,32768,microbatch=7;activation gradient,1
+3,pp_mb8,4,backward,Send,pp1,32768,microbatch=6;activation gradient,1
+3,pp_mb8,4,backward,Send,pp1,32768,microbatch=5;activation gradient,1
+3,pp_mb8,4,backward,Send,pp1,32768,microbatch=4;activation gradient,1
+3,pp_mb8,4,backward,Send,pp1,32768,microbatch=3;activation gradient,1
+3,pp_mb8,4,backward,Send,pp1,32768,microbatch=2;activation gradient,1
+3,pp_mb8,4,backward,Send,pp1,32768,microbatch=1;activation gradient,1
+3,pp_mb8,4,backward,Send,pp1,32768,microbatch=0;activation gradient,1
+3,pp_mb8,4,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,1
+3,pp_mb8,5,forward,Recv,pp1,32768,microbatch=0;stage=0->1,1
+3,pp_mb8,5,forward,Recv,pp1,32768,microbatch=1;stage=0->1,1
+3,pp_mb8,5,forward,Recv,pp1,32768,microbatch=2;stage=0->1,1
+3,pp_mb8,5,forward,Recv,pp1,32768,microbatch=3;stage=0->1,1
+3,pp_mb8,5,forward,Recv,pp1,32768,microbatch=4;stage=0->1,1
+3,pp_mb8,5,forward,Recv,pp1,32768,microbatch=5;stage=0->1,1
+3,pp_mb8,5,forward,Recv,pp1,32768,microbatch=6;stage=0->1,1
+3,pp_mb8,5,forward,Recv,pp1,32768,microbatch=7;stage=0->1,1
+3,pp_mb8,5,backward,Send,pp1,32768,microbatch=7;activation gradient,1
+3,pp_mb8,5,backward,Send,pp1,32768,microbatch=6;activation gradient,1
+3,pp_mb8,5,backward,Send,pp1,32768,microbatch=5;activation gradient,1
+3,pp_mb8,5,backward,Send,pp1,32768,microbatch=4;activation gradient,1
+3,pp_mb8,5,backward,Send,pp1,32768,microbatch=3;activation gradient,1
+3,pp_mb8,5,backward,Send,pp1,32768,microbatch=2;activation gradient,1
+3,pp_mb8,5,backward,Send,pp1,32768,microbatch=1;activation gradient,1
+3,pp_mb8,5,backward,Send,pp1,32768,microbatch=0;activation gradient,1
+3,pp_mb8,5,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,1
+0,ep_balanced,0,dispatch,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+0,ep_balanced,0,combine,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+0,ep_balanced,0,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,1
+0,ep_balanced,0,backward_dispatch,AllToAll,tp0,131072,autograd reverse exchange,1
+0,ep_balanced,0,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,1
+0,ep_balanced,1,dispatch,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+0,ep_balanced,1,combine,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+0,ep_balanced,1,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,1
+0,ep_balanced,1,backward_dispatch,AllToAll,tp0,131072,autograd reverse exchange,1
+0,ep_balanced,1,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,1
+0,ep_balanced,2,dispatch,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+0,ep_balanced,2,combine,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+0,ep_balanced,2,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,1
+0,ep_balanced,2,backward_dispatch,AllToAll,tp0,131072,autograd reverse exchange,1
+0,ep_balanced,2,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,1
+0,ep_balanced,3,dispatch,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+0,ep_balanced,3,combine,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+0,ep_balanced,3,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,1
+0,ep_balanced,3,backward_dispatch,AllToAll,tp0,131072,autograd reverse exchange,1
+0,ep_balanced,3,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,1
+0,ep_balanced,4,dispatch,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+0,ep_balanced,4,combine,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+0,ep_balanced,4,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,1
+0,ep_balanced,4,backward_dispatch,AllToAll,tp0,131072,autograd reverse exchange,1
+0,ep_balanced,4,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,1
+0,ep_balanced,5,dispatch,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+0,ep_balanced,5,combine,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+0,ep_balanced,5,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,1
+0,ep_balanced,5,backward_dispatch,AllToAll,tp0,131072,autograd reverse exchange,1
+0,ep_balanced,5,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,1
+1,ep_balanced,0,dispatch,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+1,ep_balanced,0,combine,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+1,ep_balanced,0,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,1
+1,ep_balanced,0,backward_dispatch,AllToAll,tp0,131072,autograd reverse exchange,1
+1,ep_balanced,0,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,1
+1,ep_balanced,1,dispatch,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+1,ep_balanced,1,combine,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+1,ep_balanced,1,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,1
+1,ep_balanced,1,backward_dispatch,AllToAll,tp0,131072,autograd reverse exchange,1
+1,ep_balanced,1,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,1
+1,ep_balanced,2,dispatch,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+1,ep_balanced,2,combine,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+1,ep_balanced,2,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,1
+1,ep_balanced,2,backward_dispatch,AllToAll,tp0,131072,autograd reverse exchange,1
+1,ep_balanced,2,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,1
+1,ep_balanced,3,dispatch,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+1,ep_balanced,3,combine,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+1,ep_balanced,3,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,1
+1,ep_balanced,3,backward_dispatch,AllToAll,tp0,131072,autograd reverse exchange,1
+1,ep_balanced,3,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,1
+1,ep_balanced,4,dispatch,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+1,ep_balanced,4,combine,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+1,ep_balanced,4,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,1
+1,ep_balanced,4,backward_dispatch,AllToAll,tp0,131072,autograd reverse exchange,1
+1,ep_balanced,4,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,1
+1,ep_balanced,5,dispatch,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+1,ep_balanced,5,combine,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+1,ep_balanced,5,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,1
+1,ep_balanced,5,backward_dispatch,AllToAll,tp0,131072,autograd reverse exchange,1
+1,ep_balanced,5,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,1
+2,ep_balanced,0,dispatch,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+2,ep_balanced,0,combine,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+2,ep_balanced,0,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,1
+2,ep_balanced,0,backward_dispatch,AllToAll,tp1,131072,autograd reverse exchange,1
+2,ep_balanced,0,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,1
+2,ep_balanced,1,dispatch,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+2,ep_balanced,1,combine,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+2,ep_balanced,1,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,1
+2,ep_balanced,1,backward_dispatch,AllToAll,tp1,131072,autograd reverse exchange,1
+2,ep_balanced,1,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,1
+2,ep_balanced,2,dispatch,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+2,ep_balanced,2,combine,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+2,ep_balanced,2,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,1
+2,ep_balanced,2,backward_dispatch,AllToAll,tp1,131072,autograd reverse exchange,1
+2,ep_balanced,2,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,1
+2,ep_balanced,3,dispatch,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+2,ep_balanced,3,combine,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+2,ep_balanced,3,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,1
+2,ep_balanced,3,backward_dispatch,AllToAll,tp1,131072,autograd reverse exchange,1
+2,ep_balanced,3,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,1
+2,ep_balanced,4,dispatch,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+2,ep_balanced,4,combine,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+2,ep_balanced,4,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,1
+2,ep_balanced,4,backward_dispatch,AllToAll,tp1,131072,autograd reverse exchange,1
+2,ep_balanced,4,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,1
+2,ep_balanced,5,dispatch,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+2,ep_balanced,5,combine,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+2,ep_balanced,5,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,1
+2,ep_balanced,5,backward_dispatch,AllToAll,tp1,131072,autograd reverse exchange,1
+2,ep_balanced,5,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,1
+3,ep_balanced,0,dispatch,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+3,ep_balanced,0,combine,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+3,ep_balanced,0,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,1
+3,ep_balanced,0,backward_dispatch,AllToAll,tp1,131072,autograd reverse exchange,1
+3,ep_balanced,0,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,1
+3,ep_balanced,1,dispatch,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+3,ep_balanced,1,combine,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+3,ep_balanced,1,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,1
+3,ep_balanced,1,backward_dispatch,AllToAll,tp1,131072,autograd reverse exchange,1
+3,ep_balanced,1,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,1
+3,ep_balanced,2,dispatch,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+3,ep_balanced,2,combine,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+3,ep_balanced,2,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,1
+3,ep_balanced,2,backward_dispatch,AllToAll,tp1,131072,autograd reverse exchange,1
+3,ep_balanced,2,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,1
+3,ep_balanced,3,dispatch,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+3,ep_balanced,3,combine,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+3,ep_balanced,3,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,1
+3,ep_balanced,3,backward_dispatch,AllToAll,tp1,131072,autograd reverse exchange,1
+3,ep_balanced,3,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,1
+3,ep_balanced,4,dispatch,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+3,ep_balanced,4,combine,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+3,ep_balanced,4,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,1
+3,ep_balanced,4,backward_dispatch,AllToAll,tp1,131072,autograd reverse exchange,1
+3,ep_balanced,4,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,1
+3,ep_balanced,5,dispatch,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+3,ep_balanced,5,combine,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",1
+3,ep_balanced,5,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,1
+3,ep_balanced,5,backward_dispatch,AllToAll,tp1,131072,autograd reverse exchange,1
+3,ep_balanced,5,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,1
+0,ep_skewed,0,dispatch,AllToAll,tp0,131072,"send_splits=[56, 8];recv_splits=[56, 56]",1
+0,ep_skewed,0,combine,AllToAll,tp0,229376,"send_splits=[56, 56];recv_splits=[56, 8]",1
+0,ep_skewed,0,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,1
+0,ep_skewed,0,backward_dispatch,AllToAll,tp0,229376,autograd reverse exchange,1
+0,ep_skewed,0,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,1
+0,ep_skewed,1,dispatch,AllToAll,tp0,131072,"send_splits=[56, 8];recv_splits=[56, 56]",1
+0,ep_skewed,1,combine,AllToAll,tp0,229376,"send_splits=[56, 56];recv_splits=[56, 8]",1
+0,ep_skewed,1,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,1
+0,ep_skewed,1,backward_dispatch,AllToAll,tp0,229376,autograd reverse exchange,1
+0,ep_skewed,1,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,1
+0,ep_skewed,2,dispatch,AllToAll,tp0,131072,"send_splits=[56, 8];recv_splits=[56, 56]",1
+0,ep_skewed,2,combine,AllToAll,tp0,229376,"send_splits=[56, 56];recv_splits=[56, 8]",1
+0,ep_skewed,2,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,1
+0,ep_skewed,2,backward_dispatch,AllToAll,tp0,229376,autograd reverse exchange,1
+0,ep_skewed,2,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,1
+0,ep_skewed,3,dispatch,AllToAll,tp0,131072,"send_splits=[56, 8];recv_splits=[56, 56]",1
+0,ep_skewed,3,combine,AllToAll,tp0,229376,"send_splits=[56, 56];recv_splits=[56, 8]",1
+0,ep_skewed,3,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,1
+0,ep_skewed,3,backward_dispatch,AllToAll,tp0,229376,autograd reverse exchange,1
+0,ep_skewed,3,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,1
+0,ep_skewed,4,dispatch,AllToAll,tp0,131072,"send_splits=[56, 8];recv_splits=[56, 56]",1
+0,ep_skewed,4,combine,AllToAll,tp0,229376,"send_splits=[56, 56];recv_splits=[56, 8]",1
+0,ep_skewed,4,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,1
+0,ep_skewed,4,backward_dispatch,AllToAll,tp0,229376,autograd reverse exchange,1
+0,ep_skewed,4,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,1
+0,ep_skewed,5,dispatch,AllToAll,tp0,131072,"send_splits=[56, 8];recv_splits=[56, 56]",1
+0,ep_skewed,5,combine,AllToAll,tp0,229376,"send_splits=[56, 56];recv_splits=[56, 8]",1
+0,ep_skewed,5,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,1
+0,ep_skewed,5,backward_dispatch,AllToAll,tp0,229376,autograd reverse exchange,1
+0,ep_skewed,5,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,1
+1,ep_skewed,0,dispatch,AllToAll,tp0,131072,"send_splits=[56, 8];recv_splits=[8, 8]",1
+1,ep_skewed,0,combine,AllToAll,tp0,32768,"send_splits=[8, 8];recv_splits=[56, 8]",1
+1,ep_skewed,0,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,1
+1,ep_skewed,0,backward_dispatch,AllToAll,tp0,32768,autograd reverse exchange,1
+1,ep_skewed,0,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,1
+1,ep_skewed,1,dispatch,AllToAll,tp0,131072,"send_splits=[56, 8];recv_splits=[8, 8]",1
+1,ep_skewed,1,combine,AllToAll,tp0,32768,"send_splits=[8, 8];recv_splits=[56, 8]",1
+1,ep_skewed,1,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,1
+1,ep_skewed,1,backward_dispatch,AllToAll,tp0,32768,autograd reverse exchange,1
+1,ep_skewed,1,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,1
+1,ep_skewed,2,dispatch,AllToAll,tp0,131072,"send_splits=[56, 8];recv_splits=[8, 8]",1
+1,ep_skewed,2,combine,AllToAll,tp0,32768,"send_splits=[8, 8];recv_splits=[56, 8]",1
+1,ep_skewed,2,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,1
+1,ep_skewed,2,backward_dispatch,AllToAll,tp0,32768,autograd reverse exchange,1
+1,ep_skewed,2,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,1
+1,ep_skewed,3,dispatch,AllToAll,tp0,131072,"send_splits=[56, 8];recv_splits=[8, 8]",1
+1,ep_skewed,3,combine,AllToAll,tp0,32768,"send_splits=[8, 8];recv_splits=[56, 8]",1
+1,ep_skewed,3,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,1
+1,ep_skewed,3,backward_dispatch,AllToAll,tp0,32768,autograd reverse exchange,1
+1,ep_skewed,3,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,1
+1,ep_skewed,4,dispatch,AllToAll,tp0,131072,"send_splits=[56, 8];recv_splits=[8, 8]",1
+1,ep_skewed,4,combine,AllToAll,tp0,32768,"send_splits=[8, 8];recv_splits=[56, 8]",1
+1,ep_skewed,4,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,1
+1,ep_skewed,4,backward_dispatch,AllToAll,tp0,32768,autograd reverse exchange,1
+1,ep_skewed,4,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,1
+1,ep_skewed,5,dispatch,AllToAll,tp0,131072,"send_splits=[56, 8];recv_splits=[8, 8]",1
+1,ep_skewed,5,combine,AllToAll,tp0,32768,"send_splits=[8, 8];recv_splits=[56, 8]",1
+1,ep_skewed,5,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,1
+1,ep_skewed,5,backward_dispatch,AllToAll,tp0,32768,autograd reverse exchange,1
+1,ep_skewed,5,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,1
+2,ep_skewed,0,dispatch,AllToAll,tp1,131072,"send_splits=[56, 8];recv_splits=[56, 56]",1
+2,ep_skewed,0,combine,AllToAll,tp1,229376,"send_splits=[56, 56];recv_splits=[56, 8]",1
+2,ep_skewed,0,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,1
+2,ep_skewed,0,backward_dispatch,AllToAll,tp1,229376,autograd reverse exchange,1
+2,ep_skewed,0,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,1
+2,ep_skewed,1,dispatch,AllToAll,tp1,131072,"send_splits=[56, 8];recv_splits=[56, 56]",1
+2,ep_skewed,1,combine,AllToAll,tp1,229376,"send_splits=[56, 56];recv_splits=[56, 8]",1
+2,ep_skewed,1,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,1
+2,ep_skewed,1,backward_dispatch,AllToAll,tp1,229376,autograd reverse exchange,1
+2,ep_skewed,1,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,1
+2,ep_skewed,2,dispatch,AllToAll,tp1,131072,"send_splits=[56, 8];recv_splits=[56, 56]",1
+2,ep_skewed,2,combine,AllToAll,tp1,229376,"send_splits=[56, 56];recv_splits=[56, 8]",1
+2,ep_skewed,2,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,1
+2,ep_skewed,2,backward_dispatch,AllToAll,tp1,229376,autograd reverse exchange,1
+2,ep_skewed,2,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,1
+2,ep_skewed,3,dispatch,AllToAll,tp1,131072,"send_splits=[56, 8];recv_splits=[56, 56]",1
+2,ep_skewed,3,combine,AllToAll,tp1,229376,"send_splits=[56, 56];recv_splits=[56, 8]",1
+2,ep_skewed,3,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,1
+2,ep_skewed,3,backward_dispatch,AllToAll,tp1,229376,autograd reverse exchange,1
+2,ep_skewed,3,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,1
+2,ep_skewed,4,dispatch,AllToAll,tp1,131072,"send_splits=[56, 8];recv_splits=[56, 56]",1
+2,ep_skewed,4,combine,AllToAll,tp1,229376,"send_splits=[56, 56];recv_splits=[56, 8]",1
+2,ep_skewed,4,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,1
+2,ep_skewed,4,backward_dispatch,AllToAll,tp1,229376,autograd reverse exchange,1
+2,ep_skewed,4,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,1
+2,ep_skewed,5,dispatch,AllToAll,tp1,131072,"send_splits=[56, 8];recv_splits=[56, 56]",1
+2,ep_skewed,5,combine,AllToAll,tp1,229376,"send_splits=[56, 56];recv_splits=[56, 8]",1
+2,ep_skewed,5,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,1
+2,ep_skewed,5,backward_dispatch,AllToAll,tp1,229376,autograd reverse exchange,1
+2,ep_skewed,5,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,1
+3,ep_skewed,0,dispatch,AllToAll,tp1,131072,"send_splits=[56, 8];recv_splits=[8, 8]",1
+3,ep_skewed,0,combine,AllToAll,tp1,32768,"send_splits=[8, 8];recv_splits=[56, 8]",1
+3,ep_skewed,0,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,1
+3,ep_skewed,0,backward_dispatch,AllToAll,tp1,32768,autograd reverse exchange,1
+3,ep_skewed,0,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,1
+3,ep_skewed,1,dispatch,AllToAll,tp1,131072,"send_splits=[56, 8];recv_splits=[8, 8]",1
+3,ep_skewed,1,combine,AllToAll,tp1,32768,"send_splits=[8, 8];recv_splits=[56, 8]",1
+3,ep_skewed,1,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,1
+3,ep_skewed,1,backward_dispatch,AllToAll,tp1,32768,autograd reverse exchange,1
+3,ep_skewed,1,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,1
+3,ep_skewed,2,dispatch,AllToAll,tp1,131072,"send_splits=[56, 8];recv_splits=[8, 8]",1
+3,ep_skewed,2,combine,AllToAll,tp1,32768,"send_splits=[8, 8];recv_splits=[56, 8]",1
+3,ep_skewed,2,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,1
+3,ep_skewed,2,backward_dispatch,AllToAll,tp1,32768,autograd reverse exchange,1
+3,ep_skewed,2,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,1
+3,ep_skewed,3,dispatch,AllToAll,tp1,131072,"send_splits=[56, 8];recv_splits=[8, 8]",1
+3,ep_skewed,3,combine,AllToAll,tp1,32768,"send_splits=[8, 8];recv_splits=[56, 8]",1
+3,ep_skewed,3,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,1
+3,ep_skewed,3,backward_dispatch,AllToAll,tp1,32768,autograd reverse exchange,1
+3,ep_skewed,3,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,1
+3,ep_skewed,4,dispatch,AllToAll,tp1,131072,"send_splits=[56, 8];recv_splits=[8, 8]",1
+3,ep_skewed,4,combine,AllToAll,tp1,32768,"send_splits=[8, 8];recv_splits=[56, 8]",1
+3,ep_skewed,4,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,1
+3,ep_skewed,4,backward_dispatch,AllToAll,tp1,32768,autograd reverse exchange,1
+3,ep_skewed,4,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,1
+3,ep_skewed,5,dispatch,AllToAll,tp1,131072,"send_splits=[56, 8];recv_splits=[8, 8]",1
+3,ep_skewed,5,combine,AllToAll,tp1,32768,"send_splits=[8, 8];recv_splits=[56, 8]",1
+3,ep_skewed,5,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,1
+3,ep_skewed,5,backward_dispatch,AllToAll,tp1,32768,autograd reverse exchange,1
+3,ep_skewed,5,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,1
+0,ep_skewed,0,dispatch,AllToAll,tp0,131072,"send_splits=[56, 8];recv_splits=[56, 56]",2
+0,ep_skewed,0,combine,AllToAll,tp0,229376,"send_splits=[56, 56];recv_splits=[56, 8]",2
+0,ep_skewed,0,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,2
+0,ep_skewed,0,backward_dispatch,AllToAll,tp0,229376,autograd reverse exchange,2
+0,ep_skewed,0,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,2
+0,ep_skewed,1,dispatch,AllToAll,tp0,131072,"send_splits=[56, 8];recv_splits=[56, 56]",2
+0,ep_skewed,1,combine,AllToAll,tp0,229376,"send_splits=[56, 56];recv_splits=[56, 8]",2
+0,ep_skewed,1,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,2
+0,ep_skewed,1,backward_dispatch,AllToAll,tp0,229376,autograd reverse exchange,2
+0,ep_skewed,1,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,2
+0,ep_skewed,2,dispatch,AllToAll,tp0,131072,"send_splits=[56, 8];recv_splits=[56, 56]",2
+0,ep_skewed,2,combine,AllToAll,tp0,229376,"send_splits=[56, 56];recv_splits=[56, 8]",2
+0,ep_skewed,2,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,2
+0,ep_skewed,2,backward_dispatch,AllToAll,tp0,229376,autograd reverse exchange,2
+0,ep_skewed,2,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,2
+0,ep_skewed,3,dispatch,AllToAll,tp0,131072,"send_splits=[56, 8];recv_splits=[56, 56]",2
+0,ep_skewed,3,combine,AllToAll,tp0,229376,"send_splits=[56, 56];recv_splits=[56, 8]",2
+0,ep_skewed,3,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,2
+0,ep_skewed,3,backward_dispatch,AllToAll,tp0,229376,autograd reverse exchange,2
+0,ep_skewed,3,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,2
+0,ep_skewed,4,dispatch,AllToAll,tp0,131072,"send_splits=[56, 8];recv_splits=[56, 56]",2
+0,ep_skewed,4,combine,AllToAll,tp0,229376,"send_splits=[56, 56];recv_splits=[56, 8]",2
+0,ep_skewed,4,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,2
+0,ep_skewed,4,backward_dispatch,AllToAll,tp0,229376,autograd reverse exchange,2
+0,ep_skewed,4,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,2
+0,ep_skewed,5,dispatch,AllToAll,tp0,131072,"send_splits=[56, 8];recv_splits=[56, 56]",2
+0,ep_skewed,5,combine,AllToAll,tp0,229376,"send_splits=[56, 56];recv_splits=[56, 8]",2
+0,ep_skewed,5,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,2
+0,ep_skewed,5,backward_dispatch,AllToAll,tp0,229376,autograd reverse exchange,2
+0,ep_skewed,5,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,2
+1,ep_skewed,0,dispatch,AllToAll,tp0,131072,"send_splits=[56, 8];recv_splits=[8, 8]",2
+1,ep_skewed,0,combine,AllToAll,tp0,32768,"send_splits=[8, 8];recv_splits=[56, 8]",2
+1,ep_skewed,0,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,2
+1,ep_skewed,0,backward_dispatch,AllToAll,tp0,32768,autograd reverse exchange,2
+1,ep_skewed,0,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,2
+1,ep_skewed,1,dispatch,AllToAll,tp0,131072,"send_splits=[56, 8];recv_splits=[8, 8]",2
+1,ep_skewed,1,combine,AllToAll,tp0,32768,"send_splits=[8, 8];recv_splits=[56, 8]",2
+1,ep_skewed,1,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,2
+1,ep_skewed,1,backward_dispatch,AllToAll,tp0,32768,autograd reverse exchange,2
+1,ep_skewed,1,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,2
+1,ep_skewed,2,dispatch,AllToAll,tp0,131072,"send_splits=[56, 8];recv_splits=[8, 8]",2
+1,ep_skewed,2,combine,AllToAll,tp0,32768,"send_splits=[8, 8];recv_splits=[56, 8]",2
+1,ep_skewed,2,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,2
+1,ep_skewed,2,backward_dispatch,AllToAll,tp0,32768,autograd reverse exchange,2
+1,ep_skewed,2,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,2
+1,ep_skewed,3,dispatch,AllToAll,tp0,131072,"send_splits=[56, 8];recv_splits=[8, 8]",2
+1,ep_skewed,3,combine,AllToAll,tp0,32768,"send_splits=[8, 8];recv_splits=[56, 8]",2
+1,ep_skewed,3,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,2
+1,ep_skewed,3,backward_dispatch,AllToAll,tp0,32768,autograd reverse exchange,2
+1,ep_skewed,3,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,2
+1,ep_skewed,4,dispatch,AllToAll,tp0,131072,"send_splits=[56, 8];recv_splits=[8, 8]",2
+1,ep_skewed,4,combine,AllToAll,tp0,32768,"send_splits=[8, 8];recv_splits=[56, 8]",2
+1,ep_skewed,4,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,2
+1,ep_skewed,4,backward_dispatch,AllToAll,tp0,32768,autograd reverse exchange,2
+1,ep_skewed,4,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,2
+1,ep_skewed,5,dispatch,AllToAll,tp0,131072,"send_splits=[56, 8];recv_splits=[8, 8]",2
+1,ep_skewed,5,combine,AllToAll,tp0,32768,"send_splits=[8, 8];recv_splits=[56, 8]",2
+1,ep_skewed,5,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,2
+1,ep_skewed,5,backward_dispatch,AllToAll,tp0,32768,autograd reverse exchange,2
+1,ep_skewed,5,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,2
+2,ep_skewed,0,dispatch,AllToAll,tp1,131072,"send_splits=[56, 8];recv_splits=[56, 56]",2
+2,ep_skewed,0,combine,AllToAll,tp1,229376,"send_splits=[56, 56];recv_splits=[56, 8]",2
+2,ep_skewed,0,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,2
+2,ep_skewed,0,backward_dispatch,AllToAll,tp1,229376,autograd reverse exchange,2
+2,ep_skewed,0,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,2
+2,ep_skewed,1,dispatch,AllToAll,tp1,131072,"send_splits=[56, 8];recv_splits=[56, 56]",2
+2,ep_skewed,1,combine,AllToAll,tp1,229376,"send_splits=[56, 56];recv_splits=[56, 8]",2
+2,ep_skewed,1,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,2
+2,ep_skewed,1,backward_dispatch,AllToAll,tp1,229376,autograd reverse exchange,2
+2,ep_skewed,1,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,2
+2,ep_skewed,2,dispatch,AllToAll,tp1,131072,"send_splits=[56, 8];recv_splits=[56, 56]",2
+2,ep_skewed,2,combine,AllToAll,tp1,229376,"send_splits=[56, 56];recv_splits=[56, 8]",2
+2,ep_skewed,2,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,2
+2,ep_skewed,2,backward_dispatch,AllToAll,tp1,229376,autograd reverse exchange,2
+2,ep_skewed,2,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,2
+2,ep_skewed,3,dispatch,AllToAll,tp1,131072,"send_splits=[56, 8];recv_splits=[56, 56]",2
+2,ep_skewed,3,combine,AllToAll,tp1,229376,"send_splits=[56, 56];recv_splits=[56, 8]",2
+2,ep_skewed,3,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,2
+2,ep_skewed,3,backward_dispatch,AllToAll,tp1,229376,autograd reverse exchange,2
+2,ep_skewed,3,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,2
+2,ep_skewed,4,dispatch,AllToAll,tp1,131072,"send_splits=[56, 8];recv_splits=[56, 56]",2
+2,ep_skewed,4,combine,AllToAll,tp1,229376,"send_splits=[56, 56];recv_splits=[56, 8]",2
+2,ep_skewed,4,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,2
+2,ep_skewed,4,backward_dispatch,AllToAll,tp1,229376,autograd reverse exchange,2
+2,ep_skewed,4,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,2
+2,ep_skewed,5,dispatch,AllToAll,tp1,131072,"send_splits=[56, 8];recv_splits=[56, 56]",2
+2,ep_skewed,5,combine,AllToAll,tp1,229376,"send_splits=[56, 56];recv_splits=[56, 8]",2
+2,ep_skewed,5,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,2
+2,ep_skewed,5,backward_dispatch,AllToAll,tp1,229376,autograd reverse exchange,2
+2,ep_skewed,5,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,2
+3,ep_skewed,0,dispatch,AllToAll,tp1,131072,"send_splits=[56, 8];recv_splits=[8, 8]",2
+3,ep_skewed,0,combine,AllToAll,tp1,32768,"send_splits=[8, 8];recv_splits=[56, 8]",2
+3,ep_skewed,0,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,2
+3,ep_skewed,0,backward_dispatch,AllToAll,tp1,32768,autograd reverse exchange,2
+3,ep_skewed,0,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,2
+3,ep_skewed,1,dispatch,AllToAll,tp1,131072,"send_splits=[56, 8];recv_splits=[8, 8]",2
+3,ep_skewed,1,combine,AllToAll,tp1,32768,"send_splits=[8, 8];recv_splits=[56, 8]",2
+3,ep_skewed,1,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,2
+3,ep_skewed,1,backward_dispatch,AllToAll,tp1,32768,autograd reverse exchange,2
+3,ep_skewed,1,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,2
+3,ep_skewed,2,dispatch,AllToAll,tp1,131072,"send_splits=[56, 8];recv_splits=[8, 8]",2
+3,ep_skewed,2,combine,AllToAll,tp1,32768,"send_splits=[8, 8];recv_splits=[56, 8]",2
+3,ep_skewed,2,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,2
+3,ep_skewed,2,backward_dispatch,AllToAll,tp1,32768,autograd reverse exchange,2
+3,ep_skewed,2,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,2
+3,ep_skewed,3,dispatch,AllToAll,tp1,131072,"send_splits=[56, 8];recv_splits=[8, 8]",2
+3,ep_skewed,3,combine,AllToAll,tp1,32768,"send_splits=[8, 8];recv_splits=[56, 8]",2
+3,ep_skewed,3,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,2
+3,ep_skewed,3,backward_dispatch,AllToAll,tp1,32768,autograd reverse exchange,2
+3,ep_skewed,3,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,2
+3,ep_skewed,4,dispatch,AllToAll,tp1,131072,"send_splits=[56, 8];recv_splits=[8, 8]",2
+3,ep_skewed,4,combine,AllToAll,tp1,32768,"send_splits=[8, 8];recv_splits=[56, 8]",2
+3,ep_skewed,4,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,2
+3,ep_skewed,4,backward_dispatch,AllToAll,tp1,32768,autograd reverse exchange,2
+3,ep_skewed,4,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,2
+3,ep_skewed,5,dispatch,AllToAll,tp1,131072,"send_splits=[56, 8];recv_splits=[8, 8]",2
+3,ep_skewed,5,combine,AllToAll,tp1,32768,"send_splits=[8, 8];recv_splits=[56, 8]",2
+3,ep_skewed,5,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,2
+3,ep_skewed,5,backward_dispatch,AllToAll,tp1,32768,autograd reverse exchange,2
+3,ep_skewed,5,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,2
+0,ep_balanced,0,dispatch,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+0,ep_balanced,0,combine,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+0,ep_balanced,0,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,2
+0,ep_balanced,0,backward_dispatch,AllToAll,tp0,131072,autograd reverse exchange,2
+0,ep_balanced,0,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,2
+0,ep_balanced,1,dispatch,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+0,ep_balanced,1,combine,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+0,ep_balanced,1,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,2
+0,ep_balanced,1,backward_dispatch,AllToAll,tp0,131072,autograd reverse exchange,2
+0,ep_balanced,1,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,2
+0,ep_balanced,2,dispatch,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+0,ep_balanced,2,combine,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+0,ep_balanced,2,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,2
+0,ep_balanced,2,backward_dispatch,AllToAll,tp0,131072,autograd reverse exchange,2
+0,ep_balanced,2,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,2
+0,ep_balanced,3,dispatch,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+0,ep_balanced,3,combine,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+0,ep_balanced,3,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,2
+0,ep_balanced,3,backward_dispatch,AllToAll,tp0,131072,autograd reverse exchange,2
+0,ep_balanced,3,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,2
+0,ep_balanced,4,dispatch,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+0,ep_balanced,4,combine,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+0,ep_balanced,4,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,2
+0,ep_balanced,4,backward_dispatch,AllToAll,tp0,131072,autograd reverse exchange,2
+0,ep_balanced,4,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,2
+0,ep_balanced,5,dispatch,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+0,ep_balanced,5,combine,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+0,ep_balanced,5,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,2
+0,ep_balanced,5,backward_dispatch,AllToAll,tp0,131072,autograd reverse exchange,2
+0,ep_balanced,5,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,2
+1,ep_balanced,0,dispatch,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+1,ep_balanced,0,combine,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+1,ep_balanced,0,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,2
+1,ep_balanced,0,backward_dispatch,AllToAll,tp0,131072,autograd reverse exchange,2
+1,ep_balanced,0,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,2
+1,ep_balanced,1,dispatch,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+1,ep_balanced,1,combine,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+1,ep_balanced,1,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,2
+1,ep_balanced,1,backward_dispatch,AllToAll,tp0,131072,autograd reverse exchange,2
+1,ep_balanced,1,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,2
+1,ep_balanced,2,dispatch,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+1,ep_balanced,2,combine,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+1,ep_balanced,2,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,2
+1,ep_balanced,2,backward_dispatch,AllToAll,tp0,131072,autograd reverse exchange,2
+1,ep_balanced,2,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,2
+1,ep_balanced,3,dispatch,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+1,ep_balanced,3,combine,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+1,ep_balanced,3,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,2
+1,ep_balanced,3,backward_dispatch,AllToAll,tp0,131072,autograd reverse exchange,2
+1,ep_balanced,3,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,2
+1,ep_balanced,4,dispatch,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+1,ep_balanced,4,combine,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+1,ep_balanced,4,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,2
+1,ep_balanced,4,backward_dispatch,AllToAll,tp0,131072,autograd reverse exchange,2
+1,ep_balanced,4,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,2
+1,ep_balanced,5,dispatch,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+1,ep_balanced,5,combine,AllToAll,tp0,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+1,ep_balanced,5,backward_combine,AllToAll,tp0,131072,autograd reverse exchange,2
+1,ep_balanced,5,backward_dispatch,AllToAll,tp0,131072,autograd reverse exchange,2
+1,ep_balanced,5,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,2
+2,ep_balanced,0,dispatch,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+2,ep_balanced,0,combine,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+2,ep_balanced,0,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,2
+2,ep_balanced,0,backward_dispatch,AllToAll,tp1,131072,autograd reverse exchange,2
+2,ep_balanced,0,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,2
+2,ep_balanced,1,dispatch,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+2,ep_balanced,1,combine,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+2,ep_balanced,1,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,2
+2,ep_balanced,1,backward_dispatch,AllToAll,tp1,131072,autograd reverse exchange,2
+2,ep_balanced,1,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,2
+2,ep_balanced,2,dispatch,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+2,ep_balanced,2,combine,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+2,ep_balanced,2,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,2
+2,ep_balanced,2,backward_dispatch,AllToAll,tp1,131072,autograd reverse exchange,2
+2,ep_balanced,2,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,2
+2,ep_balanced,3,dispatch,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+2,ep_balanced,3,combine,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+2,ep_balanced,3,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,2
+2,ep_balanced,3,backward_dispatch,AllToAll,tp1,131072,autograd reverse exchange,2
+2,ep_balanced,3,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,2
+2,ep_balanced,4,dispatch,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+2,ep_balanced,4,combine,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+2,ep_balanced,4,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,2
+2,ep_balanced,4,backward_dispatch,AllToAll,tp1,131072,autograd reverse exchange,2
+2,ep_balanced,4,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,2
+2,ep_balanced,5,dispatch,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+2,ep_balanced,5,combine,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+2,ep_balanced,5,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,2
+2,ep_balanced,5,backward_dispatch,AllToAll,tp1,131072,autograd reverse exchange,2
+2,ep_balanced,5,dp_gradient,AllReduce,dp0,1048576,expert replica gradient,2
+3,ep_balanced,0,dispatch,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+3,ep_balanced,0,combine,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+3,ep_balanced,0,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,2
+3,ep_balanced,0,backward_dispatch,AllToAll,tp1,131072,autograd reverse exchange,2
+3,ep_balanced,0,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,2
+3,ep_balanced,1,dispatch,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+3,ep_balanced,1,combine,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+3,ep_balanced,1,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,2
+3,ep_balanced,1,backward_dispatch,AllToAll,tp1,131072,autograd reverse exchange,2
+3,ep_balanced,1,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,2
+3,ep_balanced,2,dispatch,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+3,ep_balanced,2,combine,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+3,ep_balanced,2,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,2
+3,ep_balanced,2,backward_dispatch,AllToAll,tp1,131072,autograd reverse exchange,2
+3,ep_balanced,2,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,2
+3,ep_balanced,3,dispatch,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+3,ep_balanced,3,combine,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+3,ep_balanced,3,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,2
+3,ep_balanced,3,backward_dispatch,AllToAll,tp1,131072,autograd reverse exchange,2
+3,ep_balanced,3,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,2
+3,ep_balanced,4,dispatch,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+3,ep_balanced,4,combine,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+3,ep_balanced,4,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,2
+3,ep_balanced,4,backward_dispatch,AllToAll,tp1,131072,autograd reverse exchange,2
+3,ep_balanced,4,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,2
+3,ep_balanced,5,dispatch,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+3,ep_balanced,5,combine,AllToAll,tp1,131072,"send_splits=[32, 32];recv_splits=[32, 32]",2
+3,ep_balanced,5,backward_combine,AllToAll,tp1,131072,autograd reverse exchange,2
+3,ep_balanced,5,backward_dispatch,AllToAll,tp1,131072,autograd reverse exchange,2
+3,ep_balanced,5,dp_gradient,AllReduce,dp1,1048576,expert replica gradient,2
+0,pp_mb8,0,forward,Send,pp0,32768,microbatch=0;stage=0->1,2
+0,pp_mb8,0,forward,Send,pp0,32768,microbatch=1;stage=0->1,2
+0,pp_mb8,0,forward,Send,pp0,32768,microbatch=2;stage=0->1,2
+0,pp_mb8,0,forward,Send,pp0,32768,microbatch=3;stage=0->1,2
+0,pp_mb8,0,forward,Send,pp0,32768,microbatch=4;stage=0->1,2
+0,pp_mb8,0,forward,Send,pp0,32768,microbatch=5;stage=0->1,2
+0,pp_mb8,0,forward,Send,pp0,32768,microbatch=6;stage=0->1,2
+0,pp_mb8,0,forward,Send,pp0,32768,microbatch=7;stage=0->1,2
+0,pp_mb8,0,backward,Recv,pp0,32768,microbatch=7;activation gradient,2
+0,pp_mb8,0,backward,Recv,pp0,32768,microbatch=6;activation gradient,2
+0,pp_mb8,0,backward,Recv,pp0,32768,microbatch=5;activation gradient,2
+0,pp_mb8,0,backward,Recv,pp0,32768,microbatch=4;activation gradient,2
+0,pp_mb8,0,backward,Recv,pp0,32768,microbatch=3;activation gradient,2
+0,pp_mb8,0,backward,Recv,pp0,32768,microbatch=2;activation gradient,2
+0,pp_mb8,0,backward,Recv,pp0,32768,microbatch=1;activation gradient,2
+0,pp_mb8,0,backward,Recv,pp0,32768,microbatch=0;activation gradient,2
+0,pp_mb8,0,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,2
+0,pp_mb8,1,forward,Send,pp0,32768,microbatch=0;stage=0->1,2
+0,pp_mb8,1,forward,Send,pp0,32768,microbatch=1;stage=0->1,2
+0,pp_mb8,1,forward,Send,pp0,32768,microbatch=2;stage=0->1,2
+0,pp_mb8,1,forward,Send,pp0,32768,microbatch=3;stage=0->1,2
+0,pp_mb8,1,forward,Send,pp0,32768,microbatch=4;stage=0->1,2
+0,pp_mb8,1,forward,Send,pp0,32768,microbatch=5;stage=0->1,2
+0,pp_mb8,1,forward,Send,pp0,32768,microbatch=6;stage=0->1,2
+0,pp_mb8,1,forward,Send,pp0,32768,microbatch=7;stage=0->1,2
+0,pp_mb8,1,backward,Recv,pp0,32768,microbatch=7;activation gradient,2
+0,pp_mb8,1,backward,Recv,pp0,32768,microbatch=6;activation gradient,2
+0,pp_mb8,1,backward,Recv,pp0,32768,microbatch=5;activation gradient,2
+0,pp_mb8,1,backward,Recv,pp0,32768,microbatch=4;activation gradient,2
+0,pp_mb8,1,backward,Recv,pp0,32768,microbatch=3;activation gradient,2
+0,pp_mb8,1,backward,Recv,pp0,32768,microbatch=2;activation gradient,2
+0,pp_mb8,1,backward,Recv,pp0,32768,microbatch=1;activation gradient,2
+0,pp_mb8,1,backward,Recv,pp0,32768,microbatch=0;activation gradient,2
+0,pp_mb8,1,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,2
+0,pp_mb8,2,forward,Send,pp0,32768,microbatch=0;stage=0->1,2
+0,pp_mb8,2,forward,Send,pp0,32768,microbatch=1;stage=0->1,2
+0,pp_mb8,2,forward,Send,pp0,32768,microbatch=2;stage=0->1,2
+0,pp_mb8,2,forward,Send,pp0,32768,microbatch=3;stage=0->1,2
+0,pp_mb8,2,forward,Send,pp0,32768,microbatch=4;stage=0->1,2
+0,pp_mb8,2,forward,Send,pp0,32768,microbatch=5;stage=0->1,2
+0,pp_mb8,2,forward,Send,pp0,32768,microbatch=6;stage=0->1,2
+0,pp_mb8,2,forward,Send,pp0,32768,microbatch=7;stage=0->1,2
+0,pp_mb8,2,backward,Recv,pp0,32768,microbatch=7;activation gradient,2
+0,pp_mb8,2,backward,Recv,pp0,32768,microbatch=6;activation gradient,2
+0,pp_mb8,2,backward,Recv,pp0,32768,microbatch=5;activation gradient,2
+0,pp_mb8,2,backward,Recv,pp0,32768,microbatch=4;activation gradient,2
+0,pp_mb8,2,backward,Recv,pp0,32768,microbatch=3;activation gradient,2
+0,pp_mb8,2,backward,Recv,pp0,32768,microbatch=2;activation gradient,2
+0,pp_mb8,2,backward,Recv,pp0,32768,microbatch=1;activation gradient,2
+0,pp_mb8,2,backward,Recv,pp0,32768,microbatch=0;activation gradient,2
+0,pp_mb8,2,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,2
+0,pp_mb8,3,forward,Send,pp0,32768,microbatch=0;stage=0->1,2
+0,pp_mb8,3,forward,Send,pp0,32768,microbatch=1;stage=0->1,2
+0,pp_mb8,3,forward,Send,pp0,32768,microbatch=2;stage=0->1,2
+0,pp_mb8,3,forward,Send,pp0,32768,microbatch=3;stage=0->1,2
+0,pp_mb8,3,forward,Send,pp0,32768,microbatch=4;stage=0->1,2
+0,pp_mb8,3,forward,Send,pp0,32768,microbatch=5;stage=0->1,2
+0,pp_mb8,3,forward,Send,pp0,32768,microbatch=6;stage=0->1,2
+0,pp_mb8,3,forward,Send,pp0,32768,microbatch=7;stage=0->1,2
+0,pp_mb8,3,backward,Recv,pp0,32768,microbatch=7;activation gradient,2
+0,pp_mb8,3,backward,Recv,pp0,32768,microbatch=6;activation gradient,2
+0,pp_mb8,3,backward,Recv,pp0,32768,microbatch=5;activation gradient,2
+0,pp_mb8,3,backward,Recv,pp0,32768,microbatch=4;activation gradient,2
+0,pp_mb8,3,backward,Recv,pp0,32768,microbatch=3;activation gradient,2
+0,pp_mb8,3,backward,Recv,pp0,32768,microbatch=2;activation gradient,2
+0,pp_mb8,3,backward,Recv,pp0,32768,microbatch=1;activation gradient,2
+0,pp_mb8,3,backward,Recv,pp0,32768,microbatch=0;activation gradient,2
+0,pp_mb8,3,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,2
+0,pp_mb8,4,forward,Send,pp0,32768,microbatch=0;stage=0->1,2
+0,pp_mb8,4,forward,Send,pp0,32768,microbatch=1;stage=0->1,2
+0,pp_mb8,4,forward,Send,pp0,32768,microbatch=2;stage=0->1,2
+0,pp_mb8,4,forward,Send,pp0,32768,microbatch=3;stage=0->1,2
+0,pp_mb8,4,forward,Send,pp0,32768,microbatch=4;stage=0->1,2
+0,pp_mb8,4,forward,Send,pp0,32768,microbatch=5;stage=0->1,2
+0,pp_mb8,4,forward,Send,pp0,32768,microbatch=6;stage=0->1,2
+0,pp_mb8,4,forward,Send,pp0,32768,microbatch=7;stage=0->1,2
+0,pp_mb8,4,backward,Recv,pp0,32768,microbatch=7;activation gradient,2
+0,pp_mb8,4,backward,Recv,pp0,32768,microbatch=6;activation gradient,2
+0,pp_mb8,4,backward,Recv,pp0,32768,microbatch=5;activation gradient,2
+0,pp_mb8,4,backward,Recv,pp0,32768,microbatch=4;activation gradient,2
+0,pp_mb8,4,backward,Recv,pp0,32768,microbatch=3;activation gradient,2
+0,pp_mb8,4,backward,Recv,pp0,32768,microbatch=2;activation gradient,2
+0,pp_mb8,4,backward,Recv,pp0,32768,microbatch=1;activation gradient,2
+0,pp_mb8,4,backward,Recv,pp0,32768,microbatch=0;activation gradient,2
+0,pp_mb8,4,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,2
+0,pp_mb8,5,forward,Send,pp0,32768,microbatch=0;stage=0->1,2
+0,pp_mb8,5,forward,Send,pp0,32768,microbatch=1;stage=0->1,2
+0,pp_mb8,5,forward,Send,pp0,32768,microbatch=2;stage=0->1,2
+0,pp_mb8,5,forward,Send,pp0,32768,microbatch=3;stage=0->1,2
+0,pp_mb8,5,forward,Send,pp0,32768,microbatch=4;stage=0->1,2
+0,pp_mb8,5,forward,Send,pp0,32768,microbatch=5;stage=0->1,2
+0,pp_mb8,5,forward,Send,pp0,32768,microbatch=6;stage=0->1,2
+0,pp_mb8,5,forward,Send,pp0,32768,microbatch=7;stage=0->1,2
+0,pp_mb8,5,backward,Recv,pp0,32768,microbatch=7;activation gradient,2
+0,pp_mb8,5,backward,Recv,pp0,32768,microbatch=6;activation gradient,2
+0,pp_mb8,5,backward,Recv,pp0,32768,microbatch=5;activation gradient,2
+0,pp_mb8,5,backward,Recv,pp0,32768,microbatch=4;activation gradient,2
+0,pp_mb8,5,backward,Recv,pp0,32768,microbatch=3;activation gradient,2
+0,pp_mb8,5,backward,Recv,pp0,32768,microbatch=2;activation gradient,2
+0,pp_mb8,5,backward,Recv,pp0,32768,microbatch=1;activation gradient,2
+0,pp_mb8,5,backward,Recv,pp0,32768,microbatch=0;activation gradient,2
+0,pp_mb8,5,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,2
+1,pp_mb8,0,forward,Recv,pp0,32768,microbatch=0;stage=0->1,2
+1,pp_mb8,0,forward,Recv,pp0,32768,microbatch=1;stage=0->1,2
+1,pp_mb8,0,forward,Recv,pp0,32768,microbatch=2;stage=0->1,2
+1,pp_mb8,0,forward,Recv,pp0,32768,microbatch=3;stage=0->1,2
+1,pp_mb8,0,forward,Recv,pp0,32768,microbatch=4;stage=0->1,2
+1,pp_mb8,0,forward,Recv,pp0,32768,microbatch=5;stage=0->1,2
+1,pp_mb8,0,forward,Recv,pp0,32768,microbatch=6;stage=0->1,2
+1,pp_mb8,0,forward,Recv,pp0,32768,microbatch=7;stage=0->1,2
+1,pp_mb8,0,backward,Send,pp0,32768,microbatch=7;activation gradient,2
+1,pp_mb8,0,backward,Send,pp0,32768,microbatch=6;activation gradient,2
+1,pp_mb8,0,backward,Send,pp0,32768,microbatch=5;activation gradient,2
+1,pp_mb8,0,backward,Send,pp0,32768,microbatch=4;activation gradient,2
+1,pp_mb8,0,backward,Send,pp0,32768,microbatch=3;activation gradient,2
+1,pp_mb8,0,backward,Send,pp0,32768,microbatch=2;activation gradient,2
+1,pp_mb8,0,backward,Send,pp0,32768,microbatch=1;activation gradient,2
+1,pp_mb8,0,backward,Send,pp0,32768,microbatch=0;activation gradient,2
+1,pp_mb8,0,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,2
+1,pp_mb8,1,forward,Recv,pp0,32768,microbatch=0;stage=0->1,2
+1,pp_mb8,1,forward,Recv,pp0,32768,microbatch=1;stage=0->1,2
+1,pp_mb8,1,forward,Recv,pp0,32768,microbatch=2;stage=0->1,2
+1,pp_mb8,1,forward,Recv,pp0,32768,microbatch=3;stage=0->1,2
+1,pp_mb8,1,forward,Recv,pp0,32768,microbatch=4;stage=0->1,2
+1,pp_mb8,1,forward,Recv,pp0,32768,microbatch=5;stage=0->1,2
+1,pp_mb8,1,forward,Recv,pp0,32768,microbatch=6;stage=0->1,2
+1,pp_mb8,1,forward,Recv,pp0,32768,microbatch=7;stage=0->1,2
+1,pp_mb8,1,backward,Send,pp0,32768,microbatch=7;activation gradient,2
+1,pp_mb8,1,backward,Send,pp0,32768,microbatch=6;activation gradient,2
+1,pp_mb8,1,backward,Send,pp0,32768,microbatch=5;activation gradient,2
+1,pp_mb8,1,backward,Send,pp0,32768,microbatch=4;activation gradient,2
+1,pp_mb8,1,backward,Send,pp0,32768,microbatch=3;activation gradient,2
+1,pp_mb8,1,backward,Send,pp0,32768,microbatch=2;activation gradient,2
+1,pp_mb8,1,backward,Send,pp0,32768,microbatch=1;activation gradient,2
+1,pp_mb8,1,backward,Send,pp0,32768,microbatch=0;activation gradient,2
+1,pp_mb8,1,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,2
+1,pp_mb8,2,forward,Recv,pp0,32768,microbatch=0;stage=0->1,2
+1,pp_mb8,2,forward,Recv,pp0,32768,microbatch=1;stage=0->1,2
+1,pp_mb8,2,forward,Recv,pp0,32768,microbatch=2;stage=0->1,2
+1,pp_mb8,2,forward,Recv,pp0,32768,microbatch=3;stage=0->1,2
+1,pp_mb8,2,forward,Recv,pp0,32768,microbatch=4;stage=0->1,2
+1,pp_mb8,2,forward,Recv,pp0,32768,microbatch=5;stage=0->1,2
+1,pp_mb8,2,forward,Recv,pp0,32768,microbatch=6;stage=0->1,2
+1,pp_mb8,2,forward,Recv,pp0,32768,microbatch=7;stage=0->1,2
+1,pp_mb8,2,backward,Send,pp0,32768,microbatch=7;activation gradient,2
+1,pp_mb8,2,backward,Send,pp0,32768,microbatch=6;activation gradient,2
+1,pp_mb8,2,backward,Send,pp0,32768,microbatch=5;activation gradient,2
+1,pp_mb8,2,backward,Send,pp0,32768,microbatch=4;activation gradient,2
+1,pp_mb8,2,backward,Send,pp0,32768,microbatch=3;activation gradient,2
+1,pp_mb8,2,backward,Send,pp0,32768,microbatch=2;activation gradient,2
+1,pp_mb8,2,backward,Send,pp0,32768,microbatch=1;activation gradient,2
+1,pp_mb8,2,backward,Send,pp0,32768,microbatch=0;activation gradient,2
+1,pp_mb8,2,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,2
+1,pp_mb8,3,forward,Recv,pp0,32768,microbatch=0;stage=0->1,2
+1,pp_mb8,3,forward,Recv,pp0,32768,microbatch=1;stage=0->1,2
+1,pp_mb8,3,forward,Recv,pp0,32768,microbatch=2;stage=0->1,2
+1,pp_mb8,3,forward,Recv,pp0,32768,microbatch=3;stage=0->1,2
+1,pp_mb8,3,forward,Recv,pp0,32768,microbatch=4;stage=0->1,2
+1,pp_mb8,3,forward,Recv,pp0,32768,microbatch=5;stage=0->1,2
+1,pp_mb8,3,forward,Recv,pp0,32768,microbatch=6;stage=0->1,2
+1,pp_mb8,3,forward,Recv,pp0,32768,microbatch=7;stage=0->1,2
+1,pp_mb8,3,backward,Send,pp0,32768,microbatch=7;activation gradient,2
+1,pp_mb8,3,backward,Send,pp0,32768,microbatch=6;activation gradient,2
+1,pp_mb8,3,backward,Send,pp0,32768,microbatch=5;activation gradient,2
+1,pp_mb8,3,backward,Send,pp0,32768,microbatch=4;activation gradient,2
+1,pp_mb8,3,backward,Send,pp0,32768,microbatch=3;activation gradient,2
+1,pp_mb8,3,backward,Send,pp0,32768,microbatch=2;activation gradient,2
+1,pp_mb8,3,backward,Send,pp0,32768,microbatch=1;activation gradient,2
+1,pp_mb8,3,backward,Send,pp0,32768,microbatch=0;activation gradient,2
+1,pp_mb8,3,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,2
+1,pp_mb8,4,forward,Recv,pp0,32768,microbatch=0;stage=0->1,2
+1,pp_mb8,4,forward,Recv,pp0,32768,microbatch=1;stage=0->1,2
+1,pp_mb8,4,forward,Recv,pp0,32768,microbatch=2;stage=0->1,2
+1,pp_mb8,4,forward,Recv,pp0,32768,microbatch=3;stage=0->1,2
+1,pp_mb8,4,forward,Recv,pp0,32768,microbatch=4;stage=0->1,2
+1,pp_mb8,4,forward,Recv,pp0,32768,microbatch=5;stage=0->1,2
+1,pp_mb8,4,forward,Recv,pp0,32768,microbatch=6;stage=0->1,2
+1,pp_mb8,4,forward,Recv,pp0,32768,microbatch=7;stage=0->1,2
+1,pp_mb8,4,backward,Send,pp0,32768,microbatch=7;activation gradient,2
+1,pp_mb8,4,backward,Send,pp0,32768,microbatch=6;activation gradient,2
+1,pp_mb8,4,backward,Send,pp0,32768,microbatch=5;activation gradient,2
+1,pp_mb8,4,backward,Send,pp0,32768,microbatch=4;activation gradient,2
+1,pp_mb8,4,backward,Send,pp0,32768,microbatch=3;activation gradient,2
+1,pp_mb8,4,backward,Send,pp0,32768,microbatch=2;activation gradient,2
+1,pp_mb8,4,backward,Send,pp0,32768,microbatch=1;activation gradient,2
+1,pp_mb8,4,backward,Send,pp0,32768,microbatch=0;activation gradient,2
+1,pp_mb8,4,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,2
+1,pp_mb8,5,forward,Recv,pp0,32768,microbatch=0;stage=0->1,2
+1,pp_mb8,5,forward,Recv,pp0,32768,microbatch=1;stage=0->1,2
+1,pp_mb8,5,forward,Recv,pp0,32768,microbatch=2;stage=0->1,2
+1,pp_mb8,5,forward,Recv,pp0,32768,microbatch=3;stage=0->1,2
+1,pp_mb8,5,forward,Recv,pp0,32768,microbatch=4;stage=0->1,2
+1,pp_mb8,5,forward,Recv,pp0,32768,microbatch=5;stage=0->1,2
+1,pp_mb8,5,forward,Recv,pp0,32768,microbatch=6;stage=0->1,2
+1,pp_mb8,5,forward,Recv,pp0,32768,microbatch=7;stage=0->1,2
+1,pp_mb8,5,backward,Send,pp0,32768,microbatch=7;activation gradient,2
+1,pp_mb8,5,backward,Send,pp0,32768,microbatch=6;activation gradient,2
+1,pp_mb8,5,backward,Send,pp0,32768,microbatch=5;activation gradient,2
+1,pp_mb8,5,backward,Send,pp0,32768,microbatch=4;activation gradient,2
+1,pp_mb8,5,backward,Send,pp0,32768,microbatch=3;activation gradient,2
+1,pp_mb8,5,backward,Send,pp0,32768,microbatch=2;activation gradient,2
+1,pp_mb8,5,backward,Send,pp0,32768,microbatch=1;activation gradient,2
+1,pp_mb8,5,backward,Send,pp0,32768,microbatch=0;activation gradient,2
+1,pp_mb8,5,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,2
+2,pp_mb8,0,forward,Send,pp1,32768,microbatch=0;stage=0->1,2
+2,pp_mb8,0,forward,Send,pp1,32768,microbatch=1;stage=0->1,2
+2,pp_mb8,0,forward,Send,pp1,32768,microbatch=2;stage=0->1,2
+2,pp_mb8,0,forward,Send,pp1,32768,microbatch=3;stage=0->1,2
+2,pp_mb8,0,forward,Send,pp1,32768,microbatch=4;stage=0->1,2
+2,pp_mb8,0,forward,Send,pp1,32768,microbatch=5;stage=0->1,2
+2,pp_mb8,0,forward,Send,pp1,32768,microbatch=6;stage=0->1,2
+2,pp_mb8,0,forward,Send,pp1,32768,microbatch=7;stage=0->1,2
+2,pp_mb8,0,backward,Recv,pp1,32768,microbatch=7;activation gradient,2
+2,pp_mb8,0,backward,Recv,pp1,32768,microbatch=6;activation gradient,2
+2,pp_mb8,0,backward,Recv,pp1,32768,microbatch=5;activation gradient,2
+2,pp_mb8,0,backward,Recv,pp1,32768,microbatch=4;activation gradient,2
+2,pp_mb8,0,backward,Recv,pp1,32768,microbatch=3;activation gradient,2
+2,pp_mb8,0,backward,Recv,pp1,32768,microbatch=2;activation gradient,2
+2,pp_mb8,0,backward,Recv,pp1,32768,microbatch=1;activation gradient,2
+2,pp_mb8,0,backward,Recv,pp1,32768,microbatch=0;activation gradient,2
+2,pp_mb8,0,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,2
+2,pp_mb8,1,forward,Send,pp1,32768,microbatch=0;stage=0->1,2
+2,pp_mb8,1,forward,Send,pp1,32768,microbatch=1;stage=0->1,2
+2,pp_mb8,1,forward,Send,pp1,32768,microbatch=2;stage=0->1,2
+2,pp_mb8,1,forward,Send,pp1,32768,microbatch=3;stage=0->1,2
+2,pp_mb8,1,forward,Send,pp1,32768,microbatch=4;stage=0->1,2
+2,pp_mb8,1,forward,Send,pp1,32768,microbatch=5;stage=0->1,2
+2,pp_mb8,1,forward,Send,pp1,32768,microbatch=6;stage=0->1,2
+2,pp_mb8,1,forward,Send,pp1,32768,microbatch=7;stage=0->1,2
+2,pp_mb8,1,backward,Recv,pp1,32768,microbatch=7;activation gradient,2
+2,pp_mb8,1,backward,Recv,pp1,32768,microbatch=6;activation gradient,2
+2,pp_mb8,1,backward,Recv,pp1,32768,microbatch=5;activation gradient,2
+2,pp_mb8,1,backward,Recv,pp1,32768,microbatch=4;activation gradient,2
+2,pp_mb8,1,backward,Recv,pp1,32768,microbatch=3;activation gradient,2
+2,pp_mb8,1,backward,Recv,pp1,32768,microbatch=2;activation gradient,2
+2,pp_mb8,1,backward,Recv,pp1,32768,microbatch=1;activation gradient,2
+2,pp_mb8,1,backward,Recv,pp1,32768,microbatch=0;activation gradient,2
+2,pp_mb8,1,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,2
+2,pp_mb8,2,forward,Send,pp1,32768,microbatch=0;stage=0->1,2
+2,pp_mb8,2,forward,Send,pp1,32768,microbatch=1;stage=0->1,2
+2,pp_mb8,2,forward,Send,pp1,32768,microbatch=2;stage=0->1,2
+2,pp_mb8,2,forward,Send,pp1,32768,microbatch=3;stage=0->1,2
+2,pp_mb8,2,forward,Send,pp1,32768,microbatch=4;stage=0->1,2
+2,pp_mb8,2,forward,Send,pp1,32768,microbatch=5;stage=0->1,2
+2,pp_mb8,2,forward,Send,pp1,32768,microbatch=6;stage=0->1,2
+2,pp_mb8,2,forward,Send,pp1,32768,microbatch=7;stage=0->1,2
+2,pp_mb8,2,backward,Recv,pp1,32768,microbatch=7;activation gradient,2
+2,pp_mb8,2,backward,Recv,pp1,32768,microbatch=6;activation gradient,2
+2,pp_mb8,2,backward,Recv,pp1,32768,microbatch=5;activation gradient,2
+2,pp_mb8,2,backward,Recv,pp1,32768,microbatch=4;activation gradient,2
+2,pp_mb8,2,backward,Recv,pp1,32768,microbatch=3;activation gradient,2
+2,pp_mb8,2,backward,Recv,pp1,32768,microbatch=2;activation gradient,2
+2,pp_mb8,2,backward,Recv,pp1,32768,microbatch=1;activation gradient,2
+2,pp_mb8,2,backward,Recv,pp1,32768,microbatch=0;activation gradient,2
+2,pp_mb8,2,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,2
+2,pp_mb8,3,forward,Send,pp1,32768,microbatch=0;stage=0->1,2
+2,pp_mb8,3,forward,Send,pp1,32768,microbatch=1;stage=0->1,2
+2,pp_mb8,3,forward,Send,pp1,32768,microbatch=2;stage=0->1,2
+2,pp_mb8,3,forward,Send,pp1,32768,microbatch=3;stage=0->1,2
+2,pp_mb8,3,forward,Send,pp1,32768,microbatch=4;stage=0->1,2
+2,pp_mb8,3,forward,Send,pp1,32768,microbatch=5;stage=0->1,2
+2,pp_mb8,3,forward,Send,pp1,32768,microbatch=6;stage=0->1,2
+2,pp_mb8,3,forward,Send,pp1,32768,microbatch=7;stage=0->1,2
+2,pp_mb8,3,backward,Recv,pp1,32768,microbatch=7;activation gradient,2
+2,pp_mb8,3,backward,Recv,pp1,32768,microbatch=6;activation gradient,2
+2,pp_mb8,3,backward,Recv,pp1,32768,microbatch=5;activation gradient,2
+2,pp_mb8,3,backward,Recv,pp1,32768,microbatch=4;activation gradient,2
+2,pp_mb8,3,backward,Recv,pp1,32768,microbatch=3;activation gradient,2
+2,pp_mb8,3,backward,Recv,pp1,32768,microbatch=2;activation gradient,2
+2,pp_mb8,3,backward,Recv,pp1,32768,microbatch=1;activation gradient,2
+2,pp_mb8,3,backward,Recv,pp1,32768,microbatch=0;activation gradient,2
+2,pp_mb8,3,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,2
+2,pp_mb8,4,forward,Send,pp1,32768,microbatch=0;stage=0->1,2
+2,pp_mb8,4,forward,Send,pp1,32768,microbatch=1;stage=0->1,2
+2,pp_mb8,4,forward,Send,pp1,32768,microbatch=2;stage=0->1,2
+2,pp_mb8,4,forward,Send,pp1,32768,microbatch=3;stage=0->1,2
+2,pp_mb8,4,forward,Send,pp1,32768,microbatch=4;stage=0->1,2
+2,pp_mb8,4,forward,Send,pp1,32768,microbatch=5;stage=0->1,2
+2,pp_mb8,4,forward,Send,pp1,32768,microbatch=6;stage=0->1,2
+2,pp_mb8,4,forward,Send,pp1,32768,microbatch=7;stage=0->1,2
+2,pp_mb8,4,backward,Recv,pp1,32768,microbatch=7;activation gradient,2
+2,pp_mb8,4,backward,Recv,pp1,32768,microbatch=6;activation gradient,2
+2,pp_mb8,4,backward,Recv,pp1,32768,microbatch=5;activation gradient,2
+2,pp_mb8,4,backward,Recv,pp1,32768,microbatch=4;activation gradient,2
+2,pp_mb8,4,backward,Recv,pp1,32768,microbatch=3;activation gradient,2
+2,pp_mb8,4,backward,Recv,pp1,32768,microbatch=2;activation gradient,2
+2,pp_mb8,4,backward,Recv,pp1,32768,microbatch=1;activation gradient,2
+2,pp_mb8,4,backward,Recv,pp1,32768,microbatch=0;activation gradient,2
+2,pp_mb8,4,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,2
+2,pp_mb8,5,forward,Send,pp1,32768,microbatch=0;stage=0->1,2
+2,pp_mb8,5,forward,Send,pp1,32768,microbatch=1;stage=0->1,2
+2,pp_mb8,5,forward,Send,pp1,32768,microbatch=2;stage=0->1,2
+2,pp_mb8,5,forward,Send,pp1,32768,microbatch=3;stage=0->1,2
+2,pp_mb8,5,forward,Send,pp1,32768,microbatch=4;stage=0->1,2
+2,pp_mb8,5,forward,Send,pp1,32768,microbatch=5;stage=0->1,2
+2,pp_mb8,5,forward,Send,pp1,32768,microbatch=6;stage=0->1,2
+2,pp_mb8,5,forward,Send,pp1,32768,microbatch=7;stage=0->1,2
+2,pp_mb8,5,backward,Recv,pp1,32768,microbatch=7;activation gradient,2
+2,pp_mb8,5,backward,Recv,pp1,32768,microbatch=6;activation gradient,2
+2,pp_mb8,5,backward,Recv,pp1,32768,microbatch=5;activation gradient,2
+2,pp_mb8,5,backward,Recv,pp1,32768,microbatch=4;activation gradient,2
+2,pp_mb8,5,backward,Recv,pp1,32768,microbatch=3;activation gradient,2
+2,pp_mb8,5,backward,Recv,pp1,32768,microbatch=2;activation gradient,2
+2,pp_mb8,5,backward,Recv,pp1,32768,microbatch=1;activation gradient,2
+2,pp_mb8,5,backward,Recv,pp1,32768,microbatch=0;activation gradient,2
+2,pp_mb8,5,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,2
+3,pp_mb8,0,forward,Recv,pp1,32768,microbatch=0;stage=0->1,2
+3,pp_mb8,0,forward,Recv,pp1,32768,microbatch=1;stage=0->1,2
+3,pp_mb8,0,forward,Recv,pp1,32768,microbatch=2;stage=0->1,2
+3,pp_mb8,0,forward,Recv,pp1,32768,microbatch=3;stage=0->1,2
+3,pp_mb8,0,forward,Recv,pp1,32768,microbatch=4;stage=0->1,2
+3,pp_mb8,0,forward,Recv,pp1,32768,microbatch=5;stage=0->1,2
+3,pp_mb8,0,forward,Recv,pp1,32768,microbatch=6;stage=0->1,2
+3,pp_mb8,0,forward,Recv,pp1,32768,microbatch=7;stage=0->1,2
+3,pp_mb8,0,backward,Send,pp1,32768,microbatch=7;activation gradient,2
+3,pp_mb8,0,backward,Send,pp1,32768,microbatch=6;activation gradient,2
+3,pp_mb8,0,backward,Send,pp1,32768,microbatch=5;activation gradient,2
+3,pp_mb8,0,backward,Send,pp1,32768,microbatch=4;activation gradient,2
+3,pp_mb8,0,backward,Send,pp1,32768,microbatch=3;activation gradient,2
+3,pp_mb8,0,backward,Send,pp1,32768,microbatch=2;activation gradient,2
+3,pp_mb8,0,backward,Send,pp1,32768,microbatch=1;activation gradient,2
+3,pp_mb8,0,backward,Send,pp1,32768,microbatch=0;activation gradient,2
+3,pp_mb8,0,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,2
+3,pp_mb8,1,forward,Recv,pp1,32768,microbatch=0;stage=0->1,2
+3,pp_mb8,1,forward,Recv,pp1,32768,microbatch=1;stage=0->1,2
+3,pp_mb8,1,forward,Recv,pp1,32768,microbatch=2;stage=0->1,2
+3,pp_mb8,1,forward,Recv,pp1,32768,microbatch=3;stage=0->1,2
+3,pp_mb8,1,forward,Recv,pp1,32768,microbatch=4;stage=0->1,2
+3,pp_mb8,1,forward,Recv,pp1,32768,microbatch=5;stage=0->1,2
+3,pp_mb8,1,forward,Recv,pp1,32768,microbatch=6;stage=0->1,2
+3,pp_mb8,1,forward,Recv,pp1,32768,microbatch=7;stage=0->1,2
+3,pp_mb8,1,backward,Send,pp1,32768,microbatch=7;activation gradient,2
+3,pp_mb8,1,backward,Send,pp1,32768,microbatch=6;activation gradient,2
+3,pp_mb8,1,backward,Send,pp1,32768,microbatch=5;activation gradient,2
+3,pp_mb8,1,backward,Send,pp1,32768,microbatch=4;activation gradient,2
+3,pp_mb8,1,backward,Send,pp1,32768,microbatch=3;activation gradient,2
+3,pp_mb8,1,backward,Send,pp1,32768,microbatch=2;activation gradient,2
+3,pp_mb8,1,backward,Send,pp1,32768,microbatch=1;activation gradient,2
+3,pp_mb8,1,backward,Send,pp1,32768,microbatch=0;activation gradient,2
+3,pp_mb8,1,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,2
+3,pp_mb8,2,forward,Recv,pp1,32768,microbatch=0;stage=0->1,2
+3,pp_mb8,2,forward,Recv,pp1,32768,microbatch=1;stage=0->1,2
+3,pp_mb8,2,forward,Recv,pp1,32768,microbatch=2;stage=0->1,2
+3,pp_mb8,2,forward,Recv,pp1,32768,microbatch=3;stage=0->1,2
+3,pp_mb8,2,forward,Recv,pp1,32768,microbatch=4;stage=0->1,2
+3,pp_mb8,2,forward,Recv,pp1,32768,microbatch=5;stage=0->1,2
+3,pp_mb8,2,forward,Recv,pp1,32768,microbatch=6;stage=0->1,2
+3,pp_mb8,2,forward,Recv,pp1,32768,microbatch=7;stage=0->1,2
+3,pp_mb8,2,backward,Send,pp1,32768,microbatch=7;activation gradient,2
+3,pp_mb8,2,backward,Send,pp1,32768,microbatch=6;activation gradient,2
+3,pp_mb8,2,backward,Send,pp1,32768,microbatch=5;activation gradient,2
+3,pp_mb8,2,backward,Send,pp1,32768,microbatch=4;activation gradient,2
+3,pp_mb8,2,backward,Send,pp1,32768,microbatch=3;activation gradient,2
+3,pp_mb8,2,backward,Send,pp1,32768,microbatch=2;activation gradient,2
+3,pp_mb8,2,backward,Send,pp1,32768,microbatch=1;activation gradient,2
+3,pp_mb8,2,backward,Send,pp1,32768,microbatch=0;activation gradient,2
+3,pp_mb8,2,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,2
+3,pp_mb8,3,forward,Recv,pp1,32768,microbatch=0;stage=0->1,2
+3,pp_mb8,3,forward,Recv,pp1,32768,microbatch=1;stage=0->1,2
+3,pp_mb8,3,forward,Recv,pp1,32768,microbatch=2;stage=0->1,2
+3,pp_mb8,3,forward,Recv,pp1,32768,microbatch=3;stage=0->1,2
+3,pp_mb8,3,forward,Recv,pp1,32768,microbatch=4;stage=0->1,2
+3,pp_mb8,3,forward,Recv,pp1,32768,microbatch=5;stage=0->1,2
+3,pp_mb8,3,forward,Recv,pp1,32768,microbatch=6;stage=0->1,2
+3,pp_mb8,3,forward,Recv,pp1,32768,microbatch=7;stage=0->1,2
+3,pp_mb8,3,backward,Send,pp1,32768,microbatch=7;activation gradient,2
+3,pp_mb8,3,backward,Send,pp1,32768,microbatch=6;activation gradient,2
+3,pp_mb8,3,backward,Send,pp1,32768,microbatch=5;activation gradient,2
+3,pp_mb8,3,backward,Send,pp1,32768,microbatch=4;activation gradient,2
+3,pp_mb8,3,backward,Send,pp1,32768,microbatch=3;activation gradient,2
+3,pp_mb8,3,backward,Send,pp1,32768,microbatch=2;activation gradient,2
+3,pp_mb8,3,backward,Send,pp1,32768,microbatch=1;activation gradient,2
+3,pp_mb8,3,backward,Send,pp1,32768,microbatch=0;activation gradient,2
+3,pp_mb8,3,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,2
+3,pp_mb8,4,forward,Recv,pp1,32768,microbatch=0;stage=0->1,2
+3,pp_mb8,4,forward,Recv,pp1,32768,microbatch=1;stage=0->1,2
+3,pp_mb8,4,forward,Recv,pp1,32768,microbatch=2;stage=0->1,2
+3,pp_mb8,4,forward,Recv,pp1,32768,microbatch=3;stage=0->1,2
+3,pp_mb8,4,forward,Recv,pp1,32768,microbatch=4;stage=0->1,2
+3,pp_mb8,4,forward,Recv,pp1,32768,microbatch=5;stage=0->1,2
+3,pp_mb8,4,forward,Recv,pp1,32768,microbatch=6;stage=0->1,2
+3,pp_mb8,4,forward,Recv,pp1,32768,microbatch=7;stage=0->1,2
+3,pp_mb8,4,backward,Send,pp1,32768,microbatch=7;activation gradient,2
+3,pp_mb8,4,backward,Send,pp1,32768,microbatch=6;activation gradient,2
+3,pp_mb8,4,backward,Send,pp1,32768,microbatch=5;activation gradient,2
+3,pp_mb8,4,backward,Send,pp1,32768,microbatch=4;activation gradient,2
+3,pp_mb8,4,backward,Send,pp1,32768,microbatch=3;activation gradient,2
+3,pp_mb8,4,backward,Send,pp1,32768,microbatch=2;activation gradient,2
+3,pp_mb8,4,backward,Send,pp1,32768,microbatch=1;activation gradient,2
+3,pp_mb8,4,backward,Send,pp1,32768,microbatch=0;activation gradient,2
+3,pp_mb8,4,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,2
+3,pp_mb8,5,forward,Recv,pp1,32768,microbatch=0;stage=0->1,2
+3,pp_mb8,5,forward,Recv,pp1,32768,microbatch=1;stage=0->1,2
+3,pp_mb8,5,forward,Recv,pp1,32768,microbatch=2;stage=0->1,2
+3,pp_mb8,5,forward,Recv,pp1,32768,microbatch=3;stage=0->1,2
+3,pp_mb8,5,forward,Recv,pp1,32768,microbatch=4;stage=0->1,2
+3,pp_mb8,5,forward,Recv,pp1,32768,microbatch=5;stage=0->1,2
+3,pp_mb8,5,forward,Recv,pp1,32768,microbatch=6;stage=0->1,2
+3,pp_mb8,5,forward,Recv,pp1,32768,microbatch=7;stage=0->1,2
+3,pp_mb8,5,backward,Send,pp1,32768,microbatch=7;activation gradient,2
+3,pp_mb8,5,backward,Send,pp1,32768,microbatch=6;activation gradient,2
+3,pp_mb8,5,backward,Send,pp1,32768,microbatch=5;activation gradient,2
+3,pp_mb8,5,backward,Send,pp1,32768,microbatch=4;activation gradient,2
+3,pp_mb8,5,backward,Send,pp1,32768,microbatch=3;activation gradient,2
+3,pp_mb8,5,backward,Send,pp1,32768,microbatch=2;activation gradient,2
+3,pp_mb8,5,backward,Send,pp1,32768,microbatch=1;activation gradient,2
+3,pp_mb8,5,backward,Send,pp1,32768,microbatch=0;activation gradient,2
+3,pp_mb8,5,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,2
+0,pp_mb1,0,forward,Send,pp0,262144,microbatch=0;stage=0->1,2
+0,pp_mb1,0,backward,Recv,pp0,262144,microbatch=0;activation gradient,2
+0,pp_mb1,0,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,2
+0,pp_mb1,1,forward,Send,pp0,262144,microbatch=0;stage=0->1,2
+0,pp_mb1,1,backward,Recv,pp0,262144,microbatch=0;activation gradient,2
+0,pp_mb1,1,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,2
+0,pp_mb1,2,forward,Send,pp0,262144,microbatch=0;stage=0->1,2
+0,pp_mb1,2,backward,Recv,pp0,262144,microbatch=0;activation gradient,2
+0,pp_mb1,2,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,2
+0,pp_mb1,3,forward,Send,pp0,262144,microbatch=0;stage=0->1,2
+0,pp_mb1,3,backward,Recv,pp0,262144,microbatch=0;activation gradient,2
+0,pp_mb1,3,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,2
+0,pp_mb1,4,forward,Send,pp0,262144,microbatch=0;stage=0->1,2
+0,pp_mb1,4,backward,Recv,pp0,262144,microbatch=0;activation gradient,2
+0,pp_mb1,4,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,2
+0,pp_mb1,5,forward,Send,pp0,262144,microbatch=0;stage=0->1,2
+0,pp_mb1,5,backward,Recv,pp0,262144,microbatch=0;activation gradient,2
+0,pp_mb1,5,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,2
+1,pp_mb1,0,forward,Recv,pp0,262144,microbatch=0;stage=0->1,2
+1,pp_mb1,0,backward,Send,pp0,262144,microbatch=0;activation gradient,2
+1,pp_mb1,0,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,2
+1,pp_mb1,1,forward,Recv,pp0,262144,microbatch=0;stage=0->1,2
+1,pp_mb1,1,backward,Send,pp0,262144,microbatch=0;activation gradient,2
+1,pp_mb1,1,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,2
+1,pp_mb1,2,forward,Recv,pp0,262144,microbatch=0;stage=0->1,2
+1,pp_mb1,2,backward,Send,pp0,262144,microbatch=0;activation gradient,2
+1,pp_mb1,2,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,2
+1,pp_mb1,3,forward,Recv,pp0,262144,microbatch=0;stage=0->1,2
+1,pp_mb1,3,backward,Send,pp0,262144,microbatch=0;activation gradient,2
+1,pp_mb1,3,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,2
+1,pp_mb1,4,forward,Recv,pp0,262144,microbatch=0;stage=0->1,2
+1,pp_mb1,4,backward,Send,pp0,262144,microbatch=0;activation gradient,2
+1,pp_mb1,4,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,2
+1,pp_mb1,5,forward,Recv,pp0,262144,microbatch=0;stage=0->1,2
+1,pp_mb1,5,backward,Send,pp0,262144,microbatch=0;activation gradient,2
+1,pp_mb1,5,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,2
+2,pp_mb1,0,forward,Send,pp1,262144,microbatch=0;stage=0->1,2
+2,pp_mb1,0,backward,Recv,pp1,262144,microbatch=0;activation gradient,2
+2,pp_mb1,0,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,2
+2,pp_mb1,1,forward,Send,pp1,262144,microbatch=0;stage=0->1,2
+2,pp_mb1,1,backward,Recv,pp1,262144,microbatch=0;activation gradient,2
+2,pp_mb1,1,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,2
+2,pp_mb1,2,forward,Send,pp1,262144,microbatch=0;stage=0->1,2
+2,pp_mb1,2,backward,Recv,pp1,262144,microbatch=0;activation gradient,2
+2,pp_mb1,2,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,2
+2,pp_mb1,3,forward,Send,pp1,262144,microbatch=0;stage=0->1,2
+2,pp_mb1,3,backward,Recv,pp1,262144,microbatch=0;activation gradient,2
+2,pp_mb1,3,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,2
+2,pp_mb1,4,forward,Send,pp1,262144,microbatch=0;stage=0->1,2
+2,pp_mb1,4,backward,Recv,pp1,262144,microbatch=0;activation gradient,2
+2,pp_mb1,4,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,2
+2,pp_mb1,5,forward,Send,pp1,262144,microbatch=0;stage=0->1,2
+2,pp_mb1,5,backward,Recv,pp1,262144,microbatch=0;activation gradient,2
+2,pp_mb1,5,dp_gradient,AllReduce,dp0,2097152,pipeline stage 0 replica gradient,2
+3,pp_mb1,0,forward,Recv,pp1,262144,microbatch=0;stage=0->1,2
+3,pp_mb1,0,backward,Send,pp1,262144,microbatch=0;activation gradient,2
+3,pp_mb1,0,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,2
+3,pp_mb1,1,forward,Recv,pp1,262144,microbatch=0;stage=0->1,2
+3,pp_mb1,1,backward,Send,pp1,262144,microbatch=0;activation gradient,2
+3,pp_mb1,1,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,2
+3,pp_mb1,2,forward,Recv,pp1,262144,microbatch=0;stage=0->1,2
+3,pp_mb1,2,backward,Send,pp1,262144,microbatch=0;activation gradient,2
+3,pp_mb1,2,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,2
+3,pp_mb1,3,forward,Recv,pp1,262144,microbatch=0;stage=0->1,2
+3,pp_mb1,3,backward,Send,pp1,262144,microbatch=0;activation gradient,2
+3,pp_mb1,3,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,2
+3,pp_mb1,4,forward,Recv,pp1,262144,microbatch=0;stage=0->1,2
+3,pp_mb1,4,backward,Send,pp1,262144,microbatch=0;activation gradient,2
+3,pp_mb1,4,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,2
+3,pp_mb1,5,forward,Recv,pp1,262144,microbatch=0;stage=0->1,2
+3,pp_mb1,5,backward,Send,pp1,262144,microbatch=0;activation gradient,2
+3,pp_mb1,5,dp_gradient,AllReduce,dp1,2097152,pipeline stage 1 replica gradient,2
+0,tp_sp_b128,0,forward,ReduceScatter,tp0,262144,partial output to sequence shard,2
+0,tp_sp_b128,0,forward,AllGather,tp0,131072,sequence shard to replicated loss input,2
+0,tp_sp_b128,0,backward,ReduceScatter,tp0,262144,AllGather backward,2
+0,tp_sp_b128,0,backward,AllGather,tp0,131072,ReduceScatter backward,2
+0,tp_sp_b128,0,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+0,tp_sp_b128,0,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+0,tp_sp_b128,1,forward,ReduceScatter,tp0,262144,partial output to sequence shard,2
+0,tp_sp_b128,1,forward,AllGather,tp0,131072,sequence shard to replicated loss input,2
+0,tp_sp_b128,1,backward,ReduceScatter,tp0,262144,AllGather backward,2
+0,tp_sp_b128,1,backward,AllGather,tp0,131072,ReduceScatter backward,2
+0,tp_sp_b128,1,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+0,tp_sp_b128,1,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+0,tp_sp_b128,2,forward,ReduceScatter,tp0,262144,partial output to sequence shard,2
+0,tp_sp_b128,2,forward,AllGather,tp0,131072,sequence shard to replicated loss input,2
+0,tp_sp_b128,2,backward,ReduceScatter,tp0,262144,AllGather backward,2
+0,tp_sp_b128,2,backward,AllGather,tp0,131072,ReduceScatter backward,2
+0,tp_sp_b128,2,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+0,tp_sp_b128,2,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+0,tp_sp_b128,3,forward,ReduceScatter,tp0,262144,partial output to sequence shard,2
+0,tp_sp_b128,3,forward,AllGather,tp0,131072,sequence shard to replicated loss input,2
+0,tp_sp_b128,3,backward,ReduceScatter,tp0,262144,AllGather backward,2
+0,tp_sp_b128,3,backward,AllGather,tp0,131072,ReduceScatter backward,2
+0,tp_sp_b128,3,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+0,tp_sp_b128,3,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+0,tp_sp_b128,4,forward,ReduceScatter,tp0,262144,partial output to sequence shard,2
+0,tp_sp_b128,4,forward,AllGather,tp0,131072,sequence shard to replicated loss input,2
+0,tp_sp_b128,4,backward,ReduceScatter,tp0,262144,AllGather backward,2
+0,tp_sp_b128,4,backward,AllGather,tp0,131072,ReduceScatter backward,2
+0,tp_sp_b128,4,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+0,tp_sp_b128,4,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+0,tp_sp_b128,5,forward,ReduceScatter,tp0,262144,partial output to sequence shard,2
+0,tp_sp_b128,5,forward,AllGather,tp0,131072,sequence shard to replicated loss input,2
+0,tp_sp_b128,5,backward,ReduceScatter,tp0,262144,AllGather backward,2
+0,tp_sp_b128,5,backward,AllGather,tp0,131072,ReduceScatter backward,2
+0,tp_sp_b128,5,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+0,tp_sp_b128,5,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+1,tp_sp_b128,0,forward,ReduceScatter,tp0,262144,partial output to sequence shard,2
+1,tp_sp_b128,0,forward,AllGather,tp0,131072,sequence shard to replicated loss input,2
+1,tp_sp_b128,0,backward,ReduceScatter,tp0,262144,AllGather backward,2
+1,tp_sp_b128,0,backward,AllGather,tp0,131072,ReduceScatter backward,2
+1,tp_sp_b128,0,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+1,tp_sp_b128,0,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+1,tp_sp_b128,1,forward,ReduceScatter,tp0,262144,partial output to sequence shard,2
+1,tp_sp_b128,1,forward,AllGather,tp0,131072,sequence shard to replicated loss input,2
+1,tp_sp_b128,1,backward,ReduceScatter,tp0,262144,AllGather backward,2
+1,tp_sp_b128,1,backward,AllGather,tp0,131072,ReduceScatter backward,2
+1,tp_sp_b128,1,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+1,tp_sp_b128,1,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+1,tp_sp_b128,2,forward,ReduceScatter,tp0,262144,partial output to sequence shard,2
+1,tp_sp_b128,2,forward,AllGather,tp0,131072,sequence shard to replicated loss input,2
+1,tp_sp_b128,2,backward,ReduceScatter,tp0,262144,AllGather backward,2
+1,tp_sp_b128,2,backward,AllGather,tp0,131072,ReduceScatter backward,2
+1,tp_sp_b128,2,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+1,tp_sp_b128,2,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+1,tp_sp_b128,3,forward,ReduceScatter,tp0,262144,partial output to sequence shard,2
+1,tp_sp_b128,3,forward,AllGather,tp0,131072,sequence shard to replicated loss input,2
+1,tp_sp_b128,3,backward,ReduceScatter,tp0,262144,AllGather backward,2
+1,tp_sp_b128,3,backward,AllGather,tp0,131072,ReduceScatter backward,2
+1,tp_sp_b128,3,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+1,tp_sp_b128,3,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+1,tp_sp_b128,4,forward,ReduceScatter,tp0,262144,partial output to sequence shard,2
+1,tp_sp_b128,4,forward,AllGather,tp0,131072,sequence shard to replicated loss input,2
+1,tp_sp_b128,4,backward,ReduceScatter,tp0,262144,AllGather backward,2
+1,tp_sp_b128,4,backward,AllGather,tp0,131072,ReduceScatter backward,2
+1,tp_sp_b128,4,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+1,tp_sp_b128,4,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+1,tp_sp_b128,5,forward,ReduceScatter,tp0,262144,partial output to sequence shard,2
+1,tp_sp_b128,5,forward,AllGather,tp0,131072,sequence shard to replicated loss input,2
+1,tp_sp_b128,5,backward,ReduceScatter,tp0,262144,AllGather backward,2
+1,tp_sp_b128,5,backward,AllGather,tp0,131072,ReduceScatter backward,2
+1,tp_sp_b128,5,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+1,tp_sp_b128,5,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+2,tp_sp_b128,0,forward,ReduceScatter,tp1,262144,partial output to sequence shard,2
+2,tp_sp_b128,0,forward,AllGather,tp1,131072,sequence shard to replicated loss input,2
+2,tp_sp_b128,0,backward,ReduceScatter,tp1,262144,AllGather backward,2
+2,tp_sp_b128,0,backward,AllGather,tp1,131072,ReduceScatter backward,2
+2,tp_sp_b128,0,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+2,tp_sp_b128,0,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+2,tp_sp_b128,1,forward,ReduceScatter,tp1,262144,partial output to sequence shard,2
+2,tp_sp_b128,1,forward,AllGather,tp1,131072,sequence shard to replicated loss input,2
+2,tp_sp_b128,1,backward,ReduceScatter,tp1,262144,AllGather backward,2
+2,tp_sp_b128,1,backward,AllGather,tp1,131072,ReduceScatter backward,2
+2,tp_sp_b128,1,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+2,tp_sp_b128,1,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+2,tp_sp_b128,2,forward,ReduceScatter,tp1,262144,partial output to sequence shard,2
+2,tp_sp_b128,2,forward,AllGather,tp1,131072,sequence shard to replicated loss input,2
+2,tp_sp_b128,2,backward,ReduceScatter,tp1,262144,AllGather backward,2
+2,tp_sp_b128,2,backward,AllGather,tp1,131072,ReduceScatter backward,2
+2,tp_sp_b128,2,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+2,tp_sp_b128,2,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+2,tp_sp_b128,3,forward,ReduceScatter,tp1,262144,partial output to sequence shard,2
+2,tp_sp_b128,3,forward,AllGather,tp1,131072,sequence shard to replicated loss input,2
+2,tp_sp_b128,3,backward,ReduceScatter,tp1,262144,AllGather backward,2
+2,tp_sp_b128,3,backward,AllGather,tp1,131072,ReduceScatter backward,2
+2,tp_sp_b128,3,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+2,tp_sp_b128,3,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+2,tp_sp_b128,4,forward,ReduceScatter,tp1,262144,partial output to sequence shard,2
+2,tp_sp_b128,4,forward,AllGather,tp1,131072,sequence shard to replicated loss input,2
+2,tp_sp_b128,4,backward,ReduceScatter,tp1,262144,AllGather backward,2
+2,tp_sp_b128,4,backward,AllGather,tp1,131072,ReduceScatter backward,2
+2,tp_sp_b128,4,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+2,tp_sp_b128,4,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+2,tp_sp_b128,5,forward,ReduceScatter,tp1,262144,partial output to sequence shard,2
+2,tp_sp_b128,5,forward,AllGather,tp1,131072,sequence shard to replicated loss input,2
+2,tp_sp_b128,5,backward,ReduceScatter,tp1,262144,AllGather backward,2
+2,tp_sp_b128,5,backward,AllGather,tp1,131072,ReduceScatter backward,2
+2,tp_sp_b128,5,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+2,tp_sp_b128,5,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+3,tp_sp_b128,0,forward,ReduceScatter,tp1,262144,partial output to sequence shard,2
+3,tp_sp_b128,0,forward,AllGather,tp1,131072,sequence shard to replicated loss input,2
+3,tp_sp_b128,0,backward,ReduceScatter,tp1,262144,AllGather backward,2
+3,tp_sp_b128,0,backward,AllGather,tp1,131072,ReduceScatter backward,2
+3,tp_sp_b128,0,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+3,tp_sp_b128,0,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+3,tp_sp_b128,1,forward,ReduceScatter,tp1,262144,partial output to sequence shard,2
+3,tp_sp_b128,1,forward,AllGather,tp1,131072,sequence shard to replicated loss input,2
+3,tp_sp_b128,1,backward,ReduceScatter,tp1,262144,AllGather backward,2
+3,tp_sp_b128,1,backward,AllGather,tp1,131072,ReduceScatter backward,2
+3,tp_sp_b128,1,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+3,tp_sp_b128,1,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+3,tp_sp_b128,2,forward,ReduceScatter,tp1,262144,partial output to sequence shard,2
+3,tp_sp_b128,2,forward,AllGather,tp1,131072,sequence shard to replicated loss input,2
+3,tp_sp_b128,2,backward,ReduceScatter,tp1,262144,AllGather backward,2
+3,tp_sp_b128,2,backward,AllGather,tp1,131072,ReduceScatter backward,2
+3,tp_sp_b128,2,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+3,tp_sp_b128,2,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+3,tp_sp_b128,3,forward,ReduceScatter,tp1,262144,partial output to sequence shard,2
+3,tp_sp_b128,3,forward,AllGather,tp1,131072,sequence shard to replicated loss input,2
+3,tp_sp_b128,3,backward,ReduceScatter,tp1,262144,AllGather backward,2
+3,tp_sp_b128,3,backward,AllGather,tp1,131072,ReduceScatter backward,2
+3,tp_sp_b128,3,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+3,tp_sp_b128,3,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+3,tp_sp_b128,4,forward,ReduceScatter,tp1,262144,partial output to sequence shard,2
+3,tp_sp_b128,4,forward,AllGather,tp1,131072,sequence shard to replicated loss input,2
+3,tp_sp_b128,4,backward,ReduceScatter,tp1,262144,AllGather backward,2
+3,tp_sp_b128,4,backward,AllGather,tp1,131072,ReduceScatter backward,2
+3,tp_sp_b128,4,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+3,tp_sp_b128,4,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+3,tp_sp_b128,5,forward,ReduceScatter,tp1,262144,partial output to sequence shard,2
+3,tp_sp_b128,5,forward,AllGather,tp1,131072,sequence shard to replicated loss input,2
+3,tp_sp_b128,5,backward,ReduceScatter,tp1,262144,AllGather backward,2
+3,tp_sp_b128,5,backward,AllGather,tp1,131072,ReduceScatter backward,2
+3,tp_sp_b128,5,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+3,tp_sp_b128,5,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+0,tp_ar_b128,0,forward,AllReduce,tp0,262144,row-parallel partial output,2
+0,tp_ar_b128,0,backward,AllReduce,tp0,262144,autograd dual of AllReduce,2
+0,tp_ar_b128,0,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+0,tp_ar_b128,0,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+0,tp_ar_b128,1,forward,AllReduce,tp0,262144,row-parallel partial output,2
+0,tp_ar_b128,1,backward,AllReduce,tp0,262144,autograd dual of AllReduce,2
+0,tp_ar_b128,1,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+0,tp_ar_b128,1,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+0,tp_ar_b128,2,forward,AllReduce,tp0,262144,row-parallel partial output,2
+0,tp_ar_b128,2,backward,AllReduce,tp0,262144,autograd dual of AllReduce,2
+0,tp_ar_b128,2,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+0,tp_ar_b128,2,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+0,tp_ar_b128,3,forward,AllReduce,tp0,262144,row-parallel partial output,2
+0,tp_ar_b128,3,backward,AllReduce,tp0,262144,autograd dual of AllReduce,2
+0,tp_ar_b128,3,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+0,tp_ar_b128,3,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+0,tp_ar_b128,4,forward,AllReduce,tp0,262144,row-parallel partial output,2
+0,tp_ar_b128,4,backward,AllReduce,tp0,262144,autograd dual of AllReduce,2
+0,tp_ar_b128,4,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+0,tp_ar_b128,4,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+0,tp_ar_b128,5,forward,AllReduce,tp0,262144,row-parallel partial output,2
+0,tp_ar_b128,5,backward,AllReduce,tp0,262144,autograd dual of AllReduce,2
+0,tp_ar_b128,5,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+0,tp_ar_b128,5,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+1,tp_ar_b128,0,forward,AllReduce,tp0,262144,row-parallel partial output,2
+1,tp_ar_b128,0,backward,AllReduce,tp0,262144,autograd dual of AllReduce,2
+1,tp_ar_b128,0,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+1,tp_ar_b128,0,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+1,tp_ar_b128,1,forward,AllReduce,tp0,262144,row-parallel partial output,2
+1,tp_ar_b128,1,backward,AllReduce,tp0,262144,autograd dual of AllReduce,2
+1,tp_ar_b128,1,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+1,tp_ar_b128,1,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+1,tp_ar_b128,2,forward,AllReduce,tp0,262144,row-parallel partial output,2
+1,tp_ar_b128,2,backward,AllReduce,tp0,262144,autograd dual of AllReduce,2
+1,tp_ar_b128,2,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+1,tp_ar_b128,2,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+1,tp_ar_b128,3,forward,AllReduce,tp0,262144,row-parallel partial output,2
+1,tp_ar_b128,3,backward,AllReduce,tp0,262144,autograd dual of AllReduce,2
+1,tp_ar_b128,3,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+1,tp_ar_b128,3,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+1,tp_ar_b128,4,forward,AllReduce,tp0,262144,row-parallel partial output,2
+1,tp_ar_b128,4,backward,AllReduce,tp0,262144,autograd dual of AllReduce,2
+1,tp_ar_b128,4,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+1,tp_ar_b128,4,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+1,tp_ar_b128,5,forward,AllReduce,tp0,262144,row-parallel partial output,2
+1,tp_ar_b128,5,backward,AllReduce,tp0,262144,autograd dual of AllReduce,2
+1,tp_ar_b128,5,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+1,tp_ar_b128,5,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+2,tp_ar_b128,0,forward,AllReduce,tp1,262144,row-parallel partial output,2
+2,tp_ar_b128,0,backward,AllReduce,tp1,262144,autograd dual of AllReduce,2
+2,tp_ar_b128,0,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+2,tp_ar_b128,0,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+2,tp_ar_b128,1,forward,AllReduce,tp1,262144,row-parallel partial output,2
+2,tp_ar_b128,1,backward,AllReduce,tp1,262144,autograd dual of AllReduce,2
+2,tp_ar_b128,1,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+2,tp_ar_b128,1,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+2,tp_ar_b128,2,forward,AllReduce,tp1,262144,row-parallel partial output,2
+2,tp_ar_b128,2,backward,AllReduce,tp1,262144,autograd dual of AllReduce,2
+2,tp_ar_b128,2,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+2,tp_ar_b128,2,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+2,tp_ar_b128,3,forward,AllReduce,tp1,262144,row-parallel partial output,2
+2,tp_ar_b128,3,backward,AllReduce,tp1,262144,autograd dual of AllReduce,2
+2,tp_ar_b128,3,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+2,tp_ar_b128,3,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+2,tp_ar_b128,4,forward,AllReduce,tp1,262144,row-parallel partial output,2
+2,tp_ar_b128,4,backward,AllReduce,tp1,262144,autograd dual of AllReduce,2
+2,tp_ar_b128,4,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+2,tp_ar_b128,4,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+2,tp_ar_b128,5,forward,AllReduce,tp1,262144,row-parallel partial output,2
+2,tp_ar_b128,5,backward,AllReduce,tp1,262144,autograd dual of AllReduce,2
+2,tp_ar_b128,5,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+2,tp_ar_b128,5,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+3,tp_ar_b128,0,forward,AllReduce,tp1,262144,row-parallel partial output,2
+3,tp_ar_b128,0,backward,AllReduce,tp1,262144,autograd dual of AllReduce,2
+3,tp_ar_b128,0,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+3,tp_ar_b128,0,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+3,tp_ar_b128,1,forward,AllReduce,tp1,262144,row-parallel partial output,2
+3,tp_ar_b128,1,backward,AllReduce,tp1,262144,autograd dual of AllReduce,2
+3,tp_ar_b128,1,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+3,tp_ar_b128,1,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+3,tp_ar_b128,2,forward,AllReduce,tp1,262144,row-parallel partial output,2
+3,tp_ar_b128,2,backward,AllReduce,tp1,262144,autograd dual of AllReduce,2
+3,tp_ar_b128,2,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+3,tp_ar_b128,2,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+3,tp_ar_b128,3,forward,AllReduce,tp1,262144,row-parallel partial output,2
+3,tp_ar_b128,3,backward,AllReduce,tp1,262144,autograd dual of AllReduce,2
+3,tp_ar_b128,3,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+3,tp_ar_b128,3,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+3,tp_ar_b128,4,forward,AllReduce,tp1,262144,row-parallel partial output,2
+3,tp_ar_b128,4,backward,AllReduce,tp1,262144,autograd dual of AllReduce,2
+3,tp_ar_b128,4,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+3,tp_ar_b128,4,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+3,tp_ar_b128,5,forward,AllReduce,tp1,262144,row-parallel partial output,2
+3,tp_ar_b128,5,backward,AllReduce,tp1,262144,autograd dual of AllReduce,2
+3,tp_ar_b128,5,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+3,tp_ar_b128,5,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+0,tp_ar_b32,0,forward,AllReduce,tp0,65536,row-parallel partial output,2
+0,tp_ar_b32,0,backward,AllReduce,tp0,65536,autograd dual of AllReduce,2
+0,tp_ar_b32,0,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+0,tp_ar_b32,0,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+0,tp_ar_b32,1,forward,AllReduce,tp0,65536,row-parallel partial output,2
+0,tp_ar_b32,1,backward,AllReduce,tp0,65536,autograd dual of AllReduce,2
+0,tp_ar_b32,1,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+0,tp_ar_b32,1,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+0,tp_ar_b32,2,forward,AllReduce,tp0,65536,row-parallel partial output,2
+0,tp_ar_b32,2,backward,AllReduce,tp0,65536,autograd dual of AllReduce,2
+0,tp_ar_b32,2,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+0,tp_ar_b32,2,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+0,tp_ar_b32,3,forward,AllReduce,tp0,65536,row-parallel partial output,2
+0,tp_ar_b32,3,backward,AllReduce,tp0,65536,autograd dual of AllReduce,2
+0,tp_ar_b32,3,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+0,tp_ar_b32,3,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+0,tp_ar_b32,4,forward,AllReduce,tp0,65536,row-parallel partial output,2
+0,tp_ar_b32,4,backward,AllReduce,tp0,65536,autograd dual of AllReduce,2
+0,tp_ar_b32,4,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+0,tp_ar_b32,4,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+0,tp_ar_b32,5,forward,AllReduce,tp0,65536,row-parallel partial output,2
+0,tp_ar_b32,5,backward,AllReduce,tp0,65536,autograd dual of AllReduce,2
+0,tp_ar_b32,5,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+0,tp_ar_b32,5,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+1,tp_ar_b32,0,forward,AllReduce,tp0,65536,row-parallel partial output,2
+1,tp_ar_b32,0,backward,AllReduce,tp0,65536,autograd dual of AllReduce,2
+1,tp_ar_b32,0,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+1,tp_ar_b32,0,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+1,tp_ar_b32,1,forward,AllReduce,tp0,65536,row-parallel partial output,2
+1,tp_ar_b32,1,backward,AllReduce,tp0,65536,autograd dual of AllReduce,2
+1,tp_ar_b32,1,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+1,tp_ar_b32,1,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+1,tp_ar_b32,2,forward,AllReduce,tp0,65536,row-parallel partial output,2
+1,tp_ar_b32,2,backward,AllReduce,tp0,65536,autograd dual of AllReduce,2
+1,tp_ar_b32,2,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+1,tp_ar_b32,2,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+1,tp_ar_b32,3,forward,AllReduce,tp0,65536,row-parallel partial output,2
+1,tp_ar_b32,3,backward,AllReduce,tp0,65536,autograd dual of AllReduce,2
+1,tp_ar_b32,3,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+1,tp_ar_b32,3,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+1,tp_ar_b32,4,forward,AllReduce,tp0,65536,row-parallel partial output,2
+1,tp_ar_b32,4,backward,AllReduce,tp0,65536,autograd dual of AllReduce,2
+1,tp_ar_b32,4,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+1,tp_ar_b32,4,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+1,tp_ar_b32,5,forward,AllReduce,tp0,65536,row-parallel partial output,2
+1,tp_ar_b32,5,backward,AllReduce,tp0,65536,autograd dual of AllReduce,2
+1,tp_ar_b32,5,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+1,tp_ar_b32,5,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+2,tp_ar_b32,0,forward,AllReduce,tp1,65536,row-parallel partial output,2
+2,tp_ar_b32,0,backward,AllReduce,tp1,65536,autograd dual of AllReduce,2
+2,tp_ar_b32,0,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+2,tp_ar_b32,0,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+2,tp_ar_b32,1,forward,AllReduce,tp1,65536,row-parallel partial output,2
+2,tp_ar_b32,1,backward,AllReduce,tp1,65536,autograd dual of AllReduce,2
+2,tp_ar_b32,1,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+2,tp_ar_b32,1,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+2,tp_ar_b32,2,forward,AllReduce,tp1,65536,row-parallel partial output,2
+2,tp_ar_b32,2,backward,AllReduce,tp1,65536,autograd dual of AllReduce,2
+2,tp_ar_b32,2,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+2,tp_ar_b32,2,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+2,tp_ar_b32,3,forward,AllReduce,tp1,65536,row-parallel partial output,2
+2,tp_ar_b32,3,backward,AllReduce,tp1,65536,autograd dual of AllReduce,2
+2,tp_ar_b32,3,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+2,tp_ar_b32,3,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+2,tp_ar_b32,4,forward,AllReduce,tp1,65536,row-parallel partial output,2
+2,tp_ar_b32,4,backward,AllReduce,tp1,65536,autograd dual of AllReduce,2
+2,tp_ar_b32,4,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+2,tp_ar_b32,4,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+2,tp_ar_b32,5,forward,AllReduce,tp1,65536,row-parallel partial output,2
+2,tp_ar_b32,5,backward,AllReduce,tp1,65536,autograd dual of AllReduce,2
+2,tp_ar_b32,5,dp_gradient,AllReduce,dp0,1048576,w1 shard replica gradient,2
+2,tp_ar_b32,5,dp_gradient,AllReduce,dp0,1048576,w2 shard replica gradient,2
+3,tp_ar_b32,0,forward,AllReduce,tp1,65536,row-parallel partial output,2
+3,tp_ar_b32,0,backward,AllReduce,tp1,65536,autograd dual of AllReduce,2
+3,tp_ar_b32,0,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+3,tp_ar_b32,0,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+3,tp_ar_b32,1,forward,AllReduce,tp1,65536,row-parallel partial output,2
+3,tp_ar_b32,1,backward,AllReduce,tp1,65536,autograd dual of AllReduce,2
+3,tp_ar_b32,1,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+3,tp_ar_b32,1,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+3,tp_ar_b32,2,forward,AllReduce,tp1,65536,row-parallel partial output,2
+3,tp_ar_b32,2,backward,AllReduce,tp1,65536,autograd dual of AllReduce,2
+3,tp_ar_b32,2,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+3,tp_ar_b32,2,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+3,tp_ar_b32,3,forward,AllReduce,tp1,65536,row-parallel partial output,2
+3,tp_ar_b32,3,backward,AllReduce,tp1,65536,autograd dual of AllReduce,2
+3,tp_ar_b32,3,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+3,tp_ar_b32,3,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+3,tp_ar_b32,4,forward,AllReduce,tp1,65536,row-parallel partial output,2
+3,tp_ar_b32,4,backward,AllReduce,tp1,65536,autograd dual of AllReduce,2
+3,tp_ar_b32,4,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+3,tp_ar_b32,4,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2
+3,tp_ar_b32,5,forward,AllReduce,tp1,65536,row-parallel partial output,2
+3,tp_ar_b32,5,backward,AllReduce,tp1,65536,autograd dual of AllReduce,2
+3,tp_ar_b32,5,dp_gradient,AllReduce,dp1,1048576,w1 shard replica gradient,2
+3,tp_ar_b32,5,dp_gradient,AllReduce,dp1,1048576,w2 shard replica gradient,2

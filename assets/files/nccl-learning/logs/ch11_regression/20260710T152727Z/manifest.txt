@@ -1,0 +1,25 @@
+experiment=ch11_regression_attribution
+run_id=20260710T152727Z
+timestamp_utc=2026-07-10T15:30:18.405142+00:00
+hostname=sg-fuxc2-260708-12652-default0-0
+cycles=10
+iterations=20
+sizes=1K,256K,64M
+world_size=4
+total_measurement_rows=420
+nccl_tests_commit=5bcd45d2ee8365e37895e118c9d11b0ebc15aa69
+nccl_source_commit=178b6b759074597777ce13438efb0e0ba625e429
+command_01=taskset -c 0,2,4,6 /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 1K -e 64M -f 256 -g 4 -w 5 -n 20 -N 10 -c 1 -I 0 -z 0 -C 0 -a 3 -d float -o sum
+command_02=NCCL_MIN_NCHANNELS=1 NCCL_MAX_NCHANNELS=1 taskset -c 0,2,4,6 /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 1K -e 64M -f 256 -g 4 -w 5 -n 20 -N 10 -c 1 -I 0 -z 0 -C 0 -a 3 -d float -o sum
+command_03=NCCL_P2P_DISABLE=1 taskset -c 0,2,4,6 /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 1K -e 64M -f 256 -g 4 -w 5 -n 20 -N 10 -c 1 -I 0 -z 0 -C 0 -a 3 -d float -o sum
+command_04=NCCL_P2P_DISABLE=1 taskset -c 1,3,5,7 /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 1K -e 64M -f 256 -g 4 -w 5 -n 20 -N 10 -c 1 -I 0 -z 0 -C 0 -a 3 -d float -o sum
+command_05=taskset -c 1,3,5,7 /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 1K -e 64M -f 256 -g 4 -w 5 -n 20 -N 10 -c 1 -I 0 -z 0 -C 0 -a 3 -d float -o sum
+command_06=taskset -c 0 /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 1K -e 64M -f 256 -g 4 -w 5 -n 20 -N 10 -c 1 -I 0 -z 0 -C 0 -a 3 -d float -o sum
+command_07=taskset -c 0 /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 1K -e 64M -f 256 -g 4 -w 5 -n 20 -N 10 -c 1 -I 0 -z 0 -C 0 -a 3 -d float -o sum
+command_08=taskset -c 0 /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 1K -e 64M -f 256 -g 4 -w 5 -n 20 -N 10 -c 1 -I 0 -z 0 -C 0 -a 3 -d float -o sum
+command_09=taskset -c 0 /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 1K -e 64M -f 256 -g 4 -w 5 -n 20 -N 10 -c 1 -I 0 -z 0 -C 0 -a 3 -d float -o sum
+command_10=taskset -c 1,3,5,7 /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 1K -e 64M -f 256 -g 4 -w 5 -n 20 -N 10 -c 1 -I 0 -z 0 -C 0 -a 3 -d float -o sum
+command_11=NCCL_P2P_DISABLE=1 taskset -c 1,3,5,7 /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 1K -e 64M -f 256 -g 4 -w 5 -n 20 -N 10 -c 1 -I 0 -z 0 -C 0 -a 3 -d float -o sum
+command_12=NCCL_P2P_DISABLE=1 taskset -c 0,2,4,6 /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 1K -e 64M -f 256 -g 4 -w 5 -n 20 -N 10 -c 1 -I 0 -z 0 -C 0 -a 3 -d float -o sum
+command_13=NCCL_MIN_NCHANNELS=1 NCCL_MAX_NCHANNELS=1 taskset -c 0,2,4,6 /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 1K -e 64M -f 256 -g 4 -w 5 -n 20 -N 10 -c 1 -I 0 -z 0 -C 0 -a 3 -d float -o sum
+command_14=taskset -c 0,2,4,6 /root/nccl-learning/third_party/nccl-tests/build/all_reduce_perf -b 1K -e 64M -f 256 -g 4 -w 5 -n 20 -N 10 -c 1 -I 0 -z 0 -C 0 -a 3 -d float -o sum

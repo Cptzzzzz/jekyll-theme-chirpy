@@ -1,0 +1,97 @@
+== System ==
+Thu Jul  9 07:40:45 UTC 2026
+sg-fuxc2-260708-12652-default0-0
+Linux sg-fuxc2-260708-12652-default0-0 5.15.0-177-generic #187-Ubuntu SMP Sat Apr 11 22:54:33 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+
+== NVIDIA GPUs ==
+GPU 0: Tesla V100-SXM2-32GB (UUID: GPU-5ae611af-8174-c5e5-7db2-d7fe2ec69ec1)
+GPU 1: Tesla V100-SXM2-32GB (UUID: GPU-01707108-c8af-0c59-683e-245462fe241b)
+GPU 2: Tesla V100-SXM2-32GB (UUID: GPU-5bc4ac6f-8eb5-e999-bc7e-5bd9b20c1a1d)
+GPU 3: Tesla V100-SXM2-32GB (UUID: GPU-60f7bcda-4431-1320-0928-f3271e24c8e7)
+Thu Jul  9 07:40:45 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.159.03             Driver Version: 580.159.03     CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  Tesla V100-SXM2-32GB           On  |   00000000:1A:00.0 Off |                    0 |
+| N/A   40C    P0             43W /  300W |     106MiB /  32768MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  Tesla V100-SXM2-32GB           On  |   00000000:1C:00.0 Off |                    0 |
+| N/A   34C    P0             44W /  300W |       0MiB /  32768MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   2  Tesla V100-SXM2-32GB           On  |   00000000:1D:00.0 Off |                    0 |
+| N/A   35C    P0             42W /  300W |       0MiB /  32768MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   3  Tesla V100-SXM2-32GB           On  |   00000000:1E:00.0 Off |                    0 |
+| N/A   41C    P0             43W /  300W |       0MiB /  32768MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+
+== GPU topology ==
+	[4mGPU0	GPU1	GPU2	GPU3	CPU Affinity	NUMA Affinity	GPU NUMA ID[0m
+GPU0	 X 	NV2	NV2	NV2	0,2,4,6,8,10	0		N/A
+GPU1	NV2	 X 	NV2	NV2	0,2,4,6,8,10	0		N/A
+GPU2	NV2	NV2	 X 	NV2	0,2,4,6,8,10	0		N/A
+GPU3	NV2	NV2	NV2	 X 	0,2,4,6,8,10	0		N/A
+
+Legend:
+
+  X    = Self
+  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)
+  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node
+  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)
+  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)
+  PIX  = Connection traversing at most a single PCIe bridge
+  NV#  = Connection traversing a bonded set of # NVLinks
+
+== CUDA toolkit ==
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2024 NVIDIA Corporation
+Built on Fri_Jun_14_16:34:21_PDT_2024
+Cuda compilation tools, release 12.6, V12.6.20
+Build cuda_12.6.r12.6/compiler.34431801_0
+lrwxrwxrwx 1 root root   22 Aug 17  2024 /usr/local/cuda -> /etc/alternatives/cuda
+lrwxrwxrwx 1 root root   25 Aug 17  2024 /usr/local/cuda-12 -> /etc/alternatives/cuda-12
+drwxr-xr-x 1 root root 4096 Aug 17  2024 /usr/local/cuda-12.6
+
+== PyTorch / CUDA / NCCL ==
+python: available
+torch: 2.5.0a0+872d972e41.nv24.08
+torch cuda available: True
+torch cuda version: 12.6
+torch nccl version: (2, 22, 3)
+cuda device count: 4
+cuda:0: Tesla V100-SXM2-32GB
+cuda:1: Tesla V100-SXM2-32GB
+cuda:2: Tesla V100-SXM2-32GB
+cuda:3: Tesla V100-SXM2-32GB
+
+== NCCL shared libraries visible to linker ==
+	libnccl_wrapper.so.0 (libc6,x86-64) => /opt/hpcx/clusterkit/lib/libnccl_wrapper.so.0
+	libnccl_wrapper.so (libc6,x86-64) => /opt/hpcx/clusterkit/lib/libnccl_wrapper.so
+	libnccl.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnccl.so.2
+	libnccl.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libnccl.so
+	libnccl-net.so.0 (libc6,x86-64) => /opt/hpcx/nccl_rdma_sharp_plugin/lib/libnccl-net.so.0
+	libnccl-net.so (libc6,x86-64) => /opt/hpcx/nccl_rdma_sharp_plugin/lib/libnccl-net.so
+/usr/lib/x86_64-linux-gnu/libnccl.so
+/usr/lib/x86_64-linux-gnu/libnccl.so.2
+/usr/lib/x86_64-linux-gnu/libnccl.so.2.22.3
+
+== RDMA / InfiniBand probes ==
+/usr/bin/ibv_devinfo
+0 HCAs found:
+

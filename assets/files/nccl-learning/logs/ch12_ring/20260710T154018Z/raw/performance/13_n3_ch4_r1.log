@@ -1,0 +1,39 @@
+# nccl-tests version 2.19.5 nccl-headers=22203 nccl-library=22203
+# Collective test starting: all_reduce_perf
+# nThread 1 nGpus 3 minBytes 1048576 maxBytes 67108864 step: 64(factor) warmup iters: 5 iters: 20 agg iters: 1 validation: 1 graph: 0 unalign: 0
+#
+# Using devices
+#  Rank  0 Group  0 Pid  43357 on sg-fuxc2-260708-12652-default0-0 device  0 [0000:1a:00] Tesla V100-SXM2-32GB
+#  Rank  1 Group  0 Pid  43357 on sg-fuxc2-260708-12652-default0-0 device  1 [0000:1c:00] Tesla V100-SXM2-32GB
+#  Rank  2 Group  0 Pid  43357 on sg-fuxc2-260708-12652-default0-0 device  2 [0000:1d:00] Tesla V100-SXM2-32GB
+NCCL version 2.22.3+cuda12.6
+#
+#                                                              out-of-place                       in-place          
+#       size         count      type   redop    root     time   algbw   busbw  #wrong     time   algbw   busbw  #wrong 
+#        (B)    (elements)                               (us)  (GB/s)  (GB/s)             (us)  (GB/s)  (GB/s)         
+     1048576        262144     float     sum      -1    60.21   17.41   23.22       0    59.13   17.73   23.65       0
+    67108864      16777216     float     sum      -1  1267.82   52.93   70.58       0  1271.87   52.76   70.35       0
+     1048576        262144     float     sum      -1    60.06   17.46   23.28       0    58.86   17.82   23.75       0
+    67108864      16777216     float     sum      -1  1267.69   52.94   70.58       0  1272.32   52.75   70.33       0
+     1048576        262144     float     sum      -1    59.94   17.49   23.32       0    58.77   17.84   23.79       0
+    67108864      16777216     float     sum      -1  1267.56   52.94   70.59       0  1271.99   52.76   70.35       0
+     1048576        262144     float     sum      -1    59.98   17.48   23.31       0    58.92   17.80   23.73       0
+    67108864      16777216     float     sum      -1  1266.30   53.00   70.66       0  1272.73   52.73   70.30       0
+     1048576        262144     float     sum      -1    59.88   17.51   23.35       0    59.32   17.68   23.57       0
+    67108864      16777216     float     sum      -1  1268.66   52.90   70.53       0  1271.83   52.77   70.35       0
+     1048576        262144     float     sum      -1    59.22   17.71   23.61       0    58.82   17.83   23.77       0
+    67108864      16777216     float     sum      -1  1266.78   52.98   70.63       0  1272.53   52.74   70.32       0
+     1048576        262144     float     sum      -1    59.63   17.59   23.45       0    58.89   17.80   23.74       0
+    67108864      16777216     float     sum      -1  1269.16   52.88   70.50       0  1271.16   52.79   70.39       0
+     1048576        262144     float     sum      -1    60.09   17.45   23.27       0    59.43   17.64   23.53       0
+    67108864      16777216     float     sum      -1  1266.76   52.98   70.64       0  1271.68   52.77   70.36       0
+     1048576        262144     float     sum      -1    59.78   17.54   23.39       0    59.15   17.73   23.64       0
+    67108864      16777216     float     sum      -1  1267.27   52.96   70.61       0  1271.57   52.78   70.37       0
+     1048576        262144     float     sum      -1    59.71   17.56   23.41       0    59.55   17.61   23.48       0
+    67108864      16777216     float     sum      -1  1268.37   52.91   70.55       0  1272.63   52.73   70.31       0
+# Out of bounds values : 0 OK
+# Avg bus bandwidth    : 46.9883 
+#
+# Collective test concluded: all_reduce_perf
+#
+

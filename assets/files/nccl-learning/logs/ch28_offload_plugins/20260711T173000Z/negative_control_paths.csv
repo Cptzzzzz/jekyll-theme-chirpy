@@ -1,0 +1,15 @@
+config,replicate,socket_connector,collnet_connector,nvls_connected,correct
+baseline,1,1,0,0,1
+collnet_0,1,1,0,0,1
+collnet_1,1,1,0,0,1
+nvls_0,1,1,0,0,1
+nvls_auto,1,1,0,0,1
+bad_plugin,1,1,0,0,1
+missing_plugin,1,1,0,0,1
+missing_plugin,2,1,0,0,1
+bad_plugin,2,1,0,0,1
+nvls_auto,2,1,0,0,1
+nvls_0,2,1,0,0,1
+collnet_1,2,1,0,0,1
+collnet_0,2,1,0,0,1
+baseline,2,1,0,0,1

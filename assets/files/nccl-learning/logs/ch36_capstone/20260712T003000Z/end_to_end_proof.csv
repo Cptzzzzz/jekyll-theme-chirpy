@@ -1,0 +1,3 @@
+variant,bucket_bytes,buckets_per_rank_iteration,algo,proto,model_time_us,coll_channels,p2p_lines,median_step_gpu_us
+baseline,67108864,1,1,2,867.660767,12,48,2329.983949661255
+channel1,67108864,1,1,2,867.660767,1,4,8060.208320617676

@@ -1,0 +1,38 @@
+topic,case,expected,observed,pass
+causal_layer,fingerprint,application_contract,application_contract,1
+causal_layer,skip,application_order,application_order,1
+causal_layer,rank_exit,process_liveness,process_liveness,1
+causal_layer,peer_exception,application,application,1
+causal_layer,remote_error,transport_observation,transport_observation,1
+causal_layer,child_failed,launcher_summary,launcher_summary,1
+async_error_mode,0,0:0,0:0,1
+async_error_mode,1,1:1,1:1,1
+async_error_mode,2,1:0,1:0,1
+async_error_mode,3,0:1,0:1,1
+sequence_model,healthy_then_skip,1,1,1
+sequence_model,lazy_skip,0,0,1
+watchdog_state,last_enqueued,1,1,1
+watchdog_state,last_started,0,0,1
+watchdog_state,last_completed,0,0,1
+nccl_result,ncclSuccess,success,success,1
+nccl_result,ncclUnhandledCudaError,unhandled cuda error,unhandled cuda error,1
+nccl_result,ncclSystemError,unhandled system error,unhandled system error,1
+nccl_result,ncclInternalError,internal error,internal error,1
+nccl_result,ncclInvalidArgument,invalid argument,invalid argument,1
+nccl_result,ncclInvalidUsage,invalid usage,invalid usage,1
+nccl_result,ncclRemoteError,remote process exited or there was a network error,remote process exited or there was a network error,1
+nccl_result,ncclInProgress,operation in progress,operation in progress,1
+teardown,destroy,1,1,1
+teardown,finalize_nonblocking,0,0,1
+teardown,abort,0,0,1
+root_cause_priority,injection_marker,0,0,1
+root_cause_priority,fingerprint,1,1,1
+root_cause_priority,watchdog,2,2,1
+root_cause_priority,remote_error,3,3,1
+root_cause_priority,launcher,4,4,1
+timeout_scope,process_group_option,1,1,1
+timeout_scope,external_subprocess_is_last_resort,1,1,1
+network_boundary,single_node_not_network_cut,1,1,1
+network_boundary,remote_error_text_is_ambiguous,1,1,1
+communicator,warmup_proves_prior_health,1,1,1
+communicator,lazy_case_has_no_prior_nccl,1,1,1
