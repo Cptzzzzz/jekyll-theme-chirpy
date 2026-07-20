@@ -39,6 +39,8 @@ flowchart LR
 
 ## 配套长文
 
+- [vLLM 请求处理全流程](/posts/vllm-request-lifecycle-source-guide/)：从 HTTP、EngineCore、Scheduler、Paged KV、GPU Runner 一直跟到流式输出和释放。
+- [SGLang 请求处理全流程](/posts/sglang-request-lifecycle-source-guide/)：从 Tokenizer、Scheduler、Radix Cache、EXTEND/DECODE 一直跟到 Detokenizer 和 HTTP coroutine。
 - [24 道长篇综合题：完整答案与评分指南](/posts/vllm-sglang-interview-comprehensive-guide/)：适合模拟 3 到 8 分钟的完整面试回答。
 - [源码深挖与实验手册](/posts/vllm-sglang-interview-source-labs/)：用 A100 实验进一步追问 Prefill、Prefix Cache、Beam Search KV、Continuous Batching、CUDA Graph、投机解码和 KV 压力。
 - [实验聚合数据](/assets/files/vllm-sglang-interview/2026-07-17-a100-qwen3-0.6b.json)与[复现实验说明](/assets/files/vllm-sglang-interview/EXPERIMENTS.md)：用于检查结论的适用范围，而不是把单卡小模型数字当作框架排行榜。
