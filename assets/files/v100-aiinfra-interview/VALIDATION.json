@@ -1,0 +1,44 @@
+{
+  "status": "pass",
+  "json_files_parsed": 422,
+  "training_result_counts": {
+    "ddp": 30,
+    "fsdp": 12,
+    "megatron_tp": 18,
+    "megatron_pp": 36,
+    "ddp_microbatch": 24,
+    "megatron_longseq": 48
+  },
+  "vllm_benchmark_files": 58,
+  "figure_files": 13,
+  "profiler_trace_files": 4,
+  "ddp_engineering_artifacts": {
+    "runs": 21,
+    "profile_metrics": 7,
+    "profile_events": 7,
+    "profile_traces": 7
+  },
+  "nccl_engineering_logs": 27,
+  "moe_result_files": 6,
+  "checkpoint_controls": 5,
+  "failure_probes": 2,
+  "triton_result_files": 3,
+  "vllm_cache_eviction_benchmarks": 20,
+  "parallel_group_mapping_runs": 6,
+  "fsdp_runtime_artifacts": {
+    "runs": 15,
+    "profile_metrics": 5,
+    "profile_events": 5,
+    "profile_traces": 5
+  },
+  "triton_resource_result_files": 3,
+  "vllm_preemption_benchmarks": 6,
+  "report_bytes": 57942,
+  "deep_report_bytes": 44765,
+  "megatron_question_bank": {
+    "bytes": 195243,
+    "questions": 140,
+    "detailed_answers": 140
+  },
+  "errors": []
+}
