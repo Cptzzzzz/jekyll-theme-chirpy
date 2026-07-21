@@ -20,6 +20,7 @@ VLLM_URL = "/posts/vllm-request-lifecycle-source-guide/"
 SGLANG_URL = "/posts/sglang-request-lifecycle-source-guide/"
 INTERVIEW_URL = "/posts/vllm-sglang-interview-series/"
 LABS_URL = "/posts/vllm-sglang-interview-source-labs/"
+SCHEDULER_URL = "/posts/vllm-sglang-scheduler-source-deep-dive/"
 
 POSTS = [
     {
@@ -122,7 +123,7 @@ mermaid: true
 def build_intro(post: dict[str, str]) -> str:
     return f"""> 本文按固定源码版本逐段跟踪一个 {post['framework']} 请求。先用 30 秒建立全局路径，再按模块解释问题、Input、实现、Output、性能收益、代价与正确性不变量。
 
-[另一篇：{post['peer_name']} 请求全流程]({post['peer_url']}) · [面试题系列]({INTERVIEW_URL}) · [源码实验手册]({LABS_URL})
+[另一篇：{post['peer_name']} 请求全流程]({post['peer_url']}) · [调度器源码详解]({SCHEDULER_URL}) · [面试题系列]({INTERVIEW_URL}) · [源码实验手册]({LABS_URL})
 
 ## 30 秒全流程概览
 

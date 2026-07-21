@@ -12,7 +12,7 @@ mermaid: true
 
 > 本文按固定源码版本逐段跟踪一个 SGLang 请求。先用 30 秒建立全局路径，再按模块解释问题、Input、实现、Output、性能收益、代价与正确性不变量。
 
-[另一篇：vLLM 请求全流程](/posts/vllm-request-lifecycle-source-guide/) · [面试题系列](/posts/vllm-sglang-interview-series/) · [源码实验手册](/posts/vllm-sglang-interview-source-labs/)
+[另一篇：vLLM 请求全流程](/posts/vllm-request-lifecycle-source-guide/) · [调度器源码详解](/posts/vllm-sglang-scheduler-source-deep-dive/) · [面试题系列](/posts/vllm-sglang-interview-series/) · [源码实验手册](/posts/vllm-sglang-interview-source-labs/)
 
 ## 30 秒全流程概览
 
